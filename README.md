@@ -18,18 +18,19 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 ## Identificação
 
 **Título do projeto de IHC:** {{TÍTULO DO PROJETO}}  
-**TCC/projeto de origem:** {{TÍTULO ORIGINAL DO TCC}}  
-**Orientador(a):** {{NOME}}  
+**TCC/projeto de origem:** {{Ferramenta baseada em Inteligência Artificial para Apoio à Identificação de Alterações nos Padrões de Comunicação, Interação e Desempenho em Equipes}}  
+**Orientador(a):** {{Plinio Thomaz Aquino Junior}}  
 **Disciplina:** Interação Humano-Computador  
-**Instituição:** {{INSTITUIÇÃO}}  
-**Semestre:** {{ANO/SEMESTRE}}
+**Instituição:** {{Centro Universitário FEI}}  
+**Semestre:** {{2026/Segundo semestre}}
 
 ### Equipe
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
-| {{Nome 1}} | {{matrícula}} | {{@usuario}} | {{...}} |
-| {{Nome 2}} | {{matrícula}} | {{@usuario}} | {{...}} |
+| {{Caio Augusto Arnoni}} | {{22.221.019-7}} | {{@caioarnoni21}} |
+| {{Guilherme Matias Rodrigues de Souza}} | {{22.122.071-8}} | {{@Matias2335}} |
+| {{Tainá Cunha Bueno}} | {{matrícula}} | {{22.119.025-9}} | {{@tainacbueno}} |
 
 ## Relação entre TCC e projeto de IHC
 
