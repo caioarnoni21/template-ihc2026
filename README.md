@@ -30,7 +30,7 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 |---|---:|---|---|
 | {{Caio Augusto Arnoni}} | {{22.221.019-7}} | {{@caioarnoni21}} |
 | {{Guilherme Matias Rodrigues de Souza}} | {{22.122.071-8}} | {{@Matias2335}} |
-| {{Tainá Cunha Bueno}} | {{matrícula}} | {{22.119.025-9}} | {{@tainacbueno}} |
+| {{Tainá Cunha Bueno}} | {{22.119.025-9}} | {{@tainacbueno}} |
 
 ## Relação entre TCC e projeto de IHC
 
