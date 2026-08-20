@@ -1,7 +1,7 @@
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** {{19/08/2026}}  
+**Status:** 🟨 em andamento 
 **Responsabilidade:** 1 solução consolidada por equipe
 
 ## Objetivo da atividade
@@ -57,85 +57,80 @@ Uma hipótese explicitada é melhor do que uma suposição escondida.
 
 ## 0.1 Membros
 
-| Nome completo | Matrícula | GitHub |
-|---|---:|---|
-| {{...}} | {{...}} | {{...}} |
+| Caio Arnoni | 22.221.019-7 | @caioarnoni21 |
+| Guilherme Matias Rodrigues de Souza | 22.122.071-8 | [?] |
+| Tainá Cunha Bueno | 22.119.025-9 | [?] |
 
 ## 0.2 Título atual do TCC
 
-{{...}}
+**Ferramenta baseada em Inteligência Artificial para Apoio à Identificação de Alterações nos Padrões de Comunicação, Interação e Desempenho em Equipes.**
+
 
 ## 0.3 Orientador(a)
 
-{{...}}
+**Plinio Thomaz Aquino Junior.**
 
 ## 0.4 Qual é o resultado principal atualmente previsto no TCC?
 
 Marque e descreva:
 
-- [ ] sistema/aplicação interativa;
-- [ ] algoritmo;
+- [x] sistema/aplicação interativa;
+- [x] algoritmo;
 - [ ] modelo de IA/ML/LLM;
 - [ ] biblioteca/API/framework;
-- [ ] análise de dataset;
-- [ ] estudo/benchmark/avaliação experimental;
-- [ ] infraestrutura/backend;
+- [x] análise de dataset;
+- [x] estudo/benchmark/avaliação experimental;
+- [x] infraestrutura/backend;
 - [ ] componente embarcado/IoT;
-- [ ] outro: {{...}}.
+- [x] outro: pipeline experimental de coleta, processamento, cálculo de scores e geração de sinalizações.
 
-**Descrição:** {{...}}
+**Descrição:** [H] H01 - O TCC prevê o desenvolvimento e a avaliação experimental do WorkSense. A ferramenta recebe interações comunicacionais simuladas e registros de tarefas, extrai indicadores, calcula separadamente um score comunicacional e um score profissional e compara ciclos de reanálise com o baseline de cada perfil. A solução inclui um bot no Telegram, integrações entre serviços, armazenamento, algoritmos de processamento e visualizações preliminares.
 
 ## 0.5 O TCC já previa desenvolvimento de interface com usuário?
 
 - [ ] Sim, a interface já faz parte do TCC.
-- [ ] Parcialmente; existe alguma interação, mas ainda não está bem definida.
+- [x] Parcialmente; existe alguma interação, mas ainda não está bem definida.
 - [ ] Não. O TCC é predominantemente técnico e não previa interface.
 
 **Explique o que está formalmente previsto no TCC:** {{...}}
 
-> Esta resposta serve para separar o compromisso do TCC do projeto da disciplina. Mesmo quando a opção for **não**, a equipe irá definir uma interface para exercitar IHC.
-
----
+** [H] H02 - Está prevista uma interação conversacional por Telegram para envio de mensagens, áudios e comandos de tarefas. O texto também prevê visualizações dos scores e sinalizações, mas ainda não define uma interface de gestão completa, seus fluxos de uso ou requisitos de usabilidade. As visualizações atuais são gráficos preliminares de resultados experimentais.
 
 # 1. Entendendo a contribuição do projeto
 
 ## 1.1 Explique o TCC em uma frase, sem citar linguagem de programação, framework ou banco de dados.
 
-{{...}}
+O WorkSense apoia a identificação de alterações ao longo do tempo nos padrões de comunicação, interação e execução de tarefas de perfis profissionais, mantendo a interpretação e a decisão sob responsabilidade humana.
 
 ## 1.2 Qual situação, atividade ou problema do mundo real motivou o TCC?
 
-{{[F/H/?] ...}}
+[H] H03 - Em ambientes remotos ou híbridos, informações sobre comunicação e trabalho ficam distribuídas em diferentes plataformas, tornando mais difícil perceber mudanças sutis na rotina profissional. Mensagens e registros de tarefas existem, mas não estão automaticamente organizados de forma temporalmente comparável, interpretável e útil para análise humana.
 
 ## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
 
-Complete, se ajudar:
-
-> “Nosso TCC produz, melhora, analisa ou permite `{{capacidade}}`.”
-
-Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar modelos; identificar padrões; prever demanda; analisar desempenho; gerar resumos; recomendar configurações.
-
-{{...}}
+Nosso TCC detecta anomalias , idêntica padrões ,analisa desempenho (não punitivo)
 
 ## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
 
-{{[F/H/?] ...}}
+[H] H04 - Gestores poderão perceber mais cedo variações que mereçam análise, compreender quais dimensões contribuíram para a sinalização e decidir de maneira mais informada se é necessário algum acompanhamento humano. A contribuição não deve produzir diagnóstico, punição ou decisão automática.
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
 
 | Mérito/contribuição técnica | Possível aplicação/valor em uso |
 |---|---|
-| {{...}} | {{...}} |
+| Integração experimental de dados comunicacionais e registros de tarefas em um único pipeline. | Reduzir a fragmentação de informações que hoje exigiriam consultas manuais a diferentes fontes. |
+| Extração de indicadores linguísticos, de polaridade, semânticos, de frequência, prazo e qualidade. | Apresentar ao gestor sinais organizados sobre diferentes dimensões da rotina profissional. |
+| Cálculo separado dos scores comunicacional e profissional. | Evitar que uma dimensão compense ou esconda alterações da outra. |
+| Comparação com baseline individual e ciclos de reanálise. | Avaliar mudanças em relação ao histórico do próprio perfil, em vez de comparar pessoas diferentes. |
+| Avaliação experimental com cenários simulados e previamente rotulados. | Verificar se as sinalizações correspondem às alterações planejadas antes de qualquer estudo com pessoas reais. |
+| Explicabilidade mínima e supervisão humana como requisitos. | Permitir que resultados sejam analisados com contexto e sem aparência de diagnóstico definitivo. |
 
----
 
 # 2. Entendendo as pessoas envolvidas
 
 ## 2.1 Quem interage diretamente com o produto, se já existe interface prevista?
 
-Se não houver interface prevista no TCC, escreva `NÃO SE APLICA AO ESCOPO ORIGINAL` e prossiga para 2.2.
-
-{{[F/H/?] ...}}
+[H] H05 - No escopo experimental atual, perfis profissionais simulados interagem diretamente com o bot do Telegram, enviando mensagens, áudios e comandos associados a tarefas. Não há participação de colaboradores reais.
 
 ## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
 
@@ -143,7 +138,12 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Perfil | Relação com a contribuição | O que faria | Status/evidência |
 |---|---|---|---|
-| {{DBA / analista / gestor / técnico / pesquisador / usuário final...}} | {{...}} | {{...}} | F / H / ? |
+| Gestor ou líder de equipe | Interpreta os resultados e decide se há necessidade de acompanhamento | Consultaria sinalizações, compararia períodos, verificaria indicadores e registraria sua análise | [H] H06; papel de supervisão humana |
+| Perfil profissional simulado | Produz os dados experimentais de comunicação e tarefas | Interagiria com o bot e realizaria movimentações simuladas no quadro Kanban | [H] H07 |
+| Colaborador real, em aplicação futura | Pessoa sobre a qual os dados poderiam se referir | Interagiria com ferramentas de comunicação e tarefas e precisaria compreender finalidade, uso e limites dos dados | [H] H08 |
+| Profissional de RH | Apoio especializado à interpretação e à governança | Analisaria tendências agregadas, orientaria gestores e acompanharia práticas responsáveis | [H] H09 |
+| Administrador da solução | Configura e mantém o ambiente | Gerenciaria integrações, usuários, permissões, credenciais, retenção e auditoria | [H] H10; requisitos técnicos |
+| Pesquisadores/equipe do TCC | Opera e avalia a solução experimental | Gera dados simulados, executa processamentos, revisa erros e avalia coerência das sinalizações | [H] H11 |
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
@@ -155,9 +155,11 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 Considere conhecimento do domínio, experiência tecnológica, frequência de uso, necessidades de acessibilidade, responsabilidade profissional, familiaridade com métricas, linguagem técnica, urgência etc.
 
-{{[F/H/?] ...}}
+[H] H12 - Gestores podem ter pouco tempo, diferentes níveis de familiaridade com métricas e responsabilidade direta sobre decisões que afetam pessoas. Precisam de linguagem clara, comparação temporal, indicação da qualidade dos dados e explicações sobre os componentes de cada resultado.
 
----
+[H] H13 - Colaboradores podem perceber a análise como vigilância, especialmente se não houver transparência, consentimento, finalidade clara e limites de acesso.
+
+[?] Ainda não sabemos quais necessidades de acessibilidade, frequência de uso, dispositivos preferidos e níveis reais de conhecimento analítico existem em cada perfil.
 
 # 3. Entendendo objetivos e atividades
 
