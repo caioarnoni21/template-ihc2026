@@ -107,8 +107,8 @@ Marque e descreva:
 [F] F01 - As transformações nas formas de trabalho, com equipes atuando entre ambientes presenciais, remotos e digitais, tornaram mais difícil perceber mudanças sutis na rotina profissional dos colaboradores. Alterações na forma de comunicação, na frequência das interações ou na evolução das entregas podem ocorrer gradualmente e passar despercebidas no acompanhamento cotidiano. Ao mesmo tempo, parte dessas interações e atividades deixa registros digitais que podem ser analisados ao longo do tempo para apoiar essa percepção.
 
 ## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
-****** citação de hipótese
-[H] H03 - Identificar mudanças nos padrões de comunicação, interação e indicadores profissionais ao longo do tempo, utilizando o histórico individual como referência e gerando sinalizações para apoiar a análise humana, sem caráter diagnóstico ou punitivo.
+
+[H03] Identificar mudanças nos padrões de comunicação, interação e indicadores profissionais ao longo do tempo, utilizando o histórico individual como referência e gerando sinalizações para apoiar a análise humana, sem caráter diagnóstico ou punitivo.
 
 ## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
 
@@ -170,10 +170,7 @@ Considere conhecimento do domínio, experiência tecnológica, frequência de us
 
 ## 3.1 O que o usuário está tentando conseguir no mundo real?
 
-investigar como uma ferramenta baseada em inteligência artificial pode apoiar gestores na identificação de indícios de alteração nos padrões de comunicação, interação e desempenho de colaboradores 
-
-** citação de hipótese **
-[H] H04; o gestor busca acompanhar a equipe de forma mais estruturada e preventiva, percebendo mudanças relevantes na rotina dos colaboradores, compreendendo melhor essas variações e decidindo quando é necessário algum acompanhamento humano.
+[H04] O gestor busca acompanhar a equipe de forma mais estruturada e preventiva, percebendo mudanças relevantes na rotina dos colaboradores, compreendendo melhor essas variações e decidindo quando é necessário algum acompanhamento humano.
 
 ## 3.2 Quais são as atividades mais importantes?
 
@@ -337,34 +334,21 @@ Menu lateral por área; cartões de indicadores; filtros de data, equipe e perfi
 
 Explique qual parte da interface será usada como recorte da disciplina e por que esse fluxo é relevante.
 
-{{...}}
+[H05] Para a disciplina de IHC, o recorte será a interface destinada ao gestor ou líder de equipe. Ela permitirá cadastrar e vincular colaboradores ao WorkSense e, principalmente, acompanhar os resultados produzidos pela ferramenta, consultando scores comunicacionais e profissionais, sinalizações, variações em relação ao histórico individual e os indicadores que contribuíram para cada resultado.
 
-### Caminho B — TCC não possui interface prevista
-
-Faça o exercício de transferência de uso:
-
-> **Imagine que o TCC foi concluído com sucesso e uma empresa, laboratório ou organização quer transformar a contribuição em algo utilizável. Quem precisaria interagir com ela e para quê?**
-
-Responda:
-
-1. quem poderia contratar/adotar a solução? {{...}}
-2. quem seria o usuário direto? {{...}}
-3. quem administraria/configuraria? {{...}}
-4. quem interpretaria resultados? {{...}}
-5. quem tomaria decisões? {{...}}
-6. quais dados/entradas seriam necessários? {{...}}
-7. quais resultados deveriam ser compreendidos? {{...}}
-8. que erros/rupturas seriam possíveis? {{...}}
+O fluxo de acompanhamento e interpretação das sinalizações será priorizado, pois está diretamente relacionado à contribuição central do TCC e envolve decisões importantes de IHC, como apresentar informações complexas de forma compreensível, evitar interpretações punitivas ou definitivas e fornecer contexto suficiente para apoiar a decisão humana. O cadastro e vínculo dos colaboradores será considerado um fluxo de apoio necessário para permitir esse acompanhamento.
 
 ## 7.2 Qual perfil será priorizado no projeto de IHC?
 
-{{...}}
+Gestor ou líder de equipe.
 
-**Por que esse perfil foi escolhido?** {{...}}
+**Por que esse perfil foi escolhido?** 
+[H05] O gestor foi escolhido por ser o usuário responsável por acompanhar os resultados produzidos pelo WorkSense e interpretar as sinalizações antes de qualquer ação relacionada ao colaborador. É para esse perfil que a interface deverá organizar os scores, suas variações e os indicadores associados, oferecendo informações suficientes para uma interpretação contextualizada.
 
 ## 7.3 Qual objetivo desse usuário será priorizado?
 
-{{...}}
+[H04] Acompanhar a equipe de forma mais estruturada e preventiva, identificando e compreendendo variações relevantes nos padrões dos colaboradores para decidir quando uma situação merece acompanhamento humano.
+
 
 ## 7.4 Que interface será explorada na disciplina?
 
@@ -372,17 +356,21 @@ Complete:
 
 > **Para fins da disciplina de IHC, será projetada uma interface que permita a `{{perfil}}` utilizar `{{capacidade/resultado do TCC}}` para `{{objetivo}}`, no contexto de `{{situação}}`.**
 
-{{...}}
+Para fins da disciplina de IHC, será projetada uma interface que permita ao gestor ou líder de equipe utilizar as sinalizações, scores e indicadores produzidos pelo WorkSense para acompanhar e compreender alterações nos padrões comunicacionais e profissionais dos colaboradores, no contexto do acompanhamento cotidiano de equipes.
+
+[H03]; [H05] A interface deverá permitir o cadastro e vínculo dos colaboradores, a consulta de seus scores comunicacional e profissional, a comparação com o histórico individual e a visualização dos indicadores que contribuíram para eventuais sinalizações. O foco da disciplina estará na forma como essas informações são apresentadas e interpretadas pelo gestor.
 
 ## 7.5 Qual é a relação dessa interface com o TCC?
 
 - [ ] Já fazia parte do TCC.
-- [ ] É um aprofundamento de algo parcialmente previsto.
+- [ X ] É um aprofundamento de algo parcialmente previsto.
 - [ ] É uma extensão conceitual criada para a disciplina.
 - [ ] É um protótipo demonstrativo de aplicação potencial.
 - [ ] Outra: {{...}}.
 
 > **Declaração:** a interface desenvolvida nesta disciplina é um artefato de aprendizagem de IHC baseado no tema do TCC. Sua inclusão ou implementação no TCC somente ocorrerá se isso for posteriormente decidido pela equipe e pelo orientador.
+
+[F] F02 - O TCC já prevê o vínculo entre usuários, a geração de scores e sinalizações e a apresentação de seus componentes, além de possuir visualizações preliminares dos resultados. Entretanto, ainda não define uma interface de gestão completa, seus fluxos de interação ou requisitos de usabilidade. O projeto de IHC aprofundará essa parte, projetando especificamente a interação do gestor com o cadastro dos colaboradores e com os resultados produzidos pelo WorkSense.
 
 ---
 
