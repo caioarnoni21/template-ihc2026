@@ -100,37 +100,38 @@ Marque e descreva:
 
 ## 1.1 Explique o TCC em uma frase, sem citar linguagem de programação, framework ou banco de dados.
 
-O WorkSense apoia a identificação de alterações ao longo do tempo nos padrões de comunicação, interação e execução de tarefas de perfis profissionais, mantendo a interpretação e a decisão sob responsabilidade humana.
+[H] H03 - O WorkSense apoia a identificação de alterações ao longo do tempo nos padrões de comunicação, interação e execução de tarefas de perfis profissionais, mantendo a interpretação e a decisão sob responsabilidade humana.
 
 ## 1.2 Qual situação, atividade ou problema do mundo real motivou o TCC?
 
-[H] H03 - Em ambientes remotos ou híbridos, informações sobre comunicação e trabalho ficam distribuídas em diferentes plataformas, tornando mais difícil perceber mudanças sutis na rotina profissional. Mensagens e registros de tarefas existem, mas não estão automaticamente organizados de forma temporalmente comparável, interpretável e útil para análise humana.
+[F] F01 - As transformações nas formas de trabalho, com equipes atuando entre ambientes presenciais, remotos e digitais, tornaram mais difícil perceber mudanças sutis na rotina profissional dos colaboradores. Alterações na forma de comunicação, na frequência das interações ou na evolução das entregas podem ocorrer gradualmente e passar despercebidas no acompanhamento cotidiano. Ao mesmo tempo, parte dessas interações e atividades deixa registros digitais que podem ser analisados ao longo do tempo para apoiar essa percepção.
 
 ## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
-
-Nosso TCC detecta anomalias , idêntica padrões ,analisa desempenho (não punitivo)
+****** citação de hipótese
+[H] H03 - Identificar mudanças nos padrões de comunicação, interação e indicadores profissionais ao longo do tempo, utilizando o histórico individual como referência e gerando sinalizações para apoiar a análise humana, sem caráter diagnóstico ou punitivo.
 
 ## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
 
-[H] H04 - Gestores poderão perceber mais cedo variações que mereçam análise, compreender quais dimensões contribuíram para a sinalização e decidir de maneira mais informada se é necessário algum acompanhamento humano. A contribuição não deve produzir diagnóstico, punição ou decisão automática.
+[H] H04 - A contribuição pode tornar o acompanhamento das equipes mais estruturado e preventivo, auxiliando gestores na identificação e interpretação de variações, favorecendo um acompanhamento mais contextualizado dos colaboradores e apoiando a organização em decisões de gestão mais informadas e transparentes, sempre com supervisão humana.
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
 
 | Mérito/contribuição técnica | Possível aplicação/valor em uso |
 |---|---|
-| Integração experimental de dados comunicacionais e registros de tarefas em um único pipeline. | Reduzir a fragmentação de informações que hoje exigiriam consultas manuais a diferentes fontes. |
-| Extração de indicadores linguísticos, de polaridade, semânticos, de frequência, prazo e qualidade. | Apresentar ao gestor sinais organizados sobre diferentes dimensões da rotina profissional. |
-| Cálculo separado dos scores comunicacional e profissional. | Evitar que uma dimensão compense ou esconda alterações da outra. |
-| Comparação com baseline individual e ciclos de reanálise. | Avaliar mudanças em relação ao histórico do próprio perfil, em vez de comparar pessoas diferentes. |
-| Avaliação experimental com cenários simulados e previamente rotulados. | Verificar se as sinalizações correspondem às alterações planejadas antes de qualquer estudo com pessoas reais. |
-| Explicabilidade mínima e supervisão humana como requisitos. | Permitir que resultados sejam analisados com contexto e sem aparência de diagnóstico definitivo. |
+| Integração de dados comunicacionais e operacionais em um único pipeline experimental. | Oferecer uma visão mais estruturada de diferentes dimensões da rotina profissional que normalmente seriam acompanhadas de forma isolada. |
+| Extração de indicadores linguísticos, de polaridade textual, semânticos e profissionais relacionados a frequência, prazo e qualidade. | Transformar registros digitais existentes em informações organizadas que possam apoiar a percepção de mudanças ao longo do tempo. |
+| Construção de scores comunicacional e profissional independentes. | Permitir que alterações em comunicação e em aspectos profissionais sejam analisadas separadamente, sem que uma dimensão compense ou oculte a outra. |
+| Utilização de baseline individual e ciclos temporais de reanálise. | Avaliar mudanças em relação ao histórico do próprio perfil, em vez de comparar pessoas diferentes. |
+| Desenvolvimento de uma abordagem experimental para sinalização de alterações de padrão a partir de múltiplos indicadores. | Apoiar gestores na identificação de situações que mereçam análise mais aprofundada, sem transformar os scores em avaliações definitivas de desempenho ou comportamento. |
+| Estruturação de uma estratégia de avaliação para verificar a resposta dos indicadores e scores a alterações de padrão. | Verificar se as sinalizações produzidas pela ferramenta representam adequadamente mudanças observadas nos dados. |
+| Apresentação dos scores juntamente com seus componentes e manutenção da supervisão humana na interpretação dos resultados. | Permitir que o gestor compreenda quais dimensões contribuíram para uma sinalização e interprete o resultado dentro do contexto, sem caráter diagnóstico ou punitivo. |
 
 
 # 2. Entendendo as pessoas envolvidas
 
 ## 2.1 Quem interage diretamente com o produto, se já existe interface prevista?
 
-[H] H05 - No escopo experimental atual, perfis profissionais simulados interagem diretamente com o bot do Telegram, enviando mensagens, áudios e comandos associados a tarefas. Não há participação de colaboradores reais.
+[H] H05 - O gestor ou líder de equipe será o usuário direto da interface prevista para o WorkSense. Por meio dela, poderá cadastrar e vincular os usuários dos colaboradores às fontes de dados utilizadas pela ferramenta, acompanhar os perfis cadastrados e visualizar seus scores comunicacionais e profissionais, sinalizações e os indicadores que contribuíram para cada resultado.
 
 ## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
 
@@ -138,28 +139,32 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Perfil | Relação com a contribuição | O que faria | Status/evidência |
 |---|---|---|---|
-| Gestor ou líder de equipe | Interpreta os resultados e decide se há necessidade de acompanhamento | Consultaria sinalizações, compararia períodos, verificaria indicadores e registraria sua análise | [H] H06; papel de supervisão humana |
-| Perfil profissional simulado | Produz os dados experimentais de comunicação e tarefas | Interagiria com o bot e realizaria movimentações simuladas no quadro Kanban | [H] H07 |
-| Colaborador real, em aplicação futura | Pessoa sobre a qual os dados poderiam se referir | Interagiria com ferramentas de comunicação e tarefas e precisaria compreender finalidade, uso e limites dos dados | [H] H08 |
-| Profissional de RH | Apoio especializado à interpretação e à governança | Analisaria tendências agregadas, orientaria gestores e acompanharia práticas responsáveis | [H] H09 |
-| Administrador da solução | Configura e mantém o ambiente | Gerenciaria integrações, usuários, permissões, credenciais, retenção e auditoria | [H] H10; requisitos técnicos |
-| Pesquisadores/equipe do TCC | Opera e avalia a solução experimental | Gera dados simulados, executa processamentos, revisa erros e avalia coerência das sinalizações | [H] H11 |
+| Gestor ou líder de equipe | Usuário principal da interface e responsável pela interpretação dos resultados | Cadastraria e vincularia colaboradores, acompanharia seus scores e sinalizações, consultaria os indicadores envolvidos e decidiria se alguma situação merece acompanhamento humano | [H] H05; usuário principal da interface |
+| Colaborador | Pessoa associada ao perfil acompanhado pela ferramenta | Utilizaria normalmente os canais integrados ao WorkSense, como o agente conversacional e a ferramenta de tarefas, gerando os registros utilizados na análise. Não teria acesso à interface de gestão prevista | [H] H06 — O colaborador será a principal pessoa acompanhada pela ferramenta, produzindo registros comunicacionais e profissionais utilizados nas análises, mas não utilizará diretamente a interface de gestão |
+| Profissional de RH ou responsável pela gestão de pessoas | Stakeholder interessado no uso adequado da ferramenta | Poderia auxiliar na definição de políticas de uso, transparência, consentimento e limites para interpretação das sinalizações | [H] H07 — Profissionais de RH ou responsáveis pela gestão de pessoas poderão atuar como stakeholders do WorkSense, contribuindo para políticas de uso, transparência, consentimento e limites de interpretação das sinalizações |
+| Administrador da solução | Responsável pela operação e configuração técnica | Configuraria integrações, acessos, permissões, credenciais e demais parâmetros necessários ao funcionamento da ferramenta | [H] H08 — A operação do WorkSense exigirá um perfil de administração responsável por configurar integrações, acessos, permissões, credenciais e demais parâmetros técnicos da solução |
+| Pesquisadores/equipe do TCC | Desenvolve, opera e avalia a solução experimental | Prepararia os dados utilizados no experimento, executaria os módulos de processamento, testaria a solução e avaliaria os resultados obtidos | [H] H09 — Durante o contexto experimental do TCC, a equipe de pesquisadores será responsável por preparar os dados de avaliação, executar os processamentos, realizar testes e analisar os resultados produzidos pela ferramenta. |
 
 ## 2.3 Existem pessoas afetadas que não usariam a interface diretamente?
 
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | sim/não | {{...}} |
+| Colaborador | Seus registros de comunicação e de atividades podem compor os indicadores e scores apresentados ao gestor. Pode ser afetado pelas interpretações e ações de acompanhamento decorrentes das sinalizações | Não | [H] H06; principal pessoa afetada pelos resultados |
+| Profissional de RH ou responsável pela gestão de pessoas | Mesmo sem utilizar a interface no escopo atual, pode ser afetado pelas necessidades de definição de políticas de uso, consentimento, transparência e limites para utilização das sinalizações no ambiente organizacional | Não | [H] H07; stakeholder relacionado à governança do uso.
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
 Considere conhecimento do domínio, experiência tecnológica, frequência de uso, necessidades de acessibilidade, responsabilidade profissional, familiaridade com métricas, linguagem técnica, urgência etc.
 
-[H] H12 - Gestores podem ter pouco tempo, diferentes níveis de familiaridade com métricas e responsabilidade direta sobre decisões que afetam pessoas. Precisam de linguagem clara, comparação temporal, indicação da qualidade dos dados e explicações sobre os componentes de cada resultado.
+[H] H10 - Gestores podem apresentar diferentes níveis de familiaridade com métricas, indicadores e ferramentas digitais, além de diferentes frequências e contextos de acompanhamento da equipe. A interface deve permitir compreender scores, variações e sinalizações sem exigir conhecimento técnico sobre IA ou sobre os algoritmos utilizados.
 
-[H] H13 - Colaboradores podem perceber a análise como vigilância, especialmente se não houver transparência, consentimento, finalidade clara e limites de acesso.
+[H] H11 - Colaboradores apresentam padrões distintos de comunicação, interação e utilização das ferramentas de trabalho e podem possuir diferentes percepções sobre a finalidade e o uso de seus dados pela solução.
 
-[?] Ainda não sabemos quais necessidades de acessibilidade, frequência de uso, dispositivos preferidos e níveis reais de conhecimento analítico existem em cada perfil.
+[H] H12 - Profissionais de RH ou responsáveis pela gestão de pessoas tendem a possuir maior familiaridade com processos organizacionais, privacidade e governança, mas podem apresentar diferentes níveis de familiaridade com indicadores quantitativos e ferramentas digitais.
+
+[H] H13 - Administradores da solução necessitam de maior familiaridade técnica com integrações, acessos, permissões e configurações para realizar atividades de implantação e manutenção do WorkSense.
+
+[H] H14 - Os pesquisadores/equipe do TCC necessitam de maior nível de detalhamento técnico sobre indicadores, scores e processamento dos dados para testar e avaliar a solução experimental.
 
 # 3. Entendendo objetivos e atividades
 
@@ -167,7 +172,8 @@ Considere conhecimento do domínio, experiência tecnológica, frequência de us
 
 Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashboard”.
 
-{{[F/H/?] ...}}
+****** citação de hipótese
+[H] H04; o gestor busca acompanhar a equipe de forma mais estruturada e preventiva, percebendo mudanças relevantes na rotina dos colaboradores, compreendendo melhor essas variações e decidindo quando é necessário algum acompanhamento humano.
 
 ## 3.2 Quais são as atividades mais importantes?
 
