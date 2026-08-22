@@ -149,7 +149,7 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | sim/não | {{...}} |
+| Colaborador | Recebe tarefas pelo Telegram, organiza e atualiza suas atividades no Kanban e utiliza a IA para esclarecer dúvidas. Os dados dessas interações são utilizados na análise mas não utilizaria a interface com foco no gestor | não | {{...}} |
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
