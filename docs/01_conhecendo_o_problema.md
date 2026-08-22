@@ -242,29 +242,39 @@ Um gestor acompanha uma equipe e precisa perceber se determinado profissional es
 
 ## 5.1 Onde e em quais situações a interação poderia ocorrer?
 
+Em ambiente corporativo, no escritório ou em trabalho remoto, durante revisão periódica da equipe, preparação para reunião individual, planejamento de capacidade, acompanhamento de prazos ou análise de uma sinalização específica.
+
 {{[F/H/?] ...}}
 
 ## 5.2 Em quais dispositivos/equipamentos?
+
+Computador ou notebook será o dispositivo principal para análise detalhada. Um dispositivo móvel poderá ser usado para consulta breve ou notificação, mas não é considerado inicialmente adequado para investigações extensas.
 
 {{[F/H/?] ...}}
 
 ## 5.3 Existem condições físicas relevantes?
 
-Considere iluminação, ruído, mobilidade, conexão, privacidade, uso compartilhado, interrupções, pressão de tempo etc.
+A interação pode ocorrer sob interrupções e pressão de tempo. Como envolve informações sensíveis, a tela deve ser usada em ambiente com privacidade visual e não deve permanecer exposta em monitores compartilhados.
 
 {{[F/H/?] ...}}
 
 ## 5.4 Existem fatores sociais ou organizacionais?
 
-Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade profissional, auditoria, turnos e colaboração.
+Sim. Relações hierárquicas, assimetria de poder, permissões, responsabilidade do gestor, confiança da equipe, políticas internas e legislação de proteção de dados influenciam o uso. Uma mesma sinalização não deve ser visível a qualquer pessoa nem utilizada fora da finalidade declarada.
 
 {{[F/H/?] ...}}
 
 ## 5.5 Existe necessidade de histórico, rastreabilidade ou auditoria?
 
+Sim. O histórico é necessário para comparar cada ciclo de 15 dias com o baseline individual de 30 dias e acompanhar a evolução dos scores.
+
+Na interface do gestor, a rastreabilidade deverá mostrar o período e as fontes analisadas, os indicadores que originaram a sinalização, a data do processamento, quem realizou a análise e qual encaminhamento foi registrado, sem expor conteúdo bruto desnecessário.
+
 {{[F/H/?] ...}}
 
 ## 5.6 Um erro pode produzir consequência relevante? Qual?
+
+Sim. A interpretação incorreta pode afetar privacidade, confiança, relações de trabalho e decisões sobre pessoas. Por isso, a interface deverá comunicar incerteza, insuficiência de dados e proibição de uso diagnóstico ou punitivo.
 
 {{[F/H/?] ...}}
 
