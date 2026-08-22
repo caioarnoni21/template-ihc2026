@@ -170,24 +170,28 @@ Considere conhecimento do domínio, experiência tecnológica, frequência de us
 
 ## 3.1 O que o usuário está tentando conseguir no mundo real?
 
-Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashboard”.
+investigar como uma ferramenta baseada em inteligência artificial pode apoiar gestores na identificação de indícios de alteração nos padrões de comunicação, interação e desempenho de colaboradores 
 
-****** citação de hipótese
+** citação de hipótese **
 [H] H04; o gestor busca acompanhar a equipe de forma mais estruturada e preventiva, percebendo mudanças relevantes na rotina dos colaboradores, compreendendo melhor essas variações e decidindo quando é necessário algum acompanhamento humano.
 
 ## 3.2 Quais são as atividades mais importantes?
 
 | ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
 |---|---|---|---|---|
-| A01 | {{...}} | {{...}} | {{...}} | {{...}} |
-| A02 | {{...}} | {{...}} | {{...}} | {{...}} |
-| A03 | {{...}} | {{...}} | {{...}} | {{...}} |
+| A01 | Atribuir e organizar tarefas no quadro Kanban, definindo responsável, descrição e prazo | Gestor | Contínua / Alta | {{...}} |
+| A02 | Executar e atualizar as tarefas, realizando a movimentação dos cartões entre as etapas do Kanban e registrando as interações relacionadas às atividades e tirando duvidas com a IA integrada Ollama | Colaborador | Diária / Alta | {{...}} |
+| A03 | Analisar os dados coletados e identificar alterações de padrão por meio dos indicadores comunicacionais e profissionais e da comparação com o baseline | Sistema / Gestor | A cada ciclo de análise / Alta | {{...}} |
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
+
+A mais frequente é a execução e atualização das tarefas pelos colaboradores. Isso ocorre porque, durante o desenvolvimento das atividades, os colaboradores podem consultar suas tarefas, interagir pelo Telegram, esclarecer dúvidas com o agente de IA e movimentar os cartões no Kanban conforme o andamento do trabalho
 
 {{[F/H/?] ...}}
 
 ## 3.4 Qual parece mais crítica? Que consequência existe se for mal executada?
+
+A atividade mais crítica seria a análise dos dados e identificação de alterações nos padrões, pois é responsável por transformar os registros coletados em indicadores, scores e sinalizações para o gestor. Se for mal executada, pode gerar sinalizações incorretas ou deixar de identificar alterações planejadas, comprometendo a avaliação da ferramenta
 
 {{[F/H/?] ...}}
 
@@ -197,25 +201,32 @@ Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashbo
 
 ## 4.1 Como essas atividades são realizadas hoje, antes da interface imaginada na disciplina?
 
-Pode existir software concorrente, linha de comando, planilha, notebook, script, painel técnico, processo manual, consulta a logs, análise visual, troca de mensagens, decisão por especialista etc.
+É feito manualmente o registros dos colaboradores no banco de dados dentro da VPS e a analise por meio de script
 
 {{[F/H/?] ...}}
 
 ## 4.2 O que é difícil, demorado, confuso, repetitivo, arriscado ou pouco transparente?
 
+É difícil para o gestor perceber alterações sutis nos padrões de comunicação, interação e desempenho ao longo do tempo, especialmente quando essas informações estão distribuídas entre mensagens, registros de tarefas e métricas operacionais. A simples disponibilidade desses dados não garante que estejam organizados de maneira interpretável e temporalmente comparável
+
 {{[F/H/?] ...}}
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
+
+O profissional precisa considerar, em conjunto, os indicadores comunicacionais e profissionais. No eixo comunicacional, são relevantes sentimento/polaridade, frequência de mensagens, tamanho das respostas, quantidade de palavras, diversidade lexical e estabilidade ou mudança semântica. No eixo profissional, são considerados frequência de ações, cumprimento de prazos e sinais de qualidade, como reabertura de cartões e pendências em checklist
 
 {{[F/H/?] ...}}
 
 ## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
 
+Uma sinalização incorreta pode levar o gestor a interpretar uma alteração textual ou operacional fora de seu contexto. Isso é especialmente problemático porque uma mudança na polaridade, no conteúdo semântico ou nos registros de tarefas não determina, por si só, sua causa. O trabalho destaca justamente a necessidade de análise humana complementar.
+
 {{[F/H/?] ...}}
 
 ## 4.5 Conte uma situação concreta.
 
-Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificuldade e consequência. **Não descreva ainda a futura solução.**
+Um gestor acompanha uma equipe e precisa perceber se determinado profissional está apresentando uma alteração relevante em sua rotina. Durante um período de acompanhamento, as mensagens enviadas pelo perfil passam a apresentar mudanças em frequência e conteúdo, enquanto os registros de tarefas também podem indicar alterações na rotina de trabalho. O gestor precisa analisar essas informações em relação ao histórico anterior do profissional, mas os dados estão distribuídos entre diferentes registros e uma alteração isolada pode ter várias explicações. Se a mudança for interpretada sem considerar o contexto e os demais indicadores, existe o risco de atribuir significado incorreto ao comportamento observado
+
 
 {{[F/H/?] narrativa...}}
 
