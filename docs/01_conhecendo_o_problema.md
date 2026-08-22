@@ -198,7 +198,7 @@ A atividade mais crítica seria a análise dos dados e identificação de altera
 
 ## 4.1 Como essas atividades são realizadas hoje, antes da interface imaginada na disciplina?
 
-É feito manualmente o registros dos colaboradores no banco de dados dentro da VPS e a analise por meio de script
+Hoje o acompanhamento é feito de forma manual o gestor observa diretamente a equipe através quadros Kanban no Trello e troca mensagens em canais de comunicação e reuniões recorrentes
 
 {{[F/H/?] ...}}
 
@@ -210,13 +210,13 @@ A atividade mais crítica seria a análise dos dados e identificação de altera
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
 
-O profissional precisa considerar, em conjunto, os indicadores comunicacionais e profissionais. No eixo comunicacional, são relevantes sentimento/polaridade, frequência de mensagens, tamanho das respostas, quantidade de palavras, diversidade lexical e estabilidade ou mudança semântica. No eixo profissional, são considerados frequência de ações, cumprimento de prazos e sinais de qualidade, como reabertura de cartões e pendências em checklist
+O gestor precisa cruzar manualmente frequência e tom das mensagens trocadas pelo colaborador,volume e regularidade de entregas nos cartões do Trello,cumprimento de prazos e ocorrência de reaberturas/retrabalho, se o padrão observado é diferente do histórico do perfil daquele colaborador especificamente e variações na carga de trabalho , prazos e mudanças no time
 
 {{[F/H/?] ...}}
 
 ## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
 
-Uma sinalização incorreta pode levar o gestor a interpretar uma alteração textual ou operacional fora de seu contexto. Isso é especialmente problemático porque uma mudança na polaridade, no conteúdo semântico ou nos registros de tarefas não determina, por si só, sua causa. O trabalho destaca justamente a necessidade de análise humana complementar.
+Uma sinalização incorreta pode levar o gestor a interpretar uma alteração textual fora de seu contexto. Isso é especialmente problemático porque uma mudança nos registros de tarefas não determina, por si só, sua causa. O trabalho destaca justamente a necessidade de análise humana complementar.
 
 {{[F/H/?] ...}}
 
@@ -231,7 +231,7 @@ Um gestor acompanha uma equipe e precisa perceber se determinado profissional es
 
 | Evidência/fonte | O que sustenta | Limitação |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| [F] Scholze & Hecker (2023) [1] e Handke et al. (2024) [2] — citados na Introdução do artigo | Sustentam que a digitalização, o trabalho remoto/híbrido e o uso constante de plataformas colaborativas tornaram mais complexa a percepção de mudanças sutis na rotina dos colaboradores | São estudos sobre o cenário geral de trabalho digital/híbrido, não avaliam diretamente práticas de gestão ou ferramentas de detecção de padrão |
 
 ---
 
