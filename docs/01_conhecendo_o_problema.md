@@ -288,27 +288,42 @@ Sim. A interpretação incorreta pode afetar privacidade, confiança, relações
 
 | Alternativa atual | Quem usa | Para quê | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
+| Conversas, reuniões e observação cotidiana | Gestores e equipes | Compreender dificuldades e acompanhar o trabalho | Processo real ainda precisa ser investigado |
+| Telegram, Teams, Slack ou e-mail | Equipes | Comunicação e registro de interações | [F] Classe de ferramentas existente; Telegram integra o TCC |
+| Trello e outros quadros Kanban | Equipes e gestores | Organizar tarefas, prazos e responsáveis | [F] Trello utilizado no TCC |
+| Planilhas, relatórios e scripts | Pesquisadores/analistas | Consolidar dados e calcular indicadores | [F] Processo experimental atual do TCC |
+| Microsoft Viva Insights | Gestores, líderes e analistas | Analisar padrões de colaboração, produtividade e bem-estar |  (https://learn.microsoft.com/en-us/viva/insights/introduction) |
+| ActivTrak | Gestores e líderes | Acompanhar produtividade, carga de trabalho e tendências | (https://support.activtrak.com/hc/en-us/articles/18821721976475-Organization-Overview) |
+| Worklytics | Lideranças, RH e People Analytics | Integrar métricas de colaboração e trabalho com foco em privacidade | (https://www.worklytics.co/workplace-insights-dashboard) |
+| Workday Peakon Employee Voice | Gestores, RH e colaboradores | Coletar feedback, acompanhar sentimento, prioridades e planos de ação | (https://www.workday.com/en-us/products/employee-voice/overview.html) |
 
 ## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
+
+Sim. Microsoft Viva Insights, ActivTrak, Worklytics e Workday Peakon atuam em áreas próximas, como workplace analytics, people analytics, produtividade, colaboração, bem-estar e escuta contínua.
 
 {{[F/H/?] ...}}
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
 
-Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, plataformas de dados, ferramentas de monitoramento, painéis de IA, sistemas administrativos.
+[H] Gestores provavelmente conhecem dashboards, relatórios, planilhas, sistemas administrativos, ferramentas de comunicação, calendários e quadros Kanban. Analistas podem conhecer ferramentas de BI e visualização de dados.
 
 {{[F/H/?] ...}}
 
 ## 6.4 O que essas soluções parecem fazer bem?
 
+As soluções observadas organizam informações em visões gerais, filtros por período e grupo, comparações temporais, cartões de indicadores e aprofundamento progressivo. Algumas também separam papéis de acesso, apresentam planos de ação e adotam agregação ou anonimização para reduzir riscos de privacidade.
+
 {{[F/H/?] ...}}
 
 ## 6.5 O que parecem fazer mal, dificultar ou não atender?
 
+Algumas interfaces exibem grande quantidade de métricas, o que pode exigir conhecimento analítico. Produtos de monitoramento podem reforçar sensação de vigilância. Soluções de employee listening dependem principalmente de pesquisas, enquanto ferramentas de produtividade podem enfatizar atividade e tempo. Ainda não sabemos se alguma alternativa combina, de maneira comparável ao WorkSense, conteúdo comunicacional, registros de tarefas, baseline individual, scores separados e explicabilidade.
+
 {{[F/H/?] ...}}
 
 ## 6.6 Que padrões de interface ou vocabulário parecem familiares a esse público?
+
+Menu lateral por área; cartões de indicadores; filtros de data, equipe e perfil; gráficos de tendência; comparação antes/depois; status de alerta; detalhamento por clique; tabelas com ordenação; exportação; histórico; permissões por papel; e termos como período, tendência, baseline, score, indicador, participação, carga de trabalho e plano de ação.
 
 {{[F/H/?] ...}}
 
