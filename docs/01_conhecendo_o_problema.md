@@ -382,20 +382,20 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Possibilidade | Pode fazer sentido? | Objetivo/tarefa que justificaria | Evidência atual |
 |---|---|---|---|
-| Dashboard/visão geral | sim/não/talvez | {{...}} | {{...}} |
-| Configuração/parametrização | sim/não/talvez | {{...}} | {{...}} |
-| Entrada/upload/seleção de dados | sim/não/talvez | {{...}} | {{...}} |
-| Acompanhamento de processamento | sim/não/talvez | {{...}} | {{...}} |
-| Relatório/resultados | sim/não/talvez | {{...}} | {{...}} |
-| Histórico com busca/filtros | sim/não/talvez | {{...}} | {{...}} |
-| Comparação de resultados | sim/não/talvez | {{...}} | {{...}} |
-| Explicabilidade/detalhamento | sim/não/talvez | {{...}} | {{...}} |
-| Administração/configurações globais | sim/não/talvez | {{...}} | {{...}} |
-| Usuários/perfis/permissões | sim/não/talvez | {{...}} | {{...}} |
-| CRUD de entidade do domínio | sim/não/talvez | {{...}} | {{...}} |
-| Auditoria/logs | sim/não/talvez | {{...}} | {{...}} |
-| Alertas/ocorrências | sim/não/talvez | {{...}} | {{...}} |
-| Ajuda/documentação | sim/não/talvez | {{...}} | {{...}} |
+| Dashboard/visão geral | Sim | Revisar a situação recente e localizar sinalizações | [H] padrão de mercado |
+| Configuração/parametrização | Talvez | Definir períodos, fontes e regras de sinalização | [H] Parâmetros existem no TCC; usuário responsável ainda não validado |
+| Entrada/upload/seleção de dados | Talvez | Permitir reprocessamento experimental ou importação controlada | [H] Processo atual usa JSON/CSV; não é tarefa prioritária do gestor |
+| Acompanhamento de processamento | Talvez | Saber se os dados estão atualizados e se o cálculo terminou | [H] |
+| Relatório/resultados | Sim | Compartilhar uma análise autorizada e registrar conclusões | [H] Necessidade a validar |
+| Histórico com busca/filtros | Sim | Recuperar períodos, sinalizações e avaliações anteriores | [F] Histórico e auditoria são requisitos técnicos; forma de uso é hipótese |
+| Comparação de resultados | Sim | Comparar baseline e ciclo de reanálise | [H] |
+| Explicabilidade/detalhamento | Sim | Entender quais componentes contribuíram para a sinalização | [F] Requisito não funcional do TCC |
+| Administração/configurações globais | Talvez | Manter integrações, retenção e regras do sistema | [H] fora do fluxo principal do gestor |
+| Usuários/perfis/permissões | Sim | Restringir acesso conforme responsabilidade | [H] Necessidade de governança e privacidade |
+| CRUD de entidade do domínio | Não, inicialmente | Não foi identificada tarefa central que exija CRUD genérico | [?] Reavaliar se surgir necessidade real |
+| Auditoria/logs | Sim | Verificar origem, processamento, acesso e encaminhamento | [F] Auditoria técnica prevista; auditoria de uso é hipótese |
+| Alertas/ocorrências | Sim | Chamar atenção para uma variação que mereça análise | [F] Sinalizações fazem parte do TCC |
+| Ajuda/documentação | Sim | Explicar métricas, limitações, privacidade e interpretação adequada | [H] H05 e H07 |
 
 > **Atenção:** “login + dashboard + CRUD” não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
 
@@ -407,13 +407,26 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Benefício esperado | Problema/necessidade | Usuário | Status/evidência |
 |---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
+| Tornar mudanças potencialmente relevantes mais perceptíveis | Informações dispersas e difíceis de acompanhar no tempo | Gestor | [H] H01 |
+| Reduzir erros de interpretação | Scores e métricas podem ser confundidos com diagnósticos ou avaliações absolutas | Gestor e colaborador afetado | [F] Risco reconhecido no TCC; forma de mitigação é hipótese |
+| Explicar a origem de cada sinalização | Resultado agregado sem contexto é pouco transparente | Gestor/analista | [F] Explicabilidade é requisito do TCC |
+| Apoiar acompanhamento humano rastreável | Decisões podem ficar desconectadas das evidências e do contexto | Gestor/RH | [H] |
+| Proteger privacidade e limitar acesso | Dados comunicacionais e profissionais são sensíveis | Colaborador e organização | [F] Limites éticos e LGPD discutidos no TCC |
 
 ## 9.2 Que ações o usuário deverá conseguir realizar?
 
 | ID | O usuário precisa conseguir... | Para alcançar... | Prioridade inicial |
 |---|---|---|---|
-| F01 | {{ação}} | {{objetivo}} | alta/média/baixa |
+| F01 | Selecionar equipe e período | Delimitar corretamente a análise | Alta |
+| F02 | Consultar sinalizações recentes | Perceber variações que mereçam atenção | Alta |
+| F03 | Distinguir score comunicacional e profissional | Identificar qual dimensão apresentou mudança | Alta |
+| F04 | Comparar baseline e reanálise | Entender a variação em relação ao histórico do perfil | Alta |
+| F05 | Abrir componentes e explicações | Compreender por que a sinalização foi gerada | Alta |
+| F06 | Verificar cobertura, atualização e dados ausentes | Avaliar se existe evidência suficiente | Alta |
+| F07 | Registrar interpretação e encaminhamento | Manter supervisão e rastreabilidade humanas | Alta |
+| F08 | Consultar histórico | Acompanhar evolução e revisitar decisões | Média |
+| F09 | Acessar ajuda sobre métricas e limites | Evitar interpretação diagnóstica ou punitiva | Alta |
+| F10 | Exportar relatório autorizado | Compartilhar análise com papel responsável | Baixa |
 
 ## 9.3 Tecnologias/restrições já definidas no TCC
 
@@ -421,7 +434,16 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 | Tecnologia/restrição | Por que existe | Possível impacto na interação |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Telegram | Canal de interação com os perfis simulados | Parte da experiência ocorre fora da interface gerencial e pode exigir vínculo claro entre plataformas |
+| Trello | Fonte dos registros profissionais em quadro Kanban | Vocabulário como cartão, lista, prazo, conclusão e reabertura pode aparecer nas explicações |
+| n8n | Orquestra as integrações | Falhas ou atrasos do fluxo precisam ser comunicados como estado de processamento, não como ausência de mudança |
+| PostgreSQL | Mantém vínculos e interações | Permite histórico e auditoria, mas exige controles de acesso e retenção |
+| Ollama com modelo conversacional | Produz respostas no agente em ambiente controlado | Deve ficar separado do cálculo dos scores para evitar falsa atribuição de autoridade ao modelo |
+| Módulos de PLN e análise | Extraem indicadores comunicacionais | A interface deve traduzir métricas técnicas para linguagem compreensível sem esconder limitações |
+| Baseline de 30 dias e reanálise de 15 dias | Estrutura temporal do experimento | A comparação de períodos precisa ser visível e não pode sugerir comparação direta entre pessoas |
+| Dois scores separados | Evita compensação entre dimensões diferentes | A interface deve preservar visualmente essa separação |
+| Dados simulados | Reduz risco ético e permite avaliação controlada | Resultados não podem ser generalizados para ambientes reais nesta etapa |
+| Sem diagnóstico, punição ou decisão automática | Delimitação ética e metodológica | Avisos, linguagem, permissões e fluxo de decisão devem reforçar supervisão humana |
 
 ---
 
@@ -441,23 +463,23 @@ Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
 | Pergunta | Síntese atual |
 |---|---|
-| Qual é a contribuição central do TCC? | {{...}} |
-| O TCC já previa interface? | {{...}} |
-| Quem é o usuário prioritário de IHC? | {{...}} |
-| O que ele precisa alcançar? | {{...}} |
-| Qual problema/atividade será estudado? | {{...}} |
-| Como isso acontece hoje? | {{...}} |
-| Qual é o contexto de uso? | {{...}} |
-| Que interface/recorte será explorado? | {{...}} |
-| Como a interface se relaciona ao TCC? | {{...}} |
-| Quais pontos ainda são hipóteses? | {{H01...}} |
+| Qual é a contribuição central do TCC? | Integrar indicadores comunicacionais e profissionais, compará-los ao histórico do próprio perfil e gerar sinalizações explicáveis de possíveis alterações. |
+| O TCC já previa interface? | Parcialmente: existe interação pelo Telegram e há visualizações preliminares, mas não uma experiência gerencial completa. |
+| Quem é o usuário prioritário de IHC? | [H] Gestor ou líder de equipe remota/híbrida. |
+| O que ele precisa alcançar? | Reconhecer, compreender e contextualizar uma mudança para decidir se é necessário acompanhamento humano. |
+| Qual problema/atividade será estudado? | Revisão e investigação de uma sinalização sem confundi-la com diagnóstico ou avaliação absoluta. |
+| Como isso acontece hoje? | [F] No experimento, por arquivos, scripts e gráficos; [H] em contexto real, por observação, conversas e consultas manuais a ferramentas dispersas. |
+| Qual é o contexto de uso? | [H] Acompanhamento periódico ou sob demanda de equipes digitais, em ambiente corporativo remoto ou presencial. |
+| Que interface/recorte será explorado? | Fluxo gerencial de visão geral, comparação temporal, explicabilidade, verificação da evidência e registro da análise humana. |
+| Como a interface se relaciona ao TCC? | Aprofunda a apresentação e interpretação de resultados parcialmente previstas, como artefato de aprendizagem de IHC. |
+| Quais pontos ainda são hipóteses? | H01 a H08: usuário prioritário, papéis, rotina, dispositivo, transparência, explicabilidade e estados de evidência. |
 
 ### Delimitação
 
-**Dentro do escopo de IHC:** {{...}}  
-**Fora do escopo de IHC:** {{...}}  
-**Dentro do escopo formal do TCC:** {{...}}  
-**Interface da disciplina será implementada no TCC?** não definido / sim / não — {{justificativa, se houver}}
+**Dentro do escopo de IHC:** compreender o gestor e stakeholders; modelar a tarefa de revisar e investigar sinalizações; definir arquitetura da informação; prototipar visão geral, comparação temporal, explicabilidade, estados de dados e registro de acompanhamento; avaliar compreensão, eficiência, prevenção de erro, acessibilidade e confiança.  
+**Fora do escopo de IHC:** redesenhar todo o Telegram, implementar os algoritmos de PLN, alterar fórmulas dos scores, validar diagnóstico clínico, monitorar colaboradores reais, definir política organizacional completa ou construir todos os módulos administrativos.  
+**Dentro do escopo formal do TCC:** pipeline experimental, integrações, dados simulados, extração de indicadores, scores separados, baseline, sinalizações, testes e avaliação experimental.  
+**Interface da disciplina será implementada no TCC?** Não definido.
 
 ---
 
