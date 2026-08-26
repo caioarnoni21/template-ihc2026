@@ -176,21 +176,17 @@ Considere conhecimento do domínio, experiência tecnológica, frequência de us
 
 | ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
 |---|---|---|---|---|
-| A01 | Atribuir e organizar tarefas no quadro Kanban, definindo responsável, descrição e prazo | Gestor | Contínua / Alta | {{...}} |
-| A02 | Executar e atualizar as tarefas, realizando a movimentação dos cartões entre as etapas do Kanban e registrando as interações relacionadas às atividades e tirando duvidas com a IA integrada Ollama | Colaborador | Diária / Alta | {{...}} |
-| A03 | Analisar os dados coletados e identificar alterações de padrão por meio dos indicadores comunicacionais e profissionais e da comparação com o baseline | Sistema / Gestor | A cada ciclo de análise / Alta | {{...}} |
+| A01 | Atribuir e acompanhar tarefas no quadro Kanban, definindo responsáveis, descrições e prazos | Gestor | Contínua / Alta | [H] H15 |
+| A02 | Executar e atualizar as tarefas, movimentando cartões conforme o andamento do trabalho e utilizando os canais integrados ao WorkSense | Colaborador | Diária / Alta | [H] H16 |
+| A03 | Acompanhar e interpretar variações apresentadas pelo WorkSense, considerando scores, indicadores, histórico individual e contexto do colaborador | Gestor | A cada ciclo ou sinalização / Alta | [H] H04; [H] H05 |
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
 
-A mais frequente é a execução e atualização das tarefas pelos colaboradores. Isso ocorre porque, durante o desenvolvimento das atividades, os colaboradores podem consultar suas tarefas, interagir pelo Telegram, esclarecer dúvidas com o agente de IA e movimentar os cartões no Kanban conforme o andamento do trabalho
-
-{{[F/H/?] ...}}
+[H16] A execução e atualização das tarefas parece ser a atividade mais frequente, pois ocorre durante a rotina de trabalho dos colaboradores, envolvendo o acompanhamento das atividades e o registro de seu andamento.
 
 ## 3.4 Qual parece mais crítica? Que consequência existe se for mal executada?
 
-A atividade mais crítica seria a análise dos dados e identificação de alterações nos padrões, pois é responsável por transformar os registros coletados em indicadores, scores e sinalizações para o gestor. Se for mal executada, pode gerar sinalizações incorretas ou deixar de identificar alterações planejadas, comprometendo a avaliação da ferramenta
-
-{{[F/H/?] ...}}
+[H] H17 - A interpretação das sinalizações pelo gestor parece ser uma das atividades mais críticas, pois uma interpretação inadequada pode atribuir significado incorreto a uma variação ou levar a uma ação de acompanhamento sem contexto suficiente. Por isso, os resultados precisam ser apresentados com seus indicadores e permanecer sujeitos à análise humana.
 
 ---
 
@@ -198,40 +194,31 @@ A atividade mais crítica seria a análise dos dados e identificação de altera
 
 ## 4.1 Como essas atividades são realizadas hoje, antes da interface imaginada na disciplina?
 
-Hoje o acompanhamento é feito de forma manual o gestor observa diretamente a equipe através quadros Kanban no Trello e troca mensagens em canais de comunicação e reuniões recorrentes
-
-{{[F/H/?] ...}}
+[H] H18 - Atualmente, o gestor tende a acompanhar a equipe por meio de diferentes fontes e momentos de contato, como reuniões, conversas presenciais/online e registros em ferramentas de gestão de tarefas, precisando interpretar essas informações durante o acompanhamento cotidiano.
 
 ## 4.2 O que é difícil, demorado, confuso, repetitivo, arriscado ou pouco transparente?
 
-É difícil para o gestor perceber alterações sutis nos padrões de comunicação, interação e desempenho ao longo do tempo, especialmente quando essas informações estão distribuídas entre mensagens, registros de tarefas e métricas operacionais. A simples disponibilidade desses dados não garante que estejam organizados de maneira interpretável e temporalmente comparável
-
-{{[F/H/?] ...}}
+[F01] Alterações sutis na comunicação, interação e evolução das atividades podem ser difíceis de perceber ao longo do acompanhamento cotidiano, especialmente quando os registros precisam ser observados em diferentes momentos e contextos.
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
 
-O gestor precisa cruzar manualmente frequência e tom das mensagens trocadas pelo colaborador,volume e regularidade de entregas nos cartões do Trello,cumprimento de prazos e ocorrência de reaberturas/retrabalho, se o padrão observado é diferente do histórico do perfil daquele colaborador especificamente e variações na carga de trabalho , prazos e mudanças no time
-
-{{[F/H/?] ...}}
+[H] H19 - Para compreender mudanças na rotina de um colaborador, o gestor pode considerar informações como frequência e características das interações, andamento e regularidade das entregas, cumprimento de prazos, ocorrências de retrabalho e mudanças no contexto de trabalho, interpretando essas informações em relação ao histórico daquele profissional.
 
 ## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
 
-Uma sinalização incorreta pode levar o gestor a interpretar uma alteração textual fora de seu contexto. Isso é especialmente problemático porque uma mudança nos registros de tarefas não determina, por si só, sua causa. O trabalho destaca justamente a necessidade de análise humana complementar.
-
-{{[F/H/?] ...}}
+[F] F02 - Indicadores comunicacionais ou profissionais isolados podem admitir diferentes interpretações. Uma mensagem classificada como negativa pode representar, por exemplo, uma dificuldade técnica, enquanto eventos de tarefas podem refletir características do processo ou da própria atividade. Por isso, uma interpretação incorreta pode atribuir significado indevido a uma sinalização, justificando a necessidade de contexto e supervisão humana.
 
 ## 4.5 Conte uma situação concreta.
 
-Um gestor acompanha uma equipe e precisa perceber se determinado profissional está apresentando uma alteração relevante em sua rotina. Durante um período de acompanhamento, as mensagens enviadas pelo perfil passam a apresentar mudanças em frequência e conteúdo, enquanto os registros de tarefas também podem indicar alterações na rotina de trabalho. O gestor precisa analisar essas informações em relação ao histórico anterior do profissional, mas os dados estão distribuídos entre diferentes registros e uma alteração isolada pode ter várias explicações. Se a mudança for interpretada sem considerar o contexto e os demais indicadores, existe o risco de atribuir significado incorreto ao comportamento observado
-
-
-{{[F/H/?] narrativa...}}
+[H18]; [H19] Um gestor acompanha um colaborador ao longo de sua rotina por meio de interações e registros de trabalho. Em determinado período, percebe ou recebe uma sinalização de que alguns desses registros se afastaram do histórico daquele profissional. Para decidir se a situação merece atenção, precisa compreender quais aspectos mudaram e considerar o contexto antes de realizar qualquer acompanhamento. Uma alteração isolada pode possuir diferentes explicações e, se interpretada sem contexto, pode levar a uma conclusão inadequada.
 
 ## 4.6 Que evidência existe hoje?
 
 | Evidência/fonte | O que sustenta | Limitação |
 |---|---|---|
-| [F] Scholze & Hecker (2023) [1] e Handke et al. (2024) [2] — citados na Introdução do artigo | Sustentam que a digitalização, o trabalho remoto/híbrido e o uso constante de plataformas colaborativas tornaram mais complexa a percepção de mudanças sutis na rotina dos colaboradores | São estudos sobre o cenário geral de trabalho digital/híbrido, não avaliam diretamente práticas de gestão ou ferramentas de detecção de padrão |
+| [F] Scholze & Hecker (2023) [1]	| Sustenta que a digitalização do trabalho introduz novas demandas e modifica a forma como atividades e interações profissionais acontecem, contribuindo para o contexto em que gestores precisam acompanhar equipes mediadas por recursos digitais. |	Não investiga diretamente como gestores identificam mudanças individuais na rotina dos colaboradores. |
+| [F] Handke et al. (2024) [2] |	Sustenta as mudanças trazidas pelo trabalho híbrido para a colaboração e o funcionamento das equipes, reforçando que o acompanhamento ocorre em um contexto que combina interações presenciais e digitais.	| Discute o trabalho híbrido e a dinâmica das equipes de forma ampla, sem detalhar quais informações os gestores utilizam no acompanhamento cotidiano. |
+| [F] Lütjens & Felfe (2026) [3] |	Sustenta a relevância da comunicação informal em equipes híbridas e como sua ocorrência pode variar conforme o contexto de trabalho, reforçando a importância das interações para compreender a dinâmica da equipe. |	Não analisa especificamente a percepção do gestor sobre mudanças de padrão nem o cruzamento dessas interações com registros de tarefas. |
 
 ---
 
@@ -239,41 +226,31 @@ Um gestor acompanha uma equipe e precisa perceber se determinado profissional es
 
 ## 5.1 Onde e em quais situações a interação poderia ocorrer?
 
-Em ambiente corporativo, no escritório ou em trabalho remoto, durante revisão periódica da equipe, preparação para reunião individual, planejamento de capacidade, acompanhamento de prazos ou análise de uma sinalização específica.
-
-{{[F/H/?] ...}}
+[H] H20 - A interação com o WorkSense poderá ocorrer em contexto corporativo, presencial ou remoto, principalmente durante momentos de acompanhamento da equipe, como revisões periódicas, preparação para reuniões individuais, acompanhamento de prazos ou análise de uma sinalização específica.
 
 ## 5.2 Em quais dispositivos/equipamentos?
 
-Computador ou notebook será o dispositivo principal para análise detalhada. Um dispositivo móvel poderá ser usado para consulta breve ou notificação, mas não é considerado inicialmente adequado para investigações extensas.
-
-{{[F/H/?] ...}}
+[H] H21 - O computador ou notebook tende a ser o dispositivo principal para o acompanhamento detalhado dos colaboradores, enquanto dispositivos móveis podem ser úteis para consultas breves ou notificações.
 
 ## 5.3 Existem condições físicas relevantes?
 
-A interação pode ocorrer sob interrupções e pressão de tempo. Como envolve informações sensíveis, a tela deve ser usada em ambiente com privacidade visual e não deve permanecer exposta em monitores compartilhados.
-
-{{[F/H/?] ...}}
+[H] H22 - O gestor pode utilizar a interface em situações com interrupções ou restrição de tempo e, por lidar com informações relacionadas aos colaboradores, pode precisar de condições que preservem a privacidade visual durante a consulta.
 
 ## 5.4 Existem fatores sociais ou organizacionais?
 
-Sim. Relações hierárquicas, assimetria de poder, permissões, responsabilidade do gestor, confiança da equipe, políticas internas e legislação de proteção de dados influenciam o uso. Uma mesma sinalização não deve ser visível a qualquer pessoa nem utilizada fora da finalidade declarada.
+[H] H23 - Relações hierárquicas, responsabilidade do gestor, confiança da equipe, níveis de permissão e políticas organizacionais podem influenciar como o WorkSense é utilizado e como suas sinalizações são interpretadas. O acesso às informações também deverá respeitar a finalidade definida para seu uso.
 
-{{[F/H/?] ...}}
+[F] F03 - O tratamento de dados relacionados a pessoas está sujeito a princípios de finalidade, necessidade, transparência e segurança, considerados pelo TCC a partir da LGPD e das diretrizes de IA confiável.
 
 ## 5.5 Existe necessidade de histórico, rastreabilidade ou auditoria?
 
-Sim. O histórico é necessário para comparar cada ciclo de 15 dias com o baseline individual de 30 dias e acompanhar a evolução dos scores.
+[H03] O histórico individual é necessário para que o WorkSense compare períodos e sinalize alterações em relação ao padrão anterior do próprio perfil.
 
-Na interface do gestor, a rastreabilidade deverá mostrar o período e as fontes analisadas, os indicadores que originaram a sinalização, a data do processamento, quem realizou a análise e qual encaminhamento foi registrado, sem expor conteúdo bruto desnecessário.
-
-{{[F/H/?] ...}}
+[H] H24 - Para interpretar adequadamente uma sinalização, o gestor pode precisar consultar seu período de referência, os indicadores que contribuíram para o resultado e informações sobre quando a análise foi realizada.
 
 ## 5.6 Um erro pode produzir consequência relevante? Qual?
 
-Sim. A interpretação incorreta pode afetar privacidade, confiança, relações de trabalho e decisões sobre pessoas. Por isso, a interface deverá comunicar incerteza, insuficiência de dados e proibição de uso diagnóstico ou punitivo.
-
-{{[F/H/?] ...}}
+[H] H25 - Uma interpretação incorreta das sinalizações pode afetar a forma como o gestor acompanha um colaborador e gerar impactos sobre privacidade, confiança e relações de trabalho. Por isso, a apresentação dos resultados deve deixar claros seus limites e evitar interpretações diagnósticas ou punitivas.
 
 ---
 
@@ -285,44 +262,44 @@ Sim. A interpretação incorreta pode afetar privacidade, confiança, relações
 
 | Alternativa atual | Quem usa | Para quê | Status/evidência |
 |---|---|---|---|
-| Conversas, reuniões e observação cotidiana | Gestores e equipes | Compreender dificuldades e acompanhar o trabalho | Processo real ainda precisa ser investigado |
+| Conversas, reuniões e observação cotidiana | Gestores e equipes | Compreender dificuldades e acompanhar o trabalho | [H] H18; processo atual ainda precisa ser investigado |
 | Telegram, Teams, Slack ou e-mail | Equipes | Comunicação e registro de interações | [F] Classe de ferramentas existente; Telegram integra o TCC |
 | Trello e outros quadros Kanban | Equipes e gestores | Organizar tarefas, prazos e responsáveis | [F] Trello utilizado no TCC |
 | Planilhas, relatórios e scripts | Pesquisadores/analistas | Consolidar dados e calcular indicadores | [F] Processo experimental atual do TCC |
-| Microsoft Viva Insights | Gestores, líderes e analistas | Analisar padrões de colaboração, produtividade e bem-estar |  (https://learn.microsoft.com/en-us/viva/insights/introduction) |
-| ActivTrak | Gestores e líderes | Acompanhar produtividade, carga de trabalho e tendências | (https://support.activtrak.com/hc/en-us/articles/18821721976475-Organization-Overview) |
-| Worklytics | Lideranças, RH e People Analytics | Integrar métricas de colaboração e trabalho com foco em privacidade | (https://www.worklytics.co/workplace-insights-dashboard) |
-| Workday Peakon Employee Voice | Gestores, RH e colaboradores | Coletar feedback, acompanhar sentimento, prioridades e planos de ação | (https://www.workday.com/en-us/products/employee-voice/overview.html) |
+| Microsoft Viva Insights | Gestores, líderes e analistas | Analisar padrões de colaboração, produtividade e bem-estar |  [F] documentação oficial da Microsoft (https://learn.microsoft.com/en-us/viva/insights/introduction) |
+| ActivTrak | Gestores e líderes | Acompanhar produtividade, carga de trabalho e tendências | [F] documentação oficial do ActivTrak (https://support.activtrak.com/hc/en-us/articles/18821721976475-Organization-Overview) |
+| Worklytics | Lideranças, RH e People Analytics | Integrar métricas de colaboração e trabalho com foco em privacidade | [F] documentação oficial do Worklytics (https://www.worklytics.co/workplace-insights-dashboard) |
+| Workday Peakon Employee Voice | Gestores, RH e colaboradores | Coletar feedback, acompanhar sentimento, prioridades e planos de ação | [F] documentação oficial do Workday(https://www.workday.com/en-us/products/employee-voice/overview.html) |
 
 ## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
 
-Sim. Microsoft Viva Insights, ActivTrak, Worklytics e Workday Peakon atuam em áreas próximas, como workplace analytics, people analytics, produtividade, colaboração, bem-estar e escuta contínua.
-
-{{[F/H/?] ...}}
+[F] F04 - Existem soluções que atuam em áreas próximas ao WorkSense, como Microsoft Viva Insights, ActivTrak, Worklytics e Workday Peakon Employee Voice, abrangendo workplace analytics, colaboração, produtividade, carga de trabalho e escuta de colaboradores. Essas soluções não são equivalentes ao WorkSense, mas apresentam capacidades e contextos de uso relacionados.
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
 
-[H] Gestores provavelmente conhecem dashboards, relatórios, planilhas, sistemas administrativos, ferramentas de comunicação, calendários e quadros Kanban. Analistas podem conhecer ferramentas de BI e visualização de dados.
-
-{{[F/H/?] ...}}
+[H] H26 - Gestores podem estar familiarizados com interfaces profissionais como dashboards, relatórios, planilhas, ferramentas de comunicação, calendários e quadros Kanban, enquanto perfis com maior atuação analítica podem também utilizar ferramentas de BI e visualização de dados.
 
 ## 6.4 O que essas soluções parecem fazer bem?
 
-As soluções observadas organizam informações em visões gerais, filtros por período e grupo, comparações temporais, cartões de indicadores e aprofundamento progressivo. Algumas também separam papéis de acesso, apresentam planos de ação e adotam agregação ou anonimização para reduzir riscos de privacidade.
-
-{{[F/H/?] ...}}
+[F] F05 - As soluções analisadas apresentam recursos para organizar indicadores, visualizar tendências e comparar informações ao longo do tempo, além de permitir diferentes níveis de aprofundamento. Também foram observados mecanismos relacionados a controle de acesso e privacidade, como separação por papéis no Viva Insights e agregação/anonimização de dados no Worklytics.
 
 ## 6.5 O que parecem fazer mal, dificultar ou não atender?
 
-Algumas interfaces exibem grande quantidade de métricas, o que pode exigir conhecimento analítico. Produtos de monitoramento podem reforçar sensação de vigilância. Soluções de employee listening dependem principalmente de pesquisas, enquanto ferramentas de produtividade podem enfatizar atividade e tempo. Ainda não sabemos se alguma alternativa combina, de maneira comparável ao WorkSense, conteúdo comunicacional, registros de tarefas, baseline individual, scores separados e explicabilidade.
+[H] H27 - Interfaces que concentram grande quantidade de métricas podem aumentar a dificuldade de interpretação para gestores com menor familiaridade com análise de dados.
 
-{{[F/H/?] ...}}
+[H] H28 - Soluções percebidas como mecanismos de monitoramento individual podem gerar preocupações relacionadas a vigilância, privacidade e confiança.
+
+[?] ?02 - Ainda não sabemos se alguma solução existente combina de forma semelhante ao WorkSense análise comunicacional, registros de tarefas, comparação com baseline individual, scores comunicacional e profissional separados e explicação dos indicadores que contribuíram para uma sinalização.
 
 ## 6.6 Que padrões de interface ou vocabulário parecem familiares a esse público?
 
-Menu lateral por área; cartões de indicadores; filtros de data, equipe e perfil; gráficos de tendência; comparação antes/depois; status de alerta; detalhamento por clique; tabelas com ordenação; exportação; histórico; permissões por papel; e termos como período, tendência, baseline, score, indicador, participação, carga de trabalho e plano de ação.
+Gestores podem já ter contato com padrões comuns em ferramentas profissionais, como dashboards, indicadores resumidos, filtros, gráficos de tendência, comparações históricas, tabelas e detalhamento de informações. Ferramentas como planilhas, calendários, sistemas administrativos, canais de comunicação e quadros Kanban também podem influenciar suas expectativas sobre organização e navegação.
 
-{{[F/H/?] ...}}
+[F] F06 - Nas soluções profissionais analisadas aparecem padrões como dashboards, indicadores resumidos, tendências temporais, comparações históricas, detalhamento progressivo e diferentes níveis de acesso conforme o papel do usuário.
+
+[H26] A familiaridade dos gestores com esses tipos de interface e ferramentas ainda precisa ser investigada.
+
+[?] ?03 - Ainda não sabemos quais termos são mais compreensíveis para gestores ao apresentar conceitos como baseline, score, variação e sinalização.
 
 ---
 
@@ -349,7 +326,6 @@ Gestor ou líder de equipe.
 
 [H04] Acompanhar a equipe de forma mais estruturada e preventiva, identificando e compreendendo variações relevantes nos padrões dos colaboradores para decidir quando uma situação merece acompanhamento humano.
 
-
 ## 7.4 Que interface será explorada na disciplina?
 
 Complete:
@@ -370,7 +346,8 @@ Para fins da disciplina de IHC, será projetada uma interface que permita ao ges
 
 > **Declaração:** a interface desenvolvida nesta disciplina é um artefato de aprendizagem de IHC baseado no tema do TCC. Sua inclusão ou implementação no TCC somente ocorrerá se isso for posteriormente decidido pela equipe e pelo orientador.
 
-[F] F02 - O TCC já prevê o vínculo entre usuários, a geração de scores e sinalizações e a apresentação de seus componentes, além de possuir visualizações preliminares dos resultados. Entretanto, ainda não define uma interface de gestão completa, seus fluxos de interação ou requisitos de usabilidade. O projeto de IHC aprofundará essa parte, projetando especificamente a interação do gestor com o cadastro dos colaboradores e com os resultados produzidos pelo WorkSense.
+[H02] O TCC já prevê o vínculo entre usuários, a geração de scores e sinalizações e a apresentação de seus componentes, além de possuir visualizações preliminares dos resultados. Entretanto, ainda não define uma interface de gestão completa, seus fluxos de interação ou requisitos de usabilidade.
+O projeto de IHC aprofundará essa parte, projetando especificamente a interação do gestor com o cadastro dos colaboradores e com os resultados produzidos pelo WorkSense.
 
 ---
 
@@ -382,20 +359,20 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Possibilidade | Pode fazer sentido? | Objetivo/tarefa que justificaria | Evidência atual |
 |---|---|---|---|
-| Dashboard/visão geral | Sim | Revisar a situação recente e localizar sinalizações | [H] padrão de mercado |
-| Configuração/parametrização | Talvez | Definir períodos, fontes e regras de sinalização | [H] Parâmetros existem no TCC; usuário responsável ainda não validado |
-| Entrada/upload/seleção de dados | Talvez | Permitir reprocessamento experimental ou importação controlada | [H] Processo atual usa JSON/CSV; não é tarefa prioritária do gestor |
-| Acompanhamento de processamento | Talvez | Saber se os dados estão atualizados e se o cálculo terminou | [H] |
-| Relatório/resultados | Sim | Compartilhar uma análise autorizada e registrar conclusões | [H] Necessidade a validar |
-| Histórico com busca/filtros | Sim | Recuperar períodos, sinalizações e avaliações anteriores | [F] Histórico e auditoria são requisitos técnicos; forma de uso é hipótese |
-| Comparação de resultados | Sim | Comparar baseline e ciclo de reanálise | [H] |
-| Explicabilidade/detalhamento | Sim | Entender quais componentes contribuíram para a sinalização | [F] Requisito não funcional do TCC |
-| Administração/configurações globais | Talvez | Manter integrações, retenção e regras do sistema | [H] fora do fluxo principal do gestor |
-| Usuários/perfis/permissões | Sim | Restringir acesso conforme responsabilidade | [H] Necessidade de governança e privacidade |
-| CRUD de entidade do domínio | Não, inicialmente | Não foi identificada tarefa central que exija CRUD genérico | [?] Reavaliar se surgir necessidade real |
-| Auditoria/logs | Sim | Verificar origem, processamento, acesso e encaminhamento | [F] Auditoria técnica prevista; auditoria de uso é hipótese |
-| Alertas/ocorrências | Sim | Chamar atenção para uma variação que mereça análise | [F] Sinalizações fazem parte do TCC |
-| Ajuda/documentação | Sim | Explicar métricas, limitações, privacidade e interpretação adequada | [H] H05 e H07 |
+| Dashboard/visão geral | Sim | Obter uma visão geral da equipe e identificar colaboradores ou sinalizações que mereçam análise mais detalhada | [H] H04, H05; alinhado ao objetivo de acompanhamento do gestor |
+| Relatório/resultados | Sim | Compreender o que mudou em determinado perfil, em qual período e quais indicadores contribuíram para o resultado | [H] H03, H04, H24; [F] F02 |
+| Histórico com busca/filtros | Sim | Consultar períodos e sinalizações anteriores de um colaborador e acompanhar sua evolução ao longo do tempo | [H] H03, H24 |
+| Comparação com o baseline | Sim | Comparar o período analisado com o histórico individual do próprio colaborador | [H] H03; comparação temporal faz parte da contribuição proposta |
+| Explicabilidade/detalhamento dos indicadores | Sim | Entender quais componentes comunicacionais ou profissionais contribuíram para um score ou sinalização | [F] requisito não funcional do TCC; [F] F02 |
+| Alertas/sinalizações | Sim | Direcionar a atenção do gestor para uma variação que possa merecer análise | [H] H03, H04; sinalizações fazem parte da contribuição proposta |
+| Cadastro de colaboradores | Sim | Cadastrar os perfis que serão acompanhados, assim realizando vinculação às fontes necessárias para associação dos registros | [H] H05; faz parte do recorte definido para a interface |
+| Ajuda/documentação | Sim | Ajudar o gestor a compreender scores, indicadores, limites de interpretação e significado das sinalizações | [H] H10; [F] F02 |
+| Configuração/parametrização técnica	| Não, inicialmente |	Poderia permitir alteração de períodos, thresholds ou outras regras do processamento	| [H] H08, H13; parece pertencer ao administrador e não ao fluxo principal do gestor |
+| Entrada/seleção/preparação de dados	| Não, inicialmente	| Poderia permitir importar datasets ou selecionar fontes para processamento	| [H] H09, H14; pertence principalmente ao processo experimental, não à atividade do gestor |
+| Execução / acompanhamento do processamento	| Não, inicialmente	| Poderia permitir iniciar análises ou acompanhar execução do pipeline |	Não foi identificada uma necessidade do gestor de controlar diretamente o processamento |
+| Relatórios / exportação | Talvez | Exportar ou compartilhar resultados de uma análise quando houver necessidade organizacional |	[?] PENDENTE; ainda não sabemos se essa tarefa é necessária |
+| Administração global | Não, inicialmente | Manter integrações, parâmetros globais, credenciais e configurações técnicas |	[H] H08, H13; pertence ao perfil administrador |
+| Auditoria/logs técnicos	| Não, inicialmente	| Consultar registros técnicos de execução ou falhas | Auditoria técnica é requisito do TCC, mas não foi identificada como tarefa do gestor |
 
 > **Atenção:** “login + dashboard + CRUD” não é uma solução universal. Cada padrão deve surgir de uma tarefa real.
 
@@ -407,26 +384,25 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 | Benefício esperado | Problema/necessidade | Usuário | Status/evidência |
 |---|---|---|---|
-| Tornar mudanças potencialmente relevantes mais perceptíveis | Informações dispersas e difíceis de acompanhar no tempo | Gestor | [H] H01 |
-| Reduzir erros de interpretação | Scores e métricas podem ser confundidos com diagnósticos ou avaliações absolutas | Gestor e colaborador afetado | [F] Risco reconhecido no TCC; forma de mitigação é hipótese |
-| Explicar a origem de cada sinalização | Resultado agregado sem contexto é pouco transparente | Gestor/analista | [F] Explicabilidade é requisito do TCC |
-| Apoiar acompanhamento humano rastreável | Decisões podem ficar desconectadas das evidências e do contexto | Gestor/RH | [H] |
-| Proteger privacidade e limitar acesso | Dados comunicacionais e profissionais são sensíveis | Colaborador e organização | [F] Limites éticos e LGPD discutidos no TCC |
+| Apoiar um acompanhamento mais estruturado e preventivo da equipe | Mudanças relevantes na rotina profissional podem ocorrer gradualmente e passar despercebidas no acompanhamento cotidiano | Gestor | [F] F01; [H] H04 |
+| Dar ao gestor melhores condições para decidir quando um colaborador pode precisar de acompanhamento | O gestor precisa perceber e compreender variações antes de decidir se alguma ação humana é necessária | Gestor | [H] H04 |
+| Favorecer uma análise mais contextualizada de cada colaborador ao longo do tempo |	Observações e indicadores isolados podem admitir diferentes interpretações e não representam, sozinhos, a situação do colaborador |	Gestor e colaborador afetado |	[F] F02; [H] H03 |
+| Aproximar os resultados técnicos do WorkSense da atividade real de gestão |	O TCC produz scores, indicadores e sinalizações, mas ainda não possui uma interface gerencial estruturada para que esses resultados sejam utilizados pelo gestor |	Gestor |	[H] H02; [H] H05 |
 
 ## 9.2 Que ações o usuário deverá conseguir realizar?
 
 | ID | O usuário precisa conseguir... | Para alcançar... | Prioridade inicial |
 |---|---|---|---|
-| F01 | Selecionar equipe e período | Delimitar corretamente a análise | Alta |
-| F02 | Consultar sinalizações recentes | Perceber variações que mereçam atenção | Alta |
-| F03 | Distinguir score comunicacional e profissional | Identificar qual dimensão apresentou mudança | Alta |
-| F04 | Comparar baseline e reanálise | Entender a variação em relação ao histórico do perfil | Alta |
-| F05 | Abrir componentes e explicações | Compreender por que a sinalização foi gerada | Alta |
-| F06 | Verificar cobertura, atualização e dados ausentes | Avaliar se existe evidência suficiente | Alta |
-| F07 | Registrar interpretação e encaminhamento | Manter supervisão e rastreabilidade humanas | Alta |
-| F08 | Consultar histórico | Acompanhar evolução e revisitar decisões | Média |
-| F09 | Acessar ajuda sobre métricas e limites | Evitar interpretação diagnóstica ou punitiva | Alta |
-| F10 | Exportar relatório autorizado | Compartilhar análise com papel responsável | Baixa |
+| T01 | Visualizar os colaboradores acompanhados e suas sinalizações recentes | Identificar situações que possam merecer análise | Alta |
+| T02 | Selecionar um colaborador e consultar seus resultados | Analisar uma situação específica | Alta |
+| T03 | Distinguir score comunicacional e profissional | Identificar em qual dimensão ocorreu maior variação | Alta |
+| T04 | Comparar o período analisado com o baseline individual | Compreender a mudança em relação ao histórico do próprio colaborador | Alta |
+| T05 | Consultar os indicadores que contribuíram para um score ou sinalização | Entender por que aquela variação foi apresentada | Alta |
+| T06 | Consultar períodos e sinalizações anteriores | Acompanhar a evolução do perfil ao longo do tempo | Média |
+| T07 | Cadastrar e vincular colaboradores | Definir quais perfis poderão ser acompanhados pela ferramenta | Alta |
+| T08 | Acessar explicações sobre métricas, sinalizações e limites de interpretação | Interpretar os resultados de forma adequada | Média |
+| T09 | Consultar informações sobre o período e atualização da análise | Entender a que dados o resultado apresentado se refere | Média |
+| T10 | Exportar ou compartilhar resultados | Compartilhar uma análise quando houver necessidade autorizada | Baixa / PENDENTE |
 
 ## 9.3 Tecnologias/restrições já definidas no TCC
 
@@ -434,16 +410,16 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 | Tecnologia/restrição | Por que existe | Possível impacto na interação |
 |---|---|---|
-| Telegram | Canal de interação com os perfis simulados | Parte da experiência ocorre fora da interface gerencial e pode exigir vínculo claro entre plataformas |
-| Trello | Fonte dos registros profissionais em quadro Kanban | Vocabulário como cartão, lista, prazo, conclusão e reabertura pode aparecer nas explicações |
-| n8n | Orquestra as integrações | Falhas ou atrasos do fluxo precisam ser comunicados como estado de processamento, não como ausência de mudança |
-| PostgreSQL | Mantém vínculos e interações | Permite histórico e auditoria, mas exige controles de acesso e retenção |
-| Ollama com modelo conversacional | Produz respostas no agente em ambiente controlado | Deve ficar separado do cálculo dos scores para evitar falsa atribuição de autoridade ao modelo |
-| Módulos de PLN e análise | Extraem indicadores comunicacionais | A interface deve traduzir métricas técnicas para linguagem compreensível sem esconder limitações |
-| Baseline de 30 dias e reanálise de 15 dias | Estrutura temporal do experimento | A comparação de períodos precisa ser visível e não pode sugerir comparação direta entre pessoas |
-| Dois scores separados | Evita compensação entre dimensões diferentes | A interface deve preservar visualmente essa separação |
-| Dados simulados | Reduz risco ético e permite avaliação controlada | Resultados não podem ser generalizados para ambientes reais nesta etapa |
-| Sem diagnóstico, punição ou decisão automática | Delimitação ética e metodológica | Avisos, linguagem, permissões e fluxo de decisão devem reforçar supervisão humana |
+| Telegram | Canal previsto para interação comunicacional associada aos perfis | A interface gerencial deverá permitir identificar corretamente quais usuários estão vinculados aos perfis acompanhados |
+| Trello | Fonte dos registros profissionais relacionados às tarefas | Informações sobre tarefas, prazos, conclusões e reaberturas poderão aparecer no detalhamento dos indicadores profissionais |
+| n8n | Orquestra as integrações entre os componentes da solução | Estados de falha ou desatualização do fluxo não devem ser confundidos com resultados da análise, caso essas informações sejam apresentadas ao gestor |
+| PostgreSQL | Mantém vínculos e registros operacionais utilizados pelo fluxo | O cadastro e vínculo dos colaboradores deve considerar as associações necessárias entre os usuários e as fontes utilizadaso |
+| Ollama e modelo conversacional | Responsáveis pela interação do agente conversacional | O papel do agente deve permanecer separado dos resultados analíticos, evitando sugerir que o modelo conversacional calcula ou avalia os scores |
+| Módulos de PLN e análise | Extraem os indicadores comunicacionais e profissionais | Os resultados técnicos precisam ser apresentados em uma forma compreensível para o gestor, sem exigir conhecimento dos algoritmos utilizados |
+| Baseline de 30 dias e reanálise de 15 dias | Estruturam a comparação temporal atualmente prevista no TCC | A interface deve deixar clara a relação entre período de referência e período analisado, evitando comparação direta entre colaboradores |
+| Score comunicacional e score profissional separados | Mantêm independentes dimensões de naturezas diferentes | A interface deve preservar a distinção entre os dois resultados e seus respectivos componentes |
+| Origem da base experimental ainda em definição | A equipe ainda avalia o uso de dados simulados, reais ou provenientes de uma base existente | [?] ?01 — a decisão poderá alterar requisitos de privacidade, consentimento, apresentação e tratamento dos dados |
+| Sem finalidade diagnóstica, punitiva ou decisão automatizada | Delimitação ética e metodológica do WorkSense | Linguagem, explicações e fluxo de análise devem reforçar que as sinalizações apoiam a interpretação humana e não constituem conclusões definitivas |
 
 ---
 
@@ -451,9 +427,34 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 | ID | Hipótese/dúvida | Por que importa | Como poderá ser investigada |
 |---|---|---|---|
-| H01 | {{...}} | {{...}} | Entrega 2/3/7/... |
-| H02 | {{...}} | {{...}} | {{...}} |
-| H03 | {{...}} | {{...}} | {{...}} |
+| H01 | O TCC prevê o desenvolvimento e a avaliação experimental do WorkSense, com processamento de registros comunicacionais e profissionais, extração de indicadores, cálculo separado dos scores e comparação temporal com baseline individual. | Delimita o que pertence ao TCC e quais capacidades técnicas podem dar origem ao recorte de IHC. | {Entrega ...} |
+| H02 | O TCC já prevê o vínculo entre usuários, a geração de scores e sinalizações e a apresentação de seus componentes, além de possuir visualizações preliminares dos resultados. Entretanto, ainda não define uma interface de gestão completa, seus fluxos de interação ou requisitos específicos de usabilidade. | Justifica o aprofundamento da interação do gestor no projeto de IHC sem ignorar os requisitos funcionais e não funcionais já definidos para o WorkSense. | {Entrega ...} |
+| H03 | O WorkSense pode apoiar a identificação de alterações ao longo do tempo nos padrões de comunicação, interação e execução de tarefas de perfis profissionais, mantendo a interpretação e a decisão sob responsabilidade humana. | Representa a principal capacidade do WorkSense que deverá ser traduzida para uma interação útil e compreensível para o gestor. | {Entrega ...} |
+| H04 | A contribuição pode tornar o acompanhamento das equipes mais estruturado e preventivo, auxiliando gestores na identificação e interpretação de variações, favorecendo um acompanhamento mais contextualizado dos colaboradores e apoiando decisões de gestão mais informadas e transparentes, sempre com supervisão humana. | Define o benefício esperado para o gestor e orienta quais tarefas da interface devem receber maior prioridade. | {Entrega ...} |
+| H05 | O gestor ou líder de equipe será o usuário direto da interface de IHC, podendo cadastrar e vincular colaboradores, acompanhar seus perfis e consultar scores, sinalizações e indicadores comunicacionais e profissionais. | Delimita o usuário principal e o conjunto inicial de atividades consideradas no recorte da interface. | {Entrega ...} |
+| H06 | O colaborador é a pessoa associada ao perfil acompanhado pelo WorkSense, gera registros comunicacionais e profissionais por meio dos canais integrados, mas não utiliza diretamente a interface gerencial. | Distingue o usuário direto da interface da pessoa afetada pelas informações e interpretações produzidas a partir de seus registros. | {Entrega ...} |
+| H07 | Profissionais de RH ou gestão de pessoas podem participar como stakeholders relacionados a políticas de uso, transparência, privacidade e limites de interpretação dos resultados, sem necessariamente serem usuários diretos da interface. | Ajuda a identificar responsabilidades organizacionais e possíveis necessidades de governança que podem afetar o projeto. | {Entrega ...} |
+| H08 | O administrador da solução pode ser responsável por atividades técnicas como configuração de integrações, acessos, permissões, credenciais e parâmetros necessários ao funcionamento do WorkSense. | Permite separar tarefas administrativas das atividades que realmente pertencem ao fluxo principal do gestor. | {Entrega ...} |
+| H09 | A equipe responsável pelo TCC desenvolve, opera e avalia experimentalmente o WorkSense, preparando os dados de avaliação, executando os processamentos, realizando testes e analisando os resultados obtidos. | Diferencia as atividades experimentais e técnicas da equipe do TCC das tarefas que deverão ser realizadas pelo usuário da interface. | {Entrega ...} |
+| H10 | Gestores podem apresentar diferentes níveis de familiaridade com métricas, indicadores e ferramentas digitais. | A familiaridade do usuário pode afetar a compreensão dos resultados e o nível de detalhamento adequado para a interface. | {Entrega ...} |
+| H11 | Colaboradores possuem padrões distintos de comunicação, interação e uso de ferramentas de trabalho e podem apresentar diferentes percepções ou preocupações sobre a finalidade e o uso de seus dados. | Reforça a necessidade de considerar diferenças individuais e os possíveis efeitos do sistema sobre as pessoas acompanhadas. | {Entrega ...} |
+| H12 | Profissionais de RH ou gestão de pessoas podem possuir maior familiaridade com processos de pessoas, privacidade e governança, mas apresentar diferentes níveis de experiência com indicadores quantitativos e ferramentas digitais. | Ajuda a compreender de que forma esse stakeholder poderia participar da governança ou interpretação dos resultados. | {Entrega ...} |
+| H13 | Administradores da solução precisam de maior familiaridade técnica com integrações, acessos, permissões e configurações necessárias à implantação e manutenção do WorkSense. | Ajuda a distinguir necessidades técnicas de administração das necessidades de interação do gestor. | {Entrega ...} |
+| H14 | A equipe responsável pelo TCC precisa de maior nível de detalhe sobre indicadores, componentes dos scores e processamento dos dados para realizar testes, avaliar os resultados e identificar erros. | Diferencia as necessidades de análise técnica da equipe do TCC das informações que precisam ser apresentadas ao gestor. | {Entrega ...} |
+| H15 | Gestores organizam e acompanham continuamente as atividades da equipe por meio de informações como responsáveis, andamento e prazos. | Ajuda a compreender quais atividades fazem parte da rotina do gestor e quais informações podem ser relevantes para o acompanhamento. | {Entrega ...} |
+| H16 | A execução e atualização das tarefas constituem uma atividade frequente dos colaboradores durante sua rotina de trabalho. | Ajuda a entender como os registros profissionais utilizados pelo WorkSense são produzidos no cotidiano. | {Entrega ...} |
+| H17 | A interpretação das sinalizações pelo gestor parece ser uma das atividades mais críticas, pois uma interpretação inadequada pode atribuir significado incorreto a uma variação ou levar a uma ação de acompanhamento sem contexto suficiente. Por isso, os resultados precisam ser apresentados com seus indicadores e permanecer sujeitos à análise humana. | Define um fluxo central de IHC e envolve consequências sobre pessoas caso o resultado seja interpretado inadequadamente. | {Entrega ...} |
+| H18 | Atualmente, o gestor tende a acompanhar a equipe por meio de diferentes fontes e momentos de contato, como reuniões, conversas presenciais/online e registros em ferramentas de gestão de tarefas, precisando interpretar essas informações durante o acompanhamento cotidiano. | Compreender o processo atual permite projetar uma interface que complemente a atividade do gestor em vez de pressupor um fluxo inexistente. | {Entrega ...} |
+| H19 | Para compreender mudanças na rotina de um colaborador, o gestor pode considerar informações como frequência e características das interações, andamento e regularidade das entregas, cumprimento de prazos, ocorrências de retrabalho e mudanças no contexto de trabalho, interpretando essas informações em relação ao histórico daquele profissional. | Ajuda a identificar quais informações realmente apoiam a interpretação do gestor e evita simplesmente reproduzir na interface todas as métricas calculadas pelo sistema. | {Entrega ...} |
+| H20 | A interação com o WorkSense poderá ocorrer em contexto corporativo, presencial ou remoto, principalmente durante momentos de acompanhamento da equipe, como revisões periódicas, preparação para reuniões individuais, acompanhamento de prazos ou análise de uma sinalização específica. | O momento e a situação de uso influenciam o nível de detalhe, duração da interação e informações necessárias. | {Entrega ...} |
+| H21 | O computador ou notebook tende a ser o dispositivo principal para o acompanhamento detalhado dos colaboradores, enquanto dispositivos móveis podem ser úteis para consultas breves ou notificações. | O dispositivo influencia espaço disponível, densidade das informações e possíveis formas de interação. | {Entrega ...} |
+| H22 | O gestor pode utilizar a interface em situações com interrupções ou restrição de tempo e, por lidar com informações relacionadas aos colaboradores, pode precisar de condições que preservem a privacidade visual durante a consulta. | Condições físicas de uso podem afetar atenção, leitura das informações e exposição indevida de dados. | {Entrega ...} |
+| H23 | Relações hierárquicas, responsabilidade do gestor, confiança da equipe, níveis de permissão e políticas organizacionais podem influenciar como o WorkSense é utilizado e como suas sinalizações são interpretadas. O acesso às informações também deverá respeitar a finalidade definida para seu uso. | O sistema envolve dados sobre colaboradores e relações de poder, tornando o contexto organizacional relevante para acesso e interpretação. | {Entrega ...} |
+| H24 | Para interpretar adequadamente uma sinalização, o gestor pode precisar consultar seu período de referência, os indicadores que contribuíram para o resultado e informações sobre quando a análise foi realizada. | Ajuda a definir qual contexto precisa acompanhar uma sinalização para que ela não seja apresentada como um resultado isolado. | {Entrega ...} |
+| H25 | Uma interpretação incorreta das sinalizações pode afetar a forma como o gestor acompanha um colaborador e gerar impactos sobre privacidade, confiança e relações de trabalho. Por isso, a apresentação dos resultados deve deixar claros seus limites e evitar interpretações diagnósticas ou punitivas. | Erros de interpretação podem produzir consequências sobre pessoas e sobre a relação entre gestor e colaborador. | {Entrega ...} |
+| H26 | Gestores podem estar familiarizados com interfaces profissionais como dashboards, relatórios, planilhas, ferramentas de comunicação, calendários e quadros Kanban, enquanto perfis com maior atuação analítica podem também utilizar ferramentas de BI e visualização de dados. | A familiaridade prévia pode influenciar expectativas, vocabulário e padrões de interação compreendidos com menor esforço. | {Entrega ...} |
+| H27 | Interfaces que concentram grande quantidade de métricas podem aumentar a dificuldade de interpretação para gestores com menor familiaridade com análise de dados. | O WorkSense produz diversos indicadores e pode gerar sobrecarga se todos receberem o mesmo nível de destaque. | {Entrega ...} |
+| H28 | Soluções percebidas como mecanismos de monitoramento individual podem gerar preocupações relacionadas a vigilância, privacidade e confiança. | A percepção de vigilância pode afetar aceitação, confiança e uso responsável do sistema. | {Entrega ...} |
 
 Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
@@ -463,22 +464,22 @@ Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
 | Pergunta | Síntese atual |
 |---|---|
-| Qual é a contribuição central do TCC? | Integrar indicadores comunicacionais e profissionais, compará-los ao histórico do próprio perfil e gerar sinalizações explicáveis de possíveis alterações. |
-| O TCC já previa interface? | Parcialmente: existe interação pelo Telegram e há visualizações preliminares, mas não uma experiência gerencial completa. |
-| Quem é o usuário prioritário de IHC? | [H] Gestor ou líder de equipe remota/híbrida. |
-| O que ele precisa alcançar? | Reconhecer, compreender e contextualizar uma mudança para decidir se é necessário acompanhamento humano. |
-| Qual problema/atividade será estudado? | Revisão e investigação de uma sinalização sem confundi-la com diagnóstico ou avaliação absoluta. |
-| Como isso acontece hoje? | [F] No experimento, por arquivos, scripts e gráficos; [H] em contexto real, por observação, conversas e consultas manuais a ferramentas dispersas. |
-| Qual é o contexto de uso? | [H] Acompanhamento periódico ou sob demanda de equipes digitais, em ambiente corporativo remoto ou presencial. |
-| Que interface/recorte será explorado? | Fluxo gerencial de visão geral, comparação temporal, explicabilidade, verificação da evidência e registro da análise humana. |
-| Como a interface se relaciona ao TCC? | Aprofunda a apresentação e interpretação de resultados parcialmente previstas, como artefato de aprendizagem de IHC. |
-| Quais pontos ainda são hipóteses? | H01 a H08: usuário prioritário, papéis, rotina, dispositivo, transparência, explicabilidade e estados de evidência. |
+| Qual é a contribuição central do TCC? |  Desenvolver o WorkSense para identificar indícios de alterações ao longo do tempo em padrões comunicacionais e profissionais, a partir de indicadores e scores separados comparados ao histórico individual, gerando sinalizações para apoiar a análise humana. |
+| O TCC já previa interface? | Parcialmente. O TCC já prevê interação com o WorkSense por meio do agente conversacional e contempla vínculo de usuários, geração de scores e sinalizações, apresentação de seus componentes e visualizações preliminares. Porém, não havia sido projetada uma interface gerencial completa para apoiar o uso e a interpretação desses resultados pelo gestor. |
+| Quem é o usuário prioritário de IHC? | [H] Gestor ou líder de equipe. |
+| O que ele precisa alcançar? | [H] Acompanhar a equipe de forma mais estruturada, perceber mudanças relevantes na rotina de cada colaborador e compreender essas variações em relação ao seu histórico e contexto para decidir quando é necessário aprofundar o acompanhamento humano. |
+| Qual problema/atividade será estudado? | [H] A O acompanhamento e a interpretação, pelo gestor, de mudanças nos padrões comunicacionais e profissionais dos colaboradores, especialmente quando uma sinalização indica uma variação que pode merecer atenção. |
+| Como isso acontece hoje? | [H] O gestor tende a acompanhar a equipe por diferentes momentos e fontes de informação, como reuniões, conversas e registros em ferramentas de gestão de tarefas, interpretando essas informações durante sua rotina de acompanhamento. |
+| Qual é o contexto de uso? |  [H] Ambiente corporativo presencial ou remoto, em situações de acompanhamento periódico da equipe ou quando uma situação específica leva o gestor a consultar mais detalhadamente um colaborador. |
+| Que interface/recorte será explorado? | Uma interface gerencial que permita cadastrar e vincular colaboradores, obter uma visão geral da equipe, identificar sinalizações que mereçam atenção e aprofundar a análise de um perfil por meio dos scores comunicacional e profissional, histórico individual, comparação temporal e indicadores relacionados. |
+| Como a interface se relaciona ao TCC? | É um aprofundamento de algo parcialmente previsto no TCC. O projeto de IHC utiliza capacidades já propostas pelo WorkSense e aprofunda especificamente a interação do gestor com o cadastro dos colaboradores e com os resultados produzidos pela ferramenta. |
+| Quais pontos ainda são hipóteses? | Permanecem em investigação as características e práticas dos usuários e stakeholders, o processo atual de acompanhamento, as informações consideradas relevantes pelo gestor, o contexto e os dispositivos de uso, os riscos de interpretação, a familiaridade com métricas e padrões de interface e outras hipóteses registradas de H01 a H28. Também permanecem abertas as dúvidas ?01, ?02 e ?03. |
 
 ### Delimitação
 
-**Dentro do escopo de IHC:** compreender o gestor e stakeholders; modelar a tarefa de revisar e investigar sinalizações; definir arquitetura da informação; prototipar visão geral, comparação temporal, explicabilidade, estados de dados e registro de acompanhamento; avaliar compreensão, eficiência, prevenção de erro, acessibilidade e confiança.  
-**Fora do escopo de IHC:** redesenhar todo o Telegram, implementar os algoritmos de PLN, alterar fórmulas dos scores, validar diagnóstico clínico, monitorar colaboradores reais, definir política organizacional completa ou construir todos os módulos administrativos.  
-**Dentro do escopo formal do TCC:** pipeline experimental, integrações, dados simulados, extração de indicadores, scores separados, baseline, sinalizações, testes e avaliação experimental.  
+**Dentro do escopo de IHC:** compreender o contexto em que gestores acompanham mudanças nos colaboradores e projetar uma interface que apresente de forma explícita os resultados produzidos pelo WorkSense, preservando a separação entre os scores comunicacional e profissional, a comparação com o histórico individual e os indicadores que contribuíram para cada resultado.
+**Fora do escopo de IHC:** redesenhar toda a interação pelo Telegram; definir ou alterar os algoritmos de PLN e as fórmulas dos scores; projetar todos os módulos administrativos do WorkSense; validar políticas organizacionais de uso; ou avaliar se a ferramenta melhora efetivamente a gestão de equipes em um ambiente organizacional real.
+**Dentro do escopo formal do TCC:** desenvolver e avaliar experimentalmente o pipeline do WorkSense, incluindo integrações, processamento dos registros comunicacionais e profissionais, extração de indicadores, cálculo separado dos scores, comparação com baseline individual e geração de sinalizações. A avaliação busca verificar se os indicadores e scores produzidos respondem de forma coerente às alterações presentes nos dados e tornar explícitos os componentes que contribuíram para os resultados. 
 **Interface da disciplina será implementada no TCC?** Não definido.
 
 ---
@@ -503,9 +504,9 @@ A Entrega 1 é uma **fotografia inicial do conhecimento**. Ela pode e deve ser r
 
 Prepare uma explicação de até três frases:
 
-1. **Problema/atividade humana:** {{...}}
-2. **Contribuição técnica do TCC:** {{...}}
-3. **Como uma pessoa poderia utilizar essa contribuição:** {{...}}
+1. **Problema/atividade humana:** Em equipes que atuam entre contextos presenciais e remotos, gestores podem ter mais dificuldade para perceber e acompanhar mudanças sutis que ocorrem ao longo do tempo na comunicação, interação e execução das atividades dos colaboradores.
+2. **Contribuição técnica do TCC:** O WorkSense processa registros comunicacionais e profissionais, extrai indicadores, calcula scores separados e compara os resultados com o histórico individual para identificar possíveis alterações de padrão.
+3. **Como uma pessoa poderia utilizar essa contribuição:** Um gestor poderia consultar essas sinalizações, scores e indicadores para apoiar o acompanhamento dos colaboradores e decidir quando uma situação merece análise mais detalhada.
 
 Essa síntese ajuda a apresentar o projeto para público não especializado sem reduzir seu mérito técnico.
 
