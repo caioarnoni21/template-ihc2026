@@ -30,16 +30,16 @@ Retome o mapa inicial de alternativas e produtos citado na Entrega 1. Aqui a equ
 
 | Item citado na Entrega 1 | Tipo | Por que foi citado | Status inicial | Decisão nesta entrega |
 |---|---|---|---|---|
-| Microsoft Viva Insights | ferramenta cotidiana  | É uma ferramente que usa dados para melhorar o bem-estar e a produtividade no trabalho | [F] documentação oficial da Microsoft (https://learn.microsoft.com/en-us/viva/insights/introduction) | analisar|
-| ActivTrak | ferramenta cotidiana  | é uma plataforma em nuvem de monitoramento de funcionários e análise de produtividade projetada para equipes presenciais, remotas ou híbridas | [F] documentação oficial do ActivTrak (https://support.activtrak.com/hc/en-us/articles/18821721976475-Organization-Overview) | analisar|
-| Worklytics | ferramenta cotidiana  | é uma plataforma de People Analytics e análise de local de trabalho (workplace analytics) baseada em Inteligência Artificial | [F] documentação oficial do Worklytics (https://www.worklytics.co/workplace-insights-dashboard) | analisar|
-| Workday Peakon Employee Voice | ferramenta cotidiana  | é uma plataforma de escuta de funcionários impulsionada por inteligência artificial que mede o engajamento, o bem-estar e o sentimento no ambiente de trabalho | [F] documentação oficial do Workday(https://www.workday.com/en-us/products/employee-voice/overview.html) | analisar|
+| Microsoft Viva Insights | concorrente  | É uma ferramente que usa dados para melhorar o bem-estar e a produtividade no trabalho | [F] documentação oficial da Microsoft (https://learn.microsoft.com/en-us/viva/insights/introduction) | analisar|
+| ActivTrak | concorrente  | é uma plataforma em nuvem de monitoramento de funcionários e análise de produtividade projetada para equipes presenciais, remotas ou híbridas | [F] documentação oficial do ActivTrak (https://support.activtrak.com/hc/en-us/articles/18821721976475-Organization-Overview) | analisar|
+| Worklytics | concorrente  | é uma plataforma de People Analytics e análise de local de trabalho (workplace analytics) baseada em Inteligência Artificial | [F] documentação oficial do Worklytics (https://www.worklytics.co/workplace-insights-dashboard) | analisar|
+| Workday Peakon Employee Voice | concorrente  | é uma plataforma de escuta de funcionários impulsionada por inteligência artificial que mede o engajamento, o bem-estar e o sentimento no ambiente de trabalho | [F] documentação oficial do Workday(https://www.workday.com/en-us/products/employee-voice/overview.html) | analisar|
 
 Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, atualize `H01`, `H02`... em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
 ## 1. Público-alvo desta análise
 
-{{descrever e ligar à Entrega 1}}
+O publico alvo é os colaboradores
 
 ## 2. Concorrentes diretos/indiretos
 
