@@ -39,20 +39,20 @@ Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, 
 
 ## 1. Público-alvo desta análise
 
-O publico alvo é os colaboradores
+O publico alvo é os gestores
 
 ## 2. Concorrentes diretos/indiretos
 
 ### Análise C01 — {{produto}}
 
-**Autor(a):** {{nome — matrícula}}  
-**Tipo:** direto / indireto / análogo  
-**Link oficial:** {{URL}}  
-**Data de acesso:** {{dd/mm/aaaa}}
+**Autor(a):** Caio Arnoni — 22.221.019-7  
+**Tipo:** direto 
+**Link oficial:** https://learn.microsoft.com/en-us/viva/insights/introduction  
+**Data de acesso:** 26/08/2026
 
 #### Contexto e proposta
 
-{{...}}
+O Viva Insights ajuda pessoas e empresas a prosperarem com insights baseados em dados e protegidos pela privacidade, além de oferecer recomendações para melhorar a produtividade e o bem-estar. A proposta dele é fornecer insights pessoais para seus funcionários, insights de equipe para gerentes, insights organizacionais para seus gerentes e líderes de negócios
 
 #### Funcionalidades relevantes
 
