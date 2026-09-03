@@ -43,7 +43,7 @@ O publico alvo é os gestores
 
 ## 2. Concorrentes diretos/indiretos
 
-### Análise C01 — {{produto}}
+### Análise C01 — Microsoft Viva Insights
 
 **Autor(a):** Caio Arnoni — 22.221.019-7  
 **Tipo:** direto 
