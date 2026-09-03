@@ -90,6 +90,54 @@ A pagina oficial apresentava o Viva Insights por **US$ 4 por usuario/mes**, com 
 | Limitacao: dependencia do ecossistema Microsoft | Licenciamento e fontes de dados | Manter o WorkSense independente de um unico fornecedor |
 
 
+### Análise C02 — ActivTrak 
+
+**Autor(a):** Guilherme Matias — 22.122.071-8  
+**Tipo:** direto <br>
+**Link oficial:** https://www.activtrak.com/product/executive-insights/ <br>
+**Data de acesso:** 03/09/2026
+
+#### Contexto e proposta
+
+O ActivTrak é uma plataforma em nuvem de monitoramento de funcionários e análise de produtividade, voltada a equipes presenciais, remotas ou híbridas. É posicionada como uma plataforma de workforce analytics que ajuda líderes a entender como as equipes de fato usam seu tempo, onde a produtividade trava e onde o risco de burnout está crescendo, diferenciando-se de ferramentas de vigilância pura por não fazer captura de tela constante nem registro de teclas. O sistema não registra teclas digitadas, não usa a câmera nem grava vídeos, focando em coletar dados de uso de aplicativos e sites de forma automática e silenciosa em segundo plano. A proposta central é transformar dados de atividade em dashboards e relatórios que apoiem decisões de gestão de produtividade, e não em um processo aberto de vigilância granular
+
+#### Funcionalidades relevantes
+
+| Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
+|---|---|---|---|
+Alocação de Tempo por Categoria e Aplicativo| O ActivTrak classifica o tempo em categorias (Business App, Productivity, Office, etc.) num gráfico de rosca, mostra a variação percentual entre períodos numa tabela e lista os aplicativos mais usados em um ranking de barras.| <img width="728" height="532" alt="image" src="https://github.com/user-attachments/assets/94129834-6cad-4125-b9bd-ef1c43453ec5" /> |A interface é voltada à análise gerencial, priorizando indicadores consolidados em vez de informações detalhadas de cada atividade. Essa abordagem facilita uma visão geral da produtividade, mas pode dificultar a compreensão do motivo das alterações apresentadas, exigindo que o usuário navegue ou analise outros dados para encontrar possíveis causas.
+
+#### Experiência do usuário e opiniões
+
+Na página do Capterra, o ActivTrak possui nota 4,5/5 em 587 avaliações. O resumo agregado destaca facilidade de uso, navegação intuitiva e qualidade dos insights de produtividade como pontos valorizados; também registra relatos frequentes de lentidão, travamentos e monitoramento em tempo real pouco confiável.
+
+#### Preço/modelo de negócio
+
+A página oficial apresenta os planos Essentials por US$ 10 por usuário/mês, Essentials Plus por US$ 15 por usuário/mês e Professional por US$ 19 por usuário/mês, além de um plano gratuito para até 3 usuários (com 30 dias de histórico de dados) e um plano Enterprise sob consulta. A contratação não depende de licença de nenhum outro produto.
+
+#### Padrões e tendências percebidos
+
+* dashboard com abas separadas por tipo de dado (categoria, aplicativo, produtividade);
+* comparação de variação percentual entre período de referência e período atual;
+* ranking por volume/tempo (aplicativos, categorias);
+* pontuação agregada (Productivity Score) para benchmarking;
+* indicador de risco (Burnout Risk) como sinalização preventiva;
+* sugestões geradas por IA (ActivTrak Coach) em vez de dashboard cru;
+* captura de dados automática e contínua, sem intervenção do usuário monitorado.
+
+#### Pontos positivos, limitações e lições
+
+| Ponto | Evidência | Implicação para nosso projeto |
+|---|---|---|
+| Positivo: visão geral da produtividade | Dashboard de Category Allocation | Apresentar ao gestor uma visão resumida da distribuição do tempo e das atividades |
+| Positivo: comparação entre períodos | Top Changes in Category Allocation | Permitir comparar o comportamento atual com um período de referência para identificar desvios |
+| Positivo: múltiplas representações | Gráfico de rosca, tabela e gráficos de barras | Utilizar diferentes formas de visualização conforme o tipo de informação apresentada |
+| Positivo: categorização automática | Categorias de aplicativos e sites | Classificar as atividades dos usuários para facilitar a identificação de padrões |
+| Limitação: alta densidade visual | Dashboard apresenta gráficos, tabelas e diversos indicadores simultaneamente | Priorizar poucos indicadores na visão inicial e permitir o aprofundamento conforme a necessidade |
+| Limitação: comparação de categorias pouco intuitiva | Gráfico de rosca com várias categorias próximas | Utilizar gráficos mais adequados para comparação direta entre categorias |
+| Limitação: pouca contextualização dos desvios | Alterações são apresentadas principalmente por valores e percentuais | Relacionar o desvio identificado às tarefas ou atividades que podem ter contribuído para sua ocorrência |
+| Limitação: foco no monitoramento de atividades | Dados de aplicativos e sites são o principal elemento analisado | Priorizar a análise de tarefas e desvios no WorkSense, evitando transformar o sistema em uma ferramenta de vigilância |
+
 > Repita a subseção para C02, C03... até atender à quantidade da equipe.
 
 ## 3. Softwares que o público-alvo usa no cotidiano
