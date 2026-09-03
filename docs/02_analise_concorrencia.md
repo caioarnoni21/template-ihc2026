@@ -58,25 +58,37 @@ O Viva Insights ajuda pessoas e empresas a prosperarem com insights baseados em 
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| {{...}} | {{...}} | `../assets/02_concorrencia/...` | {{...}} |
+| Análise de Rede Organizacional | O Viva Insights utiliza dados agregados de colaboração do Microsoft 365, como reuniões, e-mails, calendário e chats. A interface representa equipes como nós e suas relações como conexões, permitindo filtrar grupos, segmentar dados, alternar entre grafo e matriz e comparar períodos anteriores e posteriores a uma mudança organizacional. | <img width="1275" height="1650" alt="image" src="https://github.com/user-attachments/assets/5f466ce3-af91-4af6-bc32-d7a41435be87" /> | A comparação lado a lado reduz a necessidade de o usuário memorizar resultados de telas diferentes. Filtros, legendas e detalhamento ajudam na exploração. Porém, o grafo pode ficar visualmente carregado e depende bastante de cores, exigindo rótulos, explicações textuais e formas alternativas de apresentar os resultados. |
 
 #### Experiência do usuário e opiniões
 
-Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte identificável. Não trate opinião isolada como verdade universal.
+Na pagina do G2, o Viva Insights possuia nota 4,5/5 em 43 avaliacoes. O resumo agregado destaca integracao com Microsoft 365, produtividade, bem-estar e agendamento de tempo de foco como pontos valorizados; tambem registra relatos de perda de acompanhamento de algumas pendencias.
 
 #### Preço/modelo de negócio
 
-{{...}}
+A pagina oficial apresentava o Viva Insights por **US$ 4 por usuario/mes**, com pagamento anual, e o pacote Workplace Analytics and Employee Feedback por **US$ 6 por usuario/mes**. A elegibilidade depende de licenca Microsoft 365/Office 365 compativel.
 
 #### Padrões e tendências percebidos
 
-{{...}}
+- dashboard e biblioteca de relatorios por papel;
+- filtros de periodo, grupo e atributo organizacional;
+- comparacao antes/depois;
+- alternancia entre grafo, matriz e visualizacoes quantitativas;
+- legenda persistente e detalhamento progressivo;
+- agregacao e limite minimo de grupo;
+- exportacao/publicacao de resultados para outros atores.
 
 #### Pontos positivos, limitações e lições
 
 | Ponto | Evidência | Implicação para nosso projeto |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Positivo: comparacao temporal explicita | Figura C01 | Comparar baseline e periodo recente lado a lado |
+| Positivo: multiplas representacoes | Grafo e matriz oficiais | Oferecer resumo simples e aprofundamento opcional |
+| Positivo: privacidade incorporada | Documentacao oficial | Definir limiares, papeis e protecao antes de exibir dados |
+| Limitacao: alta densidade visual | Figura C01 | Priorizar poucos indicadores na visao inicial |
+| Limitacao: dependencia de cor e legenda | Arestas verdes/roxas e nos segmentados | Repetir significado com texto, icone, rotulo ou padrao visual |
+| Limitacao: dependencia do ecossistema Microsoft | Licenciamento e fontes de dados | Manter o WorkSense independente de um unico fornecedor |
+
 
 > Repita a subseção para C02, C03... até atender à quantidade da equipe.
 
@@ -106,12 +118,12 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 | Critério | C01 | C02 | C03 | Oportunidade para o projeto |
 |---|---|---|---|---|
-| Navegação |  |  |  |  |
-| Feedback/estado |  |  |  |  |
-| Prevenção/recuperação de erro |  |  |  |  |
-| Terminologia |  |  |  |  |
-| Acessibilidade |  |  |  |  |
-| Eficiência |  |  |  |  |
+| Navegação | Areas e visoes por papel; exploracao profunda |  |  |  |
+| Feedback/estado | Periodo, filtros, legenda e visualizacao atual |  |  |  |
+| Prevenção/recuperação de erro | Agregacao e controles de privacidade; complexidade pode gerar erro analitico |  |  |  |
+| Terminologia | Tecnica: ONA, insularidade, colaboracao |  |  |  |
+| Acessibilidade | Nao auditada; grafo depende de cor e densidade |  |  |  |
+| Eficiência | Comparacao lado a lado reduz etapas |  |  |  |
 
 ## 5. Recomendações derivadas
 
