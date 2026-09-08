@@ -90,7 +90,7 @@ A pagina oficial apresentava o Viva Insights por **US$ 4 por usuario/mes**, com 
 | Limitacao: dependencia do ecossistema Microsoft | Licenciamento e fontes de dados | Manter o WorkSense independente de um unico fornecedor |
 
 
-### Análise C02 — Worklytics
+### Análise C02 — ActivTrak
 
 **Autor(a):** Guilherme Matias — 22.122.071-8  
 **Tipo:** direto <br>
@@ -139,7 +139,7 @@ A página oficial apresenta os planos Essentials por US$ 10 por usuário/mês, E
 | Limitação: foco no monitoramento de atividades | Dados de aplicativos e sites são o principal elemento analisado | Priorizar a análise de tarefas e desvios no WorkSense, evitando transformar o sistema em uma ferramenta de vigilância |
 
 
-### Análise C03 — ActivTrak 
+### Análise C03 — Worklytics
 
 **Autor(a):** Guilherme Matias — 22.122.071-8  
 **Tipo:** direto <br>
@@ -219,12 +219,12 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 | Critério | C01 | C02 | C03 | Oportunidade para o projeto |
 |---|---|---|---|---|
-| Navegação | Areas e visoes por papel; exploracao profunda |  |  |  |
-| Feedback/estado | Periodo, filtros, legenda e visualizacao atual |  |  |  |
-| Prevenção/recuperação de erro | Agregacao e controles de privacidade; complexidade pode gerar erro analitico |  |  |  |
-| Terminologia | Tecnica: ONA, insularidade, colaboracao |  |  |  |
-| Acessibilidade | Nao auditada; grafo depende de cor e densidade |  |  |  |
-| Eficiência | Comparacao lado a lado reduz etapas |  |  |  |
+| Navegação | Areas e visoes por papel; exploracao profunda | Abas separadas por categoria, aplicativo e produtividade | Dashboards com filtros e diferentes métricas |  |
+| Feedback/estado | Periodo, filtros, legenda e visualizacao atual | Indicadores, rankings e variação percentual | Métricas, benchmarks e comparações entre períodos |  |
+| Prevenção/recuperação de erro | Agregacao e controles de privacidade; complexidade pode gerar erro analitico | Grande quantidade de indicadores pode dificultar a interpretação | Muitos dados e filtros podem gerar sobrecarga |  |
+| Terminologia | Tecnica: ONA, insularidade, colaboracao | Termos como Productivity Score e Burnout Risk | Termos relacionados a colaboração, métricas e benchmarks |  |
+| Acessibilidade | Nao auditada; grafo depende de cor e densidade | Diversos gráficos podem dificultar comparação direta | Grande quantidade de métricas pode aumentar a carga visual |  |
+| Eficiência | Comparacao lado a lado reduz etapas | Dashboard apresenta resumo de vários indicadores | Filtros e benchmarks facilitam exploração |  |
 
 ## 5. Recomendações derivadas
 
