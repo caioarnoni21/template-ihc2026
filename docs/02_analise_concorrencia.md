@@ -90,7 +90,7 @@ A pagina oficial apresentava o Viva Insights por **US$ 4 por usuario/mes**, com 
 | Limitacao: dependencia do ecossistema Microsoft | Licenciamento e fontes de dados | Manter o WorkSense independente de um unico fornecedor |
 
 
-### Análise C02 — ActivTrak 
+### Análise C02 — Worklytics
 
 **Autor(a):** Guilherme Matias — 22.122.071-8  
 **Tipo:** direto <br>
@@ -137,6 +137,59 @@ A página oficial apresenta os planos Essentials por US$ 10 por usuário/mês, E
 | Limitação: comparação de categorias pouco intuitiva | Gráfico de rosca com várias categorias próximas | Utilizar gráficos mais adequados para comparação direta entre categorias |
 | Limitação: pouca contextualização dos desvios | Alterações são apresentadas principalmente por valores e percentuais | Relacionar o desvio identificado às tarefas ou atividades que podem ter contribuído para sua ocorrência |
 | Limitação: foco no monitoramento de atividades | Dados de aplicativos e sites são o principal elemento analisado | Priorizar a análise de tarefas e desvios no WorkSense, evitando transformar o sistema em uma ferramenta de vigilância |
+
+
+### Análise C03 — ActivTrak 
+
+**Autor(a):** Guilherme Matias — 22.122.071-8  
+**Tipo:** direto <br>
+**Link oficial:** https://www.worklytics.co/workplace-insights-dashboard <br>
+**Data de acesso:** 08/09/2026
+
+#### Contexto e proposta
+
+O Worklytics é uma plataforma de workplace analytics voltada à análise de como o trabalho acontece dentro das organizações. A plataforma coleta dados de ferramentas corporativas utilizadas pelas equipes, como Google Workspace, Microsoft 365, Slack, Zoom e GitHub, e transforma esses dados em métricas sobre colaboração, reuniões, comunicação, foco, carga de trabalho e outros aspectos da experiência profissional.
+
+#### Funcionalidades relevantes
+
+| Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
+|---|---|---|---|
+Análise de reuniões| Analisa dados de calendário para identificar tempo gasto em reuniões, frequência, duração, sobrecarga e indicadores de efetividade das reuniões.| <img width="1438" height="749" alt="image" src="https://github.com/user-attachments/assets/2f1d2130-16ff-4411-b517-f1d281ec2451" />|A informação transforma uma grande quantidade de eventos de calendário em indicadores mais fáceis de interpretar, permitindo identificar rapidamente possíveis problemas relacionados ao excesso ou à baixa efetividade de reuniões.
+
+#### Experiência do usuário e opiniões
+
+A experiência do Worklytics é bastante orientada a dashboards analíticos, nos quais o usuário pode explorar métricas, aplicar filtros e comparar diferentes grupos ou períodos. O novo Workplace Insights Dashboard foi desenvolvido justamente para transformar dados provenientes de calendário, e-mail, Slack, documentos, código e outras fontes em visualizações que permitam responder perguntas sobre como as equipes estão trabalhando.
+
+#### Preço/modelo de negócio
+
+O plano Free é gratuito e permite até 100 usuários, utilizando apenas dados de calendário, com histórico de 30 dias e acesso a indicadores básicos de reuniões, foco e colaboração.
+O plano Business começa em US$ 2.500 por mês, inclui até 200 usuários e permite adicionar integrações, visibilidade organizacional, indicadores de adoção de IA, histórico de até três meses, benchmarks básicos e mais de 200 métricas pré-configuradas de colaboração. Usuários adicionais custam US$ 10 por usuário/mês.
+
+#### Padrões e tendências percebidos
+
+* Dashboards orientados à análise organizacional, em vez de monitoramento individual;
+* Integração de múltiplas fontes de dados, como Google Workspace, Microsoft 365, Slack, Zoom e GitHub;
+* Comparação entre equipes e períodos, permitindo identificar mudanças nos padrões de trabalho;
+* Métricas agregadas de colaboração, reuniões, foco e jornada;
+* Network Graphs, utilizados para representar relações de colaboração entre pessoas e equipes;
+* Benchmarks, utilizados para contextualizar os indicadores;
+* Filtros por grupos, funções, gestores e outros atributos, permitindo aprofundar a análise;
+* Identificação de sinais relacionados a burnout e sobrecarga, sem realizar diagnóstico individual;
+* Análise de adoção de IA, acompanhando como as equipes estão incorporando ferramentas de IA;
+* Privacidade incorporada ao modelo, com anonimização, pseudonimização e agregação dos dados;
+* Ausência de análise do conteúdo das comunicações, utilizando metadados sobre a atividade de trabalho.
+
+#### Pontos positivos, limitações e lições
+
+| Ponto | Evidência | Implicação para nosso projeto |
+|---|---|---|
+| Positivo: análise de padrões de trabalho | Métricas de colaboração, foco e reuniões           | Analisar padrões relacionados às tarefas e não apenas atividades isoladas        |
+| Positivo: comparação entre períodos      | Comparação de métricas e benchmarks                | Comparar o comportamento atual com períodos anteriores para identificar desvios  |
+| Positivo: privacidade incorporada        | Dados agregados e análise por grupos               | Priorizar a privacidade e evitar monitoramento individual excessivo              |
+| Positivo: múltiplas fontes de dados      | Integração com ferramentas de trabalho             | Futuramente, integrar diferentes fontes para enriquecer a análise                |
+| Limitação: grande quantidade de métricas | Mais de 200 métricas e diversos filtros            | Priorizar poucos indicadores na visão inicial e permitir aprofundamento          |
+| Limitação: foco organizacional           | Análise de colaboração e comportamento das equipes | Manter o WorkSense focado em tarefas e desvios, evitando ampliar demais o escopo |
+| Limitação: dependência de integrações    | Dados provenientes de diversas ferramentas         | Começar com as fontes essenciais para reduzir a complexidade                     |
 
 > Repita a subseção para C02, C03... até atender à quantidade da equipe.
 
