@@ -191,7 +191,55 @@ O plano Business começa em US$ 2.500 por mês, inclui até 200 usuários e perm
 | Limitação: foco organizacional           | Análise de colaboração e comportamento das equipes | Manter o WorkSense focado em tarefas e desvios, evitando ampliar demais o escopo |
 | Limitação: dependência de integrações    | Dados provenientes de diversas ferramentas         | Começar com as fontes essenciais para reduzir a complexidade                     |
 
-> Repita a subseção para C02, C03... até atender à quantidade da equipe.
+### Análise C04 — Workday Peakon Employee Voice
+
+**Autor(a):** Tainá Cunha — 22.119.025-9  
+**Tipo:** direto 
+**Link oficial:** (https://www.workday.com/en-us/products/employee-voice/overview.html)
+**Data de acesso:** 09/09/2026
+
+#### Contexto e proposta
+
+O Workday Peakon Employee Voice é uma plataforma de escuta de funcionários voltada à coleta e análise contínua de feedback. A ferramenta utiliza pesquisas, dashboards e recursos de inteligência artificial para acompanhar indicadores relacionados a engajamento, sentimento, bem-estar e outros aspectos da experiência dos funcionários. Os resultados são apresentados aos gestores por meio de scores, comparações, áreas prioritárias e recomendações que auxiliam na identificação de pontos que podem exigir atenção.
+A plataforma também utiliza Processamento de Linguagem Natural para analisar comentários dos funcionários. O recurso AI Topics agrupa comentários semanticamente semelhantes, gera resumos dos principais assuntos e associa informações como sentimento, volume de comentários e segmentos mais relacionados ao tema.
+
+#### Funcionalidades relevantes
+
+| Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
+|---|---|---|---|
+| Dashboard de engajamento e acompanhamento temporal [4.1] | O dashboard reúne o score de engajamento, comparação com benchmarks, evolução do score ao longo do tempo, participação nas pesquisas e os principais fatores associados aos resultados. Também destaca áreas consideradas prioridades ou pontos fortes para facilitar o direcionamento da análise pelo gestor. |   <img width="837" height="522" alt="image" src="https://github.com/user-attachments/assets/7a6d7a36-0d3d-4009-a0b3-10941d290eb1" /> | A interface apresenta primeiro um score geral e permite aprofundar a análise pelos indicadores que contribuíram para o resultado. A tendência temporal e a comparação com uma referência ajudam o gestor a interpretar o valor dentro de um contexto. Por outro lado, a presença simultânea de scores, benchmarks, percentuais e indicadores visuais pode induzir interpretações simplificadas caso o significado de cada elemento não esteja claro. |
+
+#### Experiência do usuário e opiniões
+
+Na página do Capterra, o Workday Peakon Employee Voice possui nota 4,7/5 em 64 avaliações, com 4,7/5 em facilidade de uso e 4,8/5 em atendimento ao cliente. Entre os pontos positivos relatados está a facilidade para dividir os resultados por áreas, funções, características organizacionais e drivers, além de acompanhar como os resultados mudam ao longo do tempo. Também há avaliações que apontam limitações nas funcionalidades de planejamento e acompanhamento das ações criadas a partir dos resultados. [4.2]
+
+#### Preço/modelo de negócio
+
+O Workday não apresenta uma tabela pública de preços para o Peakon Employee Voice na página oficial. A contratação segue um modelo comercial voltado a organizações, com solicitação de demonstração e contato com a equipe de vendas para definição da proposta.
+
+#### Padrões e tendências percebidos
+
+- dashboard com score principal e detalhamento progressivo dos fatores relacionados ao resultado;
+- comparação dos resultados com benchmarks internos e externos;
+- acompanhamento da evolução dos scores ao longo do tempo;
+- identificação de áreas prioritárias e pontos fortes;
+- segmentação dos resultados por equipes e outros atributos organizacionais;
+- uso de mapas de calor para comparar grupos e períodos;
+- análise de comentários por PLN, com agrupamento de tópicos e identificação de sentimento [4.3];
+- recomendações e planos de ação associados aos resultados;
+- controle de visibilidade e uso de limites mínimos de respostas para preservar a confidencialidade dos funcionários.
+
+#### Pontos positivos, limitações e lições
+
+| Ponto | Evidência | Implicação para nosso projeto |
+|---|---|---|
+| Positivo: comparação temporal explícita | Score over time e comparação entre rodadas | Apresentar de forma clara a diferença entre o baseline e o período de reanálise |
+| Positivo: detalhamento dos fatores do score | Pontos destacados e áreas prioritárias | Mostrar quais componentes contribuíram para uma alteração no score, evitando apresentar apenas o valor final |
+| Positivo: contextualização dos valores | Benchmarks internos e externos | Apresentar o score junto de uma referência que ajude o gestor a interpretar a alteração |
+| Positivo: análise de comentários por IA | AI Topics agrupa comentários e apresenta sentimento, volume e temas | Contextualizar os indicadores comunicacionais apresentados ao gestor em forma de texto |
+| Limitação: dependência de pesquisas e participação | Os indicadores são construídos principalmente a partir das respostas e comentários dos funcionários | O WorkSense pode utilizar registros comunicacionais e profissionais já produzidos durante a rotina de trabalho, reduzindo/eliminando a dependência de pesquisas periódicas |
+| Limitação: grande quantidade de informações | Dashboard reúne scores, benchmarks, tendências, participação e drivers (pontos destacados) | Priorizar no WorkSense uma visão inicial simples e permitir aprofundamento conforme a necessidade |
+| Limitação: scores e cores podem favorecer interpretação classificatória | Dashboard e heat maps utilizam valores e cores para destacar diferenças | Apresentar as alterações como sinalizações para investigação, com contexto e explicação dos indicadores, evitando representar o colaborador como simplesmente “bom” ou “ruim” |
 
 ## 3. Softwares que o público-alvo usa no cotidiano
 
@@ -207,35 +255,43 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 | Padrão observado | Produto(s) | Para qual tarefa serve | Vantagem percebida | Risco/limitação | Aplicável ao nosso escopo? |
 |---|---|---|---|---|---|
-| dashboard | {{...}} | {{...}} | {{...}} | {{...}} | sim/não/talvez |
-| relatório | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| histórico + filtros | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| administração/CRUD | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| comparação de resultados | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
+| dashboard | Todos | Acompanhar indicadores e obter uma visão geral dos dados antes de aprofundar a análise | Permite identificar rapidamente informações relevantes e concentrar diferentes indicadores em uma mesma visão | A concentração de muitos indicadores pode aumentar a carga visual e dificultar a interpretação | Sim |
+| relatório | Todos, exceto C03 | Consultar resultados consolidados e informações mais detalhadas sobre os indicadores analisados | Facilita o aprofundamento e o compartilhamento dos resultados | Relatórios extensos podem dificultar a identificação rápida das informações que merecem atenção | Sim |
+| histórico + filtros | Todos, exceto C02 | Explorar resultados por período, grupo ou outros atributos e acompanhar sua evolução ao longo do tempo | Permite investigar alterações e visualizar os dados dentro de um contexto específico | Muitos filtros e possibilidades de segmentação podem tornar a exploração mais complexa | Sim |
+| administração/CRUD | C04 | Cadastrar e gerenciar usuários, grupos, atributos e permissões de acesso ao sistema | Permite controlar quem pode acessar e administrar diferentes dados e funcionalidades | O excesso de opções administrativas pode aumentar a complexidade da interface e exige cuidado com permissões de acesso a dados sensíveis | Sim |
+| comparação de resultados | Todos | Comparar períodos, grupos, benchmarks ou valores de referência para identificar alterações | Facilita a percepção de mudanças e reduz a necessidade de o gestor comparar informações de telas diferentes mentalmente | Comparações sem contexto podem levar a interpretações simplificadas ou classificatórias dos resultados | Sim |
 
 > O objetivo não é concluir “todo concorrente tem dashboard, então teremos um”. O padrão só será adotado se apoiar uma tarefa rastreável.
 
 ## 4. Síntese comparativa da equipe
 
-| Critério | C01 | C02 | C03 | Oportunidade para o projeto |
-|---|---|---|---|---|
-| Navegação | Areas e visoes por papel; exploracao profunda | Abas separadas por categoria, aplicativo e produtividade | Dashboards com filtros e diferentes métricas |  |
-| Feedback/estado | Periodo, filtros, legenda e visualizacao atual | Indicadores, rankings e variação percentual | Métricas, benchmarks e comparações entre períodos |  |
-| Prevenção/recuperação de erro | Agregacao e controles de privacidade; complexidade pode gerar erro analitico | Grande quantidade de indicadores pode dificultar a interpretação | Muitos dados e filtros podem gerar sobrecarga |  |
-| Terminologia | Tecnica: ONA, insularidade, colaboracao | Termos como Productivity Score e Burnout Risk | Termos relacionados a colaboração, métricas e benchmarks |  |
-| Acessibilidade | Nao auditada; grafo depende de cor e densidade | Diversos gráficos podem dificultar comparação direta | Grande quantidade de métricas pode aumentar a carga visual |  |
-| Eficiência | Comparacao lado a lado reduz etapas | Dashboard apresenta resumo de vários indicadores | Filtros e benchmarks facilitam exploração |  |
+| Critério | C01 | C02 | C03 | C04 | Oportunidade para o projeto |
+|---|---|---|---|---|---|
+| Navegação | Areas e visoes por papel; exploracao profunda | Abas separadas por categoria, aplicativo e produtividade | Dashboards com filtros e diferentes métricas | Dashboards e áreas de análise | Organizar a interface por níveis de detalhe, começando com uma visão geral dos perfis e permitindo aprofundar a análise de scores, componentes e períodos quando necessário |
+| Feedback/estado | Período, filtros, legenda e visualizacao atual | Indicadores, rankings e variação percentual | Métricas, benchmarks e comparações entre períodos | Score, benchmark, tendência e participação | Exibir claramente o período analisado, o baseline de referência, a variação dos scores e quais componentes contribuíram para cada sinalização |
+| Prevenção/recuperação de erro | Agregacao e controles de privacidade; complexidade pode gerar erro analitico | Grande quantidade de indicadores pode dificultar a interpretação | Muitos dados e filtros podem gerar sobrecarga | Limites mínimos de respostas | Evitar interpretações equivocadas por meio de explicações dos indicadores, contexto das sinalizações e avisos quando houver dados insuficientes para uma análise confiável |
+| Terminologia | Técnica: ONA, insularidade, colaboracao | Termos como Productivity Score e Burnout Risk | Termos relacionados a colaboração, métricas e benchmarks | Termos como engagement score, drivers, benchmark e topics | Utilizar termos simples e próximos da linguagem do gestor, explicando conceitos técnicos como baseline, score e variação sempre que necessário |
+| Acessibilidade | Não auditada; grafo depende de cor e densidade | Diversos gráficos podem dificultar comparação direta | Grande quantidade de métricas pode aumentar a carga visual | Atenção à dependência de cores nos heat maps | Evitar depender somente de cores para representar alterações, utilizando também textos, valores, ícones ou outros elementos visuais para indicar o significado dos dados |
+| Eficiência | Comparação lado a lado reduz etapas | Dashboard apresenta resumo de vários indicadores | Filtros e benchmarks facilitam exploração | Destaque automático de prioridades e mudanças mais relevantes | Destacar primeiro os perfis e indicadores com alterações mais relevantes, reduzindo o esforço do gestor para identificar quais situações merecem análise mais detalhada |
 
 ## 5. Recomendações derivadas
 
 Liste recomendações com origem explícita.
 
-- **RC01:** {{recomendação}} — derivada de {{C01/C02/evidência}}.
-- **RC02:** {{...}}
+- **RC01:** Apresentar a comparação entre o baseline e o período atual de forma visual e direta, destacando a variação ocorrida — derivada de C04, que apresenta a evolução dos scores ao longo do tempo e comparações entre períodos.
+- **RC02:** Exibir junto ao score os indicadores que mais contribuíram para sua alteração, permitindo que o gestor entenda a origem da sinalização — derivada de C04, que detalha os drivers relacionados aos resultados apresentados.
+- **RC03:** Destacar na visão inicial as alterações que mais merecem atenção e permitir o aprofundamento dos dados quando necessário — derivada de C04, que utiliza áreas prioritárias e detalhamento progressivo dos resultados.
+- **RC04:** Evitar que cores sejam o único recurso para indicar melhora, piora ou variação, apresentando também valores e informações textuais — derivada de C04, cujo dashboard e mapas de calor utilizam cores para representar diferenças entre resultados.
 
 ## Referências
 
 {{fontes dos produtos, avaliações e literatura}}
+
+| ID | Concorrente | Link|
+|---|---|---|
+| 4.1 | C04 | https://forms.workday.com/en-us/quick-demos/workday-peakon-employee-voice/form.html | 
+| 4.2 | C04 | https://www.capterra.com/p/151069/Peakon/reviews/ |
+| 4.3 | C04 | https://doc.workday.com/peakon/en-us/workday-peakon-employee-voice/insights/topics/concept--ai-topics.html |
 
 ## Checklist
 
