@@ -247,7 +247,9 @@ Analise interfaces que moldam a expectativa do público, mesmo que não sejam co
 
 | Software | Por que o público usa | Padrões relevantes | Prints | O que aprender |
 |---|---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{link local}} | {{...}} |
+| Trello | Fonte de dados de tarefas e representacao Kanban do TCC | quadro, listas, cartoes, responsaveis, etiquetas, prazo, filtros, tabela, calendario e dashboard | [Trello Views](https://trello.com/en/views) | Manter correspondencia entre indicador profissional e objetos conhecidos, como tarefa, prazo e estado |
+| Telegram | Fonte de mensagens, audios e comandos do experimento | conversa cronologica, remetente, resposta, status de envio, grupo, bot e comandos | [Telegram Bot Platform](https://core.telegram.org/bots) | Usar linguagem conversacional apenas para tarefas simples e fornecer feedback imediato de processamento |
+
 
 ## 3.1 Padrões de interface relevantes ao escopo de IHC
 
@@ -282,13 +284,33 @@ Liste recomendações com origem explícita.
 - **RC02:** Exibir junto ao score os indicadores que mais contribuíram para sua alteração, permitindo que o gestor entenda a origem da sinalização — derivada de C04, que detalha os drivers relacionados aos resultados apresentados.
 - **RC03:** Destacar na visão inicial as alterações que mais merecem atenção e permitir o aprofundamento dos dados quando necessário — derivada de C04, que utiliza áreas prioritárias e detalhamento progressivo dos resultados.
 - **RC04:** Evitar que cores sejam o único recurso para indicar melhora, piora ou variação, apresentando também valores e informações textuais — derivada de C04, cujo dashboard e mapas de calor utilizam cores para representar diferenças entre resultados.
+- **RC05:** mostrar baseline e periodo recente lado a lado, com datas explicitas - derivada de C01 e C03; relacionada a A01 e A02.
+- **RC06:** separar score comunicacional e score profissional e permitir ver seus componentes - derivada de C04 e do requisito tecnico do TCC; relacionada a H05.
+- **RC07:** apresentar definicao, fonte, periodo, cobertura e limitacao junto de cada indicador - derivada de C02; relacionada a A03 e H05.
+- **RC08:** limitar a visao inicial aos indicadores necessarios para decidir se vale investigar - derivada da densidade observada em C01-C03; relacionada a H06.
+- **RC09:** oferecer aprofundamento progressivo por sinalizacao, preservando filtros e contexto - derivada de C01, C03 e C04; relacionada a A02.
+- **RC10:** distinguir visual e textualmente estabilidade, dados ausentes, dados insuficientes, processamento em andamento e erro - derivada da comparacao dos estados de C01-C03; relacionada a H07.
+- **RC11:** evitar rotulos como "produtivo", "improdutivo", "saudavel" ou "em risco" sem contexto - derivada das limitacoes de C03 e C04; relacionada a prevencao de dano.
+- **RC12:** nao usar somente cor para representar aumento, reducao, prioridade ou alerta - derivada das telas de C01, C03 e C04; relacionada a acessibilidade.
+- **RC13:** aplicar minimizacao, agregacao, limite de grupo, papeis de acesso e registro de consulta - derivada de C01, C02 e C04; relacionada a H02-H04.
+- **RC14:** permitir que o gestor registre contexto, decisao e acompanhamento sem receber diagnostico ou punicao automatica - derivada de C04 e do escopo do TCC; relacionada a A04.
+- **RC15:** oferecer mecanismo posterior de incluir voz/contexto do colaborador - derivada do contraste entre C01-C03 e C04; relacionada a H02.
 
 ## Referências
 
-{{fontes dos produtos, avaliações e literatura}}
-
 | ID | Concorrente | Link|
 |---|---|---|
+| 1.1 | CO1 | https://learn.microsoft.com/en-us/viva/insights/introduction |
+| 1.2 | CO1 | https://learn.microsoft.com/en-us/viva/insights/advanced/analyst/network-collaboration-insights |
+| 1.3 | CO1 | https://adoption.microsoft.com/files/viva/insights/Microsoft-Viva-Insights_Measuring-change.pdf |
+| 2.1 | C02 | https://support.activtrak.com/hc/en-us/articles/18821721976475-Organization-Overview |
+| 2.2 | C02 | https://www.activtrak.com/pricing/ |
+| 2.3 | C02 | https://support.activtrak.com/hc/en-us/articles/360050977352-What-Data-Does-ActivTrak-Collect |
+| 2.4 | C02 | https://www.capterra.com/p/135366/ActivTrak/reviews/ |
+| 3.1 | C03 | https://www.worklytics.co/workplace-insights-dashboard
+| 3.2 | C03 | https://www.worklytics.co/pricing |
+| 3.3 | C03 | https://www.worklytics.co/how-it-works |
+| 3.4 | C03 | https://www.g2.com/sellers/worklytics |
 | 4.1 | C04 | https://forms.workday.com/en-us/quick-demos/workday-peakon-employee-voice/form.html | 
 | 4.2 | C04 | https://www.capterra.com/p/151069/Peakon/reviews/ |
 | 4.3 | C04 | https://doc.workday.com/peakon/en-us/workday-peakon-employee-voice/insights/topics/concept--ai-topics.html |
