@@ -28,16 +28,23 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 | Item da Entrega 1 | Status inicial | Evidência disponível agora | Como será tratado nesta entrega |
 |---|---|---|---|
-| {{usuário/objetivo/característica/H01...}} | F / H / ? | {{...}} | incorporar / manter como hipótese / descartar / investigar |
+| H01 - Gestor como usuário prioritário | H | A Entrega 1 propõe acompanhamento gerencial; o foco no gestor foi mantido pela equipe | Incorporar em P01, preservando a necessidade de pesquisa com gestores |
+| H02 - Transparência e participação dos colaboradores | H | O PDF descreve expectativas fictícias de interpretação cautelosa; não há pesquisa com colaboradores reais | Incorporar em P03 como hipótese, incluindo explicação do uso dos dados e contextualização |
+| H03 - RH como apoio e governança | H | As entregas anteriores mencionam esse papel, sem comprovar frequência de uso | Manter H03; propor P02 como segunda primária e registrar H09 sobre uso recorrente |
+| H04 - Administração técnica distinta da gestão | H | Separação de responsabilidades proposta na Entrega 1 | Não criar uma quarta persona; manter integrações e permissões técnicas fora das jornadas principais |
+| H05 - Eixos separados, componentes e limitações | H | O desenho experimental separa os eixos; o benefício de interface não foi testado | Apresentar comparações explicáveis em P01 e P02; testar compreensão |
+| H06 - Revisão periódica como entrada principal | H | Não há levantamento real da rotina | Propor revisão periódica em P01 e P02, sem afirmar que a frequência foi validada |
+| H07 - Distinguir estabilidade e problemas de dados | H | Os perfis sintéticos permitem exercitar estabilidade e mudanças, mas não cobrem todos os erros | Incluir estados de ausência, incompletude e baixa evidência nas futuras tarefas |
+| H08 - Computador como dispositivo principal | H | Nenhuma pesquisa contextual fornecida | Usar computador como hipótese de P01/P02 e acesso responsivo em P03 |
 
 ## 1. Personas
 
-### Persona P01 — {{nome fictício}}
+### Persona P01 — Rafael Costa
 
 **Autor(a):** {{Guilherme Matias — 22.122.071-8}}  
 **Tipo:** primária
 **Base de evidências:**  proto-persona a validar
-**Hipóteses da Entrega 1 relacionadas:** {{H01, H02 ou —}}
+**Hipóteses da Entrega 1 relacionadas:** H01, H04, H05, H06, H07 e H08.
 
 ![Persona P01](../assets/03_personas/persona_p01.svg)
 
