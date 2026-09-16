@@ -41,7 +41,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 ### Persona P01 — Rafael Costa
 
-**Autor(a):** {{Guilherme Matias — 22.122.071-8}}  
+**Autor(a):** Caio Arnoni - 22.221.019-7  
 **Tipo:** primária
 **Base de evidências:**  proto-persona a validar
 **Hipóteses da Entrega 1 relacionadas:** H01, H04, H05, H06, H07 e H08.
@@ -50,21 +50,25 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 | Campo | Descrição |
 |---|---|
-| Faixa etária / contexto relevante | {{somente o que impacta o uso}} |
-| Ocupação/papel | {{...}} |
-| Conhecimento do domínio | {{...}} |
-| Experiência tecnológica | {{...}} |
-| Objetivos | {{...}} |
-| Necessidades | {{...}} |
-| Dores/frustrações | {{...}} |
-| Motivadores | {{...}} |
-| Restrições/acessibilidade | {{...}} |
-| Ambiente típico de uso | {{...}} |
-| Comportamentos relevantes | {{...}} |
+| Faixa etária / contexto relevante | 30 anos. Lidera uma equipe distribuída e concilia acompanhamento de pessoas com entregas de projeto (H). |
+| Ocupação/papel | Gestor responsável por prioridades, acompanhamento de tarefas e conversas de apoio com sua equipe (H). |
+| Conhecimento do domínio | Conhece desenvolvimento e gestão de tarefas; não é especialista em PLN nem em interpretação estatística de modelos (H). |
+| Experiência tecnológica | Usa quadros de tarefas, chat e relatórios; consegue interpretar gráficos simples quando há período, legenda e definição (H). |
+| Objetivos | Identificar situações que merecem conversa, entender o que mudou e combinar ações de apoio sem julgar alguém apenas por um indicador (H). |
+| Necessidades | Comparar períodos da mesma pessoa; separar comunicação e atividade profissional; verificar cobertura e atualização; recuperar o contexto de acompanhamentos anteriores (H). |
+| Dores/frustrações | Informações dispersas entre tarefas e conversas; dificuldade para distinguir mudança persistente de episódio pontual; receio de interpretar sinais fora de contexto (H). |
+| Motivadores | Ajudar a equipe, organizar o trabalho e ter elementos compreensíveis para decisões responsáveis (H). |
+| Restrições/acessibilidade | Pode ser interrompido durante a análise (H). |
+| Ambiente típico de uso | Notebook no escritório ou em trabalho remoto; revisão periódica e consulta antes de uma conversa individual, em ambiente que preserve a confidencialidade (H). |
+| Comportamentos relevantes | Primeiro observa uma visão geral; depois investiga a mudança, consulta o contexto e conversa com a pessoa antes de decidir (H). |
 
 **Decisões de design influenciadas por P01:**
 
-- {{...}}
+- Mostrar referência de 30 dias e reanálise de 15 dias com datas explícitas e comparação do próprio histórico, sem ranking entre colaboradores.
+- Separar os dois eixos e permitir consultar componentes, fontes e limitações com detalhamento progressivo.
+- Distinguir “sem alteração relevante”, “sem dados”, “análise incompleta” e “evidência insuficiente”.
+- Oferecer registro restrito de contexto, decisão humana e próximo acompanhamento, como proposta do protótipo.
+- Evitar alertas conclusivos e notificações repetitivas; preservar filtros e posição quando houver interrupção.
 
 ### Persona P02 — {{nome fictício}}
 
