@@ -146,8 +146,8 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 
 ### 4.1. Jornada J01 - Rafael Costa (P01, primária)
 
-**Persona:** Rafael Costa  
-**Objetivo da jornada:** compreender uma mudança e decidir um acompanhamento responsável. 
+**Persona:** Rafael Costa   <br>
+**Objetivo da jornada:** compreender uma mudança e decidir um acompanhamento responsável.  <br>
 **Início e fim da jornada:** começa na necessidade de revisar o andamento da equipe e termina na revisão do próximo passo combinado.
 
 | Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
@@ -159,8 +159,8 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 
 ### 4.2. Jornada J02 - João Pedro (P02, primária)
 
-**Persona:** João Pedro
-**Objetivo da jornada:** obter uma resposta simples e confiável sobre se há necessidade de atenção com alguém da equipe, e decidir com segurança se e como agir.
+**Persona:** João Pedro <br>
+**Objetivo da jornada:** obter uma resposta simples e confiável sobre se há necessidade de atenção com alguém da equipe, e decidir com segurança se e como agir. <br> 
 **Início e fim da jornada:** começa numa consulta rápida antes de uma decisão pontual (ex: antes de uma reunião ou conversa individual) e termina no registro simples da decisão tomada.
 
 | Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
