@@ -115,21 +115,25 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 
 ## 3. Contexto de uso — consolidação
 
+### 3.1. Contexto CT01 - Rafael Costa (P01, primária)
+
 | Dimensão | Descrição | Implicação de design |
 |---|---|---|
-| Usuários | {{...}} | {{...}} |
-| Tarefas | {{...}} | {{...}} |
-| Equipamentos | {{...}} | {{...}} |
-| Ambiente físico | {{...}} | {{...}} |
-| Ambiente social/organizacional | {{...}} | {{...}} |
-| Papéis/permissões/governança | {{...}} | {{...}} |
-| Volume de dados/histórico | {{...}} | {{...}} |
+| Usuários | Gestor autorizado da própria equipe; não especialista em modelos de linguagem (H) | Linguagem de trabalho, definições acessíveis e escopo de equipe explícito |
+| Tarefas | Revisar sinais, verificar dados, investigar diferenças, buscar contexto e decidir acompanhamento (H) | Fluxo de visão geral para detalhes e registro restrito de próximos passos |
+| Equipamentos | Notebook ou computador; celular apenas como acesso secundário hipotético (H08) | Priorizar legibilidade no desktop sem inviabilizar leitura responsiva |
+| Ambiente físico | Escritório ou trabalho remoto, com interrupções e necessidade de privacidade (H) | Preservar filtros e progresso; não expor detalhes em notificações |
+| Ambiente social/organizacional | Relação hierárquica com os colaboradores; necessidade de escuta antes de agir (H) | Rótulos neutros e incentivo à contextualização; nenhuma decisão automática |
+| Papéis/permissões/governança | Acesso apenas ao escopo e ao nível de detalhe autorizados; configuração técnica separada (P/H04) | Restringir detalhes, informar o escopo e registrar acessos; não pressupor acesso a mensagens brutas |
+| Volume de dados/histórico | Referência de 30 dias e reanálise de 15 dias no experimento; número real de pessoas e eventos desconhecido (H) | Exibir datas, cobertura e atualização; não apresentar ausência de dados como estabilidade |
 
 ## 4. Jornada do usuário — equipe
 
-**Persona:** {{P01}}  
-**Objetivo da jornada:** {{...}}  
-**Início e fim da jornada:** {{...}}
+### 4.1. Jornada J01 - Rafael Costa (P01, primária)
+
+**Persona:** Rafael Costa  
+**Objetivo da jornada:** compreender uma mudança e decidir um acompanhamento responsável. 
+**Início e fim da jornada:** começa na necessidade de revisar o andamento da equipe e termina na revisão do próximo passo combinado.
 
 | Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
 |---|---|---|---|---|---|---|
