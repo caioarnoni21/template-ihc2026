@@ -43,7 +43,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 **Autor(a):** Caio Arnoni - 22.221.019-7  
 **Tipo:** primária
-**Base de evidências:**  proto-persona a validar
+**Base de evidências:**  proto-persona a validar <br>
 **Hipóteses da Entrega 1 relacionadas:** H01, H04, H05, H06, H07 e H08.
 
 ![Persona P01](../assets/03_personas/persona_p01.svg)
@@ -73,29 +73,32 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 ### Persona P02 — {{nome fictício}}
 
 **Autor(a):** {{Guilherme Matias — 22.122.071-8}}  
-**Tipo:** primária / secundária  
-**Base de evidências:** entrevista / questionário / literatura / observação / proto-persona a validar / combinação  
+**Tipo:** primária  
+**Base de evidências:** proto-persona a validar  <br>
 **Hipóteses da Entrega 1 relacionadas:** {{H01, H02 ou —}}
 
 ![Persona P01](../assets/03_personas/persona_p01.svg)
 
 | Campo | Descrição |
 |---|---|
-| Faixa etária / contexto relevante | {{somente o que impacta o uso}} |
-| Ocupação/papel | {{...}} |
-| Conhecimento do domínio | {{...}} |
-| Experiência tecnológica | {{...}} |
-| Objetivos | {{...}} |
-| Necessidades | {{...}} |
-| Dores/frustrações | {{...}} |
-| Motivadores | {{...}} |
-| Restrições/acessibilidade | {{...}} |
-| Ambiente típico de uso | {{...}} |
-| Comportamentos relevantes | {{...}} |
+| Faixa etária / contexto relevante | 42 anos. Lidera uma equipe grande e majoritariamente presencial/híbrida de atendimento ao cliente, com alta rotatividade de tarefas (H). |
+| Ocupação/papel | Gestor de operações, responsável por metas de atendimento, escalas e bem-estar da equipe (H). |
+| Conhecimento do domínio | Forte conhecimento de gestão de pessoas e processos operacionais; pouca familiaridade com métricas de PLN, estatística ou dashboards analíticos (H).|
+| Experiência tecnológica | Usa principalmente planilhas, e-mail e sistemas de chamados; sente-se pouco confortável interpretando gráficos sem explicação em linguagem simples (H). |
+| Objetivos | Identificar sinais de sobrecarga ou desengajamento antes que virem problema; entender se algo mudou sem depender de jargão técnico; agir com segurança jurídica e ética (H). |
+| Necessidades | Explicações em linguagem simples, sem termos técnicos; garantias claras sobre limites e uso adequado do indicador; histórico documentado para justificar decisões (H). |
+| Dores/frustrações | Medo de usar a ferramenta de forma equivocada e prejudicar alguém injustamente; desconfiança de números que não entende plenamente; sobrecarga de informação em relatórios longos (H). |
+| Motivadores | Proteger a equipe de desgaste, evitar decisões injustas, ter respaldo documentado para conversas difíceis (H). |
+| Restrições/acessibilidade | Pouco tempo disponível entre reuniões; prefere leitura rápida e direta, com opção de aprofundar só se necessário (H). |
+| Ambiente típico de uso | Sala compartilhada ou home office; consulta rápida antes de decisões pontuais, muitas vezes sob pressão de tempo (H). |
+| Comportamentos relevantes | Busca primeiro uma resposta simples ("preciso me preocupar ou não?"); só aprofunda em detalhes técnicos se a situação parecer séria; valoriza confirmação humana antes de agir (H). |
 
-**Decisões de design influenciadas por P02:**
+**Decisões de design influenciadas por P01:**
 
-- {{...}}
+- Oferecer um resumo em linguagem simples antes de qualquer detalhamento técnico ou estatístico.
+- Explicitar, de forma acessível, os limites do que o indicador pode e não pode afirmar (evitar leitura como "diagnóstico").
+- Priorizar objetividade e brevidade na primeira camada de informação, com aprofundamento opcional.
+- Reforçar, em qualquer alerta, a necessidade de conversa humana antes de qualquer ação nunca apresentar como veredito automático.
 
 
 > Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
