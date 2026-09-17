@@ -70,7 +70,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 - Oferecer registro restrito de contexto, decisão humana e próximo acompanhamento, como proposta do protótipo.
 - Evitar alertas conclusivos e notificações repetitivas; preservar filtros e posição quando houver interrupção.
 
-### Persona P02 — {{nome fictício}}
+### Persona P02 — {{João Pedro}}
 
 **Autor(a):** {{Guilherme Matias — 22.122.071-8}}  
 **Tipo:** primária  
@@ -130,6 +130,18 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 | Papéis/permissões/governança | Acesso apenas ao escopo e ao nível de detalhe autorizados; configuração técnica separada (P/H04) | Restringir detalhes, informar o escopo e registrar acessos; não pressupor acesso a mensagens brutas |
 | Volume de dados/histórico | Referência de 30 dias e reanálise de 15 dias no experimento; número real de pessoas e eventos desconhecido (H) | Exibir datas, cobertura e atualização; não apresentar ausência de dados como estabilidade |
 
+### 3.2. Contexto CT01 - João Pedro (P02, primária)
+
+| Dimensão | Descrição | Implicação de design |
+|---|---|---|
+| Usuários | Gestor autorizado da própria equipe operacional; pouca familiaridade com métricas de PLN ou estatística (H)| Linguagem simples por padrão, sem jargão técnico; termos explicados na primeira aparição|
+| Tarefas | Consultar rapidamente se "há algo a se preocupar"; só aprofunda em componentes/fontes se a situação parecer relevante; registra decisão e justificativa antes de agir (H) | Resposta simples e objetiva na primeira camada, com aprofundamento técnico totalmente opcional |
+| Equipamentos | Notebook em sala compartilhada ou home office; acesso entre reuniões, com pouco tempo disponível (H) | Priorizar leitura rápida (poucos cliques até a informação essencial); evitar relatórios longos por padrão |
+| Ambiente físico | Ambiente com pressão de tempo e possíveis interrupções; nem sempre em local reservado (H) | Preservar contexto/progresso ao retomar; discrição visual (sem termos sensíveis expostos em tela) |
+| Ambiente social/organizacional | Receio de prejudicar alguém injustamente; busca respaldo documentado para decisões e conversas difíceis (H) | Reforçar, em qualquer indicação, que não é diagnóstico nem veredito automático; exigir confirmação humana antes de qualquer ação |
+| Papéis/permissões/governança | Acesso restrito ao escopo da própria equipe; não deve inferir acesso a conteúdo bruto de mensagens (H) | Explicitar limites do que o indicador pode/não pode afirmar; registrar decisão e justificativa em linguagem natural, sem exigir conhecimento técnico |
+| Volume de dados/histórico | Mesma janela do experimento (30 dias de referência / 15 dias de reanálise); desconhece volume real de eventos por pessoa (H) | Indicar claramente datas e cobertura; diferenciar "sem dados"/"análise incompleta" de "sem alteração relevante", para não gerar falsa sensação de segurança ou de alarme |
+
 ## 4. Jornada do usuário — equipe
 
 ### 4.1. Jornada J01 - Rafael Costa (P01, primária)
@@ -141,6 +153,24 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 | Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
 |---|---|---|---|---|---|---|
 | 1 | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
+
+> A jornada pode incluir etapas **antes, durante e depois** do uso do produto. Não transforme a jornada em lista de telas.
+
+
+### 4.2. Jornada J02 - João Pedro (P02, primária)
+
+**Persona:** João Pedro
+**Objetivo da jornada:** obter uma resposta simples e confiável sobre se há necessidade de atenção com alguém da equipe, e decidir com segurança se e como agir.
+**Início e fim da jornada:** começa numa consulta rápida antes de uma decisão pontual (ex: antes de uma reunião ou conversa individual) e termina no registro simples da decisão tomada.
+
+| Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
+|---|---|---|---|---|---|---|
+| 1 | Abre o painel entre duas reuniões, com pouco tempo disponível | Saber rapidamente se "precisa se preocupar ou não" com alguém da equipe | Pressa; quer uma resposta direta sem rodeios | Falta de tempo para explorar relatórios longos | Resumo em linguagem simples logo na abertura, sem exigir navegação por menus técnicos | H |
+| 2 | Vê um resumo indicando possível mudança em uma pessoa | Entender, em termos simples, o que esse sinal significa | Insegurança: "isso é grave? é sobre o quê?" | Medo de interpretar mal um termo técnico ou estatístico | Explicações em linguagem acessível, sem jargão, explicando o que o indicador é e não é | H |
+| 3 | Decide se quer aprofundar ou não, dependendo da gravidade percebida | Confirmar se vale a pena investigar mais a fundo | Cautela; não quer "abrir uma caixa" sem necessidade | Risco de ignorar algo importante por falta de clareza | Aprofundamento técnico disponível, mas totalmente opcional e não obrigatório para decidir | H |
+| 4 | Ao aprofundar, verifica se há dados suficientes e atualizados | Garantir que a informação é confiável antes de agir | Necessidade de segurança e respaldo | Agir com base em dado incompleto e prejudicar alguém injustamente | Indicação clara de "sem dados", "análise incompleta" ou "evidência insuficiente", nunca omitida | H |
+| 5 | Conversa com a pessoa (fora da ferramenta), já ciente de que o sinal não é diagnóstico | Confirmar humanamente a situação antes de decidir qualquer ação | Empatia; alívio por saber que não precisa agir sozinho com base no dado | Risco de tratar um sinal do sistema como verdade absoluta, sem ouvir a pessoa | Reforço explícito, em qualquer indicação, de que o sinal exige conversa humana antes de qualquer ação — nunca apresentado como veredito automático | H |
+
 
 > A jornada pode incluir etapas **antes, durante e depois** do uso do produto. Não transforme a jornada em lista de telas.
 
