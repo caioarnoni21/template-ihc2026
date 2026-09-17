@@ -109,10 +109,11 @@ Explique diferenças entre os perfis e qual persona é prioritária. Evite perso
 
 ## 2. Mapa de empatia — equipe
 
-**Persona escolhida:** {{P01}}  
-**Justificativa:** {{por que esse perfil é relevante}}
+**Persona escolhida:** Rafael Costa  
+**Justificativa:** representa o fluxo prioritário de interpretação de sinais e acompanhamento da equipe. Todas as afirmações de experiência abaixo são hipóteses.
 
-![Mapa de empatia](../assets/03_personas/mapa_empatia.svg)
+<img width="1055" height="757" alt="image" src="https://github.com/user-attachments/assets/4c7dd098-8258-44ca-9dbd-a2937388699f" />
+
 
 Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos. Diferencie **evidência** de **hipótese**.
 
