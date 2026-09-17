@@ -17,7 +17,7 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 ## Identificação
 
-**Título do projeto de IHC:** {{TÍTULO DO PROJETO}}  
+**Título do projeto de IHC:** GRUPO 25  
 **TCC/projeto de origem:** {{Ferramenta baseada em Inteligência Artificial para Apoio à Identificação de Alterações nos Padrões de Comunicação, Interação e Desempenho em Equipes}}  
 **Orientador(a):** {{Plinio Thomaz Aquino Junior}}  
 **Disciplina:** Interação Humano-Computador  
