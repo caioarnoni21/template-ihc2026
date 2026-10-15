@@ -81,47 +81,61 @@ Os cartões de Maria parecem seguir os prazos combinados. **[NOVO - H; C01.Q5: N
 - **Questão de investigação:** como o gestor diferencia mudança de comunicação, andamento das entregas e contexto não registrado?
 - **Limite:** exemplos isolados não autorizam inferir causa, estado emocional ou desempenho global. As janelas de duas semanas da narrativa são escolhas fictícias de Rafael, não alteração dos períodos experimentais do TCC.
 
-## Cenário C02 — {{título}}
+## Cenário C02 — Preparação de conversa de acompanhamento sob pressão de tempo
 
-**Autor(a):** Guilherme Matias - RA:   
-**Persona(s) relacionada(s):** {{P01}}  
-**Necessidade relacionada:** {{R01}}  
-**Situação concreta da Entrega 1 relacionada:** {{seção 4.4 / H01 / outra ou “nova situação justificada”}}  
-**Hipóteses ainda presentes:** {{H01, H02 ou —}}
+**Autor(a):** Guilherme Matias - 22.122.071-8  
+**Persona(s) relacionada(s):** P02 - João Pedro, protagonista; {{P0X - nome}}, colaboradora envolvida.  
+**Necessidade relacionada:** N02 - reconhecer limites dos dados; N03 - considerar contexto humano; N06 - acompanhar retorno e ação; {{N0X - obter leitura simples antes do detalhe}}.  
+**Situação concreta da Entrega 1 relacionada:** {{seção 4.5, investigação manual de uma mudança; seções correspondentes}}.  
+**Hipóteses ainda presentes:** {{H0X, H0Y}}.
 
 ### 1. Cenário inicial
 
-{{narrativa}}
+Em uma semana de trabalho presencial e híbrido, João Pedro, gestor de operações de uma equipe de atendimento ao cliente, percebe que Camila Duarte, atendente da equipe, tem respondido de forma mais seca nos canais internos e passou a aparecer menos nas conversas informais. Ele precisa decidir se isso merece uma conversa de apoio ou se é só uma fase corrida. Entre duas reuniões, abre a planilha de escalas, o sistema de chamados e o canal de chat da equipe, aos quais já tem acesso. Os chamados de Camila parecem fechados dentro das metas, mas João não consegue saber se houve mudança real ou se está reagindo a poucas mensagens recentes. Como as informações estão em ferramentas separadas, ele não consegue ligá-las com segurança. Termina a consulta sem saber se "precisa se preocupar ou não" e com receio de tratar uma impressão como fato sobre a colaboradora.
 
 ### 2. Questões de refinamento
 
-Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revelar informações **ainda ausentes** do cenário, não repetir o que já foi respondido.
-
 | # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
 |---|---|---|---|
-| Q1 | {{...}} | {{...}} | {{...}} |
+| Q1 | Por que João precisa decidir isso agora, e não na próxima reunião de acompanhamento? | Identificar o gatilho e a consequência de adiar a análise | Entrevista com gestor sobre um episódio recente, sem coletar conteúdo privado |
+| Q2 | Quanto tempo João tem, onde faz a consulta e quais interrupções ocorrem? | Delimitar restrições de execução e de privacidade | Observação contextual consentida ou relato da rotina entre reuniões |
+| Q3 | Que informação sobre a carga e a rotina da equipe não aparece nos registros e depende de outras pessoas? | Identificar conhecimento externo às ferramentas | Entrevistas com gestor, supervisores e atendentes sobre escalas, picos e acordos |
+| Q4 | Como João escolhe o período de comparação e evita depender da memória? | Tornar explícita a estratégia de investigação | Reconstrução de uma tarefa real com materiais autorizados ou fictícios |
+| Q5 | O que João considera sinal de mudança e quais atributos dos registros consegue conferir? | Distinguir impressão, frequência, conteúdo, data e situação do chamado | Entrevista com exemplos fictícios de mensagens, escalas e chamados |
+| Q6 | Conferir as metas de atendimento permite concluir, sozinho, que não há problema (ou que há)? | Impedir que uma fonte substitua a outra | Discussão de casos contrastantes com gestores, sem avaliar colaboradores reais |
+| Q7 | Como João reage se um dado novo contradiz a primeira impressão? | Compreender revisão da interpretação e continuidade da tarefa | Entrevista por incidente crítico, incluindo evidências contraditórias |
+| Q8 | Como João decide que já sabe o suficiente para conversar e como registra e retoma o que foi combinado? | Identificar critério de conclusão e risco de perder o acompanhamento | Relato de acompanhamentos anteriores e análise de registros autorizados |
 
 ### 3. Cenário refinado
 
-Reescreva o cenário incorporando as respostas. Marque o conteúdo novo de forma consistente (por exemplo, `**[NOVO: ...]**`).
+Em uma semana de trabalho presencial e híbrido, João Pedro percebe que as mensagens de Camila Duarte estão mais secas e que ela participa menos das conversas informais. Ele precisa decidir se isso merece uma conversa de apoio. **[NOVO - H; C02.Q1: A reunião individual mensal já está marcada para o dia seguinte. João quer chegar com uma ideia clara do que perguntar, sem uma conclusão fechada e com algo que possa justificar depois, se a conversa for difícil.]** **[NOVO - H; C02.Q2: Ele está em uma sala compartilhada, com quinze minutos entre duas reuniões. Um supervisor o chama para resolver uma escala e ele precisa recomeçar a consulta, sem lembrar onde parou. Há outras pessoas por perto, o que o faz evitar deixar nomes e mensagens abertos na tela.]**
 
-{{narrativa refinada}}
+João abre a planilha de escalas, o sistema de chamados e o canal de chat da equipe. **[NOVO - H; C02.Q3: Ele conhece as metas, mas depende do supervisor para saber que as últimas duas semanas tiveram pico de demanda e troca de turnos, informação que não consta nas ferramentas. Os combinados sobre como a equipe se comunica no chat foram feitos em reunião e não estão registrados.]** **[NOVO - H; C02.Q4: Decide comparar as duas últimas semanas com as duas anteriores e anota o que encontra em um arquivo restrito, sem saber ao certo como relacionar chat, escalas e chamados.]**
+
+Os chamados de Camila parecem fechados dentro das metas. **[NOVO - H; C02.Q5: No chat, João confere datas e lê as mensagens anteriores às respostas secas. Nota trocas mais curtas nos últimos dias, mas não tem uma contagem completa nem sabe se os trechos que leu representam toda a semana.]** **[NOVO - H; C02.Q6: Os chamados dentro da meta informam sobre aquelas entregas, mas não confirmam nem descartam mudança no modo de se comunicar, nem explicam a causa. João percebe que "meta cumprida" não responde à sua pergunta.]**
+
+**[NOVO - H; C02.Q7: Enquanto anota, vê que Camila escreveu uma explicação longa e cuidadosa para um colega de outro turno. Isso contraria sua impressão de respostas sempre secas, e ele corrige a anotação, mas continua sem saber a extensão da mudança.]** Ao alternar entre planilha, chamados, chat e anotações, não consegue chegar a uma resposta simples dentro do tempo disponível.
+
+**[NOVO - H; C02.Q8: João conclui que não deve agir só com o que viu e que precisa ouvir Camila antes de qualquer decisão. Anota duas perguntas abertas para a conversa e combina consigo mesmo registrar, logo depois, o que ouviu e o que ficou combinado; não possui ainda uma explicação confirmada nem uma decisão sobre apoio.]** A preparação termina incompleta: ele sabe que precisa conversar, mas permanece inseguro sobre o peso de poucos exemplos e com receio de perder o que foi combinado se não registrar.
 
 ### 4. Elementos extraídos
 
 | Elemento | Evidência no cenário |
 |---|---|
-| Ator(es) | {{...}} |
-| Objetivo(s) | {{...}} |
-| Contexto | {{...}} |
-| Recursos/informações | {{...}} |
-| Ações | {{...}} |
-| Problemas/rupturas | {{...}} |
-| Consequências | {{...}} |
+| Ator(es) | João investiga; Camila fornece seu contexto; o supervisor conhece picos de demanda e trocas de turno (C02.Q3) |
+| Objetivo(s) | Chegar à conversa de apoio com uma leitura simples da situação e sem avaliação fechada (C02.Q1) |
+| Contexto | Trabalho presencial/híbrido; sala compartilhada; quinze minutos e interrupção entre reuniões (C02.Q2) |
+| Recursos/informações | Planilha de escalas, sistema de chamados, canal de chat, datas, contexto das respostas e arquivo restrito de anotações (C02.Q4-Q5) |
+| Ações | Consultar, ler trechos anteriores, anotar, conferir chamados, corrigir uma anotação e preparar perguntas (C02.Q4-Q8) |
+| Problemas/rupturas | Ferramentas separadas, amostra incompleta, dependência de memória, interrupções e contexto não registrado |
+| Consequências | Preparação incompleta, retrabalho e risco de abordagem injusta; nenhuma decisão punitiva ocorre na narrativa |
 
 ### 5. Implicações para as próximas entregas
 
-Quais tarefas merecem análise? Quais informações precisam ser coletadas? **Não desenhe a solução ainda.**
+- **Tarefa a analisar:** reunir evidências de um período, avaliar se são suficientes, chegar a uma leitura simples e registrar o encaminhamento após a conversa. O foco é a tarefa humana anterior à interpretação de qualquer sinal automatizado.
+- **Informações a coletar:** como gestores com pouca familiaridade com dados decidem se "há algo a observar", o que consideram suficiente para conversar, o tempo real disponível e como registram e retomam acordos.
+- **Questão de investigação:** como o gestor operacional diferencia mudança de comunicação, cumprimento de metas e contexto não registrado, quando tem pouco tempo e pouca familiaridade com métricas?
+- **Limite:** exemplos isolados não autorizam inferir causa, estado emocional ou desempenho global. As janelas de duas semanas da narrativa são escolhas fictícias de João, não alteração dos períodos experimentais do TCC.
 
 ## Cenário C03 — {{título}}
 
