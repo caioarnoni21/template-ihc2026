@@ -72,7 +72,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 ### Persona P02 — {{João Pedro}}
 
-**Autor(a):** {{Guilherme Matias — 22.122.071-8}}  
+**Autor(a):** Guilherme Matias — 22.122.071-8} 
 **Tipo:** primária  
 **Base de evidências:** proto-persona a validar  <br>
 **Hipóteses da Entrega 1 relacionadas:** {{H01, H02 ou —}}
@@ -109,11 +109,18 @@ Explique diferenças entre os perfis e qual persona é prioritária. Evite perso
 
 ## 2. Mapa de empatia — equipe
 
-**Persona escolhida:** Rafael Costa  
-**Justificativa:** representa o fluxo prioritário de interpretação de sinais e acompanhamento da equipe. Todas as afirmações de experiência abaixo são hipóteses.
+### Persona escolhida: Rafael Costa  
+### Justificativa: representa o fluxo prioritário de interpretação de sinais e acompanhamento da equipe. Todas as afirmações de experiência abaixo são hipóteses.
 
-<img width="1055" height="757" alt="image" src="https://github.com/user-attachments/assets/4c7dd098-8258-44ca-9dbd-a2937388699f" />
+<img width="1055" height="757" alt="image" src="https://github.com/user-attachments/assets/4c7dd098-8258-44ca-9dbd-a2937388699f"/>
 
+
+<br>
+
+### Persona escolhida:  joão Pedro <br>
+###  Justificativa: representa o gestor não analítico, que precisa de uma primeira leitura simples e de limites claros do indicador, e permite verificar se o protótipo também é compreensível para quem não interpreta dados com facilidade. Todas as afirmações de experiência abaixo são hipóteses.
+
+<img width="1920" height="1080" alt="Ter a conversa humana reforçada como etapa obrigatória antes de qualquer ação" src="https://github.com/user-attachments/assets/3109199b-9fba-4e6d-a196-fc86f87a2eec" />
 
 Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos. Diferencie **evidência** de **hipótese**.
 
