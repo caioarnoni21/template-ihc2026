@@ -163,7 +163,12 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 
 | Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
 |---|---|---|---|---|---|---|
-| 1 | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
+| 1 | Reúne questões sobre tarefas e conversas recentes | Definir o que precisa acompanhar | Preocupação em não deixar dificuldades passarem | Informações dispersas | Visão geral com período e escopo claros | H01 e H06; hipótese |
+| 2 | Confere fontes, atualização e cobertura antes de interpretar | Saber se é possível comparar os períodos | Cautela sobre a confiabilidade | Falha de integração pode parecer ausência de mudança | Estados distintos de estabilidade, ausência e incompletude | H07; períodos apoiados no desenho experimental |
+| 3 | Examina a variação comunicacional e a estabilidade profissional de Maria | Entender qual eixo mudou e quais componentes contribuíram | Curiosidade, sem concluir a causa | Um score isolado pode induzir julgamento | Histórico individual, componentes e definições | Perfil B simulado, páginas 3-4; interação é H05 |
+| 4 | Convida Maria para uma conversa reservada e escuta o contexto | Conferir se há necessidade de apoio | Cuidado com a abordagem | Assimetria hierárquica pode inibir a explicação | Linguagem neutra e possibilidade de contextualização | H01, H02 e H10; hipótese |
+| 5 | Registra apenas o contexto necessário e uma decisão humana: apoiar, acompanhar ou não intervir | Tornar o encaminhamento claro | Maior clareza, ainda sem certeza causal | Registro excessivo pode expor a pessoa | Registro restrito, responsável e data de revisão | Proposta de design ligada a H01/H02 |
+| 6 | Retoma o acordo e verifica novos dados e retorno da pessoa | Avaliar se o acompanhamento precisa continuar | Atenção à evolução real | Encerrar só porque o indicador mudou | Histórico do acompanhamento, sem encerramento automático | H06; hipótese |
 
 > A jornada pode incluir etapas **antes, durante e depois** do uso do produto. Não transforme a jornada em lista de telas.
 
