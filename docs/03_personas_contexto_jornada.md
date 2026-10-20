@@ -71,7 +71,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 - Oferecer registro restrito de contexto, decisão humana e próximo acompanhamento, como proposta do protótipo.
 - Evitar alertas conclusivos e notificações repetitivas; preservar filtros e posição quando houver interrupção.
 
-### Persona P02 — {{João Pedro}}
+### Persona P02 — João Pedro
 
 **Autor(a):** Guilherme Matias — 22.122.071-8} 
 **Tipo:** primária  
@@ -103,6 +103,39 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 - Priorizar objetividade e brevidade na primeira camada de informação, com aprofundamento opcional.
 - Reforçar, em qualquer alerta, a necessidade de conversa humana antes de qualquer ação nunca apresentar como veredito automático.
 
+### Persona P03 - Maria Fonseca
+
+**Autor(a):** integrante responsável e matrícula a definir pela equipe.  
+**Tipo:** secundária; colaboradora afetada pelas análises e usuária eventual do fluxo de transparência proposto.  
+**Papel:** desenvolvedora frontend sênior.  
+**Base de evidências:** adaptação do perfil B de *Documento1_personas.pdf*, páginas 3-4; dados fictícios para simulação. Necessidades de interação com o WorkSense são hipóteses adicionais.  
+**Hipóteses relacionadas:** H02, H05, H07 e H10.
+
+![P03 - Maria Fonseca: colaboradora e persona secundária](../assets/03_personas/persona_p03.svg)
+
+| Campo | Descrição |
+|---|---|
+| Faixa etária / contexto relevante | No perfil simulado, integra a equipe há três anos e faz a ligação entre desenvolvimento e design (D). A idade não é usada para inferir habilidade ou necessidade de interface. |
+| Ocupação/papel | Desenvolvedora frontend sênior e mentora de profissionais juniores no cenário fictício (D). |
+| Conhecimento do domínio | Conhece desenvolvimento de interfaces e comunicação de decisões técnicas; não se presume conhecimento dos modelos de análise do WorkSense (D/H). |
+| Experiência tecnológica | Trabalha com chat, revisão de código e tarefas de desenvolvimento no cenário simulado (D). Isso não garante que compreenda scores ou classificações automáticas (H). |
+| Objetivos | Entregar tarefas no prazo e ser ouvida nas decisões (D, perfil fictício); entender como seus dados são usados e contextualizar interpretações que possam afetá-la (H). |
+| Necessidades | Explicação clara sobre fontes, finalidade, acesso e limitações; canal para perguntar e registrar contexto; confirmação de recebimento e retorno (H). |
+| Dores/frustrações | No cenário fictício, espera que uma mudança no tom de comunicação não seja confundida com pior desempenho (D). Pode sentir desconforto com análises opacas e sem oportunidade de resposta (H). |
+| Motivadores | Participar das decisões, preservar a confiança na equipe e receber apoio pertinente, sem julgamento automático (D/H). |
+| Restrições/acessibilidade | Não deve precisar acessar dados de colegas para explicar a própria situação (P). Nenhuma deficiência foi informada; o fluxo deve ter linguagem direta, teclado, rótulos claros e leitura em diferentes telas (P). |
+| Ambiente típico de uso | Atua em canais de comunicação e tarefas; eventualmente consulta uma explicação do WorkSense e conversa de modo reservado com o gestor (D/H). O acesso direto a essa explicação é proposto, não existente. |
+| Comportamentos relevantes | No experimento, passa de 2-3 para 3-4 mensagens por dia, com textos mais curtos e mudança de polaridade, enquanto os indicadores profissionais permanecem estáveis (D). Não há causa real demonstrada para essa mudança. |
+
+**Relação com a contribuição técnica:** Maria é afetada pela interpretação dos sinais comunicacionais. A interface precisa comunicar que uma variação em relação ao seu histórico não equivale a queda de desempenho. O fluxo eventual de esclarecimento e contextualização é uma proposta a validar em H10, e não a suposição de que todo colaborador deva usar um painel analítico.
+
+**Decisões de design influenciadas por P03:**
+
+- Explicar quais fontes entram na análise, com qual finalidade, quem acessa os resultados e quais são as limitações.
+- Exibir separadamente a mudança comunicacional e a estabilidade profissional, sem rótulos psicológicos ou avaliativos.
+- Propor um canal restrito de contextualização e correção, com destinatário visível e confirmação de recebimento.
+- Oferecer alternativa de conversa reservada; não obrigar o registro de informações pessoais sensíveis.
+- Não abrir acesso a informações de outros colaboradores; definir a política de acesso aos próprios resultados antes de prototipar esse detalhe.
 
 > Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
 
@@ -120,10 +153,23 @@ Explique diferenças entre os perfis e qual persona é prioritária. Evite perso
 
 <br>
 
-### Persona escolhida:  joão Pedro <br>
+### Persona escolhida:  João Pedro <br>
 ###  Justificativa: representa o gestor não analítico, que precisa de uma primeira leitura simples e de limites claros do indicador, e permite verificar se o protótipo também é compreensível para quem não interpreta dados com facilidade. Todas as afirmações de experiência abaixo são hipóteses.
 
 <img width="1920" height="1080" alt="Ter a conversa humana reforçada como etapa obrigatória antes de qualquer ação" src="https://github.com/user-attachments/assets/3109199b-9fba-4e6d-a196-fc86f87a2eec" />
+
+### Persona escolhida:  Maria Fonseca <br>
+
+*Justificativa:* incorpora a perspectiva de quem pode ser afetado por uma interpretação, mesmo sem ser o usuário principal do painel.
+
+| Dimensão | Conteúdo | Natureza/base |
+|---|---|---|
+| Vê | Conversas técnicas, decisões de interface e tarefas que continuam sendo entregues no prazo | D; descrição fictícia do perfil B, páginas 3-4 |
+| Ouve | Pedidos de alinhamento e, no uso proposto, uma explicação do gestor sobre uma mudança sinalizada | H; H02 e H10 |
+| Diz/faz | No experimento, envia mensagens mais frequentes e curtas; no fluxo proposto, pergunta sobre a análise e fornece contexto se desejar | D para o padrão simulado; H para a interação com o WorkSense |
+| Pensa/sente | Deseja ser ouvida e pode se preocupar com a associação indevida entre tom de mensagem e desempenho | D para o objetivo do perfil fictício; H para a reação ao sistema |
+| Dores | Interpretação sem contexto, falta de clareza sobre acesso aos dados e dificuldade de obter uma revisão | H; H02, H05 e H10 |
+| Ganhos | Compreender a finalidade, distinguir os dois eixos, contextualizar a situação e receber um retorno claro | H; H02 e H10 |
 
 Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos. Diferencie **evidência** de **hipótese**.
 
@@ -152,6 +198,20 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 | Ambiente social/organizacional | Receio de prejudicar alguém injustamente; busca respaldo documentado para decisões e conversas difíceis (H) | Reforçar, em qualquer indicação, que não é diagnóstico nem veredito automático; exigir confirmação humana antes de qualquer ação |
 | Papéis/permissões/governança | Acesso restrito ao escopo da própria equipe; não deve inferir acesso a conteúdo bruto de mensagens (H) | Explicitar limites do que o indicador pode/não pode afirmar; registrar decisão e justificativa em linguagem natural, sem exigir conhecimento técnico |
 | Volume de dados/histórico | Mesma janela do experimento (30 dias de referência / 15 dias de reanálise); desconhece volume real de eventos por pessoa (H) | Indicar claramente datas e cobertura; diferenciar "sem dados"/"análise incompleta" de "sem alteração relevante", para não gerar falsa sensação de segurança ou de alarme |
+
+### 3.3. Contexto CT03 - Maria Fonseca (P03, secundária)
+
+| Dimensão | Descrição | Implicação de design |
+|---|---|---|
+| Usuários | Colaboradora cujos registros compõem um cenário experimental; futura usuária eventual de transparência (D/H10) | Separar esse fluxo do painel de gestão e não exigir conhecimento analítico |
+| Tarefas | Entender finalidade e acesso, perguntar sobre um resultado, contextualizar e acompanhar a resposta (H) | Explicação curta, destinatário visível, confirmação e acompanhamento da solicitação |
+| Equipamentos | Notebook de trabalho; possível consulta pelo celular (H) | Conteúdo responsivo e formulário acessível, sem depender de gráficos complexos |
+| Ambiente físico | Consulta individual ou conversa reservada com o gestor, entre atividades de desenvolvimento (H) | Permitir leitura em etapas e proteger conteúdo de notificações |
+| Ambiente social/organizacional | Assimetria entre gestor e colaboradora pode dificultar discordar de uma interpretação (H) | Explicitar canal de revisão e alternativa de conversa sem impor relato pessoal sensível |
+| Papéis/permissões/governança | Acesso restrito ao próprio fluxo; acesso aos próprios indicadores ainda depende de política definida; sem dados de colegas (P) | Informar quem recebe o contexto e separar permissão de leitura de permissão de gestão |
+| Volume de dados/histórico | Perfil B: referência de 30 dias e reanálise de 15; frequência aumenta de 2-3 para 3-4 mensagens/dia, sem mudança profissional relevante (D) | Mostrar o período correto e explicar que os eixos podem variar de forma independente |
+
+**Consolidação da equipe:** os três contextos compartilham a necessidade de explicação e limites de interpretação, mas não a mesma informação nem a mesma permissão. CT01 orienta acompanhamento de equipe; CT02, análise coletiva; CT03, transparência e participação. As três personas sintéticas não constituem amostra suficiente para validar agregação, privacidade ou uso real.
 
 ## 4. Jornada do usuário — equipe
 
@@ -186,6 +246,22 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 | 3 | Decide se quer aprofundar ou não, dependendo da gravidade percebida | Confirmar se vale a pena investigar mais a fundo | Cautela; não quer "abrir uma caixa" sem necessidade | Risco de ignorar algo importante por falta de clareza | Aprofundamento técnico disponível, mas totalmente opcional e não obrigatório para decidir | H |
 | 4 | Ao aprofundar, verifica se há dados suficientes e atualizados | Garantir que a informação é confiável antes de agir | Necessidade de segurança e respaldo | Agir com base em dado incompleto e prejudicar alguém injustamente | Indicação clara de "sem dados", "análise incompleta" ou "evidência insuficiente", nunca omitida | H |
 | 5 | Conversa com a pessoa (fora da ferramenta), já ciente de que o sinal não é diagnóstico | Confirmar humanamente a situação antes de decidir qualquer ação | Empatia; alívio por saber que não precisa agir sozinho com base no dado | Risco de tratar um sinal do sistema como verdade absoluta, sem ouvir a pessoa | Reforço explícito, em qualquer indicação, de que o sinal exige conversa humana antes de qualquer ação — nunca apresentado como veredito automático | H |
+
+### 4.3. Jornada J03 - Maria Fonseca (P03, secundária)
+
+**Objetivo:** compreender o uso de seus dados, contextualizar uma sinalização e receber retorno.  
+**Início e fim:** começa ao receber uma explicação sobre a análise e termina com uma resposta e um encaminhamento compreensível.  
+**Cenário:** fluxo eventual de transparência proposto em H10; pode combinar interface e conversa reservada.
+
+| Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
+|---|---|---|---|---|---|---|
+| 1. Antes: conhecer a finalidade | Recebe informação sobre o WorkSense e os canais para esclarecimento | Saber o que é analisado e com qual propósito | Curiosidade ou receio | Coleta e acesso podem parecer opacos | Explicação de fontes, finalidade, acesso e limitações | H02; hipótese, não prática já existente |
+| 2. Durante: compreender a sinalização | Consulta a explicação autorizada ou a recebe do gestor | Entender o que mudou e o que não mudou | Preocupação com julgamento indevido | Mudança comunicacional pode parecer avaliação de desempenho | Separar os eixos e evitar linguagem conclusiva | Perfil B simulado; reação e fluxo são H05/H10 |
+| 3. Durante ou em conversa: contextualizar | Pergunta, corrige informação factual ou oferece contexto, sem obrigação de expor questões pessoais | Ser ouvida | Desejo de segurança para discordar | Não saber quem receberá a mensagem | Canal restrito, destinatário visível e alternativa de conversa | H02 e H10; hipótese |
+| 4. Durante: confirmar recebimento | Verifica se o pedido foi recebido e quem dará retorno | Não perder o acompanhamento | Expectativa de resposta | Silêncio após enviar uma explicação | Confirmação, estado do pedido e responsável visível | H10; proposta de design |
+| 5. Depois: receber retorno | Recebe explicação sobre a revisão e combina um próximo passo, se necessário | Encerrar a dúvida ou pedir nova revisão | Maior clareza ou necessidade de novo esclarecimento | Resposta genérica que não considera seu contexto | Resposta compreensível e possibilidade de continuidade | H02 e H10; hipótese |
+
+**Variação essencial para teste:** Maria deve conseguir perguntar ou solicitar revisão sem precisar inserir informação pessoal sensível e sem acessar dados de colegas. A interface não deve prometer mudança automática de score após o envio de contexto.
 
 
 > A jornada pode incluir etapas **antes, durante e depois** do uso do produto. Não transforme a jornada em lista de telas.
