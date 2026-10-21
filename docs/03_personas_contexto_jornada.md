@@ -41,8 +41,8 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 ### Persona P01 — Rafael Costa
 
-**Autor(a):** Caio Arnoni - 22.221.019-7  
-**Tipo:** primária
+**Autor(a):** Caio Arnoni - 22.221.019-7 <br> 
+**Tipo:** primária <br>
 **Base de evidências:**  proto-persona a validar <br>
 **Hipóteses da Entrega 1 relacionadas:** H01, H04, H05, H06, H07 e H08.
 
@@ -73,8 +73,8 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 ### Persona P02 — João Pedro
 
-**Autor(a):** Guilherme Matias — 22.122.071-8} 
-**Tipo:** primária  
+**Autor(a):** Guilherme Matias — 22.122.071-8} <br>
+**Tipo:** primária  <br>
 **Base de evidências:** proto-persona a validar  <br>
 **Hipóteses da Entrega 1 relacionadas:** {{H01, H02 ou —}}
 <br>
@@ -105,13 +105,13 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 ### Persona P03 - Maria Fonseca
 
-**Autor(a):** integrante responsável e matrícula a definir pela equipe.  
-**Tipo:** secundária; colaboradora afetada pelas análises e usuária eventual do fluxo de transparência proposto.  
-**Papel:** desenvolvedora frontend sênior.  
-**Base de evidências:** adaptação do perfil B de *Documento1_personas.pdf*, páginas 3-4; dados fictícios para simulação. Necessidades de interação com o WorkSense são hipóteses adicionais.  
-**Hipóteses relacionadas:** H02, H05, H07 e H10.
+**Autor(a):** Tainá Cunha Bueno — 22.119.025-9 <br>
+**Tipo:** secundaria  <br>
+**Base de evidências:** proto-persona hipotética  <br>
+**Hipóteses da Entrega 1 relacionadas:** H02, H05, H07 e H10.
 
-![P03 - Maria Fonseca: colaboradora e persona secundária](../assets/03_personas/persona_p03.svg)
+<img width="632" height="546" alt="image" src="https://github.com/user-attachments/assets/d9dbea44-bfb7-4256-9b9a-5a1012866bf7" />
+
 
 | Campo | Descrição |
 |---|---|
@@ -159,17 +159,11 @@ Explique diferenças entre os perfis e qual persona é prioritária. Evite perso
 <img width="1920" height="1080" alt="Ter a conversa humana reforçada como etapa obrigatória antes de qualquer ação" src="https://github.com/user-attachments/assets/3109199b-9fba-4e6d-a196-fc86f87a2eec" />
 
 ### Persona escolhida:  Maria Fonseca <br>
+### Justificativa: incorpora a perspectiva de quem pode ser afetado por uma interpretação, mesmo sem ser o usuário principal do painel.
 
-*Justificativa:* incorpora a perspectiva de quem pode ser afetado por uma interpretação, mesmo sem ser o usuário principal do painel.
+<img width="1097" height="782" alt="image" src="https://github.com/user-attachments/assets/12cb3b51-97e8-44f0-96f8-c5cfe27450d0" />
 
-| Dimensão | Conteúdo | Natureza/base |
-|---|---|---|
-| Vê | Conversas técnicas, decisões de interface e tarefas que continuam sendo entregues no prazo | D; descrição fictícia do perfil B, páginas 3-4 |
-| Ouve | Pedidos de alinhamento e, no uso proposto, uma explicação do gestor sobre uma mudança sinalizada | H; H02 e H10 |
-| Diz/faz | No experimento, envia mensagens mais frequentes e curtas; no fluxo proposto, pergunta sobre a análise e fornece contexto se desejar | D para o padrão simulado; H para a interação com o WorkSense |
-| Pensa/sente | Deseja ser ouvida e pode se preocupar com a associação indevida entre tom de mensagem e desempenho | D para o objetivo do perfil fictício; H para a reação ao sistema |
-| Dores | Interpretação sem contexto, falta de clareza sobre acesso aos dados e dificuldade de obter uma revisão | H; H02, H05 e H10 |
-| Ganhos | Compreender a finalidade, distinguir os dois eixos, contextualizar a situação e receber um retorno claro | H; H02 e H10 |
+<br>
 
 Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos. Diferencie **evidência** de **hipótese**.
 
