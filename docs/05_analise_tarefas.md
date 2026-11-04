@@ -30,6 +30,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
 | T01 | Consultar uma análise e registrar o próximo passo humano | Rafael Costa (P01) / E4-C01 | Revisão periódica ou sob demanda; alta | Caio Arnoni |
+| T02 | Interpretar uma sinalização de um colaborador e decidir o acompanhamento | João Pedro (P02)  / E4-C02 | A cada ciclo ou sinalização / Alta (H17) | Guilherme Matias |
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
