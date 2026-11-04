@@ -125,15 +125,24 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 |---|---|---|---|
 | 0 | Realizar triagem rápida da equipe e registrar o encaminhamento |Plano 0: executar 1 > 2. Se 2.2 = não aprofundar, executar 5. Se 2.2 = aprofundar, executar 3 > 4 > 5. Se 3.1 indicar “sem dados”, “incompleta” ou “insuficiente”, executar 3 > 5 (registrar “aguardar dados”)| Sem o desvio por estado da análise, o gestor agiria sobre uma análise que não existe. A tarefa precisa caber em cerca de 15 minutos |
 | 1 | Obter a leitura inicial da equipe |Plano 1: executar 1.1 > 1.2| A primeira tela deve responder em linguagem simples, sem jargão técnico (RC08) |
-
-
+|1.1| Abrir o painel |Operação única: acessar o painel pelo notebook| Privacidade visual: não exibir nomes e termos sensíveis de imediato, pois há pessoas por perto|
+|1.2| Ler o resumo e identificar se há colaborador com sinalização |Leitura do resumo na primeira camada de informação| Poucos indicadores na visão inicial, sem ranking nem rótulos como “em risco” (RC11) |
+| 2 | Decidir se vale aprofundar |Plano 2: executar 2.1 > 2.2| O aprofundamento deve ser opcional, nunca obrigatório para decidir (RC09) |
+|2.1| Ler o que o sinal significa e o que não significa |Leitura de um texto curto exibido junto da sinalização|Deixar claro que não é diagnóstico nem veredito automático |
+|2.2| Decidir entre aprofundar ou não |Decisão cognitiva do gestor, com base na gravidade percebida| Se não aprofundar, o caminho curto leva direto ao registro (5) |
+| 4 | Confirmar com contexto humano |Plano 4: executar 4.1 > 4.2| A ferramenta não decide; reforçar a conversa humana antes de qualquer ação|
+|4.1| Recordar o contexto externo à ferramenta |Recuperação da memória (picos de demanda, troca de turnos, combinados da equipe)| Esse contexto não está nos registros e depende de memória ou do supervisor (C02.Q3) |
+|4.2| Conversar com o colaborador e decidir o encaminhamento |Conversa fora da ferramenta, seguida da decisão| Etapa externa ao sistema por escolha de projeto; o sistema não deve induzir a decisão|
+| 5 | Registrar a decisão e a justificativa |Plano 5: executar 5.1 > 5.2| O gestor precisa de respaldo documentado, sem diagnóstico (RC14)|
+|5.1| Escolher o encaminhamento |Selecionar entre apoiar, acompanhar, não intervir ou aguardar dados|Opções claras e neutras, sem punição automática|
+|5.2| Escrever a justificativa e confirmar o registro |Digitar texto livre curto e clicar em confirmar| Registro mínimo para não expor a pessoa; exibir confirmação e preservar o contexto em caso de interrupção|
 
 **Verificação do HTA:**
 
-- O objetivo 0 representa uma meta do usuário?
-- As subtarefas são necessárias e suficientes?
-- Os **planos** indicam ordem, alternativa, repetição ou condição?
-- A decomposição parou em nível útil para projeto de interação?
+* O objetivo 0 representa uma meta do usuário? Sim. É a meta real do João Pedro: saber rapidamente se há algo a observar e deixar a decisão registrada com segurança.
+* As subtarefas são necessárias e suficientes? Sim. Cobrem da leitura inicial ao registro final, incluindo a verificação de confiabilidade e o contexto humano, que são as maiores preocupações da persona.
+* Os planos indicam ordem, alternativa, repetição ou condição? Sim. Há sequência (1 > 2), alternativa (aprofundar ou não), condição (estado da análise em 3.1) e opcionalidade (3.3).
+* A decomposição parou em nível útil para projeto de interação? Sim. Parou no nível de leitura, clique e digitação, que é adequado para o protótipo.
 
 ---
 
