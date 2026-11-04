@@ -199,23 +199,38 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ---
 
-## CTT — T03 {{nome da tarefa}}
+## CTT — T02 Realizar triagem rápida da equipe e registrar o encaminhamento
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Guilherme Matias — 22.122.071-8
 
 ### Descrição
-
-{{...}}
+O CTT modela as relações temporais entre as ações do João Pedro e as respostas do WorkSense na triagem entre reuniões. Ele mostra:
+* a sequência obrigatória (leitura inicial, decisão, registro);
+* o aprofundamento opcional;
+* a escolha entre análise confiável e análise sem dados suficientes;
+* a interrupção, que suspende a triagem e permite retomá-la do ponto em que parou.
 
 ### Diagrama
 
-![CTT T03](../assets/05_tarefas/ctt_t03.svg)
+<img width="2788" height="1296" alt="image" src="https://github.com/user-attachments/assets/d57a027c-f910-417d-ae88-26422c151ab7" />
+
+
 
 ### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| `>>` (Habilitação) | A conclusão de uma tarefa habilita o início da seguinte. | Abrir painel >> Exibir resumo >> Ler resumo e identificar sinalização |
+| `[]` (Escolha) | Apenas uma das alternativas é executada. | Análise confiável `[]` Análise não confiável (A7 `[]` A8) |
+| `[ ]` (Opcional) | A tarefa pode ser omitida sem comprometer a meta. | Aprofundar e confirmar (A4); Consultar componentes ou ajuda (I2) |
+| `\|>` (Suspensão/retomada) | Uma tarefa interrompe a principal, que é retomada do ponto em que parou. | Executar triagem (A1) `\|>` Tratar interrupção (A6) |
+
+| Tipo de tarefa | Representação | Exemplos |
+|---|---|---|
+| Abstrata (A) | Caixa com borda grossa | A0 a A8 |
+| Usuário (U) | Caixa branca, borda fina | U1 Ler resumo; U3 Decidir aprofundar ou não; U7 Conversar com o colaborador |
+| Sistema (S) | Caixa cinza | S1 Exibir resumo da equipe; S3 Exibir estado, períodos e atualização; S4 Salvar e exibir confirmação |
+| Interação (I) | Caixa azul clara | I1 Abrir painel; I3 Escolher encaminhamento; I4 Digitar justificativa |
 
 Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
 
