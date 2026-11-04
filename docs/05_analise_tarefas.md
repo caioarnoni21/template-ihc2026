@@ -117,7 +117,8 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ### Diagrama
 
-![HTA T01](../assets/05_tarefas/hta_t01.svg)
+<img width="1767" height="658" alt="image" src="https://github.com/user-attachments/assets/a6062efc-e212-4faa-b478-185efad21484" />
+
 
 ### Decomposição e planos
 
@@ -146,21 +147,53 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ---
 
-## GOMS — T02 {{nome da tarefa}}
+## GOMS — T02 Realizar triagem rápida da equipe e registrar o encaminhamento
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Guilherme Matias — 22.122.071-8
 
 ### Goal
 
-`G0: {{meta do usuário}}`
+`G0: Decidir se há algo a observar na equipe e registrar o encaminhamento com justificativa, em cerca de 15 minutos entre reuniões.`
 
 ### Métodos, operadores e regras de seleção
 
-- **Method M1:** {{...}}
-  - Operators: {{perceber, apontar, clicar, digitar, decidir... conforme o nível adotado}}
-- **Method M2:** {{...}}
-  - Operators: {{...}}
-- **Selection Rule SR1:** usar M1 quando {{condição}}; usar M2 quando {{condição}}.
+- **Method M1 — Triagem curta (não aprofundar):** caminho mais rápido, para quando a leitura inicial basta.
+  * 1 Abrir o painel, por iniciativa própria ou por notificação discreta (HTA 1.1).
+  * 2 Ler o resumo e identificar se há colaborador com sinalização (HTA 1.2).
+  * 3 Ler o que o sinal significa e não significa (HTA 2.1).
+  * 4 Decidir não aprofundar (HTA 2.2).
+  * 5 Escolher o encaminhamento "acompanhar" ou "não intervir" e confirmar com justificativa curta (HTA 5.1 e 5.2).
+  * - Operators: apontar, clicar, perceber, ler, decidir, digitar.
+
+- **Method M2 — Triagem completa (aprofundar e confirmar com contexto humano):**
+  * 1 Executar os passos 1 a 3 de M1, decidindo aprofundar em HTA 2.2.
+  * 2 Conferir períodos de referência e reanálise, atualização e estado da análise (HTA 3.1).
+  * 3 Ler a explicação resumida da variação, indicando qual eixo mudou (HTA 3.2).
+  * 4 Consultar componentes ou ajuda, apenas se a explicação resumida não bastar (HTA 3.3, opcional).
+  * 5 Recordar o contexto externo: pico de demanda, troca de turnos, combinados da equipe (HTA 4.1).
+  * 6 Conversar com o colaborador, fora da ferramenta, e decidir o encaminhamento (HTA 4.2).
+  * 7 Escolher o encaminhamento (apoiar, acompanhar ou não intervir) (HTA 5.1).
+  * 8 Digitar a justificativa em linguagem natural, confirmar e perceber a confirmação (HTA 5.2).
+  * - Operators: apontar, clicar, perceber, ler, decidir, recordar, falar, ouvir, digitar.
+
+- **Method M3 — Aguardar dados (análise não confiável):**
+  1. Executar os passos 1 a 3 de M1, decidindo aprofundar em HTA 2.2.
+  2. Conferir o estado da análise e identificar "sem dados", "incompleta" ou "evidência insuficiente" (HTA 3.1).
+  3. Escolher o encaminhamento "aguardar dados" (HTA 5.1).
+  4. Confirmar com justificativa curta ou predefinida e perceber a confirmação (HTA 5.2).
+  - Operators: apontar, clicar, perceber, ler, decidir.
+
+- **Method M4 — Retomar após interrupção:**
+  * 1 Reabrir o painel.
+  * 2 Perceber que o colaborador e a etapa foram preservados.
+  * 3 Continuar a partir da etapa em que parou, seguindo M1, M2 ou M3.
+  * - Operators: clicar, perceber, decidir.
+
+- **Selection Rule SR1:** usar M1 quando não houver sinalização ou quando, depois de ler o significado do sinal, João considerar a variação pequena e a leitura simples suficiente; usar M2 quando a sinalização parecer relevante ou quando ele não entender o que o texto diz.
+- **Selection Rule SR2:** durante M2, se o estado da análise em HTA 3.1 for "sem dados", "incompleta" ou "evidência insuficiente", abandonar M2 e passar para M3, sem conversar com o colaborador com base em dado não confiável.
+- **Selection Rule SR3:** dentro de M2, consultar componentes ou ajuda (HTA 3.3) somente quando a explicação resumida não bastar ou quando ele não reconhecer um termo; caso contrário, seguir direto para HTA 4.1.
+- **Selection Rule SR4:** no registro (HTA 5.2), digitar justificativa completa quando o encaminhamento for "apoiar" ou "acompanhar" após conversa, porque ele precisa de respaldo documentado; usar justificativa curta ou predefinida quando for "não intervir" ou "aguardar dados", ou quando estiver sem tempo.
+- **Selection Rule SR5:** usar M4 sempre que houver interrupção (por exemplo, um supervisor chamando para resolver uma escala) entre HTA 2.1 e HTA 5.2; sem preservação de contexto, João recomeça de HTA 1.1.
 
 > Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
 
