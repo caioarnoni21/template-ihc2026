@@ -29,76 +29,113 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 | ID | Tarefa | Persona/cenário de origem | Frequência/criticidade | Autor responsável |
 |---|---|---|---|---|
-| T01 | {{...}} | {{P01/C01}} | {{...}} | {{...}} |
+| T01 | Consultar uma análise e registrar o próximo passo humano | Rafael Costa (P01) / E4-C01 | Revisão periódica ou sob demanda; alta | Caio Arnoni |
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
 ---
 
-## HTA — T01 {{nome da tarefa}}
+## HTA — T01 Consultar uma análise e registrar próximo passo
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Caio Arnoni - 22.221.019-7
 
 ### Descrição da tarefa
 
-{{objetivo, ponto de início, conclusão esperada, contexto}}
+- **Objetivo:** compreender os limites das evidências de um caso e registrar um próximo passo justificado. <br>
+- **Ponto de início:** Rafael tem uma questão sobre um colaborador e acesso autorizado à equipe. O caso é identificável e há um registro de análise, mesmo que incompleto. <br>
+- **Conclusão esperada:** encaminhamento persistido e conferido, com justificativa e responsável pela retomada. Um registro de insuficiência é um resultado válido da tarefa, não uma análise conclusiva da pessoa. <br>
+- **Contexto:** consulta no computador, com possibilidade de interrupção; rotina ainda hipotética. <br>
+
 
 ### Diagrama
 
-![HTA T01](../assets/05_tarefas/hta_t01.svg)
+<img width="1320" height="605" alt="image" src="https://github.com/user-attachments/assets/a158f4f4-dcf1-405d-8be2-b96176fa562a" />
+
 
 ### Decomposição e planos
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | {{objetivo principal}} | {{1 }} 2 > 3 / 1 ou 2 etc.> | {{...}} |
+| 0 | Consultar uma análise e registrar próximo passo | 1 > 2 > 3 | Registro concluído não equivale a resolver a situação da pessoa |
+| 1 | Localizar a análise | 1.1 / 1.2: escolher conforme visibilidade do caso/período | Evitar abrir caso homônimo ou período errado |
+| 1.1 | Selecionar caso e período em lista disponível | Operação terminal; usar se ambos estiverem visíveis | Identidade e período devem ser conferíveis |
+| 1.2 | Buscar por identificador e selecionar caso/período | Operação terminal neste nível; usar se não estiverem visíveis | Refinar o identificador se os resultados forem ambíguos |
+| 2 | Avaliar as evidências | 2.1 > 2.2 > 2.3 com evidência suficiente; 2.1 > 2.3 se insuficiente | Ausência de dados não significa estabilidade |
+| 2.1 | Conferir identidade, período, cobertura e atualização | Operação terminal | Primeiro verificar se a comparação é pertinente e possível |
+| 2.2 | Comparar comunicação e tarefas com o histórico do próprio perfil | Operação terminal, condicional à suficiência | Não confundir alteração comunicacional com piora das entregas |
+| 2.3 | Definir próximo passo ou registrar insuficiência | Operação terminal | Resultado humano: conversar, acompanhar ou manter pendência; sem diagnóstico |
+| 3 | Registrar próximo passo | 3.1 > 3.2; repetir após correção se o registro falhar | Não considerar envio como prova de persistência |
+| 3.1 | Informar decisão, justificativa e responsável pela retomada | Operação terminal | Registrar apenas o contexto necessário; data de retomada quando aplicável |
+| 3.2 | Conferir confirmação de registro persistido | Operação terminal | Conferir caso, período e conteúdo, além da mensagem de confirmação |
 
 **Verificação do HTA:**
 
-- O objetivo 0 representa uma meta do usuário?
-- As subtarefas são necessárias e suficientes?
-- Os **planos** indicam ordem, alternativa, repetição ou condição?
-- A decomposição parou em nível útil para projeto de interação?
+- O objetivo 0 representa uma meta do usuário? Sim. Consultar uma análise e registrar um próximo passo corresponde à necessidade de Rafael de compreender uma situação da equipe e decidir um acompanhamento humano.<br>
+- As subtarefas são necessárias e suficientes? Sim, para o recorte proposto: localizar a análise, avaliar as evidências e registrar o encaminhamento. Elas incluem verificar a qualidade dos dados e confirmar o registro. Realizar a conversa e resolver a situação do colaborador estão fora dessa tarefa.<br>
+- Os **planos** indicam ordem, alternativa, repetição ou condição? Sim. O plano principal segue 1 > 2 > 3. A localização utiliza 1.1 ou 1.2, conforme o caso esteja visível na lista ou exija busca. A comparação em 2.2 ocorre apenas com dados suficientes; caso contrário, Rafael segue para 2.3, registrando a limitação. Se o registro falhar, repete 3.1 > 3.2 após a correção; se a falha persistir, mantém a pendência explícita.<br>
+- A decomposição parou em nível útil para projeto de interação? Sim. As operações finais, como selecionar um caso, conferir a cobertura e registrar uma justificativa, ajudam a definir informações, controles e respostas da interface. Não é necessário decompor cada clique nem representar o funcionamento interno do algoritmo.
 
 ---
 
-## GOMS — T02 {{nome da tarefa}}
+## GOMS — T01 Consultar uma análise e registrar o próximo passo humano.
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Caio Arnoni - 22.221.019-7
 
-### Goal
+### Goals: metas e subobjetivos
 
-`G0: {{meta do usuário}}`
+- **G0:** consultar a análise correta e registrar um próximo passo humano justificado.
+- **G1:** localizar o caso e o período corretos.
+- **G2:** avaliar as evidências e definir o próximo passo.
+- **G3:** registrar e conferir o encaminhamento.
 
 ### Métodos, operadores e regras de seleção
 
-- **Method M1:** {{...}}
-  - Operators: {{perceber, apontar, clicar, digitar, decidir... conforme o nível adotado}}
-- **Method M2:** {{...}}
-  - Operators: {{...}}
-- **Selection Rule SR1:** usar M1 quando {{condição}}; usar M2 quando {{condição}}.
+- **Method M1:** Seleção pela lista disponível
+  - Ler identificador e período;
+  - Selecionar o caso;
+  - Conferir o caso e o período abertos;
+- **Method M2:** Busca pelo identificador
+  - Focalizar busca;
+  - Digitar identificador;
+  - Executar busca;
+  - Ler resultados;
+  - Selecionar caso/período;
+  - Conferir correspondência;
+- **Selection Rule SR1:** usar M1 se o caso e o período desejados já estão visíveis e identificáveis.
+- **Selection Rule SR2:** usar se o caso ou período não está visível e Rafael conhece o identificador. 
 
 > Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
 
 ---
 
-## CTT — T03 {{nome da tarefa}}
+## CTT — T01 Consultar uma análise e registrar o próximo passo humano
 
-**Autor(a):** {{nome — matrícula}}
+**Autor(a):** Caio Arnoni - 22.221.019-7
 
 ### Descrição
 
-{{...}}
+Rafael Costa, gestor de equipe, localiza o colaborador e o período desejados pela lista disponível ou pela busca. O sistema disponibiliza os dados da análise e informa sua cobertura. Rafael avalia as evidências e define um próximo passo, como conversar com o colaborador, acompanhar a situação ou solicitar esclarecimentos quando os dados forem insuficientes. Em seguida, informa sua decisão e justificativa, o sistema grava o encaminhamento e Rafael confere a confirmação. A tarefa termina com o registro confirmado, mantendo a interpretação e a decisão sob responsabilidade humana.
 
 ### Diagrama
 
-![CTT T03](../assets/05_tarefas/ctt_t03.svg)
+<img width="1628" height="708" alt="image" src="https://github.com/user-attachments/assets/05257caa-4155-41cf-811c-923736391e6d" />
+
 
 ### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| `[]` | Escolha exclusiva: ao iniciar uma alternativa, a outra não é executada naquela escolha | Selecionar pela lista ou buscar e selecionar |
+| `[]>>` | Habilitação com passagem de informação: a tarefa seguinte começa após a anterior e recebe seu resultado | O caso/período selecionado orienta a recuperação; os dados orientam a avaliação; o encaminhamento é passado para registro |
+
+### Tipos de tarefa
+
+| Símbolo | Tipo | Exemplo no diagrama |
+|---|---|---|
+| [A] | Abstrata: composição de outras tarefas | Localizar caso/período; registrar encaminhamento |
+| [I] | Interação: diálogo entre pessoa e sistema | Selecionar caso; informar decisão; consultar confirmação |
+| [S] | Sistema: execução automática sem intervenção durante o processamento | Disponibilizar dados; persistir encaminhamento |
+| [U] | Usuário: atividade humana fora do diálogo com a interface | Rafael interpretar a evidência e definir o próximo passo |
 
 Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
 
