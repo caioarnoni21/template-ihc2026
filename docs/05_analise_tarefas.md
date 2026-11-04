@@ -104,6 +104,81 @@ Identifique, quando aplicável, tarefas de usuário, sistema, interação e tare
 
 ---
 
+## HTA — T02  Realizar triagem rápida da equipe e registrar o encaminhamento
+
+**Autor(a):** Guilherme Matias — 22.122.071-8
+
+### Descrição da tarefa
+
+* Objetivo: consultar o painel entre duas reuniões, obter uma resposta simples sobre “preciso me preocupar ou não?”, decidir se vale aprofundar, confirmar com contexto humano quando necessário e registrar o encaminhamento com justificativa.
+* Ponto de início: João Pedro abre o painel do WorkSense, com cerca de 15 minutos disponíveis, antes de uma reunião individual.
+* Conclusão esperada: o encaminhamento (apoiar, acompanhar, não intervir ou aguardar dados) fica registrado com uma justificativa em linguagem natural, sem diagnóstico nem veredito automático.
+* Contexto: notebook em sala compartilhada ou home office, com pressa, possíveis interrupções e outras pessoas por perto (H). O gestor tem pouca familiaridade com métricas.
+
+### Diagrama
+
+![HTA T01](../assets/05_tarefas/hta_t01.svg)
+
+### Decomposição e planos
+
+| ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
+|---|---|---|---|
+| 0 | Realizar triagem rápida da equipe e registrar o encaminhamento |Plano 0: executar 1 > 2. Se 2.2 = não aprofundar, executar 5. Se 2.2 = aprofundar, executar 3 > 4 > 5. Se 3.1 indicar “sem dados”, “incompleta” ou “insuficiente”, executar 3 > 5 (registrar “aguardar dados”)| Sem o desvio por estado da análise, o gestor agiria sobre uma análise que não existe. A tarefa precisa caber em cerca de 15 minutos |
+| 1 | Obter a leitura inicial da equipe |Plano 1: executar 1.1 > 1.2| A primeira tela deve responder em linguagem simples, sem jargão técnico (RC08) |
+
+
+
+**Verificação do HTA:**
+
+- O objetivo 0 representa uma meta do usuário?
+- As subtarefas são necessárias e suficientes?
+- Os **planos** indicam ordem, alternativa, repetição ou condição?
+- A decomposição parou em nível útil para projeto de interação?
+
+---
+
+## GOMS — T02 {{nome da tarefa}}
+
+**Autor(a):** {{nome — matrícula}}
+
+### Goal
+
+`G0: {{meta do usuário}}`
+
+### Métodos, operadores e regras de seleção
+
+- **Method M1:** {{...}}
+  - Operators: {{perceber, apontar, clicar, digitar, decidir... conforme o nível adotado}}
+- **Method M2:** {{...}}
+  - Operators: {{...}}
+- **Selection Rule SR1:** usar M1 quando {{condição}}; usar M2 quando {{condição}}.
+
+> Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
+
+---
+
+## CTT — T03 {{nome da tarefa}}
+
+**Autor(a):** {{nome — matrícula}}
+
+### Descrição
+
+{{...}}
+
+### Diagrama
+
+![CTT T03](../assets/05_tarefas/ctt_t03.svg)
+
+### Legenda e relações temporais usadas
+
+| Operador/relação | Significado no diagrama | Exemplo no modelo |
+|---|---|---|
+| {{...}} | {{...}} | {{...}} |
+
+Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
+
+---
+
 ## Síntese da equipe
 
 Quais problemas de interação, oportunidades e requisitos apareceram a partir das modelagens? Quais tarefas irão para o protótipo e para o teste de usabilidade?
