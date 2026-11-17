@@ -1,7 +1,7 @@
 # Entrega 6 — Prototipação em papel
 
 **Data:** {{04/11/2026}}  
-**Status:** 🟨 iniciada 
+**Status:** 🟨 Completa 
 **Responsabilidade:** 1 solução integrada por equipe
 
 ## Objetivo da atividade
@@ -87,9 +87,9 @@ As quatro primeiras linhas vêm da revisão que a equipe fez no protótipo antes
 
 ## 1. Escopo do protótipo
 
-**Personas:** {{...}}  
-**Cenários/tarefas cobertos:** {{C01/T01...}}  
-**Objetivos principais:** {{...}}
+**Personas:** Rafael Costa (P01), gestor. <br>
+**Cenários/tarefas cobertos:** E4-C01. <br>
+**Objetivos principais:** T01 — Consultar uma análise e registrar o próximo passo humano.<br>
 
 ## 1.1 Possíveis famílias de interface
 
@@ -112,15 +112,25 @@ Escolha apenas o que for coerente com tarefas e cenários. Para TCCs técnicos, 
 
 | Fluxo | Tarefa/objetivo | Por que foi priorizado |
 |---|---|---|
-| PF01 | {{...}} | {{...}} |
+| PF04 | Selecionar colaborador e período → conferir evidências → definir próximo passo → registrar → conferir confirmação | Cobre o caminho principal de T01 e as etapas 1, 2 e 3 do HTA de Rafael |
+| PF05 | Selecionar análise incompleta → verificar a limitação → registrar insuficiência e responsável pela retomada → conferir confirmação | Impede tratar ausência de dados como estabilidade ou como prova de problema |
+| PF06 | Tentar registrar com campo obrigatório vazio ou simular falha ao salvar → corrigir ou tentar novamente → conferir confirmação | Distingue tentativa de envio de registro efetivamente concluído |
 
 ## 3. Telas e estados
 
-- Numere as telas/estados (`P01`, `P02`...).
-- Indique controles que mudam o estado.
-- Mostre pelo menos caminhos principais e estados de erro/retorno relevantes.
+| ID | Tela/estado | Conteúdo e interação | Situação |
+|---|---|---|---|
+| P08 | Visão geral da equipe | Resumo, seis pessoas dentro do padrão, uma sinalização, uma análise incompleta e lista da equipe. Selecionar pessoa ou sinalização abre P09 | Desenhada; transições ainda precisam ser simuladas |
+| P09 | Análise do colaborador | Identidade, período, cobertura por fonte, última atualização e estado da análise; com dados suficientes, comparação entre comunicação e tarefas e o histórico do próprio colaborador. “Registrar próximo passo” abre P10; “Voltar” retorna a P08 | Proposta |
+| E05 | Análise incompleta em P09 | Mensagem informa a fonte/período faltante e que não é possível concluir sobre a mudança. “Registrar insuficiência” abre P10; não apresenta classificação conclusiva da pessoa | Proposta |
+| P10 | Registrar próximo passo | Colaborador e período visíveis; encaminhamento, justificativa, responsável e data de retomada quando aplicável. “Confirmar registro” leva a P11 somente após sucesso; “Voltar” retorna a P09 preservando o rascunho durante a navegação | Proposta |
+| E06 | Validação do registro | Campo obrigatório vazio destacado com mensagem específica; dados preenchidos preservados. Corrigir permite nova tentativa | Proposta |
+| E07 | Falha ao salvar | “Não foi possível salvar. Seu registro ainda não foi concluído.” Preserva os campos e oferece “Tentar novamente” | Proposta |
+| P11 | Registro confirmado | Mostra “Registro salvo”, colaborador, período, encaminhamento, justificativa e responsável. “Voltar à visão geral” retorna a P08 com o último registro atualizado | Proposta |
 
-![Protótipo](../assets/06_prototipos/prototipo_fluxo_01.svg)
+<img width="1600" height="1128" alt="WhatsApp Image 2026-11-17 at 14 56 44" src="https://github.com/user-attachments/assets/608a5832-787f-429d-a0bf-0ab154422629" />
+
+
 
 ## 4. Simulação / walkthrough
 
@@ -128,13 +138,18 @@ Realize uma simulação com uma pessoa que não participou da elaboração dessa
 
 | Observação | Tela/ação | Evidência | Consequência para o design |
 |---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
-
+| O resumo destaca o que merece atenção. | P08 / Consultar a visão geral | A mensagem informa uma pessoa com sinalização e diferencia os demais estados. | Manter o resumo em linguagem simples no início da tela. |
+| Os indicadores favorecem a leitura rápida. | P08 / Consultar os totais | Há três blocos separados: dentro do próprio padrão, com sinalização e análise incompleta. | Preservar a separação e os rótulos textuais dos estados. |
+| A interface comunica uma limitação importante. | P08 / Interpretar a análise incompleta | O texto orienta que a análise incompleta ainda não deve fundamentar decisões. | Manter essa orientação também na consulta individual. |
+| A apresentação demonstra cuidado com a exposição dos nomes. | P08 / Consultar a equipe |	A tabela utiliza iniciais e oferece “Mostrar nomes completos”. | Preservar a apresentação discreta, sem tratá-la como anonimização. |
 ## 5. Alterações após a simulação
 
 | Antes | Problema | Depois | Justificativa |
 |---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{...}} |
+| Resumo textual em destaque. | 	Não foi identificado problema nessa organização durante a inspeção. | Manter o resumo no início da tela. | Favorece a identificação inicial do que merece atenção. |
+| Três indicadores separados e identificados por texto. | Não foi identificada ambiguidade entre os rótulos na inspeção. | Preservar a separação dos estados. | Diferencia sinalização, estabilidade e análise incompleta. |
+| Aviso sobre a análise incompleta na visão geral. | A continuidade dessa orientação nas próximas telas ainda não foi demonstrada. | Manter o aviso e repeti-lo na análise individual. | Reforça a interpretação cuidadosa das informações. |
+| Botão “Ver sinalização” próximo ao resumo. | A tela de destino ainda não foi apresentada. | Preservar o botão e completar a tela de análise. | Dá continuidade à ação indicada pela visão geral. |
 
 ## Checklist
 
