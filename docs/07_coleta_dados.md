@@ -80,9 +80,9 @@ Analise voluntariedade, consentimento, minimização de dados, privacidade, risc
 ### Instrumento I01 — Questionário sobre acompanhamento de equipes
 
 **Autor(a):** Caio Arnoni — 22.221.019-7 <br> 
-**Técnica:** questionário on-line com perguntas fechadas e abertas.
-**Objetivo:** investigar a rotina de acompanhamento e as informações necessárias à interpretação e ao registro de um próximo passo, verificando as hipóteses relacionadas a T01.  
-**Público:** gestores com responsabilidade direta de acompanhamento nos últimos seis meses. 
+**Técnica:** questionário on-line com perguntas fechadas e abertas.<br>
+**Objetivo:** investigar a rotina de acompanhamento e as informações necessárias à interpretação e ao registro de um próximo passo, verificando as hipóteses relacionadas a T01.  <br>
+**Público:** gestores com responsabilidade direta de acompanhamento nos últimos seis meses. <br>
 
 #### Procedimento padronizado de aplicação
 
