@@ -25,11 +25,11 @@ Modele também rupturas plausíveis: entrada inválida, falha de processamento, 
 
 ## M01 — {{nome do cenário/objetivo}}
 
-**Autor(a):** {{nome — matrícula}}  
-**Cenário de interação de origem:** {{CI01}}  
-**Objetivo(s):** {{O01}}  
-**Tarefa(s) relacionada(s):** {{T01}}  
-**Signos relevantes:** {{...}}
+**Autor(a):** Caio Arnoni - 22.221.019-7  
+**Cenário de interação de origem:** CI01, derivado de C01/E4-C01.  
+**Objetivo(s):** O01 e seus desdobramentos O02–O10, conforme a Entrega 9. 
+**Tarefa(s) relacionada(s):** T01 — Consultar uma análise e registrar o próximo passo humano.
+**Signos relevantes:** colaborador; período analisado; período de referência; padrão individual de referência; fontes; cobertura; última atualização; estado da análise; evidências de comunicação e de tarefas; sinalização; limites da análise; encaminhamento; justificativa; responsável pela retomada; data de retomada; estado do registro; motivo da falha.
 
 ### Diagrama
 
@@ -40,6 +40,8 @@ Modele também rupturas plausíveis: entrada inválida, falha de processamento, 
 ### Leitura do diagrama
 
 Explique em texto o caminho principal e pelo menos os caminhos alternativos/rupturas mais importantes.
+
+cenas têm tópico no cabeçalho e diálogos/signos no corpo; `u:` identifica a fala do usuário, `d:` a do preposto e `d+u:` o diálogo. Quadrados pretos representam processamento do sistema; o círculo cheio indica abertura e o círculo duplo, encerramento. `gco` abre a conversa sobre o objetivo e `gcc` a fecha. Linhas tracejadas indicam retornos/recuperações. `PP` = prevenção passiva; `AL` = prevenção apoiada/alerta; `RA` = recuperação apoiada; `CE` = captura de erro sem recuperação dentro da própria interface.
 
 #### Caminho principal
 
