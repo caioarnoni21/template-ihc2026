@@ -137,6 +137,120 @@ Consolide as informações em **uma tabela única**.
 - Diferencie informação fornecida pelo usuário, produzida pelo sistema e derivada do domínio.
 - Registre prevenção e recuperação apenas quando fizer sentido; explique as siglas usadas.
 
+## 1. Cenários de interação
+
+### CI02 — Fazer uma triagem rápida da equipe e registrar o encaminhamento
+
+**Autor(a):** Guilherme Matias — 22.122.071-8  
+**Origem:** cenário problema C02, seção “Cenário refinado” da Entrega 4; tarefa T02 (HTA, GOMS e CTT da Entrega 5).
+
+Em uma semana de trabalho presencial e híbrido, João Pedro percebe que as mensagens de Camila Duarte estão mais secas e que ela participa menos das conversas informais. Ele precisa decidir se isso merece uma conversa de apoio. A reunião individual mensal já está marcada para o dia seguinte, e João quer chegar com uma ideia clara do que perguntar, sem uma conclusão fechada. Ele está em uma sala compartilhada, com quinze minutos entre duas reuniões, e evita deixar nomes e mensagens abertos na tela.
+
+**Em vez de abrir planilha de escalas, sistema de chamados e chat para comparar tudo manualmente, João abre o painel do WorkSense. O sistema apresenta primeiro um resumo da equipe em linguagem simples, informando se há alguma situação a observar. As pessoas aparecem de forma discreta, por iniciais, para que ninguém por perto leia nomes na tela. Para este caso fictício, o resumo indica uma situação a observar: uma mudança na comunicação de C. D. em relação ao histórico da própria colaboradora.**
+
+**João lê, junto da sinalização, um texto curto que explica o que ela significa e o que não significa: é uma alteração observada nos dados, não um diagnóstico, uma avaliação da pessoa ou uma explicação da causa. Ele decide se precisa aprofundar. Se considerar a variação pequena e a explicação suficiente, pode ir direto ao registro de “acompanhar” ou “não intervir”.**
+
+Os chamados de Camila parecem fechados dentro das metas, mas João não sabe se isso explica ou não a mudança no modo de escrever. **Ao aprofundar, o sistema mostra os períodos de referência e de reanálise com datas explícitas, a última atualização, a cobertura dos dados e o estado da análise. Os indicadores de comunicação e os de trabalho aparecem separados, com uma explicação curta de qual deles mudou. João vê que a comunicação mudou e que os indicadores de trabalho permanecem próximos do histórico, e entende que o cumprimento das metas não explica sozinho a mudança. Se algum termo não for claro (como “referência” ou “variação”), ele abre uma explicação em linguagem simples e volta ao resumo. Detalhes técnicos só aparecem se ele os pedir.**
+
+João depende do supervisor para saber que as últimas duas semanas tiveram pico de demanda e troca de turnos, informação que não consta nas ferramentas. **O sistema lembra que o sinal não substitui a conversa com a pessoa. O contexto externo e a conversa com Camila ficam fora do sistema e ainda não ocorreram nesta narrativa.**
+
+Um supervisor o chama para resolver uma escala. **Ao voltar, na mesma sessão, João encontra preservados a pessoa, o período e a etapa em que estava, sem recomeçar a consulta.**
+
+**João escolhe o encaminhamento “acompanhar”, escreve uma justificativa curta limitada ao contexto de trabalho e indica a data de retomada. O sistema apresenta o conteúdo a ser registrado, vinculado ao colaborador e ao período. João confere e confirma. O sistema informa que o registro foi salvo e devolve pessoa, período e encaminhamento para conferência. João encerra a consulta sabendo o que pretende perguntar e quando retomar o assunto.**
+
+**Se a análise estiver sem dados, incompleta ou com evidência insuficiente, o sistema informa qual fonte ou período falhou, não apresenta conclusão sobre mudança e só permite registrar “aguardar dados”, com justificativa curta. João pode manter a conversa humana prevista, independentemente de uma conclusão que os dados não sustentam.**
+
+**Se o registro não puder ser salvo, o sistema informa que ele não foi salvo e preserva o conteúdo digitado. João pode corrigir um dado inválido ou tentar novamente. A atividade só é considerada concluída após a confirmação.**
+
+### Diferenças relevantes
+| Alteração | Por que foi necessária | Evidência/artefato que justifica |
+|---|---|---|
+| Resumo da equipe em linguagem simples na abertura, com identificação discreta | João tem quinze minutos, pouca familiaridade com métricas e outras pessoas por perto | C02.Q2; persona P02; HTA T02, etapa 1; CT01 da Entrega 3 |
+| Texto “o que o sinal significa e não significa” junto da sinalização | Evitar que o sinal seja lido como diagnóstico ou veredito, o medo central de João | Persona P02; H17 e H25; HTA T02, etapa 2.1 |
+| Aprofundamento opcional, com caminho curto até o registro | A triagem rápida só aprofunda se a situação parecer relevante | C02.Q1 e Q6; GOMS T02 (M1 e SR1) |
+| Confiabilidade explícita: períodos, atualização, cobertura e estado da análise | João teme agir com dado incompleto e prejudicar alguém | C02.Q5; HTA T02, etapa 3.1; RC10 |
+| Comunicação e indicadores de trabalho separados, com explicação resumida | “Meta cumprida” não responde à pergunta sobre comunicação | C02.Q6; HTA T02, etapa 3.2; RC06 |
+| Explicação de termos sob demanda | O vocabulário (baseline, variação, sinalização) é lacuna ?03 e João não é analítico | Entrega 1 (?03); Entrega 7 (Bloco 4); HTA T02, etapa 3.3 |
+| Lembrete de que a conversa humana vem antes da ação | O contexto externo não está nos registros e depende de supervisor e conversa | C02.Q3 e Q8; HTA T02, etapa 4 |
+| Retomada da consulta na mesma sessão | João é interrompido por supervisores | C02.Q2; GOMS T02 (M4 e SR5); estado E04 |
+| Registro com encaminhamento, justificativa, confirmação e caminho de falha | João precisa de respaldo documentado e de saber se o registro foi salvo | C02.Q8; HTA T02, etapa 5; estados P06, P07 e E02 |
+| Caminho de análise não confiável (“aguardar dados”) | Dado insuficiente não pode virar conclusão sobre a pessoa | GOMS T02 (M3 e SR2); estado E03 |
+
+## 2. Design centrado na comunicação
+
+**Nome do cenário:** CI02 — Fazer uma triagem rápida da equipe e registrar o encaminhamento.
+
+| Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
+|---|---|---|
+| Fazer a triagem da equipe e registrar o encaminhamento | `U: Preciso saber se devo me preocupar com alguém da equipe.` / `D: Posso resumir o que mudou nos dados e registrar sua decisão, sem avaliar ninguém nem dizer o motivo da mudança.` Signos: resumo da equipe, sinalização, encaminhamento | Comunicar a finalidade e o limite do apoio |
+| > Obter a leitura inicial | `U: Tem algo que eu precise olhar agora?` / `D: Há 1 situação a observar (C. D.).` ou `D: Nenhuma situação a observar nos dados disponíveis.` Signos: resumo da equipe, sinalização, identificação discreta | Dar uma resposta simples em poucos segundos, sem expor nomes |
+| > Entender o significado do sinal | `U: Isso é grave?` / `D: É uma mudança em relação ao histórico da própria pessoa. Não é diagnóstico nem explica a causa. Vale conversar antes de agir.` Signos: sinalização, limites da análise | Evitar leitura diagnóstica ou punitiva |
+| > Decidir se aprofunda | `U: Quero ver mais detalhes.` ou `U: Não preciso aprofundar.` / `D: Posso mostrar a confiabilidade e a explicação, ou ir direto ao registro.` Signos: sinalização, encaminhamento | Tornar o aprofundamento opcional |
+| > Conferir a confiabilidade | `U: Posso confiar nesses dados?` / `D: Referência: 30 dias. Reanálise: 15 dias. Atualizado em [data]. Análise: completa.` Signos: período de referência, período analisado, última atualização, cobertura, estado da análise | Permitir avaliar a validade antes de agir |
+| > Entender o que mudou | `U: O que mudou?` / `D: A comunicação mudou em relação ao histórico dela. Os indicadores de trabalho ficaram próximos do histórico.` Signos: dimensão alterada, explicação resumida, evidências de comunicação, evidências de trabalho | Evitar que uma dimensão substitua a outra |
+| > Consultar um termo | `U: O que significa “variação”?` / `D: É a diferença entre o período atual e o histórico da própria pessoa.` Signos: termo de ajuda | Reduzir a barreira de vocabulário sem exigir conhecimento técnico |
+| > Reconhecer análise não confiável | `D: Não há dados suficientes para concluir se houve mudança (fonte: chat, últimos 15 dias).` / `U: Entendi; vou aguardar.` Signos: estado da análise, cobertura, limites da análise | Impedir ação sobre análise inexistente |
+| > Considerar o contexto humano | `D: Este sinal não substitui a conversa. Converse com a pessoa antes de decidir.` / `U: Vou conversar com ela amanhã.` Signos: lembrete de conversa humana, limites da análise | Reforçar a decisão humana fora do sistema |
+| > Retomar após interrupção | `U: Quero continuar de onde parei.` / `D: Você estava vendo C. D., no período de [datas], na etapa de confiabilidade.` Signos: colaborador, período analisado, etapa | Recuperar o contexto sem recomeçar |
+| > Registrar o encaminhamento | `U: Quero registrar o que decidi.` / `D: Qual encaminhamento (apoiar, acompanhar, não intervir ou aguardar dados) e por quê?` Signos: encaminhamento, justificativa, data de retomada | Separar decisão humana de resultado técnico |
+| > Conferir e concluir | `D: Você vai registrar “acompanhar” para C. D., período [datas]. Confirmar?` / `U: Confirmo.` / `D: Registro salvo.` Signos: encaminhamento, estado do registro | Tornar a consequência da confirmação verificável |
+| > Recuperar falha de registro | `D: Não foi possível salvar. Seu texto foi mantido. Tente novamente.` / `U: Quero tentar de novo.` Signos: estado do registro, motivo da falha | Evitar perda de conteúdo e falsa confirmação |
+
+**Convenção:** `U` = usuário; `D` = preposto do designer/sistema, conforme a abordagem de Engenharia Semiótica adotada na disciplina.
+
+## 3. Mapa de objetivos
+
+<img width="2241" height="2678" alt="image" src="https://github.com/user-attachments/assets/22c74232-5dea-429d-9302-d85b81a72893" />
+
+
+### Dicionário de objetivos
+
+| ID | Objetivo | Persona(s) | Cenário(s) | Prioridade | Equivalente no mapa do Caio |
+|---|---|---|---|---|---|
+| O11 | Fazer a triagem da equipe e registrar o encaminhamento | P02 — João Pedro | CI02 / T02 | Alta | O01 |
+| O12 | Obter a leitura inicial da equipe em linguagem simples | P02 — João Pedro | CI02 | Alta | O02 (parcial) |
+| O13 | Decidir se vale aprofundar | P02 — João Pedro | CI02 | Alta | — (novo) |
+| O14 | Verificar a confiabilidade da análise | P02 — João Pedro | CI02 | Alta | O06 |
+| O15 | Entender o que mudou em cada dimensão | P02 — João Pedro | CI02 | Alta | O07 |
+| O16 | Consultar o significado dos termos e do sinal | P02 — João Pedro | CI02 | Média | O03 (parcial) |
+| O17 | Reconhecer análise não confiável e aguardar dados | P02 — João Pedro | CI02, alternativa de insuficiência | Alta | O08 |
+| O18 | Considerar o contexto humano antes de agir | P02 — João Pedro | CI02 | Alta | O04 |
+| O19 | Registrar e conferir o encaminhamento | P02 — João Pedro | CI02 | Alta | O05 |
+| O20 | Retomar a consulta após interrupção | P02 — João Pedro | CI02 | Média | O09 |
+| O21 | Recuperar uma falha de registro | P02 — João Pedro | CI02, alternativa de falha | Alta | O10 |
+
+## 4. Esquema conceitual de signos
+
+| Grupo | Signo | Origem | Observações/semântica | Tipo de conteúdo | Restrição | Valor padrão | Prevenção | Recuperação |
+|---|---|---|---|---|---|---|---|---|
+| Leitura inicial | Resumo da equipe | Aplicação | Mensagem curta que informa se há ou não situação a observar; não classifica pessoas | Texto curto e contagem de situações | Não usar rótulos como “em risco”, “improdutivo” ou “problema”; não exibir ranking | “Nenhuma situação a observar nos dados disponíveis” só quando a análise estiver completa | PP: usar linguagem simples; PA: não emitir “nenhuma situação” se a análise estiver incompleta | RA: indicar que a análise não está completa e levar à confiabilidade |
+| Leitura inicial | Identificação discreta | Aplicação | Forma reduzida de identificar o colaborador na tela (iniciais), pensada para sala compartilhada | Iniciais | Inequívoca entre os colaboradores da equipe; nome completo só sob demanda | Iniciais | PP: explicar que a tela evita exibir nomes; PA: não incluir nome em notificações | RA: permitir ver o nome completo ao selecionar a pessoa |
+| Contexto | Colaborador | Domínio | Pessoa acompanhada; escolhida pelo gestor entre as autorizadas | Identificador e nome de exibição | Deve pertencer à equipe do gestor | Nenhum | PP: mostrar a pessoa junto do período; PA: impedir acesso fora da equipe | RA: permitir corrigir a seleção |
+| Contexto | Período analisado | Domínio | Intervalo recente (reanálise de 15 dias) sobre o qual o sistema apresenta a análise | Intervalo de datas | Início não posterior ao fim; vinculado ao colaborador | Último ciclo disponível | PP: mostrar datas explícitas | RA: indicar períodos disponíveis |
+| Contexto | Período de referência | Aplicação | Intervalo histórico (30 dias) usado como padrão individual de comparação | Intervalo de datas | Não confundir com o período analisado | O da análise selecionada | PP: distinguir referência de período analisado | RA: informar ausência de referência válida e impedir conclusão |
+| Interpretação | Sinalização | Aplicação | Alteração observada em relação ao histórico da própria pessoa; não é decisão nem avaliação | Indicação por dimensão e explicação curta | Só emitir com dados suficientes; ausência de sinal não significa ausência de dificuldade humana | Sem conclusão até verificar a suficiência | PP: explicar o que é e o que não é; PA: não emitir se os dados forem insuficientes | RA: levar às evidências e aos limites antes do registro |
+| Interpretação | Limites da análise | Aplicação | Texto que explica o que o resultado permite e não permite concluir | Texto contextual | Vinculado ao caso; não esconder ausência de dados | Explicação geral, mais as limitações do caso | PP: exibir junto da sinalização | RA: oferecer explicação complementar |
+| Interpretação | Dimensão alterada | Aplicação | Indica se a mudança foi na comunicação ou nos indicadores de trabalho, mantidas separadas | Categoria: comunicação ou trabalho | Nunca combinar em um único valor | Nenhuma | PP: nomear as dimensões em linguagem do gestor | RA: permitir ver cada dimensão isoladamente |
+| Interpretação | Explicação resumida | Aplicação | Frase que informa qual dimensão mudou, sem termos técnicos e sem sugerir causa | Texto curto | Sem diagnóstico, causa ou julgamento | Não disponível sem dados suficientes | PP: usar vocabulário do gestor | RA: oferecer detalhes opcionais |
+| Interpretação | Evidências de comunicação e de trabalho | Aplicação | Indicadores por dimensão, apresentados só no aprofundamento | Medidas com unidade e comparação | Exibir período; não equivalem a desempenho global | Ocultas na primeira camada | PP: mostrar só sob demanda (“ver detalhes”) | RA: permitir voltar ao resumo |
+| Interpretação | Termo de ajuda | Aplicação | Explicação curta de um conceito (referência, variação, sinalização) | Texto curto | Linguagem simples, sem fórmulas | Não exibido até ser solicitado | PP: marcar termos com ajuda disponível | RA: permitir voltar ao ponto em que estava |
+| Confiabilidade | Última atualização | Aplicação | Momento da atualização dos dados considerados | Data e hora | Não confundir com o horário da consulta | Não disponível até conhecer a atualização | PP: dizer a que se refere a data | RA: sinalizar desatualização sem inventar horário |
+| Confiabilidade | Cobertura | Aplicação | Disponibilidade dos dados por fonte e período | Estado por fonte | Desconhecido não equivale a completo | Não verificada | PP: informar lacunas | RA: permitir registrar “aguardar dados”; CE: indicar reparo externo quando necessário |
+| Confiabilidade | Estado da análise | Aplicação | Situação da análise: completa, sem dados, incompleta ou insuficiente; não avalia a pessoa | Categoria | Distinguir visual e textualmente “sem alteração relevante” de “sem dados” | Indisponível até confirmação | PP: explicar cada estado; PA: não emitir conclusão em análise não confiável | RA: aguardar ou registrar pendência; CE: orientar suporte em falha de integração |
+| Contexto humano | Lembrete de conversa humana | Aplicação | Aviso de que o sinal não substitui a conversa com a pessoa antes de qualquer ação | Texto curto | Presente sempre que houver sinalização | Exibido com a sinalização | PP: reforçar o limite da ferramenta | — |
+| Encaminhamento | Encaminhamento | Domínio | Próximo passo escolhido por João, sem automatismo do sistema | Categoria: apoiar, acompanhar, não intervir ou aguardar dados | Seleção explícita; com análise não confiável só “aguardar dados” | Nenhum (E03: “aguardar dados” pré-selecionado) | PP: explicar as opções; PA: exigir escolha; AL: alertar sobre escolha incompatível com análise insuficiente | RA: permitir revisar antes de confirmar |
+| Encaminhamento | Justificativa | Domínio | Motivo informado por João, em linguagem natural | Texto livre curto | Obrigatória para apoiar ou acompanhar; sem diagnóstico nem dado pessoal desnecessário | Vazia (curta ou predefinida em “não intervir” e “aguardar dados”) | PP: orientar o conteúdo mínimo; PA: impedir confirmação vazia quando obrigatória | RA: apontar a ausência e preservar os demais dados |
+| Encaminhamento | Data de retomada | Domínio | Data proposta para rever o encaminhamento | Data | Obrigatória para acompanhar ou aguardar dados; não anterior ao registro | Não definida | PP: explicar quando é necessária; PA: validar a data | RA: indicar o problema e permitir corrigir |
+| Registro | Estado do registro | Aplicação | Situação do encaminhamento durante a interação | Categoria: rascunho, salvando, salvo ou falha | Informar “salvo” somente após conclusão confirmada; no protótipo, a simulação é declarada | Rascunho | PP: distinguir rascunho de salvo; AL: avisar antes de descartar conteúdo | RA: preservar o conteúdo e permitir tentar novamente |
+| Registro | Motivo da falha | Aplicação | Explicação do impedimento e da ação possível | Texto contextual | Sem detalhes técnicos | Não se aplica sem falha | PP: explicar restrições conhecidas antes da confirmação | RA: orientar correção ou nova tentativa; CE: indicar suporte se a recuperação estiver fora da interface |
+
+### Regras para os signos
+
+- **Siglas:** PP = prevenção passiva (informar antes de o erro ocorrer); PA = prevenção ativa (impedir a ação inválida); AL = alerta (avisar antes de uma ação de risco); RA = recuperação apoiada (o sistema ajuda a corrigir); CE = contato externo (a solução depende de outra pessoa ou serviço).
+- **Origem:** *Domínio* = informação do mundo do gestor (colaborador, encaminhamento); *Aplicação* = produzida pelo sistema (estado da análise, sinalização).
+- Os signos Colaborador, Período analisado, Período de referência, Sinalização, Limites da análise, Estado da análise, Última atualização, Cobertura, Encaminhamento, Justificativa, Data de retomada, Estado do registro e Motivo da falha têm o mesmo nome e significado do esquema do Caio, para a consolidação.
+
+
 ## Síntese
 
 Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas MoLIC?
@@ -144,6 +258,10 @@ Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas 
 Na Entrega 10, os diagramas MoLIC de T01 deverão representar as conversas para localizar a análise (O02), conferir suficiência e contexto (O06), interpretar as dimensões e seus limites (O03/O07/O08), definir o próximo passo (O04) e registrar e conferir o resultado (O05). Também deverão explicitar retomada (O09) e recuperação de falha (O10), sem transformar insuficiência em conclusão sobre a pessoa.
 
 Os signos obrigatórios são colaborador, períodos analisado e de referência, padrão individual de referência, fontes, cobertura, última atualização, estado da análise, evidências de comunicação e de tarefas, sinalização, limites da análise, encaminhamento, justificativa, responsável, data de retomada quando aplicável, estado do registro e motivo da falha quando houver.
+
+Na Entrega 10, os diagramas MoLIC de T02 devem representar: a leitura inicial (O12), a decisão de aprofundar (O13) com o caminho curto até o registro, a verificação de confiabilidade (O14) com o desvio de análise não confiável (O17), a interpretação por dimensão e a consulta a termos (O15 e O16), o contexto humano como etapa fora do sistema (O18), o registro e a conferência (O19), a retomada (O20) e a recuperação de falha (O21).
+
+Os signos obrigatórios são resumo da equipe, identificação discreta, colaborador, períodos analisado e de referência, sinalização, limites da análise, dimensão alterada, explicação resumida, estado da análise, última atualização, cobertura, lembrete de conversa humana, encaminhamento, justificativa, data de retomada quando aplicável, estado do registro e motivo da falha quando houver.
 
 ## Checklist
 
