@@ -23,19 +23,20 @@ Exemplos de conversas:
 
 Modele também rupturas plausíveis: entrada inválida, falha de processamento, ausência de resultado, permissão insuficiente, filtro sem resultados, conflito de alteração, cancelamento ou necessidade de recuperação.
 
-## M01 — {{nome do cenário/objetivo}}
+## M01 — Consultar uma análise e registrar o próximo passo humano
 
-**Autor(a):** Caio Arnoni - 22.221.019-7  
-**Cenário de interação de origem:** CI01, derivado de C01/E4-C01.  
-**Objetivo(s):** O01 e seus desdobramentos O02–O10, conforme a Entrega 9. 
-**Tarefa(s) relacionada(s):** T01 — Consultar uma análise e registrar o próximo passo humano.
-**Signos relevantes:** colaborador; período analisado; período de referência; padrão individual de referência; fontes; cobertura; última atualização; estado da análise; evidências de comunicação e de tarefas; sinalização; limites da análise; encaminhamento; justificativa; responsável pela retomada; data de retomada; estado do registro; motivo da falha.
+**Autor(a):** Caio Arnoni - 22.221.019-7 <br> 
+**Cenário de interação de origem:** CI01, derivado de C01/E4-C01. <br>   
+**Objetivo(s):** O01 e seus desdobramentos O02–O10, conforme a Entrega 9. <br> 
+**Tarefa(s) relacionada(s):** T01 — Consultar uma análise e registrar o próximo passo humano. <br> 
+**Signos relevantes:** colaborador; período analisado; período de referência; padrão individual de referência; fontes; cobertura; última atualização; estado da análise; evidências de comunicação e de tarefas; sinalização; limites da análise; encaminhamento; justificativa; responsável pela retomada; data de retomada; estado do registro; motivo da falha. <br> 
 
 ### Diagrama
 
-![MoLIC M01](../assets/10_molic/molic_m01.svg)
+<img width="542" height="727" alt="image" src="https://github.com/user-attachments/assets/6614c6ba-08f3-41de-a5ed-a1b41a7ec0c0" />
 
-**Fonte editável:** {{adicione aqui o link para o arquivo `.drawio`, `.svg` editável ou outro formato utilizado pela equipe}}
+
+**Fonte editável:** https://drive.google.com/file/d/1RCWIgjYGq3O19NqSB9n89yBGiDNeRZci/view?usp=sharing
 
 ### Leitura do diagrama
 
@@ -45,14 +46,28 @@ cenas têm tópico no cabeçalho e diálogos/signos no corpo; `u:` identifica a 
 
 #### Caminho principal
 
-1. {{ponto de abertura → cena...}}
-2. {{...}}
+1. **Abertura → C1:** Rafael manifesta que deseja consultar uma análise. A conversa de O01 é aberta. Ele informa colaborador e período, entre casos autorizados e análises disponíveis.
+2. **C1 → P1 → C2:** Rafael solicita a consulta; o sistema obtém a análise e apresenta identidade, períodos, fontes, cobertura, atualização, estado e limites. A obtenção da análise não é confundida com uma fala do usuário nem com uma conclusão sobre a pessoa.
+3. **C2 → C3:** após conferir que há dados suficientes, Rafael solicita a interpretação das evidências. Comunicação e tarefas são apresentadas separadamente, comparadas ao histórico individual. O diálogo pode esclarecer termos e limites sem exigir uma cena distinta para cada explicação.
+4. **C3 → C4:** Rafael define o próximo passo humano e informa justificativa, responsável e data quando aplicável. Uma mudança comunicacional não obriga uma decisão de intervenção; o sistema não faz diagnóstico.
+5. **C4 → P2 → C5:** Rafael pede a revisão do encaminhamento. O sistema verifica as informações obrigatórias; estando válidas, apresenta o conteúdo ainda não salvo para conferência. Rafael pode retornar a C4 e revisar antes de confirmar.
+6. **C5 → P3 → C6:** Rafael confirma o registro. O sistema tenta salvá-lo e somente em caso de sucesso informa a conclusão. C6 permite conferir colaborador, período, encaminhamento, justificativa, responsável e data registrada.
+7. **C6 → encerramento:** Rafael declara que conferiu o registro e encerra. O01 está concluído; a conversa com Maria e a execução do acompanhamento não são declaradas realizadas pelo sistema.
 
 #### Alternativas e rupturas
 
 | Situação | Onde ocorre | Como o usuário percebe | Caminho de recuperação/saída |
 |---|---|---|---|
-| {{dado inválido}} | {{...}} | {{fala/feedback}} | {{...}} |
+| Caso/período sem análise disponível ou falha ao obter o resultado | P1 → C7 | `d: consulta indisponível`, com causa conhecida e sem apresentar dados fictícios como resultado válido | C7 → C1: Rafael revê a seleção ou tenta novamente. Se a solução depender de integração ou autorização externa, o sistema indica o responsável; Rafael pode encerrar sem concluir O01 |
+| Análise incompleta | C2 → C8 | A cobertura informa a lacuna; C8 esclarece que não há base para concluir mudança ou estabilidade | Rafael pode voltar a C2 para rever os dados ou seguir a C4 para registrar insuficiência e um próximo passo, sem atribuir uma conclusão à pessoa |
+| Dúvida sobre sinalização ou diferença entre comunicação e tarefas | Diálogo em C3 | Rafael pergunta pelo significado; o sistema apresenta referência, evidências e limites | O diálogo esclarece sem determinar a decisão; Rafael só segue a C4 quando decidir seu próximo passo |
+| Interrupção breve na mesma sessão | Cena corrente, especialmente C2–C4 | Na retomada, permanecem identificados caso, período e conteúdo ainda não salvo | O09 é apoiado pela conservação do contexto; a interrupção não cria fala de transição nem salva automaticamente. Expiração de sessão está fora deste recorte |
+| Dado obrigatório ausente ou inválido | P2 → C4 | `[RA] d: corrija o campo indicado`, preservando os demais dados | Corrigir em C4 e solicitar nova revisão. Exigir encaminhamento, justificativa e responsável; data é exigida ao acompanhar ou aguardar dados |
+| Desejo de alterar o encaminhamento antes de salvar | C5 → C4 | Rafael comunica que quer revisar o conteúdo; não há confirmação de salvamento | Revisar, validar novamente em P2 e retornar a C5 |
+| Falha ao salvar | P3 → C9 | `[RA] d: registro não salvo`, com motivo conhecido e conteúdo preservado durante a tentativa | Rafael pode tentar novamente em P3 ou rever os dados em C5 e, se necessário, C4; não considerar O01 concluído até C6 |
+| Falha persistente sem recuperação local | C9 | Sistema informa a impossibilidade e orienta suporte, sem alegar sucesso | Rafael pode abandonar via C10, mantendo o registro como não concluído. Não se presume salvamento posterior automático |
+| Abandono durante o preenchimento | C4 → C10 | `[AL] d: há conteúdo ainda não salvo`, comunicando a consequência de descartar | Continuar retorna a C4; confirmar abandono encerra O01 sem novo registro. Se veio de C9, continuar retoma o preenchimento preservado em C4 |
+| Encerramento antes de iniciar o registro | C1–C3, C7 ou C8 | Rafael manifesta que deseja encerrar a consulta sem registrar | Encerrar como abandono de O01, não como conclusão bem-sucedida. Essas saídas são indicadas na nota do diagrama para evitar múltiplas linhas cruzadas |
 
 ## M02b — Acessar o sistema como gestor e cadastrar colaborador
 
@@ -115,7 +130,14 @@ cenas têm tópico no cabeçalho e diálogos/signos no corpo; `u:` identifica a 
 
 | Objetivo | MoLIC que cobre | Lacunas/duplicidades | Decisão |
 |---|---|---|---|
-| O01 | M01 | {{...}} | {{...}} |
+| O01 — Consultar uma análise e registrar o próximo passo humano | M01, entrada até conclusão/abandono | Cobertura do recorte T01; outros modelos ainda não integrados | Manter como objetivo central de Rafael |
+| O02 — Localizar a análise pertinente | M01, C1/P1/C7 | Sem comparação com os modelos dos colegas | Reutilizar o conceito colaborador + período |
+| O03 / O06 — Avaliar limites e conferir contexto | M01, C2/C3/C8 | Pode ser compartilhado com outros gestores | Consolidar vocabulário após comparar os modelos |
+| O07 — Interpretar comunicação e tarefas separadamente | M01, C3 | Não equivale a comparar colaboradores | Preservar a separação das dimensões |
+| O08 — Reconhecer insuficiência | M01, C8 e encaminhamento em C4 | Não deve ser confundido com estabilidade | Manter caminho próprio de interpretação da limitação |
+| O04 / O05 — Definir e registrar encaminhamento | M01, C4/P2/C5/P3/C6 | Acompanhamento após a conversa humana está fora de T01 | Não declarar intervenção ou conversa já executada |
+| O09 — Retomar após interrupção | M01, conservação da cena e signos durante a sessão | Não inclui expiração de sessão ou retomada em outro dispositivo | Manter o limite explícito e avaliar necessidade futura |
+| O10 — Recuperar falha de registro | M01, C9 e retornos a P3/C5 | Persistência real não testada no protótipo | Simular feedback, correção e nova tentativa |
 | O11 Fazer a triagem da equipe e registrar o encaminhamento | M02: abertura (`gco`) até os três `gcc` | Duplica o O01 (mesma meta; muda a persona e a tarefa) | Unificar com o O01 no mapa consolidado, mantendo M01 e M02 como variantes: o M02 tem o caminho curto |
 | O12 Obter a leitura inicial da equipe em linguagem simples | M02: Cena 1 | Parcial com o O02; o M02 parte do resumo da equipe, e o M01 parte da escolha de colaborador e período | Manter, como alternativa de entrada do O02 |
 | O13 Decidir se vale aprofundar | M02: Cena 2 (caminho curto e completo) | Sem equivalente no M01, porque o Rafael sempre aprofunda | Manter; é exclusivo do P02 |
