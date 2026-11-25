@@ -35,7 +35,9 @@ Para perfis especializados (DBA, analista, pesquisador, administrador, técnico)
 
 | ID | Instrução ao participante | O moderador pode esclarecer | O moderador não deve dizer |
 |---|---|---|---|
-| UT01 | {{...}} | {{termos do cenário}} | {{nome/local do botão}} |
+| UT01 | Você é responsável por esta equipe e está preparando uma conversa com M. F. Consulte as informações do ciclo 22/10 a 05/11 e deixe registrado o próximo passo que considera adequado, explicando o motivo. Confira o resultado antes de terminar. | M. F. é uma colaboradora fictícia; ciclo significa o período indicado no enunciado. Repetir o objetivo, sem sugerir um encaminhamento. | Onde fica “Ver a sinalização”, quais telas abrir, que opção escolher ou como interpretar os indicadores. |
+| UT02 | Em outro caso fictício de acompanhamento, você precisa decidir o próximo passo para este colaborador e ciclo. Examine as informações disponíveis, registre o que considera adequado e confira o resultado. | Trata-se de outro conjunto de dados fictícios, independente do anterior. Esclarecer apenas a identidade e o período definidos nesse cenário. | Que a análise está incompleta, que deve escolher “Aguardar dados”, onde encontrar a cobertura ou que conclusão registrar. |
+| UT03 | Você precisa concluir o registro deste acompanhamento para que ele possa ser retomado depois. Faça o registro e confira se a tarefa foi concluída. | O registro deve corresponder ao caso fictício apresentado. Repetir o objetivo e esclarecer termos do cenário. | Que a primeira tentativa falhará, onde clicar para tentar novamente ou que o registro já foi salvo sem o participante conferir. |
 
 Tarefas podem envolver, conforme o escopo: localizar informação em dashboard; filtrar histórico; configurar análise; comparar resultados; gerar relatório; revisar alerta; editar permissão; recuperar-se de falha.
 
