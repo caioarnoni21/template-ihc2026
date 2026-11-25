@@ -33,7 +33,7 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 > Esta lista é repertório de design, **não uma exigência de quantidade de telas**. A rastreabilidade deve explicar por que cada tela existe.
 
 ## Link do Figma
-**Autor:** Guilherme Matias RA: 22.122.071-8 <br>
+**Autor:** Guilherme Matias RA: 22.122.071-8 e Caio Arnoni 22.221.019-7 <br>
 **Protótipo:** https://www.figma.com/design/McbDfvqqGuDnR9uDmBdJrp/Login-e-Cadastro-de-Colaboradores?node-id=0-1&t=KVpUb4PCjVZbOSQ0-1 <br>
 **Arquivo editável:** https://www.figma.com/design/McbDfvqqGuDnR9uDmBdJrp/Login-e-Cadastro-de-Colaboradores?node-id=0-1&t=KVpUb4PCjVZbOSQ0-1  <br>
 **Última verificação de permissão:** {{22/11/2026}}
@@ -44,6 +44,13 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 
 | MoLIC | Objetivo | Fluxo/telas no Figma | Estados de erro/recuperação | Responsável |
 |---|---|---|---|---|
+| M01, C1 | O02 — Localizar a análise pertinente | F06 apresenta equipe, ciclo e acesso à sinalização de M. F. | Seleção de outro período e consulta indisponível de C7 não demonstradas nas imagens | Caio Arnoni: documentação de T01; autoria visual a confirmar |
+| M01, C3 | O03/O07 — Interpretar evidências e limites | F07 separa comunicação e atividades, com explicações do significado | Explicações presentes; interação dos controles ainda não percorrida integralmente | Caio Arnoni: documentação de T01 |
+| M01, C2/C8 | O06/O08 — Conferir cobertura e reconhecer insuficiência | F08 mostra cobertura suficiente; F09 representa análise incompleta | Aviso de dados ausentes, retorno e encaminhamento para aguardar dados representados | Caio Arnoni: documentação de T01 |
+| M01, C4/C5 | O04/O05 — Definir e revisar encaminhamento | F10, variante F12 e ações de confirmação | Justificativa e opções visíveis; validação, responsável, data de retomada e revisão anterior ao salvamento não demonstrados integralmente | Caio Arnoni: documentação de T01 |
+| M01, C6 | O05 — Conferir registro concluído | F11 e F13; retorno de F13 a F06 verificado no navegador | Confirmações representadas; coerência entre seleção e resultado ainda requer correção/verificação | Caio Arnoni: documentação de T01 |
+| M01, O09 | Retomar após interrupção | F06 tem aviso de rascunho; F10/F12 informam salvamento automático | Retomada entre sessões é prometida no texto, mas não verificada; ultrapassa a retomada na mesma sessão prevista no M01 | Caio Arnoni: documentação de T01 |
+| M01, P2/P3/C9/C10 | O10 — Recuperar falha e abandonar com clareza | Não demonstrado nos oito prints | Faltam evidências de campo inválido, falha ao salvar, nova tentativa e confirmação de abandono | Caio Arnoni: documentação de T01 |
 | M02b | O22 Acessar o sistema como gestor | `F01 → visão geral (M02, cena 1)` | `F01E` (e-mail ou senha incorretos; usuário sem perfil de gestor) | Guilherme Matias |
 | M02b | O24 Recuperar acesso | `F01 → F02 → F02S` | `F02E` (e-mail inválido); retorno `F02 → F01` | Guilherme Matias |
 | M02b | O23 Cadastrar e vincular colaborador | `F03 → F04` e `F04 → F03` (cadastrar outro) | `F03E1` (campo vazio ou formato inválido), `F03E2` (CPF, matrícula, Telegram ID ou Trello ID já vinculado), `F03E3` (falha ao salvar) | Guilherme Matias |
@@ -83,6 +90,136 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 | `F02-erro-salvar` | Mensagem de falha ao salvar, com os dados digitados mantidos | Retorno tracejado de "salvar cadastro" à cena 3 (`RA`) |
 | `F02-cadastrado` | Confirmação com nome, matrícula e vínculos de Telegram e Trello; ações "cadastrar outro" e "concluir" | Cena 4 "Colaborador cadastrado" |
 | `F02-alerta` | Janela "há alterações não gravadas" com "sair sem salvar" e "continuar editando", aberta por "Cancelar" ou por "Sair" no menu | Cena 5 (`AL`) |
+
+
+### F06 — Visão geral da equipe
+
+<img width="878" height="773" alt="image" src="https://github.com/user-attachments/assets/9aa8ff70-7077-4cea-9925-aec1d38bdfc7" />
+
+**Objetivo do usuário:** localizar o caso que merece consulta e retomar uma atividade.  
+**Signos principais:** ciclo, atualização, colaborador, situação no ciclo, último registro, sinalização, análise incompleta e rascunho.  
+**Origem no MoLIC:** M01/C1 e O09.  
+
+| Estado | O que o usuário vê | Origem no MoLIC |
+|---|---|---|
+| F06-equipe | Resumo do ciclo, seis pessoas dentro do padrão, uma sinalização, uma análise incompleta e lista de colaboradores com ações de consulta | M01, C1 — Localizar a análise pertinente |
+| F06-retomada | Aviso de rascunho de C. M. e ação “Retomar”; funcionamento ainda não verificado | O09 — Retomar após interrupção; retomada entre sessões exige ampliar o modelo atual |
+| F06-carregando (previsto) | Informação de consulta em andamento, antes de apresentar o resultado; não demonstrada nos prints | M01, P1 — Obter análise |
+| F06-indisponivel (previsto) | Motivo da indisponibilidade e opção de rever caso/período ou tentar novamente; não demonstrado nos prints | M01, P1 → C7 → C1; recuperação apoiada (RA) |
+
+### F07 — Significado da sinalização
+
+<img width="1140" height="786" alt="image" src="https://github.com/user-attachments/assets/62392718-20e7-4320-97f9-ad3b01d1460f" />
+
+
+**Objetivo do usuário:** compreender a alteração sem interpretar o resultado como diagnóstico ou punição.  
+**Signos principais:** ciclo, padrão individual, comunicação, atividades, sinalização e limites.  
+**Origem no MoLIC:** M01/C3.
+
+| Estado | O que o usuário vê | Origem no MoLIC |
+|---|---|---|
+| F07-sinalizacao | Comparação entre comunicação e atividades de M. F., apresentadas separadamente em relação ao próprio padrão | M01, C3 — Interpretar evidências e limites |
+| F07-explicacao | Blocos “O que este sinal significa” e “O que este sinal NÃO significa”, esclarecendo que não se trata de diagnóstico, avaliação de desempenho ou justificativa para punição | Diálogo de esclarecimento em C3; prevenção passiva (PP) |
+| F07-prosseguir | Ações para consultar confiabilidade ou ir diretamente ao registro; ligações ainda não verificadas integralmente | Relação com C2 e C4; o atalho precisa ser reconciliado com a conferência prévia de suficiência no M01 |
+
+### F08 — Confiabilidade: dados suficientes
+
+<img width="1016" height="775" alt="image" src="https://github.com/user-attachments/assets/aaa531d4-3035-4f18-b9cd-17df143adcc4" />
+
+
+**Objetivo do usuário:** conferir períodos, origem, cobertura e atualização antes de interpretar.  
+**Signos principais:** estado da análise, referência, ciclo, dias com dados, fontes e atualização.  
+**Origem no MoLIC:** M01/C2.  
+
+| Estado | O que o usuário vê | Origem no MoLIC |
+|---|---|---|
+| F08-completa | Mensagem de análise completa, períodos de referência e comparação, cobertura e última atualização | M01, C2 — Conferir suficiência e atualização |
+| F08-fontes | Trello e Telegram identificados como conectados, além da explicação de como a comparação é feita | Diálogo sobre fontes, cobertura e limites em C2; prevenção passiva (PP) |
+| F08-detalhamento | Ações “Ver detalhes” e “O que significa?”; conteúdo de destino não apresentado nas imagens | Esclarecimento dos signos de C2; detalhamento ainda a verificar |
+| F08-prosseguir | Ações para continuar ao registro ou voltar à sinalização | C4 e C3; no M01, a conferência de C2 antecede a interpretação em C3 |
+
+### F09 — Confiabilidade: análise incompleta
+
+<img width="1017" height="778" alt="image" src="https://github.com/user-attachments/assets/5ec34eb3-58c9-4c10-9218-563e8d00b9fe" />
+
+
+**Objetivo do usuário:** reconhecer a limitação e evitar conclusão indevida.  
+**Signos principais:** cobertura insuficiente, fonte ausente, período, estado incompleto e próximo passo.  
+**Origem no MoLIC:** M01/C8.  
+
+| Estado | O que o usuário vê | Origem no MoLIC |
+|---|---|---|
+| F09-incompleta | Aviso de falta de dados para comparação, distinto de ausência de alteração; cobertura de 6/15 dias no ciclo | M01, C2 → C8 — Reconhecer insuficiência de dados; prevenção passiva (PP) |
+| F09-fonte-ausente | Telegram sem dados desde 28/10 e orientação para verificar o Telegram ID | Signos fontes, cobertura e limites em C8; captura de erro (CE) se a correção depender de responsável externo |
+| F09-encaminhar | Ação para registrar “aguardar dados”, com possibilidade de voltar à visão geral | M01, C8 → C4; a volta à visão geral representa saída sem registro e requer verificar a ligação |
+
+### F10 — Registrar encaminhamento
+
+<img width="1216" height="776" alt="image" src="https://github.com/user-attachments/assets/b2ea2379-2c36-4086-87d2-45b28c053a3c" />
+
+
+**Objetivo do usuário:** registrar sua decisão e justificativa vinculadas ao caso e ciclo.  
+**Signos principais:** pessoa, período, encaminhamento, justificativa, limite de caracteres e rascunho.  
+**Origem no MoLIC:** M01/C4; a revisão de C5 ainda precisa ser demonstrada.
+
+| Estado | O que o usuário vê | Origem no MoLIC |
+|---|---|---|
+| F10-preenchimento | Opções de encaminhamento, justificativa, contador de caracteres e identificação do caso/ciclo; “Apoiar” selecionado no print | M01, C4 — Definir o próximo passo humano |
+| F10-rascunho | Mensagem de salvamento automático e possibilidade de retomar; comportamento não verificado | O09; persistência entre sessões extrapola a conservação de contexto prevista no M01 |
+| F10-erro-campo (previsto) | Mensagem no campo obrigatório ausente ou inválido, mantendo os demais dados; não demonstrada | Retorno de P2 — Validar dados para C4 (RA) |
+| F10-revisao (previsto) | Resumo de caso, período e conteúdo ainda não salvo, permitindo corrigir ou confirmar; não demonstrado | M01, C5 — Conferir o encaminhamento |
+| F10-salvando (previsto) | Informação de salvamento em andamento, sem afirmar sucesso antes da resposta; não demonstrada | M01, P3 — Salvar registro |
+| F10-erro-salvar (previsto) | Aviso de registro não salvo, com dados preservados e ações de nova tentativa ou revisão; não demonstrado | P3 → C9, com retorno a P3 ou C5 (RA) |
+| F10-abandono (previsto) | Alerta de conteúdo não salvo, com escolha entre continuar e abandonar; não demonstrado | M01, C10 — Decidir sobre abandono (AL) |
+
+### F11 — Confirmação de encaminhamento
+
+<img width="1241" height="776" alt="image" src="https://github.com/user-attachments/assets/5608a875-dd2d-4594-b796-7e0b5f42fdc5" />
+
+
+**Objetivo do usuário:** conferir o que foi registrado e retornar à equipe.  
+**Signos principais:** autor, data/hora, pessoa, ciclo, encaminhamento, justificativa e próxima revisão.  
+**Origem no MoLIC:** M01/C6. 
+
+| Estado | O que o usuário vê | Origem no MoLIC |
+|---|---|---|
+| F11-confirmado | Confirmação de registro, autor, data/hora, pessoa, ciclo, encaminhamento “Acompanhar”, justificativa e próxima revisão | M01, P3 → C6 — Conferir o registro concluído |
+| F11-retornar | Ação “Voltar à visão geral”; destino ainda não verificado nesta variante | Encerramento de O01 após conferência em C6 e possível início de nova consulta em C1 |
+| F11-historico | Ação “Ver histórico de registros”; tela de destino não apresentada | Consulta de histórico não detalhada no M01; modelar antes de afirmar cobertura |
+
+### F12 — Registrar insuficiência
+
+<img width="1115" height="781" alt="image" src="https://github.com/user-attachments/assets/7e5186b9-9d5e-472c-bd89-1e4c151313c1" />
+
+
+**Objetivo do usuário:** registrar a pendência causada pela insuficiência.  
+**Signos principais:** estado incompleto, encaminhamento, justificativa e rascunho.  
+**Origem no MoLIC:** M01/C8 → C4.
+
+| Estado | O que o usuário vê | Origem no MoLIC |
+|---|---|---|
+| F12-insuficiencia | Aviso de análise incompleta e orientação de que o encaminhamento disponível é aguardar dados | M01, C8 → C4; regra restritiva do protótipo a reconciliar com o modelo |
+| F12-selecao | “Apoiar” e “Aguardar dados” aparecem selecionados simultaneamente; inconsistência a corrigir, não um comportamento esperado | Signo encaminhamento em C4; corrigir escolha única antes de validar em P2 |
+| F12-justificativa | Texto sobre ausência de dados, limite de caracteres e ação de confirmar “aguardar dados” | Diálogo de justificativa em C4 |
+| F12-erro-campo (previsto) | Orientação para corrigir informação obrigatória, preservando o conteúdo; não demonstrada | P2 → C4 (RA) |
+| F12-erro-salvar (previsto) | Aviso de pendência não registrada, com possibilidade de tentar novamente; não demonstrado | P3 → C9 (RA) |
+| F12-abandono (previsto) | Alerta antes de descartar o preenchimento, com opção de continuar; não demonstrado | M01, C10 (AL) |
+
+### F13 — Confirmação de pendência
+
+<img width="1115" height="781" alt="image" src="https://github.com/user-attachments/assets/68da7072-3f30-4fda-b60c-830fcda8c0f4" />
+
+
+**Objetivo do usuário:** confirmar o registro da insuficiência e compreender como será retomado.  
+**Signos principais:** estado salvo, pessoa, ciclo, justificativa, encaminhamento e próxima revisão.  
+**Origem no MoLIC:** M01/C6, após a alternativa de insuficiência. 
+
+| Estado | O que o usuário vê | Origem no MoLIC |
+|---|---|---|
+| F13-confirmado | Confirmação de “Aguardar dados”, pessoa, período, justificativa e autoria do registro | M01, C6, após o caminho de insuficiência C8 → C4 |
+| F13-retornar | Ação “Voltar à visão geral”; retorno a F06 verificado na sessão consultada | Encerramento de O01 após C6; visão geral disponível para nova consulta |
+| F13-revisao-futura | Texto “Quando o ciclo tiver dados suficientes. Você será avisado”; aviso futuro não verificado | Signos responsável e data de retomada de C4/C6 precisam ser explicitados; notificação futura não modelada em M01 |
+| F13-historico | Ação “Ver histórico de registros”; destino não demonstrado | Consulta de histórico fora do detalhamento atual de M01 |
 
 > Documente também estados que muitas equipes esquecem: carregamento, vazio, confirmação, sucesso, erro, permissão negada, cancelamento, desfazer/voltar quando aplicável.
 
