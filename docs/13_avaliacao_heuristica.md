@@ -1,6 +1,6 @@
 # Entrega 13 — Avaliação de IHC por inspeção heurística
 
-**Data:** {{dd/mm/aaaa}}  
+**Data:** 25/11/2026 
 **Status:** ⬜ não iniciada  
 **Responsabilidade:** 1 avaliação completa por integrante, sobre todas as telas/estados relevantes do projeto.
 
@@ -46,11 +46,11 @@ Em TCCs técnicos, observe especialmente se a interface comunica o estado do pro
 
 | Item | Definição |
 |---|---|
-| Versão avaliada | {{link/commit/data}} |
-| Telas/estados | {{lista completa}} |
-| Fluxos | {{M01/M02...}} |
-| Dispositivo/viewport | {{...}} |
-| Avaliadores | {{nomes}} |
+| Versão avaliada | Capturas documentadas na Entrega 11 em 25/11/2026. Referência: https://www.figma.com/design/McbDfvqqGuDnR9uDmBdJrp/Login-e-Cadastro-de-Colaboradores?node-id=0-1&p=f&t=P0yKLlrbv12dHvD4-0. |
+| Telas/estados | F06: visão geral; F07: sinalização; F08: confiabilidade completa; F09: análise incompleta; F10: registro; F11: confirmação; F12: registro com insuficiência; F13: confirmação de aguardar dados. IDs documentais, não IDs internos do Figma. |
+| Fluxos | M01/T01: consulta, interpretação, encaminhamento e confirmação, com variante de insuficiência. Recuperação de falha, abandono e fluxos dos demais integrantes precisam ser examinados para cumprir o escopo integral. |
+| Dispositivo/viewport | Revisão de imagens estáticas de interface desktop; navegador, zoom e viewport de execução não aferidos nesta revisão. |
+| Avaliadores |A01: Caio Arnoni 22.221.019-7 |
 
 ## 3. Procedimento individual
 
@@ -66,38 +66,40 @@ Cada avaliador deve:
 
 | Grau | Interpretação |
 |---:|---|
-| 0 | não é considerado problema de usabilidade |
-| 1 | problema cosmético; corrigir se houver tempo |
-| 2 | problema menor; baixa prioridade |
-| 3 | problema maior; alta prioridade |
-| 4 | catástrofe de usabilidade; correção imperativa antes de disponibilizar |
+| 0 | Não é considerado problema de usabilidade. |
+| 1 | Problema cosmético; corrigir se houver tempo. |
+| 2 | Problema menor; baixa prioridade. |
+| 3 | Problema maior; alta prioridade. |
+| 4 | Catástrofe de usabilidade; correção imperativa antes de disponibilizar. |
 
 Ao justificar, considere **frequência, impacto e persistência** do problema no contexto real de uso.
 
 ---
 
-## Avaliador A01 — {{nome}}
+## Avaliador A01 — Caio Arnoni
 
 ### 4. Matriz de cobertura das 10 heurísticas
 
 | Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
 |---|---|---|---|---|
-| H1 | {{...}} | sim/não | {{V01...}} | {{...}} |
-| H2 | {{...}} | sim/não |  |  |
-| H3 | {{...}} | sim/não |  |  |
-| H4 | {{...}} | sim/não |  |  |
-| H5 | {{...}} | sim/não |  |  |
-| H6 | {{...}} | sim/não |  |  |
-| H7 | {{...}} | sim/não |  |  |
-| H8 | {{...}} | sim/não |  |  |
-| H9 | {{...}} | sim/não |  |  |
-| H10 | {{...}} | sim/não |  |  |
+| H1 | F06, F08, F09, F11 e F13: status e confirmação representados. | Não | — | F09 informa falta de dados; F11/F13 apresentam resumo da confirmação. |
+| H2 | F06: resumo da equipe e significado da ação de registro. | Sim | V03 | Não se aplica como declaração de ausência de violação. |
+| H3 | F07–F10/F12: controles de retorno e continuidade representados. | Sim | — | “Voltar à sinalização” e “Voltar à visão geral” indicam alternativas de navegação |
+| H4 | F10/F11: opção e confirmação; F12: seleção exclusiva. | Não | V01, V02 | Não se aplica como declaração de ausência de violação. |
+| H5 | F12: restrição anunciada e opções apresentadas. | Não | V01 | Não se aplica como declaração de ausência de violação. |
+| H6 | F06–F13: pessoa, ciclo, navegação contextual e resumo. | Sim | — | Identificação de M. F. e ciclo visíveis reduzem a necessidade de lembrar qual caso está em consulta. |
+| H7 | F06: retomada de rascunho e acesso à sinalização. | Não | — | A ação “Retomar” representa um acesso direto à atividade interrompida; funcionamento e eficiência não medidos. |
+| H8 | F07/F08: organização das informações em grupos. | Não | — | Comunicação, atividades e cobertura possuem títulos próprios, favorecendo a leitura por assunto. Legibilidade em outros tamanhos não verificada. |
+| H9 | F09/F12: estado de insuficiência. | Sim | — | A mensagem informa ausência de dados do Telegram e sugere verificar o identificador; não comprova recuperação de falha de salvamento. |
+| H10 | F07–F09: significado, limites e comparação. | Não | — | “O que este sinal NÃO significa” explica limites e evita tratar a sinalização como diagnóstico ou avaliação de desempenho. |
 
 ### 5. Declaração de violações
 
 | ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
 |---|---|---|---|---|---:|---|---|
-| V01 | H1 | {{F02}} | {{o que ocorre, em que ação e qual consequência}} | ![print](../assets/13_heuristica/v01.svg) | 3 | {{frequência/impacto/persistência}} | {{correção específica}} |
+| V01 | H4, H5 | F12 — Registro com análise incompleta | Ao visualizar os encaminhamentos, o gestor encontra “Apoiar” e “Aguardar dados” selecionados simultaneamente, embora só aguardar dados seja permitido pelo aviso. Isso torna ambígua a decisão a registrar. | <img width="1115" height="781" alt="image" src="https://github.com/user-attachments/assets/6ba5a9c5-19ec-4fdc-a597-d6af3dbc11a2" /> | 3 — Maior, preliminar | Frequência potencial: toda abertura desse estado na versão representada. Impacto: dúvida sobre a decisão válida. Persistência: a contradição permanece enquanto os controles não forem corrigidos. Não foi verificado o valor salvo. | Desmarcar e desabilitar as opções incompatíveis com insuficiência; manter somente “Aguardar dados” selecionado e conferir sua preservação na confirmação. |
+| V02 | H4 | F10/F11 — Registro e confirmação | O formulário mostra “Apoiar”, enquanto a confirmação mostra “Acompanhar”, sem mudança intermediária documentada. Se forem etapas do mesmo fluxo, o resultado diverge da escolha. | <img width="1216" height="776" alt="image" src="https://github.com/user-attachments/assets/bd18bda4-04bf-41b0-9e65-6d2e1602b489" /> | 3 — Maior, se confirmado no mesmo fluxo | Frequência e persistência dependem do encadeamento, ainda não verificado. Impacto potencial alto: perda de confiança e confirmação de decisão diferente. A divergência visual é real, mas não comprova alteração durante a navegação. | Conferir o encadeamento e alinhar escolha e confirmação. Se forem cenários independentes, identificá-los. Testar cada opção até seu resumo final. |
+| V03 | H2 | F06 — Visão geral | O rótulo “Está tudo certo, registrar e sair” induz uma conclusão geral positiva diante de sinalização e insuficiência, sem explicitar a pessoa destinatária do registro. | <img width="878" height="773" alt="image" src="https://github.com/user-attachments/assets/00bfb480-38ae-41bd-a379-60c8b723fad1" /> | 2 — Menor, preliminar | Frequência potencial: acesso à visão geral nesse estado. Impacto: ambiguidade e possível encerramento prematuro; existe alternativa visível para consultar o sinal. Persistência: o rótulo reaparece a cada acesso enquanto mantido. Destino do botão ainda não verificado. | Adotar rótulo neutro, como “Registrar encaminhamento”, e explicitar o caso ao qual se aplica; não afirmar que está tudo certo diante de dados insuficientes. |
 
 **Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
 
@@ -105,7 +107,13 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 | Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
 |---|---|---|---|
-| {{H4}} | {{...}} | {{print}} | {{...}} |
+| H1 — aspecto local | Informação de insuficiência. | <img width="1017" height="778" alt="image" src="https://github.com/user-attachments/assets/0dd9b424-31e4-4fa1-a02c-b3520e2a9b62" /> | Torna explícito o estado e sua limitação, em vez de apresentar ausência de dados como estabilidade. |
+| H3 — intenção representada | Alternativas de retorno. | <img width="1016" height="775" alt="image" src="https://github.com/user-attachments/assets/2b726935-0b2f-4186-8298-6ceb42459a33" /> <img width="1017" height="778" alt="image" src="https://github.com/user-attachments/assets/0a70121f-0910-4e30-8398-5eb87c6b6912" /> | Indica uma saída sem obrigar o registro. O funcionamento precisa ser verificado. |
+| H6 — aspecto local | Contexto visível. |<img width="1216" height="776" alt="image" src="https://github.com/user-attachments/assets/75b5adb1-65da-4597-a78b-a950f0c48f40" /> <img width="1241" height="776" alt="image" src="https://github.com/user-attachments/assets/4ebf0a97-c654-4c61-99fb-2cbfb98725f2" /> | Permite reconhecer o contexto sem depender exclusivamente da memória da tela anterior. |
+| H7 — intenção representada | Retomada de rascunho. | <img width="878" height="773" alt="image" src="https://github.com/user-attachments/assets/3eb0f178-e95b-4d03-a26a-a31551ddd624" /> | Pode reduzir etapas de reencontro da atividade; a retomada real ainda deve ser testada. |
+| H8 — aspecto local | Agrupamento por assunto. | <img width="1140" height="786" alt="image" src="https://github.com/user-attachments/assets/646d58e2-7c1f-4f93-b77f-0b7e46843c85" /> | Ajuda a localizar informações relacionadas sem misturar dimensões diferentes. |
+| H9 — aspecto local | Explicação da falta de dados. | <img width="1017" height="778" alt="image" src="https://github.com/user-attachments/assets/feec26c8-4a72-4b9d-bc27-17ca99a7c67f" /> | Expõe uma causa a verificar e uma ação possível, sem depender apenas de código de erro. |
+| H10 — aspecto local | Ajuda contextual. |<img width="1140" height="786" alt="image" src="https://github.com/user-attachments/assets/baba6e83-004f-4dd6-a7a8-fe4e6b595d66" /> | Oferece explicação junto à informação que o gestor precisa interpretar. |
 
 > Repita a seção para A02, A03... um avaliador por integrante.
 
@@ -115,7 +123,9 @@ Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes dev
 
 | ID consolidado | Achados individuais | Heurística | Problema | Severidade final | Prioridade | Responsável pela correção |
 |---|---|---|---|---:|---|---|
-| HC01 | V01(A01), V04(A02) | H1 | {{...}} | {{...}} | alta | {{...}} |
+| HC01 | V01 — revisão preliminar assistida por IA | H4, H5 | F12 apresenta “Apoiar” e “Aguardar dados” selecionados simultaneamente, apesar de permitir apenas aguardar dados. | Proposta: 3 — maior; validar com a equipe | Alta — corrigir antes do teste do estado incompleto | Proposta: Caio Arnoni, em alinhamento com o responsável pela edição do protótipo |
+| HC02 | V02 — revisão preliminar assistida por IA | H4 | F10 mostra “Apoiar”, mas F11 confirma “Acompanhar”, sem alteração intermediária documentada. | Proposta: 3 — maior, se confirmado no mesmo fluxo | Alta — verificar o encadeamento e corrigir antes do teste de registro | Proposta: Caio Arnoni, em alinhamento com o responsável pela edição do protótipo |
+| HC03 | V03 — revisão preliminar assistida por IA | H2 | F06 oferece “Está tudo certo, registrar e sair” mesmo apresentando sinalização e insuficiência de dados. | Proposta: 2 — menor; validar com a equipe | Baixa em relação a HC01/HC02; incluir na revisão anterior ao teste | Proposta: Caio Arnoni, em alinhamento com o responsável pela edição do protótipo |
 
 ## 8. Síntese e plano de melhoria
 
