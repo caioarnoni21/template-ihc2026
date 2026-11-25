@@ -1,9 +1,9 @@
 # Formulário de avaliação heurística — modelo
 
-**Avaliador:** {{...}}  
-**Versão:** {{...}}  
-**Data:** {{...}}
-**Estados especiais examinados:** {{vazio / carregamento / erro / filtro sem resultado / permissão / confirmação / outros}}
+**Avaliador:** Caio Arnoni 22.221.019-7 
+**Versão:** capturas F06–F13 documentadas na Entrega 11.  
+**Data:** 25/11/2026.  
+**Estados especiais examinados:** representação visual de análise completa, análise incompleta, seleção de encaminhamento e confirmação; navegação, validação e recuperação de falha não verificadas nesta revisão.
 
 ## Cobertura
 
