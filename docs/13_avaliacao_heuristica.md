@@ -134,6 +134,89 @@ Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes dev
 - Padrões recorrentes entre telas.
 - Correções que serão feitas antes/para a avaliação com usuários.
 
+
+### 2. Escopo da inspeção (linhas do avaliador A02)
+
+| Item | Definição |
+|---|---|
+| Versão avaliada | PDF do protótipo no Figma "Login e Cadastro de Colaboradores" (2 telas), 25/11/2026. Referência: https://www.figma.com/design/McbDfvqqGuDnR9uDmBdJrp/Login-e-Cadastro-de-Colaboradores |
+| Telas/estados | L01: login do gestor, estado padrão; L02: cadastrar colaborador, estado padrão. IDs documentais, não IDs internos do Figma. |
+| Fluxos | M02b: acessar o sistema como gestor e cadastrar colaborador. Não aparecem no PDF: erro de login, recuperar acesso, erro de validação, confirmação do vínculo, colaborador cadastrado e confirmar saída. Esses estados não foram avaliados. |
+| Dispositivo/viewport | Imagens estáticas de interface desktop; navegador, zoom e viewport não aferidos. |
+| Avaliadores | A02: Guilherme Matias 22.122.071-8 |
+
+## 3. Procedimento individual
+
+Cada avaliador deve:
+
+1. percorrer os fluxos/telas ao menos uma vez para familiarização;
+2. inspecionar novamente aplicando sistematicamente H1–H10;
+3. registrar cada problema com evidência e contexto;
+4. atribuir severidade **depois de compreender bem o problema**, justificando a decisão;
+5. não discutir achados com os demais antes de terminar a inspeção individual, quando o objetivo for preservar independência.
+
+### 4. Matriz de cobertura das 10 heurísticas
+
+| Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
+|---|---|---|---|---|
+| H1 | L02: menu lateral e trilha de navegação | Não | — | O item "Colaboradores" fica destacado no menu e a trilha "Colaboradores / Novo cadastro" mostra onde o gestor está. Estados de carregamento e sucesso não existem no PDF. |
+| H2 | L01: painel de apresentação | Sim | V04 | Não se aplica |
+| H3 | L02: saídas do formulário | Não | — | O botão "Cancelar" e a trilha de navegação dão saída sem registrar. O aviso de dados não gravados não foi avaliado. |
+| H4 | L01 e L02: identidade visual e campos | Sim | V11, V12 | Não se aplica |
+| H5 | L01 (senha, "lembrar de mim") e L02 (campos, obrigatoriedade) | Sim | V05, V06, V08, V09, V10 | Não se aplica |
+| H6 | L01 e L02: rótulos e menu | Não | — | Rótulos fixos acima dos campos e menu com item ativo reduzem a memorização. |
+| H7 | L02: formulário e ações | Não | — | Todos os campos e as duas ações cabem em uma tela, sem rolagem na captura. Teclas e atalhos não foram verificados. |
+| H8 | L01 e L02: painel, cartão e selos | Sim | V04, V08, V13 | Não se aplica |
+| H9 | Nenhuma tela de erro no PDF | Não examinada | — | Estados de erro não representados; não há exemplo a citar |
+| H10 | L01 ("Fale com o RH") e L02 (IDs) | Sim | V07, V10 | Não se aplica |
+
+
+### 5. Declaração de violações
+
+| ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
+|---|---|---|---|---|---:|---|---|
+| V04 | H2, H8 | L01 — Login | O painel verde ocupa quase metade da tela com frases promocionais e uma lista "Colaboradores / Jornadas e rotinas / Solicitações". "Jornadas e rotinas" e "Solicitações" não correspondem a nenhum item do menu da L02 nem às conversas do M02 e do M02b. | <img width="300" alt="V04" src="https://github.com/user-attachments/assets/121b7f16-3608-47d1-a994-a16a8f486f57" /> | 2 — Menor, preliminar | Frequência: todo acesso. Impacto: cria a expectativa de funções que o sistema não tem e disputa atenção com o formulário. Persistência: constante. Pode ser decisão de produto, a validar. | Reduzir o painel a nome, frase curta e propósito. Listar só o que o sistema oferece. |
+| V05 | H5 | L01 — Login | "Lembrar de mim" aparece sem explicar o que mantém nem por quanto tempo, em um sistema com dados de colaboradores usado em sala compartilhada (P02 e CT01). | <img width="300" alt="V05" src="https://github.com/user-attachments/assets/5b1c7ab6-8345-4fac-b9e7-a2efffbd5206" /> | 2 — Menor, preliminar | Frequência: todo acesso. Impacto: quem marca em computador compartilhado deixa o acesso aberto a outra pessoa. Persistência: constante. O comportamento não foi verificado e depende da implementação. | Explicar o efeito ("manter conectado neste dispositivo por X dias") e avisar para não usar em computador compartilhado, ou remover a opção. |
+| V06 | H5 | L01 — Login | O campo de senha não tem controle para mostrar ou ocultar o que foi digitado. | <img width="300" alt="V06" src="https://github.com/user-attachments/assets/0830cafa-8304-4ff9-acea-03436401db5e" /> | 1 — Cosmético, preliminar | Frequência: todo login. Impacto: baixo; o erro de digitação só aparece depois de falhar. Persistência: constante. Não foi verificado se o controle existe fora da captura. | Incluir o controle de mostrar ou ocultar a senha. |
+| V07 | H10, H6 | L01 — Login | "Não tem acesso? Fale com o RH" é texto cinza sem aparência de link e sem canal indicado (e-mail ou formulário). | <img width="300" alt="V07" src="https://github.com/user-attachments/assets/2fe1cc69-5f66-4ed4-bd9b-b1e8a1e84540" /> | 2 — Menor | Frequência: quando o gestor ainda não tem acesso. Impacto: ele fica sem caminho concreto para resolver. Persistência: constante. | Transformar em link para um canal de contato ou indicar o e-mail ou o responsável. |
+| V08 | H8, H5 | L02 — Cadastro | O formulário pede CPF, cargo, departamento, data de admissão e matrícula, que não aparecem nos fluxos modelados (o M02b usa nome, e-mail, telefone, Telegram ID e Trello ID). Metade dos campos fica fora da tarefa, e o CPF é um identificador pessoal. | <img width="300" alt="V08" src="https://github.com/user-attachments/assets/aa03677b-0469-4cc6-ab7b-fec0666763d5" /> | 3 — Maior, preliminar | Frequência: todo cadastro. Impacto: mais esforço, risco de privacidade e contradição com o princípio de necessidade registrado na Entrega 1 (F03). Persistência: constante. A equipe pode ter decidido por esses campos; validar antes de corrigir. | Manter só os campos necessários ao vínculo. Se algum for necessário, justificar e marcar como opcional. |
+| V09 | H5 | L02 — Cadastro | Nenhum campo indica se é obrigatório ou opcional. O único aviso é "Confira os dados antes de concluir o cadastro" no rodapé. | <img width="300" alt="V09" src="https://github.com/user-attachments/assets/562d9c57-2cbf-4a70-8397-8389f98127e8" /> | 2 — Menor, preliminar | Frequência: todo cadastro. Impacto: o gestor só descobre quais campos faltam ao tentar concluir. Persistência: constante. As mensagens de validação não foram avaliadas. | Marcar os obrigatórios (ou os opcionais) de forma consistente. |
+| V10 | H10, H5 | L02 — Cadastro | Telegram ID e Trello ID têm exemplo de formato no campo, mas nada diz onde encontrar o ID. O Trello ID é uma sequência longa de letras e números, difícil de obter para quem tem pouca familiaridade técnica (P02). | <img width="300" alt="V10" src="https://github.com/user-attachments/assets/23901197-4f15-45a8-980a-7bcab105dd08" /> | 3 — Maior, preliminar | Frequência: todo cadastro. Impacto: um ID errado vincula o colaborador à fonte errada, e a análise passa a usar dados de outra pessoa. Persistência: constante. A confirmação do vínculo prevista no M02b não aparece no PDF. | Incluir "Onde encontro?" com passo a passo curto, validar o formato e mostrar uma confirmação do vínculo antes de salvar. |
+| V11 | H4, H6 | L02 — Cadastro | "Cargo", "Departamento" e "Data de admissão" têm a mesma aparência dos campos de texto, sem seta nem ícone de calendário. | <img width="300" alt="V11" src="https://github.com/user-attachments/assets/a5c68f22-328f-4110-ba0c-aef8a36a647a" /> | 2 — Menor, preliminar | Frequência: todo cadastro. Impacto: o gestor pode tentar digitar onde deveria selecionar. Persistência: constante. O comportamento real não foi verificado. | Mostrar seta nas listas e ícone de calendário na data. |
+| V12 | H4 | L01 e L02 | As duas telas usam identidades diferentes: logotipo "WorkSense" no login e "worksense" no menu; painel verde-escuro versus menu cinza-escuro; botão primário verde-escuro com texto branco versus verde-claro com texto escuro. | <img width="300" alt="V12" src="https://github.com/user-attachments/assets/3fdfad93-bc56-4c8a-aaee-faf831733545" /> | 1 — Cosmético | Frequência: toda passagem do login para o cadastro. Impacto: parece haver dois produtos. Persistência: constante. | Padronizar logotipo, cor e estilo do botão primário. |
+| V13 | H8 | L02 — Cadastro | Há elementos decorativos sem função: o cartão "MAIS CONEXÃO" no menu, o selo "Novo colaborador" que repete o título e a trilha, e o ponto verde junto de "Área do gestor", que lembra um indicador de "online". | <img width="300" alt="V13" src="https://github.com/user-attachments/assets/eb235c76-aa1a-4ff7-b385-c71659f17c24" /> | 1 — Cosmético, preliminar | Frequência: todo acesso. Impacto: baixo, mas o ponto verde pode ser lido como status. Persistência: constante. | Remover o cartão e o selo, ou dar função clara ao ponto verde. |
+
+### 6. Boas práticas — heurísticas não violadas (atividade didática)
+
+| Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
+|---|---|---|---|
+| H1 | Item "Colaboradores" ativo e trilha "Colaboradores / Novo cadastro" | Figura A | O gestor sabe onde está sem depender da memória. |
+| H3 | "Cancelar" e trilha de navegação | Figura A | Oferecem saída sem concluir. O aviso de dados não gravados não foi avaliado. |
+| H6 | Rótulos fixos e menu com item ativo | Figura A | O rótulo continua visível durante o preenchimento. |
+| H7 | Formulário completo e ações em uma só tela | Figura A | Reduz o esforço de rolagem. Teclas e atalhos não foram verificados. |
+| H10 — aspecto local | Exemplos de formato nos campos Telegram e Trello | Mesma imagem do V10 (seção 5) | Mostram como o dado deve ser digitado. Falta indicar onde encontrá-lo (V10). |
+| H4 — aspecto local | "Esqueci a senha" como link verde ao lado de "Lembrar de mim" | Mesma imagem do V05 (seção 5) | Tem aparência de link e está perto do campo de senha. |
+
+**Figura A** — Tela L02 (cadastro de colaborador) completa.
+
+<img width="1389" height="868" alt="image" src="https://github.com/user-attachments/assets/913641c1-8ca1-4ba2-849e-cef06303c0e3" />
+
+
+## 7. Consolidação da equipe
+
+Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes devem ser consolidados, preservando quem os encontrou.
+
+| ID consolidado | Achados individuais | Heurística | Problema | Severidade final | Prioridade | Responsável pela correção |
+|---|---|---|---|---:|---|---|
+| HC04 | V10 (A02) | H10, H5 | Telegram ID e Trello ID sem orientação de onde encontrar | Proposta: 3 — maior; validar com a equipe | Alta — corrigir antes do teste | Proposta: Guilherme Matias |
+| HC05 | V08 (A02) | H8, H5 | Campos de cadastro fora da tarefa modelada (CPF, cargo, departamento, admissão, matrícula) | Proposta: 3 — maior; validar com a equipe | Alta — decidir se são necessários | Proposta: Guilherme Matias, com a equipe |
+| HC06 | V05, V07 (A02) | H5, H10 | "Lembrar de mim" sem explicação e "Fale com o RH" sem canal | Proposta: 2 — menor | Média | Proposta: Guilherme Matias |
+| HC07 | V04, V13 (A02) | H2, H8 | Painel promocional e elementos decorativos sem relação com a tarefa | Proposta: 2 — menor | Média | Proposta: Guilherme Matias |
+| HC08 | V09, V11 (A02) | H5, H4 | Obrigatoriedade não indicada e listas sem aparência de seleção | Proposta: 2 — menor | Média | Proposta: Guilherme Matias |
+| HC09 | V06, V12 (A02) | H5, H4 | Senha sem mostrar ou ocultar e identidade visual diferente entre as telas | Proposta: 1 — cosmético | Baixa | Proposta: Guilherme Matias |
+
+---
+
 ## Checklist
 
 - [ ] Cada integrante fez uma inspeção completa e identificada.
