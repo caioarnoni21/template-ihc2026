@@ -129,6 +129,15 @@ Consolide as informações em **uma tabela única**.
 | Encaminhamento | Data de retomada | Domínio | Data proposta pelo usuário para reavaliar o encaminhamento | Data | Obrigatória para acompanhar ou aguardar dados; não anterior à data do registro | Não definida | PP: explicar formato e quando é necessária; PA: validar condição e data | RA: indicar o problema e permitir corrigir |
 | Registro | Estado do registro | Aplicação | Situação do encaminhamento durante a interação | Categoria: rascunho, salvando, salvo ou falha | Informar salvo somente após conclusão confirmada; simulação declarada no protótipo | Rascunho | PP: distinguir rascunho de salvo; AL: avisar antes de descartar conteúdo | RA: preservar conteúdo e tentar novamente; manter pendência se não salvar |
 | Registro | Motivo da falha | Aplicação | Explicação produzida pelo sistema sobre o impedimento e a ação possível | Texto contextual | Não expor detalhes técnicos ou credenciais; não afirmar causa desconhecida | Não se aplica sem falha | PP: explicar restrições conhecidas antes da confirmação | RA: orientar correção ou nova tentativa; CE: indicar suporte se a recuperação estiver fora da interface |
+| Transparência | Finalidade da análise | Aplicação | Para que a análise existe e o que ela compara (próprio histórico, não colegas) | Texto fixo | Não prometer usos não previstos; não sugerir avaliação | — | Exibir antes da primeira explicação | — |
+| Transparência | Acesso aos resultados | Domínio | Quem vê a análise da colaboradora e em que nível de detalhe | Lista de papéis e pessoas | Coerente com a política de acesso definida | Gestor responsável | Indicar que colegas não têm acesso | — |
+| Explicação | Explicação compartilhada | Aplicação | Versão da análise do ciclo que o gestor compartilhou com a colaboradora | Período, dimensões, limites, autor e data do compartilhamento | Só a própria colaboradora; sem dados de colegas | — | Informar “nenhuma explicação compartilhada” quando ausente | Permitir pergunta geral ao gestor |
+| Esclarecimento | Forma de contato | Domínio | Como a colaboradora quer apresentar o contexto | Categoria: mensagem escrita ou conversa reservada | Uma opção por solicitação | Mensagem escrita | Mostrar a alternativa de conversa ao lado | Trocar antes de enviar |
+| Esclarecimento | Tipo de solicitação | Domínio | Natureza do que é enviado | Categoria: pergunta, correção de informação ou contexto | Obrigatório na mensagem escrita | — | Rótulos com exemplo curto | Alterar antes de enviar |
+| Esclarecimento | Mensagem de contexto | Domínio | Texto livre escrito pela colaboradora | Texto, até 1000 caracteres | Obrigatória na mensagem escrita; não exigir justificativa pessoal | Vazio | Aviso sobre dados de saúde ou pessoais sensíveis | Texto preservado na falha; alerta antes de descartar |
+| Esclarecimento | Destinatário | Domínio | Pessoa que recebe a solicitação | Nome e papel | Gestor responsável pela equipe da colaboradora | Gestor responsável | Exibido antes do envio | — |
+| Acompanhamento | Estado da solicitação | Aplicação | Situação do pedido desde o envio | Categoria: rascunho, enviando, recebida, em análise, respondida, esclarecida, falha | Informar “recebida” só após confirmação | Rascunho | Linha do tempo com datas | Em falha: tentar novamente sem perder o texto |
+| Acompanhamento | Resposta | Domínio | Retorno escrito do gestor à solicitação | Texto com autor e data | Visível só para a colaboradora e o autor | — | — | Pedir nova revisão vinculada |
 
 ### Regras para os signos
 
@@ -136,6 +145,8 @@ Consolide as informações em **uma tabela única**.
 - Evite duplicar o mesmo conceito com nomes diferentes.
 - Diferencie informação fornecida pelo usuário, produzida pelo sistema e derivada do domínio.
 - Registre prevenção e recuperação apenas quando fizer sentido; explique as siglas usadas.
+- **Signos reaproveitados no CI03 (Tainá):** período analisado, período de referência, fontes, evidências de comunicação, evidências de tarefas, sinalização e limites da análise mantêm o mesmo nome e significado do esquema do Caio. No CI03, o colaborador é sempre a própria usuária, e não um campo de seleção.
+- **Motivo da falha** é reaproveitado do registro de T01, aplicado ao envio da solicitação.
 
 ## 1. Cenários de interação
 
@@ -250,6 +261,85 @@ Um supervisor o chama para resolver uma escala. **Ao voltar, na mesma sessão, J
 - **Origem:** *Domínio* = informação do mundo do gestor (colaborador, encaminhamento); *Aplicação* = produzida pelo sistema (estado da análise, sinalização).
 - Os signos Colaborador, Período analisado, Período de referência, Sinalização, Limites da análise, Estado da análise, Última atualização, Cobertura, Encaminhamento, Justificativa, Data de retomada, Estado do registro e Motivo da falha têm o mesmo nome e significado do esquema do Caio, para a consolidação.
 
+## 1. Cenários de interação
+
+### CI03 — Esclarecer uma interpretação e acompanhar a resposta
+
+**Autor(a):** Tainá Cunha Bueno — 22.119.025-9
+**Origem:** cenário problema C03, seção “Cenário refinado” da Entrega 4; tarefa T03 (HTA, GOMS e CTT da Entrega 5).
+
+No fim de uma conversa individual, Rafael Costa comenta com Maria Fonseca que as mensagens dela no chat da equipe têm parecido mais curtas e pergunta se está tudo bem. Maria se surpreende: suas tarefas estão em dia. **No dia seguinte, ela recebe um aviso de que Rafael compartilhou com ela a explicação do ciclo 22/10–05/11.** À noite, em casa, abre o notebook com cerca de meia hora disponível.
+
+**Em vez de tentar adivinhar em que Rafael se baseou, Maria abre “Sobre minhas análises”. O sistema informa para que a análise serve, quais fontes entram (mensagens de trabalho e cartões de tarefas), que a comparação é feita com o histórico dela, e não com colegas, e quem vê os resultados. Também deixa claro o que a análise não é: diagnóstico, avaliação de desempenho ou base para punição.**
+
+**Ela abre a explicação do ciclo. O sistema mostra o período analisado e o de referência, quem compartilhou e quando, e apresenta separadamente as duas dimensões: a comunicação mudou em relação ao histórico dela (mensagens mais frequentes e mais curtas) e as tarefas permaneceram próximas do histórico. Um bloco explica o que isso significa e o que não significa, lembrando que a análise não conhece a causa da mudança.**
+
+Parte do contexto não está nos registros: ela está mentorando dois desenvolvedores juniores, e o líder técnico pediu respostas objetivas durante a release. **Maria escolhe “Esclarecer ou adicionar contexto”. O sistema oferece duas formas: mensagem escrita ou pedido de conversa reservada. Ela escolhe a mensagem escrita, marca o tipo “contexto” e escreve sobre a mentoria e a release. O sistema mostra o destinatário, Rafael Costa, e o ciclo vinculado, e avisa para não incluir informações de saúde ou pessoais sensíveis.** Maria decide não mencionar um problema familiar; **o sistema não exige justificativa pessoal e informa que enviar o contexto não altera automaticamente a análise.**
+
+**Ela envia. O sistema confirma que a solicitação foi recebida, com data, hora, destinatário e estado, e indica onde acompanhar a resposta.**
+
+**No dia seguinte, em “Minhas solicitações”, Maria vê que o estado passou de “recebida” para “em análise” e depois para “respondida”. Lê a resposta de Rafael, que diz ter considerado a mentoria e a release e que não vê necessidade de outra ação. Maria seleciona “Considero esclarecido”. Se a resposta não considerasse o contexto, ela poderia pedir nova revisão, vinculada à mesma solicitação.**
+
+**Se Maria preferir não escrever, pode pedir uma conversa reservada, indicando uma preferência de horário; a conversa ocorre fora do sistema, e a solicitação segue os mesmos estados.**
+
+**Se o envio falhar, o sistema informa que nada foi enviado, mantém o texto e oferece tentar novamente. Se ela sair antes de enviar, o sistema avisa que o rascunho será descartado.**
+
+**Se não houver explicação compartilhada no ciclo, o sistema informa isso e permite enviar uma pergunta geral ao gestor.**
+
+### Diferenças relevantes
+
+| Alteração | Por que foi necessária | Evidência/artefato que justifica |
+|---|---|---|
+| Página de transparência: finalidade, fontes, comparação com o próprio histórico e quem vê | Maria não sabia em que o comentário se baseou | C03.Q3; N07; H11 e H28; HTA T03, etapa 1.1 |
+| Explicação com período, quem compartilhou e dimensões separadas | Evitar que mudança de comunicação seja lida como queda de desempenho | C03.Q3; HTA T03, etapa 1.3; persona P03 |
+| Bloco “o que significa e o que não significa” | Reduzir leitura avaliativa ou diagnóstica | H25; Entrega 8, meta qualitativa de T03 |
+| Escolha entre mensagem escrita e conversa reservada | Permitir dar contexto sem expor questões pessoais | C03.Q5; GOMS T03, SR2 |
+| Destinatário e ciclo visíveis antes do envio; aviso sobre dados sensíveis | Saber para quem vai o contexto e evitar exposição | C03.Q5, Q7; HTA T03, etapa 2.3 |
+| Aviso de que enviar não altera a análise automaticamente | Evitar expectativa falsa sobre o efeito do envio | Jornada J03 da Entrega 3 (variação essencial para teste) |
+| Confirmação de recebimento e estados da solicitação | Responder à ruptura do silêncio | C03.Q7; HTA T03, etapas 3.1–3.2 |
+| Encerramento decidido pela colaboradora e pedido de nova revisão | Critério de conclusão definido por ela | C03.Q8; GOMS T03, SR3 |
+| Caminhos de falha, abandono e ausência de explicação | Evitar perda de texto, falsa confirmação ou beco sem saída | HTA T03, planos 1 e 2; CTT T03 (`[>`) |
+
+## 2. Design centrado na comunicação
+
+**Nome do cenário:** CI03 — Esclarecer uma interpretação e acompanhar a resposta.
+
+| Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
+|---|---|---|
+| Esclarecer uma interpretação e verificar a resposta | `U: Quero entender o que foi observado sobre mim e explicar o meu lado.` / `D: Posso mostrar o que é analisado e a explicação do seu ciclo, e levar o seu contexto ao seu gestor. Não decido nada sobre você.` Signos: explicação compartilhada, solicitação, destinatário | Comunicar a finalidade e o limite do apoio oferecido |
+| > Entender o uso dos meus dados | `U: O que é analisado e quem vê?` / `D: Mensagens de trabalho e cartões de tarefas, comparados com o seu próprio histórico. Seu gestor vê indicadores e explicações; você vê apenas a sua análise.` Signos: finalidade da análise, fontes, acesso aos resultados | Reduzir a assimetria de informação e a percepção de vigilância |
+| > Consultar a explicação do ciclo | `U: O que mudou neste ciclo?` / `D: No período 22/10–05/11, sua comunicação mudou em relação ao seu histórico; suas tarefas ficaram próximas do histórico.` Signos: período analisado, período de referência, evidências de comunicação, evidências de tarefas, explicação compartilhada | Separar as dimensões e situar o período |
+| > Compreender o significado | `U: Isso quer dizer que estou indo mal?` / `D: Não. É uma mudança em relação ao seu próprio padrão. Não é avaliação, diagnóstico ou punição, e a análise não sabe a causa.` Signos: sinalização, limites da análise | Evitar leitura avaliativa ou diagnóstica |
+| > Sem explicação compartilhada | `D: Nenhuma explicação foi compartilhada com você neste ciclo.` / `U: Quero fazer uma pergunta ao meu gestor mesmo assim.` Signos: explicação compartilhada (ausente), destinatário | Não deixar beco sem saída |
+| > Escolher como esclarecer | `D: Você pode escrever uma mensagem ou pedir uma conversa reservada.` / `U: Prefiro escrever.` ou `U: Prefiro conversar.` Signos: forma de contato | Respeitar a preferência e o nível de exposição |
+| > Descrever o contexto | `U: Quero explicar que estou mentorando juniores e que a release exigiu respostas curtas.` / `D: Sua mensagem vai para Rafael Costa, vinculada ao ciclo 22/10–05/11. Não inclua informações de saúde ou pessoais sensíveis. Enviar não altera automaticamente a análise.` Signos: tipo de solicitação, mensagem de contexto, destinatário | Tornar visíveis o destino e o efeito do envio |
+| > Confirmar o recebimento | `D: Sua solicitação foi recebida pelo sistema em 07/11 às 14:32 e encaminhada a Rafael Costa. Isso não significa que o gestor já leu sua mensagem. Você será avisada quando houver resposta.` Signos: estado da solicitação | Distinguir envio, recebimento e leitura |
+| > Acompanhar a solicitação | `U: Já tive resposta?` / `D: Estado: respondida. Resposta de Rafael Costa em 08/11.` Signos: estado da solicitação, resposta | Responder à ruptura do silêncio |
+| > Concluir ou pedir nova revisão | `U: Considero esclarecido.` ou `U: A resposta não considerou meu contexto; quero pedir nova revisão.` / `D: Sua nova mensagem será vinculada à mesma solicitação.` Signos: estado da solicitação, mensagem de contexto | A conclusão é decidida pela colaboradora |
+| > Recuperar falha de envio | `D: Não foi possível enviar. Sua mensagem foi mantida; nada foi enviado ao seu gestor.` / `U: Quero tentar novamente.` Signos: estado da solicitação, motivo da falha | Evitar perda de texto e falsa confirmação |
+| > Sair sem enviar | `D: Há texto ainda não enviado. Se sair, ele será descartado.` / `U: Quero continuar editando.` ou `U: Quero descartar.` Signos: mensagem de contexto | Prevenir perda acidental |
+
+**Convenção:** `U` = usuária; `D` = preposto do designer/sistema, conforme a abordagem de Engenharia Semiótica adotada na disciplina.
+
+## 3. Mapa de objetivos
+
+![Mapa de objetivos P03](../assets/09_modelo_conceitual/mapa_objetivos_p03.png)
+
+Fonte editável: [`mapa_objetivos_p03.svg`](../assets/09_modelo_conceitual/mapa_objetivos_p03.svg)
+
+### Dicionário de objetivos
+
+| ID | Objetivo | Persona(s) | Cenário(s) | Prioridade | Equivalente nos mapas dos colegas |
+|---|---|---|---|---|---|
+| O25 | Esclarecer uma interpretação sobre o próprio trabalho e verificar a resposta | P03 — Maria Fonseca | CI03 / T03 | Alta | Novo; complementa O01/O11 do lado da colaboradora |
+| O26 | Compreender finalidade, fontes, acesso e limites | P03 — Maria Fonseca | CI03 | Alta | Relacionado a O03; novo quanto a “quem acessa” |
+| O27 | Compreender a explicação compartilhada do ciclo | P03 — Maria Fonseca | CI03 | Alta | Relacionado a O07/O15, com leitora diferente |
+| O28 | Escolher como apresentar o contexto | P03 — Maria Fonseca | CI03 | Média | Novo |
+| O29 | Enviar contexto ou pedido ao destinatário correto | P03 — Maria Fonseca | CI03 | Alta | Novo |
+| O30 | Confirmar o recebimento | P03 — Maria Fonseca | CI03 | Alta | Análogo a O05/O19 (conferir resultado) |
+| O31 | Acompanhar a solicitação e ler a resposta | P03 — Maria Fonseca | CI03 | Alta | Novo |
+| O32 | Pedir nova revisão | P03 — Maria Fonseca | CI03, alternativa | Média | Novo |
+| O33 | Recuperar falha de envio | P03 — Maria Fonseca | CI03, alternativa de falha | Alta | Equivale a O10/O21; unificar no mapa consolidado |
 
 ## Síntese
 
@@ -262,6 +352,8 @@ Os signos obrigatórios são colaborador, períodos analisado e de referência, 
 Na Entrega 10, os diagramas MoLIC de T02 devem representar: a leitura inicial (O12), a decisão de aprofundar (O13) com o caminho curto até o registro, a verificação de confiabilidade (O14) com o desvio de análise não confiável (O17), a interpretação por dimensão e a consulta a termos (O15 e O16), o contexto humano como etapa fora do sistema (O18), o registro e a conferência (O19), a retomada (O20) e a recuperação de falha (O21).
 
 Os signos obrigatórios são resumo da equipe, identificação discreta, colaborador, períodos analisado e de referência, sinalização, limites da análise, dimensão alterada, explicação resumida, estado da análise, última atualização, cobertura, lembrete de conversa humana, encaminhamento, justificativa, data de retomada quando aplicável, estado do registro e motivo da falha quando houver.
+
+Na Entrega 10, o MoLIC de T03 (M03) deverá representar: entender o uso dos dados (O26), consultar a explicação compartilhada ou sua ausência (O27), escolher a forma de contato (O28), descrever e enviar o contexto ou o pedido de conversa (O29), confirmar o recebimento (O30), acompanhar e ler a resposta (O31), pedir nova revisão (O32) e recuperar falha de envio (O33), além do abandono com rascunho. Os signos obrigatórios são finalidade da análise, acesso aos resultados, explicação compartilhada, período analisado e de referência, evidências de comunicação e de tarefas, limites da análise, forma de contato, tipo de solicitação, mensagem de contexto, destinatário, estado da solicitação, resposta e motivo da falha.
 
 ## Checklist
 
