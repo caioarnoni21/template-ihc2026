@@ -33,7 +33,7 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 > Esta lista é repertório de design, **não uma exigência de quantidade de telas**. A rastreabilidade deve explicar por que cada tela existe.
 
 ## Link do Figma
-**Autor:** **Autor:** Guilherme Matias RA: 22.122.071-8, Caio Arnoni 22.221.019-7 e Tainá Cunha Bueno 22.119.025-9 <br>
+**Autor:** **Autor:** Guilherme Matias RA: 22.122.071-8 e Caio Arnoni 22.221.019-7 <br>
 **Protótipo:** https://www.figma.com/design/McbDfvqqGuDnR9uDmBdJrp/Login-e-Cadastro-de-Colaboradores?node-id=0-1&t=KVpUb4PCjVZbOSQ0-1 <br>
 **Arquivo editável:** https://www.figma.com/design/McbDfvqqGuDnR9uDmBdJrp/Login-e-Cadastro-de-Colaboradores?node-id=0-1&t=KVpUb4PCjVZbOSQ0-1  <br>
 **Última verificação de permissão:** {{22/11/2026}}
