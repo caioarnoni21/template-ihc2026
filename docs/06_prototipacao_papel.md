@@ -85,6 +85,8 @@ As quatro primeiras linhas vêm da revisão que a equipe fez no protótipo antes
 | Telas sem estado de erro | Senha errada, campo vazio ou ID duplicado deixavam o usuário sem saída | Estados E01 e E02 previstos, com mensagem clara e campos preservados | Prevenção e recuperação de erro |
 | {{alteração decorrente da simulação com a Laura}} | {{...}} | {{...}} | {{...}} |
 
+---
+
 ## 1. Escopo do protótipo
 
 **Personas:** Rafael Costa (P01), gestor. <br>
@@ -150,6 +152,58 @@ Realize uma simulação com uma pessoa que não participou da elaboração dessa
 | Três indicadores separados e identificados por texto. | Não foi identificada ambiguidade entre os rótulos na inspeção. | Preservar a separação dos estados. | Diferencia sinalização, estabilidade e análise incompleta. |
 | Aviso sobre a análise incompleta na visão geral. | A continuidade dessa orientação nas próximas telas ainda não foi demonstrada. | Manter o aviso e repeti-lo na análise individual. | Reforça a interpretação cuidadosa das informações. |
 | Botão “Ver sinalização” próximo ao resumo. | A tela de destino ainda não foi apresentada. | Preservar o botão e completar a tela de análise. | Dá continuidade à ação indicada pela visão geral. |
+
+---
+
+## 1. Escopo do protótipo
+
+**Personas:** P03 — Maria Fonseca (secundária, colaboradora afetada pela interpretação). <br>
+**Cenários/tarefas cobertos:** E4-C03 / T03 — Esclarecer uma interpretação sobre o próprio trabalho e verificar a resposta. <br>
+**Objetivos principais:** entender o que é analisado e quem vê; compreender a explicação do ciclo; apresentar contexto ou pedir conversa reservada; confirmar o recebimento e acompanhar a resposta. <br>
+**Observação de escopo:** o acesso da colaboradora à própria explicação é uma **proposta**, dependente da política de acesso (Entrega 3, CT03). O fluxo não mostra dados de colegas nem altera a análise automaticamente.
+
+## 2. Fluxos escolhidos
+
+| Fluxo | Tarefa/objetivo | Por que foi priorizado |
+|---|---|---|
+| PF07 | Abrir explicação → compreender comunicação e tarefas → escrever contexto → enviar → conferir recebimento → acompanhar resposta | Cobre o caminho principal de T03 (HTA 1 > 2 > 3) e responde à ruptura do C03: Maria não sabia se a mensagem foi lida (C03.Q7) |
+| PF08 | Abrir explicação → pedir conversa reservada → conferir recebimento | Alternativa para quem não quer escrever sobre assunto pessoal (C03.Q5; GOMS T03, SR2) |
+| PF09 | Enviar → falha → mensagem preservada → tentar novamente | Evita perda de texto e falsa impressão de envio (HTA T03, plano 2) |
+
+## 3. Telas e estados
+
+| ID | Tela/estado | Conteúdo e interação | Situação |
+|---|---|---|---|
+| P12 | Sobre minhas análises | Para que serve; o que é analisado (Telegram e Trello); quem vê os resultados; o que a análise **não** é. “Ver minha análise do ciclo” leva a P13 | Desenhar |
+| P13 | Explicação do ciclo | Período 22/10–05/11 e referência 22/09–21/10; comunicação “mudou” e tarefas “sem mudança”, em cartões separados; bloco “o que significa e o que não significa”; quem compartilhou e quando. “Esclarecer ou adicionar contexto” → P14; “Prefiro conversar” → P14 com a opção de conversa marcada | Desenhar |
+| E08 | P13 sem explicação compartilhada | “Nenhuma explicação foi compartilhada neste ciclo”; permite enviar uma pergunta geral | Desenhar (cartão pequeno) |
+| P14 | Esclarecer ou adicionar contexto | Forma (mensagem escrita / conversa reservada); tipo (pergunta, correção, contexto); mensagem; destinatário visível; aviso sobre dados sensíveis; “Enviar” e “Cancelar” | Desenhar |
+| E09 | Falha ao enviar | “Não foi possível enviar. Sua mensagem foi mantida.” e “Tentar novamente” | Desenhar (cartão pequeno) |
+| P15 | Solicitação recebida | Data e hora, destinatário, ciclo, tipo e estado “recebida”; “o que acontece agora”; “Acompanhar minha solicitação” → P16 | Desenhar |
+| P16 | Minhas solicitações | Linha do tempo (enviada, recebida, em análise, respondida); resposta do gestor; “Considero esclarecido” e “Pedir nova revisão” → P14 | Desenhar |
+
+![Protótipo em papel — fluxo PF07](../assets/06_prototipos/prototipo_fluxo_07.jpg)
+
+O protótipo foi elaborado digitalmente, utilizando wireframes de baixa fidelidade como alternativa ao desenho em papel.
+
+## 4. Simulação / walkthrough
+
+| Observação simulada | Tela/ação | Evidência no protótipo | Consequência para o design |
+|---|---|---|---|
+| Facilidade para identificar qual dimensão sofreu alteração | P13 / Entender o que mudou e o que não mudou | Os cartões apresentam comunicação e tarefas separadamente, com indicação da situação de cada dimensão | Manter a separação visual |
+| Possível dúvida sobre a influência do contexto na análise | P13 / Compreender os limites da análise | A informação de que o envio não altera automaticamente a análise aparece abaixo dos botões | Dar maior destaque a essa informação |
+| Facilidade para identificar as formas de esclarecimento | P14 / Escolher entre mensagem escrita e conversa reservada | As duas opções estão disponíveis no mesmo formulário | Manter as duas alternativas |
+| Possibilidade de não ler o aviso sobre informações sensíveis | P14 / Conferir destinatário e aviso | O aviso está próximo ao botão de envio, mas possui menor destaque visual | Destacar o aviso e avaliar seu posicionamento antes do campo de mensagem |
+| Facilidade para recuperar uma falha de envio | E09 / Tentar novamente | A mensagem permanece preenchida e existe um botão específico para uma nova tentativa | Manter o comportamento de recuperação |
+| Possível dúvida sobre a diferença entre recebimento e leitura | P15–P16 / Acompanhar a solicitação | A confirmação informa que a mensagem foi recebida, enquanto a linha do tempo apresenta os estados posteriores | Esclarecer que o recebimento pelo sistema não significa que o gestor leu a mensagem |
+
+## 5. Alterações propostas após a simulação
+
+| Antes | Problema identificado na simulação | Alteração proposta | Justificativa |
+|---|---|---|---|
+| Informação sobre os efeitos do envio abaixo dos botões em P13 | A colaboradora pode interpretar que o envio de contexto altera automaticamente a análise | Destacar essa informação próximo à ação de envio | Evitar expectativas incorretas sobre a finalidade da solicitação |
+| Aviso sobre dados sensíveis abaixo do campo de mensagem em P14 | A colaboradora pode preencher informações pessoais antes de ler o aviso | Posicionar o aviso antes do campo de mensagem e dar maior destaque visual | Reduzir a possibilidade de exposição desnecessária de informações pessoais |
+| Estado “Recebida” em P15 | O recebimento pelo sistema pode ser confundido com a leitura pelo gestor | Acrescentar uma explicação sobre o significado do estado | Evitar interpretações equivocadas durante o acompanhamento |
 
 ## Checklist
 
