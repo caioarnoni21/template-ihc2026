@@ -33,7 +33,7 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 > Esta lista é repertório de design, **não uma exigência de quantidade de telas**. A rastreabilidade deve explicar por que cada tela existe.
 
 ## Link do Figma
-**Autor:** Guilherme Matias RA: 22.122.071-8 e Caio Arnoni 22.221.019-7 <br>
+**Autor:** **Autor:** Guilherme Matias RA: 22.122.071-8, Caio Arnoni 22.221.019-7 e Tainá Cunha Bueno 22.119.025-9 <br>
 **Protótipo:** https://www.figma.com/design/McbDfvqqGuDnR9uDmBdJrp/Login-e-Cadastro-de-Colaboradores?node-id=0-1&t=KVpUb4PCjVZbOSQ0-1 <br>
 **Arquivo editável:** https://www.figma.com/design/McbDfvqqGuDnR9uDmBdJrp/Login-e-Cadastro-de-Colaboradores?node-id=0-1&t=KVpUb4PCjVZbOSQ0-1  <br>
 **Última verificação de permissão:** {{22/11/2026}}
@@ -56,6 +56,13 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 | M02b | O23 Cadastrar e vincular colaborador | `F03 → F04` e `F04 → F03` (cadastrar outro) | `F03E1` (campo vazio ou formato inválido), `F03E2` (CPF, matrícula, Telegram ID ou Trello ID já vinculado), `F03E3` (falha ao salvar) | Guilherme Matias |
 | M02b | O23 (saída sem salvar) | `F03 → F05` | `F05` (continuar editando ou sair sem salvar) | Guilherme Matias |
 | M02 | O11 a O21 | {{telas da triagem, ainda a definir}} | {{...}} | Guilherme Matias |
+| M03, C1 | O26 — Compreender finalidade, fontes, acesso e limites | F14 apresenta finalidade, fontes, quem vê e o que a análise não é | F14-politica (previsto): adequação à política de acesso | Tainá Cunha Bueno |
+| M03, C2 | O27 — Compreender a explicação compartilhada | F15 separa comunicação e tarefas, com período, autor do compartilhamento e limites | F15-vazio: nenhuma explicação compartilhada, com campo para envio de mensagem | Tainá Cunha Bueno |
+| M03, C3/C4/C4b | O28/O29 — Escolher a forma e enviar o contexto | F16 apresenta as opções de mensagem escrita e conversa reservada, tipo, destinatário e aviso sobre dados sensíveis | F16-conversa, F16-E1 (mensagem vazia), F16-E2 (falha ao enviar, texto preservado) e F16-sair (confirmação de descarte) | Tainá Cunha Bueno |
+| M03, C5 | O30 — Confirmar o recebimento | F17 com data, destinatário, ciclo, tipo e estado “Recebida” | Confirmação de envio e recebimento | Tainá Cunha Bueno |
+| M03, C7 | O31/O32 — Acompanhar, ler a resposta e pedir nova revisão | F18 com linha do tempo, resposta do gestor e ações de conclusão | F18-aguardando, F18-esclarecida e ação “Pedir nova revisão” | Tainá Cunha Bueno |
+| M03, C6 | O33 — Recuperar falha de envio | F16-E2 apresenta mensagem de erro e mantém o texto preenchido | Ação “Tentar novamente” | Tainá Cunha Bueno |
+| M03, C8 | O29 — Prevenir perda acidental do contexto | F16-sair apresenta uma janela de confirmação de descarte | Opções “Continuar editando” e “Descartar e sair” | Tainá Cunha Bueno |
 
 ## Catálogo de telas/estados
 
@@ -221,7 +228,124 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 | F13-revisao-futura | Texto “Quando o ciclo tiver dados suficientes. Você será avisado”; aviso futuro não verificado | Signos responsável e data de retomada de C4/C6 precisam ser explicitados; notificação futura não modelada em M01 |
 | F13-historico | Ação “Ver histórico de registros”; destino não demonstrado | Consulta de histórico fora do detalhamento atual de M01 |
 
-> Documente também estados que muitas equipes esquecem: carregamento, vazio, confirmação, sucesso, erro, permissão negada, cancelamento, desfazer/voltar quando aplicável.
+### F14 — Sobre minhas análises
+
+**Autor(a):** Tainá Cunha Bueno — 22.119.025-9
+
+![F14 — Sobre minhas análises](../assets/11_figma/f14_sobre_minhas_analises%201.png)
+
+**Objetivo da usuária:** entender o que é analisado, para quê e quem vê os resultados.
+**Signos principais:** finalidade da análise, fontes, acesso aos resultados, limites da análise.
+**Origem no MoLIC:** M03/C1.
+
+| Estado | O que o usuário vê | Origem no MoLIC |
+|---|---|---|
+| F14-padrao | Quatro cartões: para que serve; o que é analisado; quem vê os resultados; o que a análise não é. Ações “Ver minha análise do ciclo” e “Minhas solicitações” | M03, C1 — Entender o uso dos meus dados |
+| F14-politica (previsto) | Texto de “quem vê” ajustado à política de acesso definida pela equipe e pela organização | C1; depende da decisão registrada na rastreabilidade |
+
+### F15 — Explicação do ciclo
+
+![F15 — Explicação do ciclo](../assets/11_figma/f15_explicacao_do_ciclo%201.png)
+
+**Objetivo da usuária:** compreender o que mudou e o que não mudou, sem interpretar a explicação como uma avaliação pessoal.
+**Signos principais:** período analisado, período de referência, explicação compartilhada (autor e data), evidências de comunicação, evidências de tarefas, limites da análise.
+**Origem no MoLIC:** M03/C2 e transição para C3.
+
+| Estado | O que o usuário vê | Origem no MoLIC |
+|---|---|---|
+| F15-explicacao | Cartões “Comunicação — Mudou” e “Tarefas — Sem mudança”, com fonte e cobertura dos dados; bloco “O que isso significa — e o que não significa” | M03, C2 — Consultar a explicação compartilhada |
+| F15-acoes | Botões “Esclarecer ou adicionar contexto” e “Prefiro conversar”; aviso de que o envio de contexto não altera automaticamente a análise | Transição C2 → C3; prevenção passiva (PP) |
+| F15-vazio | Mensagem informando que nenhuma explicação foi compartilhada, campo de texto para envio de mensagem e botões “Enviar” e “Cancelar” | C2 sem explicação → C3 |
+
+#### F15-vazio — Nenhuma explicação compartilhada
+
+![F15-vazio — Nenhuma explicação compartilhada](../assets/11_figma/f15_vazio%201.png)
+
+Quando não há uma explicação compartilhada para o ciclo, a interface informa sua ausência e disponibiliza um campo de mensagem. A colaboradora pode enviar uma pergunta ou solicitar esclarecimentos, mesmo sem ter acesso à explicação.
+
+### F16 — Esclarecer ou adicionar contexto
+
+![F16 — Enviar esclarecimento](../assets/11_figma/f16_enviar_esclarecimento%201.png)
+
+**Objetivo da usuária:** apresentar o contexto ao destinatário correto sem expor informações pessoais sensíveis.
+**Signos principais:** forma de contato, tipo de solicitação, mensagem de contexto, destinatário, ciclo vinculado.
+**Origem no MoLIC:** M03/C3, C4, C4b e processamento “validar e enviar”.
+
+| Estado | O que o usuário vê | Origem no MoLIC |
+|---|---|---|
+| F16-mensagem | Forma “Mensagem escrita”, tipo de solicitação, campo de mensagem com contador de caracteres, destinatário, aviso sobre dados sensíveis e botões “Enviar” e “Cancelar” | M03, C3 → C4 |
+| F16-conversa | Forma “Pedir conversa reservada”, preferência de horário opcional, destinatário e botão “Solicitar conversa” | M03, C3 → C4b |
+| F16-E1 | Campo de mensagem vazio destacado em vermelho, acompanhado da instrução “Escreva sua mensagem antes de enviar” | Processamento → C4; recuperação apoiada (RA) |
+| F16-E2 | Faixa de erro informando que a mensagem não foi enviada e foi mantida, com orientação para verificar a conexão e tentar novamente | Processamento → C6; recuperação apoiada (RA) |
+| F16-sair | Janela de confirmação informando que existe uma mensagem não enviada e que o texto será descartado caso a usuária saia. Opções “Continuar editando” e “Descartar e sair” | M03, C4 → C8; alerta (AL) |
+
+#### F16-conversa — Solicitação de conversa reservada
+
+![F16-conversa — Solicitação de conversa reservada](../assets/11_figma/f16_conversa%201.png)
+
+A colaboradora pode solicitar uma conversa reservada com o gestor, informando opcionalmente sua disponibilidade. O destinatário permanece visível, e a interface informa que o horário será combinado posteriormente.
+
+#### F16-E1 — Mensagem vazia
+
+![F16-E1 — Mensagem vazia](../assets/11_figma/f16_erro_mensagem_vazia%201.png)
+
+O campo obrigatório é destacado e acompanhado de uma mensagem que orienta a usuária a preencher o texto antes de realizar o envio. As demais informações e opções selecionadas permanecem visíveis.
+
+#### F16-E2 — Falha ao enviar
+
+![F16-E2 — Falha ao enviar](../assets/11_figma/f16e_falha_ao_enviar%201.png)
+
+A interface informa que a solicitação não foi enviada ao gestor, apresenta a mensagem original preservada e oferece a opção “Tentar novamente”. A colaboradora é orientada a verificar sua conexão antes de realizar uma nova tentativa.
+
+#### F16-sair — Confirmação de descarte
+
+![F16-sair — Confirmação de descarte](../assets/11_figma/f16_sair%201.png)
+
+Ao tentar sair do formulário com uma mensagem não enviada, a interface apresenta uma janela de confirmação. A colaboradora é informada de que o texto será descartado e nenhuma solicitação será enviada ao gestor.
+
+A opção “Continuar editando” permite retornar ao formulário, enquanto “Descartar e sair” permite abandonar a operação mediante confirmação.
+
+### F17 — Solicitação recebida
+
+![F17 — Solicitação recebida](../assets/11_figma/f17_solicitacao_recebida%201.png)
+
+**Objetivo da usuária:** confirmar o recebimento do contexto e saber o que acontece depois.
+**Signos principais:** estado da solicitação, destinatário, ciclo, tipo, data e hora.
+**Origem no MoLIC:** M03/C5.
+
+| Estado | O que o usuário vê | Origem no MoLIC |
+|---|---|---|
+| F17-recebida | Confirmação de envio e recebimento, com resumo da solicitação contendo data, horário, destinatário, ciclo, tipo e estado “Recebida” | M03, C5 — Confirmar o recebimento |
+| F17-acoes | Orientações sobre os próximos passos e botões “Acompanhar minha solicitação” e “Voltar à minha análise” | C5 → C7 ou retorno a C2 |
+
+A tela apresenta a confirmação de recebimento e explica que o gestor poderá responder pela ferramenta ou combinar uma conversa. Também informa que a análise não será alterada automaticamente pelo envio do contexto.
+
+### F18 — Minhas solicitações
+
+![F18 — Minhas solicitações](../assets/11_figma/f18_minhas_solicitacoes%201.png)
+
+**Objetivo da usuária:** acompanhar o estado da solicitação, consultar a resposta do gestor e decidir se o assunto está esclarecido.
+**Signos principais:** estado da solicitação, linha do tempo, mensagem de contexto, resposta, autor e data.
+**Origem no MoLIC:** M03/C7 e acesso ubíquo “Minhas solicitações”.
+
+| Estado | O que o usuário vê | Origem no MoLIC |
+|---|---|---|
+| F18-respondida | Linha do tempo com os estados enviada, recebida, em análise e respondida; trecho da mensagem original; resposta do gestor; ações “Considero esclarecido” e “Pedir nova revisão” | M03, C7 — Acompanhar minha solicitação |
+| F18-aguardando | Estado “Em análise”, linha do tempo com etapas concluídas e pendentes e informação de que a resposta ainda não foi recebida | C7, espera |
+| F18-esclarecida | Linha do tempo concluída, resposta do gestor e confirmação de que a solicitação foi encerrada pela colaboradora | C7 → encerramento |
+| F18-nova-revisao | Ação “Pedir nova revisão”, prevista para abrir o formulário de esclarecimento vinculado à solicitação anterior | C7 → C4 |
+
+#### F18-aguardando — Aguardando resposta
+
+![F18-aguardando — Aguardando resposta](../assets/11_figma/f18_aguardando%201.png)
+
+A colaboradora consegue identificar as etapas já concluídas e verificar que sua solicitação está em análise pelo gestor. A interface informa que ela será avisada quando houver resposta, sem estabelecer um prazo.
+
+#### F18-esclarecida — Solicitação encerrada
+
+![F18-esclarecida — Solicitação encerrada](../assets/11_figma/f18-esclarecida%201.png)
+
+Após a colaboradora considerar o assunto esclarecido, a interface apresenta a linha do tempo concluída e uma confirmação de encerramento. O trecho da mensagem original e a resposta do gestor permanecem disponíveis para consulta.
 
 ## Sistema visual e consistência
 
@@ -236,14 +360,20 @@ Quando aplicável, considere: vazio/sem dados; carregamento/processamento; suces
 
 Critérios da WCAG aplicados ao protótipo Web:
 
+**Telas F14–F18 (Tainá):**
+
 | Critério | Situação | Observação |
 |---|---|---|
-| Rótulos visíveis | Atende | Todos os campos têm rótulo fixo acima; o exemplo de formato não substitui o rótulo |
-| Tamanho de alvo | Atende | Campos e botões têm altura próxima de 44 px |
-| Contraste de texto | {{verificar}} | Conferir com um plugin de contraste (texto branco sobre o verde de ação; texto de apoio em cinza). Os exemplos de formato nos campos aparecem em cinza claro e podem ficar abaixo de 4,5:1 |
-| Erro não depende só da cor | {{verificar}} | Garantir ícone e texto nas mensagens de erro dos estados `E` |
-| Foco visível | {{a prototipar}} | Definir contorno de foco nos campos e botões |
-| Navegação por teclado | {{a documentar}} | Ordem prevista: e-mail, senha, lembrar de mim, esqueci a senha, entrar |
+| Rótulos visíveis | Atendido nas imagens | Os campos de mensagem, tipo, forma de contato e preferência de horário possuem rótulos ou instruções visíveis |
+| Estado não depende só da cor | Atendido nas imagens | Os estados “Mudou”, “Sem mudança”, “Em análise”, “Respondida” e “Esclarecida” possuem identificação textual |
+| Erro não depende só da cor | Atendido nas imagens | F16-E1 e F16-E2 apresentam mensagens explicativas associadas ao destaque visual do erro |
+| Recuperação de erros | Representada | F16-E1 orienta o preenchimento do campo obrigatório e F16-E2 apresenta a opção de tentar novamente com a mensagem preservada |
+| Prevenção de perda de dados | Representada | F16-sair apresenta um alerta de descarte e oferece a opção de retornar à edição antes de confirmar a saída |
+| Tratamento de estados vazios | Representado | F15-vazio informa a ausência de explicação e oferece uma alternativa de interação |
+| Consistência visual | Atendido nas imagens | As telas possuem as mesmas dimensões e mantêm o padrão visual de navegação, botões e cartões |
+| Contraste | A verificar | Necessário verificar numericamente a relação de contraste dos textos, botões e indicadores |
+| Ordem de foco | Prevista | Forma de contato → tipo → mensagem ou preferência de horário → Enviar → Cancelar. Na janela de descarte, o foco deve permanecer entre as opções de confirmação |
+| Navegação por teclado | Não validada | A verificação depende das interações configuradas no protótipo |
 
 Para produto Web, considere critérios pertinentes da WCAG vigente (por exemplo, contraste, foco, tamanho de alvo, texto alternativo e navegação por teclado quando aplicáveis). Para outras plataformas, use as recomendações adequadas ao contexto.
 
