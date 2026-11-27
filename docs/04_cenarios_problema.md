@@ -137,49 +137,61 @@ Os chamados de Camila parecem fechados dentro das metas. **[NOVO - H; C02.Q5: No
 - **Questão de investigação:** como o gestor operacional diferencia mudança de comunicação, cumprimento de metas e contexto não registrado, quando tem pouco tempo e pouca familiaridade com métricas?
 - **Limite:** exemplos isolados não autorizam inferir causa, estado emocional ou desempenho global. As janelas de duas semanas da narrativa são escolhas fictícias de João, não alteração dos períodos experimentais do TCC.
 
-## Cenário C03 — {{título}}
+## Cenário C03 — Esclarecer uma interpretação sobre a própria comunicação
 
-**Autor(a):** Taina - RA:  
-**Persona(s) relacionada(s):** {{P01}}  
-**Necessidade relacionada:** {{R01}}  
-**Situação concreta da Entrega 1 relacionada:** {{seção 4.4 / H01 / outra ou “nova situação justificada”}}  
-**Hipóteses ainda presentes:** {{H01, H02 ou —}}
+**Autor(a):** Tainá Cunha Bueno — 22.119.025-9  
+**Persona(s) relacionada(s):** P03 - Maria Fonseca, protagonista; P01 - Rafael Costa, gestor envolvido.  
+**Necessidade relacionada:** N02 - reconhecer limites dos dados; N03 - considerar contexto humano; N06 - acompanhar retorno e ação; N07 - compreender o uso dos próprios dados (nova, proposta neste cenário).  
+**Situação concreta da Entrega 1 relacionada:** nova situação justificada. A Entrega 1 descreve a investigação feita pelo gestor (seção 4.5) e registra o colaborador como pessoa afetada que não usa a interface gerencial (H06). Este cenário mostra a mesma mudança do C01 vista pela colaboradora. A inclusão se justifica pelas hipóteses H11 (percepções diferentes sobre o uso dos dados), H25 (impacto de interpretações incorretas sobre confiança e relações de trabalho) e H28 (percepção de vigilância), e pela jornada J03 da Entrega 3.  
+**Hipóteses ainda presentes:** H06, H11, H23, H25 e H28.  
 
 ### 1. Cenário inicial
 
-{{narrativa}}
+No fim de uma conversa individual, Rafael Costa comenta com Maria Fonseca, desenvolvedora frontend sênior, que as mensagens dela no chat da equipe têm parecido mais curtas e pergunta se está tudo bem. Maria se surpreende: suas tarefas estão em dia, e ela não sabe em que Rafael se baseou para fazer o comentário. À noite, abre o histórico do chat e o quadro de tarefas para reunir exemplos que expliquem sua rotina. Escreve uma mensagem longa para Rafael, em conversa privada, explicando o que mudou no trabalho. Nos dias seguintes não recebe resposta e não sabe se a mensagem foi lida, se mudou a opinião dele ou se o assunto ficou registrado de alguma forma. Fica desconfortável em voltar ao tema por medo de parecer na defensiva.
 
 ### 2. Questões de refinamento
 
-Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revelar informações **ainda ausentes** do cenário, não repetir o que já foi respondido.
-
 | # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
 |---|---|---|---|
-| Q1 | {{...}} | {{...}} | {{...}} |
+| Q1 | Por que Maria sente necessidade de responder por escrito, e não apenas na próxima conversa? | Identificar o gatilho e o que ela teme perder se esperar | Entrevista com colaboradores sobre um episódio recente de feedback (instrumento I03) |
+| Q2 | Quando, onde e com quanto tempo Maria prepara a explicação? | Delimitar condições de execução, privacidade e cansaço | Relato da rotina; entrevista semiestruturada |
+| Q3 | O que Maria sabe sobre as informações que Rafael consultou? | Revelar a assimetria de informação entre gestor e colaboradora | Entrevista com colaboradores e gestores sobre como o feedback é fundamentado |
+| Q4 | Como Maria escolhe quais conversas e tarefas reunir como contexto? | Tornar explícita a estratégia e o esforço de reconstrução | Reconstrução de uma situação real com exemplos fictícios |
+| Q5 | Que informações Maria decide não compartilhar e por quê? | Identificar limites de privacidade e de exposição pessoal | Entrevista com perguntas abertas, sem pedir dados sensíveis |
+| Q6 | Quem mais conhece o contexto que explica a mudança? | Identificar atores e conhecimento fora dos registros | Entrevista com colaboradores e líderes técnicos |
+| Q7 | Como Maria interpreta o silêncio depois de enviar a mensagem e o que faz a seguir? | Compreender a ruptura e suas consequências para a confiança | Entrevista por incidente crítico |
+| Q8 | Como Maria reconhece que sua explicação foi considerada e que o assunto terminou? | Identificar o critério de conclusão da atividade | Entrevista sobre experiências anteriores de retorno do gestor |
 
 ### 3. Cenário refinado
 
-Reescreva o cenário incorporando as respostas. Marque o conteúdo novo de forma consistente (por exemplo, `**[NOVO: ...]**`).
+No fim de uma conversa individual, Rafael Costa comenta com Maria Fonseca, desenvolvedora frontend sênior, que as mensagens dela no chat da equipe têm parecido mais curtas e pergunta se está tudo bem. Maria se surpreende: suas tarefas estão em dia. **[NOVO - H; C03.Q3: Rafael não diz se olhou mensagens específicas, um período ou apenas teve uma impressão. Maria não sabe se ele comparou com o histórico dela ou com o de colegas.]** **[NOVO - H; C03.Q1: Ela quer responder por escrito porque teme que a impressão se transforme em avaliação antes da próxima conversa, marcada para dali a duas semanas.]**
 
-{{narrativa refinada}}
+**[NOVO - H; C03.Q2: À noite, em casa, depois do expediente, Maria usa o notebook pessoal por cerca de meia hora. Está cansada e prefere não pedir ajuda a colegas para não expor o assunto.]** **[NOVO - H; C03.Q4: Ela percorre o histórico do chat das duas últimas semanas e o quadro de tarefas, copia trechos que mostram alinhamentos rápidos da release e os cartões entregues no prazo, mas não consegue saber se os exemplos escolhidos representam todo o período.]**
+
+**[NOVO - H; C03.Q6: Parte do contexto não está nos registros: ela está mentorando dois desenvolvedores juniores, que fazem perguntas por mensagem direta, e o líder técnico pediu respostas objetivas durante a semana da release.]** **[NOVO - H; C03.Q5: Maria decide não mencionar que também está lidando com um problema familiar. Considera isso pessoal e não quer que a explicação dependa de expor sua vida privada.]**
+
+Ela escreve uma mensagem longa para Rafael, em conversa privada. **[NOVO - H; C03.Q7: Nos dias seguintes não recebe resposta. Não sabe se a mensagem foi lida, se Rafael concordou ou se o comentário inicial ficou registrado em algum lugar. Interpreta o silêncio com ansiedade e passa a escrever mensagens mais longas no chat, com receio de parecer distante.]**
+
+**[NOVO - H; C03.Q8: Para Maria, o assunto só estaria resolvido se Rafael dissesse que considerou o contexto e o que ficou combinado. Sem esse retorno, a atividade fica aberta: ela não sabe se deve insistir, pedir uma conversa ou deixar o tema.]** Fica desconfortável em voltar ao assunto por medo de parecer na defensiva.
 
 ### 4. Elementos extraídos
 
 | Elemento | Evidência no cenário |
 |---|---|
-| Ator(es) | {{...}} |
-| Objetivo(s) | {{...}} |
-| Contexto | {{...}} |
-| Recursos/informações | {{...}} |
-| Ações | {{...}} |
-| Problemas/rupturas | {{...}} |
-| Consequências | {{...}} |
+| Ator(es) | Maria explica o contexto; Rafael fez o comentário e é o destinatário; os juniores e o líder técnico conhecem parte do contexto (C03.Q6) |
+| Objetivo(s) | Esclarecer a interpretação sobre sua comunicação e saber se o contexto foi considerado (C03.Q1, Q8) |
+| Contexto | Fora do expediente, em casa, notebook pessoal, cerca de meia hora; relação hierárquica e assunto sensível (C03.Q2) |
+| Recursos/informações | Histórico do chat, quadro de tarefas, trechos copiados, memória da rotina; não sabe em que Rafael se baseou (C03.Q3–Q4) |
+| Ações | Reconstruir a situação, selecionar exemplos, decidir o que não expor, escrever e enviar mensagem, aguardar (C03.Q4–Q7) |
+| Problemas/rupturas | Assimetria de informação, amostra incerta, contexto fora dos registros, ausência de confirmação de leitura e de resposta |
+| Consequências | Esforço de reconstrução, ansiedade, mudança defensiva de comportamento e atividade sem conclusão; nenhuma decisão formal ocorre |
 
 ### 5. Implicações para as próximas entregas
 
-Quais tarefas merecem análise? Quais informações precisam ser coletadas? **Não desenhe a solução ainda.**
-
-> Repita para C02, C03... com autoria individual.
+- **Tarefa a analisar:** compreender em que se baseia uma interpretação, apresentar contexto sem expor informações pessoais e verificar se houve resposta. A tarefa será modelada como **T03** na Entrega 5.
+- **Informações a coletar:** como colaboradores recebem feedback sobre comunicação, que canais preferem para contestar ou contextualizar, o que consideram sensível e o que caracteriza um retorno satisfatório (Entrega 7, instrumento I03).
+- **Questão de investigação:** o que a colaboradora precisa saber sobre a análise e sobre o destino do seu contexto para se sentir ouvida, sem precisar expor sua vida pessoal?
+- **Limite:** o cenário é hipotético e usa o perfil fictício do TCC. Ele não autoriza concluir que colaboradores desejam acessar a ferramenta; essa decisão depende da política de acesso e da coleta com usuários reais.
 
 ## Checklist
 
