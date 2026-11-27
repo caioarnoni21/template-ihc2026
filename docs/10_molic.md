@@ -106,6 +106,47 @@ cenas têm tópico no cabeçalho e diálogos/signos no corpo; `u:` identifica a 
 | Erro ao salvar | Salvar cadastro | `d:` erro ao salvar; dados mantidos (`RA`) | Retorno tracejado à cena 3 |
 | Cancelar ou sair com dados não gravados | Cena 3 (`u:` cancelar) e acesso ubíquo "sair" | Cena 5: `d:` há alterações não gravadas (`AL`) | `u:` sair sem salvar (`gcc`) ou `u:` continuar editando (retorno à cena 3) |
 
+## M03 — Esclarecer uma interpretação sobre o próprio trabalho e verificar a resposta
+
+**Autor(a):** Tainá Cunha Bueno — 22.119.025-9 <br>
+**Cenário de interação de origem:** CI03, derivado de C03/E4-C03. <br>
+**Objetivo(s):** O25 e seus desdobramentos O26–O33, conforme a Entrega 9. <br>
+**Tarefa(s) relacionada(s):** T03 — Esclarecer uma interpretação sobre o próprio trabalho e verificar a resposta. <br>
+**Signos relevantes:** finalidade da análise; fontes; acesso aos resultados; explicação compartilhada; período analisado; período de referência; evidências de comunicação e de tarefas; limites da análise; forma de contato; tipo de solicitação; mensagem de contexto; destinatário; estado da solicitação; resposta; motivo da falha. <br>
+
+### Diagrama
+
+![MoLIC M03](../assets/10_molic/molic_m03.png)
+
+**Fonte editável:** [`molic_m03.svg`](../assets/10_molic/molic_m03.svg)
+
+### Leitura do diagrama
+
+As cenas têm o tópico no cabeçalho e diálogos e signos no corpo; `u:` identifica a fala da usuária, `d:` a do preposto e `d+u:` o diálogo. O quadrado preto representa processamento do sistema; o círculo cheio indica abertura e o círculo duplo, encerramento. Linhas tracejadas indicam retornos e recuperações. `PP` = prevenção passiva; `AL` = alerta; `RA` = recuperação apoiada.
+
+#### Caminho principal
+
+1. **Abertura → C2:** Maria manifesta que quer ver a explicação, a partir do aviso de compartilhamento ou do menu. Se for a primeira vez, pode passar antes por **C1 — Entender o uso dos meus dados**, onde o sistema comunica finalidade, fontes, quem acessa e o que a análise não é (O26).
+2. **C2 — Consultar a explicação compartilhada:** o sistema apresenta o período analisado e o de referência, quem compartilhou e quando, as dimensões de comunicação e tarefas separadas e os limites da análise (O27). Maria pode voltar a C1 para perguntar o que é analisado.
+3. **C2 → C3 — Escolher como esclarecer:** Maria diz que quer esclarecer ou adicionar contexto; o sistema apresenta as duas formas e o destinatário (O28).
+4. **C3 → C4 — Descrever o contexto:** ela escolhe a mensagem escrita, informa o tipo e escreve. O sistema mostra o destinatário e o ciclo vinculado e previne, de forma passiva, a inclusão de dados sensíveis e a expectativa de que o envio altere a análise.
+5. **C4 → validar e enviar → C5 — Confirmar o recebimento:** o sistema valida e envia; somente em caso de sucesso comunica que a solicitação foi recebida, com data, destinatário e estado (O29, O30). O recebimento pelo sistema não significa que o gestor já leu a mensagem.
+6. **C5 → C7 — Acompanhar minha solicitação:** Maria acompanha o estado (enviada, recebida, em análise, respondida) e lê a resposta (O31). C7 também é alcançada pelo acesso ubíquo “Minhas solicitações”.
+7. **C7 → encerramento:** Maria declara que considera o assunto esclarecido. O25 está concluído; a decisão de encerrar é dela, não do sistema.
+
+#### Alternativas e rupturas
+
+| Situação | Onde ocorre | Como a usuária percebe | Caminho de recuperação/saída |
+|---|---|---|---|
+| Nenhuma explicação compartilhada no ciclo | C2 | `d: nenhuma explicação compartilhada neste ciclo` | Maria pode seguir a C3 e enviar uma pergunta geral ao gestor |
+| Prefere não escrever | C3 → C4b | Opção “prefiro conversar” ao lado da mensagem escrita | Em C4b informa, se quiser, uma preferência de horário; o pedido segue o mesmo processamento e confirmação. A conversa acontece fora do sistema |
+| Campo obrigatório vazio | validar e enviar → C4 | `[RA] d: escreva sua mensagem antes de enviar`, com o restante preservado | Corrigir em C4 e enviar novamente |
+| Falha ao enviar | validar e enviar → C6 | `[RA] d: a solicitação não foi enviada`, com motivo conhecido e texto preservado | Tentar novamente volta ao processamento; Maria também pode sair mantendo o rascunho na sessão atual, sem que o sistema alegue envio (O33) |
+| Sair antes de enviar | C4 → C8 | `[AL] d: há texto ainda não enviado; se sair, ele será descartado` | Continuar volta a C4; descartar encerra O25 como abandono |
+| Resposta não considera o contexto | C7 → C4 | Maria lê a resposta e indica que não foi considerada | “Pedir nova revisão” reabre C4 vinculada à mesma solicitação (O32) |
+| Espera pela resposta | C7 | Estado “recebida” ou “em análise” | Maria pode voltar depois pelo acesso ubíquo; o sistema não promete prazo que não controla |
+
+**Fora do modelo:** a conversa pessoal entre Maria e Rafael, a eventual revisão da análise pela equipe, a persistência de rascunhos entre sessões e notificações por outros canais.
   
 ### Checklist específico de modelagem
 
@@ -149,9 +190,18 @@ cenas têm tópico no cabeçalho e diálogos/signos no corpo; `u:` identifica a 
 | O19 Registrar e conferir o encaminhamento | M02: Cenas 7, 8 e 9 | Equivale ao O05; o M02 não tem "responsável pela retomada" | Unificar no O05 e decidir se o campo "responsável" entra no M02 |
 | O20 Retomar a consulta após interrupção | M02: acesso ubíquo "retomar consulta" | Equivale ao O09, sem lacuna aparente | Unificar no O09 |
 | O21 Recuperar uma falha de registro | M02: Cena 10 | Equivale ao O10; o M02 acrescenta "deixar pendente" (`CE`) | Unificar no O10 |
-| O22 Acessar o sistema como gestor | M02b: cena 1 e validar credenciais | Ainda não está na Entrega 9; confirmar se a Tainá modela o login | Incluir na Entrega 9 |
+| O22 Acessar o sistema como gestor | M02b: cena 1 e validar credenciais | O M03 parte de uma sessão já autenticada. O acesso específico da colaboradora não foi modelado, e o M02b cobre apenas o acesso do gestor | Verificar a inclusão de O22 na Entrega 9 e definir a política de acesso da colaboradora |
 | O23 Cadastrar e vincular colaborador | M02b: cenas 3, 4 e 5 (cadastro, validação, conclusão e saída sem salvar) | Ainda não está na Entrega 9; os signos do cadastro (CPF, cargo, departamento, data de admissão, matrícula, Telegram ID, Trello ID) seguem o protótipo do Figma | Incluir na Entrega 9 |
 | O24 Recuperar acesso | M02b: cena 2 "Recuperar acesso" | Ainda não está na Entrega 9 | Incluir na Entrega 9, ou cortar a cena se o professor achar fora de escopo |
+| O25 — Esclarecer uma interpretação sobre o próprio trabalho e verificar a resposta | M03, abertura até conclusão ou abandono | Sem duplicidade; é o objetivo central da colaboradora | Manter como objetivo central de P03 |
+| O26 — Compreender finalidade, fontes, acesso e limites | M03, C1 | Relacionado a O03, mas com leitora e permissões diferentes | Manter separado; reaproveitar vocabulário de limites |
+| O27 — Compreender a explicação compartilhada | M03, C2 | Relacionado a O07/O15 (dimensões separadas) | Reaproveitar os mesmos signos de comunicação e tarefas |
+| O28 — Escolher como apresentar o contexto | M03, C3 | Sem equivalente nos outros modelos | Manter |
+| O29 — Enviar contexto ou pedido ao destinatário correto | M03, C4/C4b e processamento | Sem equivalente | Manter |
+| O30 — Confirmar o recebimento | M03, C5 | Análogo a O05/O19 (conferir resultado registrado) | Manter a mesma regra: só confirmar após sucesso |
+| O31 — Acompanhar a solicitação e ler a resposta | M03, C7 e acesso ubíquo | Sem equivalente | Manter |
+| O32 — Pedir nova revisão | M03, C7 → C4 | Sem equivalente | Manter vinculada à solicitação anterior |
+| O33 — Recuperar falha de envio | M03, C6 | Equivale a O10/O21 | Unificar no mapa consolidado com O10 |
 
 ### Preparação para o Figma
 
@@ -164,3 +214,18 @@ Liste os estados/telas que serão necessários **a partir das conversas modelada
 - usar rótulos genéricos (“Tela 1”, “Processo 2”) sem tópico de conversa;
 - criar no Figma fluxos que não existem no MoLIC;
 - diagrama sem legenda/fonte editável e com texto ilegível.
+
+**Telas e estados necessários para M03 — Tainá:**
+
+| Cena MoLIC | Tela ou estado previsto | Finalidade |
+|---|---|---|
+| C1 | F14 — Sobre minhas análises | Informar finalidade, fontes, acesso e limites da análise |
+| C2 | F15 — Explicação do ciclo | Apresentar as dimensões de comunicação e tarefas e os períodos comparados |
+| C2 | F15 — Estado sem explicação compartilhada | Informar a ausência de explicação e permitir uma pergunta geral |
+| C3 / C4 | F16 — Esclarecer ou adicionar contexto | Escolher a forma de contato, escrever a mensagem e conferir o destinatário |
+| C4b | F16 — Conversa reservada | Solicitar uma conversa com o gestor |
+| C4 | F16-E1 — Campo obrigatório vazio | Informar o erro de preenchimento e permitir a correção |
+| C6 | F16-E2 — Falha ao enviar | Informar a falha, preservar o texto e permitir nova tentativa |
+| C8 | F16 — Confirmação de descarte | Evitar a perda acidental de texto |
+| C5 | F17 — Solicitação recebida | Confirmar o recebimento e orientar sobre o acompanhamento |
+| C7 | F18 — Minhas solicitações | Apresentar estados, resposta do gestor e opções de encerramento ou nova revisão |
