@@ -60,6 +60,9 @@ Usabilidade deve ser discutida **no contexto de uso**. Metas quantitativas devem
 | Localizar e manter o contexto do caso | Rafael / localizar análise e registrar próximo passo | Participante confere identidade e período e consegue voltar sem trocar de caso inadvertidamente | Evitar registro atribuído à pessoa ou ao ciclo errado |
 | Reconhecer conclusão e recuperar falha | Rafael / registrar e conferir o resultado | Participante distingue tentativa de envio de confirmação e sabe como corrigir ou tentar novamente | Evitar falsa impressão de registro concluído |
 | Perceber clareza e controle na decisão | Rafael / T01 completa | Participante relata com suas palavras o que decidiu, por quê e o que o sistema registrou | A interface deve apoiar a decisão humana e tornar sua consequência compreensível |
+| Compreender o que é analisado e quem vê | Maria / T03, etapa 1.1 | Participante explica com suas palavras quais fontes entram, para que servem e quem acessa os resultados | Reduzir a percepção de vigilância e a assimetria de informação (H28, C03.Q3) |
+| Ler a mudança sem tomá-la como avaliação pessoal | Maria / T03, etapa 1.3 | Participante diz que a comunicação mudou em relação ao próprio histórico e que as tarefas não mudaram, sem concluir que foi avaliada negativamente | Evitar leitura punitiva ou diagnóstica (H25) |
+| Saber para onde vai o contexto e o que acontece depois | Maria / T03, etapas 2.3 e 3.1 | Participante identifica o destinatário antes de enviar e diferencia “recebida” de “respondida” | Responder à ruptura do silêncio após o envio (C03.Q7) |
 
 ### 3.2 Metas quantitativas
 
@@ -71,6 +74,8 @@ Usabilidade deve ser discutida **no contexto de uso**. Metas quantitativas devem
 | MU04 | Compreensão e prevenção de erro crítico | Percentual que identifica insuficiência e não faz conclusão sobre a pessoa a partir dos dados ausentes | T01, variante com análise incompleta | 100% no grupo avaliado | Perguntar de forma neutra “O que é possível concluir e qual seria seu próximo passo?”; conferir interpretação e registro, sem sugerir a resposta | A gravidade da interpretação equivocada justifica meta mais restritiva; não garante ausência de risco fora da amostra |
 | MU05 | Recuperação de erro | Percentual que recupera uma falha de salvamento simulada sem ajuda e confere o registro | T01, variante com falha de registro | Pelo menos 80% | Apresentar a mesma falha após a primeira confirmação; observar nova tentativa e conferência do sucesso, com campos preservados | Verificar se o usuário distingue falha de persistência e consegue terminar |
 | MU06 | Acessibilidade operacional | Proporção das etapas essenciais executáveis por teclado sem bloqueio e com foco visível | Localizar análise, abrir detalhes, preencher, confirmar e voltar em T01 | 100% das cinco etapas | Inspeção manual no protótipo web implementado, sem mouse; registrar resultado por etapa. No papel ou protótipo sem suporte a teclado, marcar não avaliável | Estabelecer um critério específico de acesso, sem substituir avaliação ampla de acessibilidade ou conformidade WCAG |
+| MU07 | Eficácia | Percentual de participantes que enviam o contexto ao destinatário correto e conferem o recebimento sem ajuda | T03, caminho principal (F15 → F16 → F17) | Pelo menos 80% | Conclusões sem ajuda divididas pelo total de tentativas válidas; verificar tipo, destinatário e conferência do estado “recebida” | Alvo inicial para o fluxo central da colaboradora |
+| MU08 | Compreensão | Percentual que interpreta corretamente as duas dimensões e os limites da análise | T03, leitura da explicação (F15) | 100% no grupo avaliado | Pergunta neutra após a leitura: “O que essa explicação diz sobre você e o que ela não diz?”; conferir se separa comunicação e tarefas e se não a trata como avaliação | Erro de interpretação afeta a confiança da colaboradora (H25, H28) |
 
 ### 3.3 Priorização das metas (se exigida na disciplina)
 
@@ -84,6 +89,14 @@ Se o professor solicitar porcentagens que somem 100%, trate-as como **peso de pr
 | MU04 — Compreensão de insuficiência | 30% | Interpretação incorreta pode afetar decisões sobre colaboradores |
 | MU05 — Recuperação de falha | 15% | Um registro não concluído precisa ser reconhecido e recuperável |
 | MU06 — Acesso por teclado | 10% | O fluxo não deve excluir usuários dependentes de teclado |
+| **Total** | **100%** | |
+
+**Priorização das metas do fluxo da colaboradora (T03):** tratadas separadamente para não alterar os pesos de T01.
+
+| Meta | Peso de prioridade | Justificativa |
+|---|---:|---|
+| MU07 — Envio e conferência do recebimento | 40% | Sem isso, o fluxo repete a ruptura do C03 |
+| MU08 — Compreensão da explicação | 60% | Uma interpretação errada pela própria pessoa afetada compromete a confiança no sistema |
 | **Total** | **100%** | |
 
 ## 4. Como o ciclo será iterado
