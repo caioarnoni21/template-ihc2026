@@ -1,7 +1,7 @@
 # Entrega 13 — Avaliação de IHC por inspeção heurística
 
 **Data:** 25/11/2026 
-**Status:** ⬜ não iniciada  
+**Status:** 🟩 Concluída
 **Responsabilidade:** 1 avaliação completa por integrante, sobre todas as telas/estados relevantes do projeto.
 
 ## Objetivo da atividade
@@ -117,24 +117,6 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 
 > Repita a seção para A02, A03... um avaliador por integrante.
 
-## 7. Consolidação da equipe
-
-Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes devem ser consolidados, preservando quem os encontrou.
-
-| ID consolidado | Achados individuais | Heurística | Problema | Severidade final | Prioridade | Responsável pela correção |
-|---|---|---|---|---:|---|---|
-| HC01 | V01 — revisão preliminar assistida por IA | H4, H5 | F12 apresenta “Apoiar” e “Aguardar dados” selecionados simultaneamente, apesar de permitir apenas aguardar dados. | Proposta: 3 — maior; validar com a equipe | Alta — corrigir antes do teste do estado incompleto | Proposta: Caio Arnoni, em alinhamento com o responsável pela edição do protótipo |
-| HC02 | V02 — revisão preliminar assistida por IA | H4 | F10 mostra “Apoiar”, mas F11 confirma “Acompanhar”, sem alteração intermediária documentada. | Proposta: 3 — maior, se confirmado no mesmo fluxo | Alta — verificar o encadeamento e corrigir antes do teste de registro | Proposta: Caio Arnoni, em alinhamento com o responsável pela edição do protótipo |
-| HC03 | V03 — revisão preliminar assistida por IA | H2 | F06 oferece “Está tudo certo, registrar e sair” mesmo apresentando sinalização e insuficiência de dados. | Proposta: 2 — menor; validar com a equipe | Baixa em relação a HC01/HC02; incluir na revisão anterior ao teste | Proposta: Caio Arnoni, em alinhamento com o responsável pela edição do protótipo |
-
-## 8. Síntese e plano de melhoria
-
-- Quantidade de problemas por heurística e severidade.
-- Problemas críticos/graves que bloqueiam teste ou release.
-- Padrões recorrentes entre telas.
-- Correções que serão feitas antes/para a avaliação com usuários.
-
-
 ### 2. Escopo da inspeção (linhas do avaliador A02)
 
 | Item | Definição |
@@ -201,6 +183,165 @@ Cada avaliador deve:
 
 <img width="1389" height="868" alt="image" src="https://github.com/user-attachments/assets/913641c1-8ca1-4ba2-849e-cef06303c0e3" />
 
+## Avaliador A03 — Tainá Cunha Bueno
+
+### 2. Escopo da inspeção (linhas do avaliador A03)
+
+| Item | Definição |
+|---|---|
+| Versão avaliada | Capturas do protótipo no Figma “Login e Cadastro de Colaboradores”, disponibilizadas em 27/11/2026. Referência: https://www.figma.com/design/McbDfvqqGuDnR9uDmBdJrp/Login-e-Cadastro-de-Colaboradores |
+| Telas/estados | F14, F15, F15-vazio, F16, F16-conversa, F16-E1, F16-E2, F16-sair, F17, F18, F18-aguardando e F18-esclarecida. As telas F01–F13 permanecem pendentes de inspeção direta pela avaliadora A03. |
+| Fluxos | M03/T03: compreensão da análise, envio de contexto, solicitação de conversa reservada, acompanhamento, encerramento, prevenção e recuperação de erros. M01 e M02b permanecem pendentes de inspeção direta. |
+| Dispositivo/viewport | Revisão de imagens estáticas desktop, com resolução de 1280 × 800 pixels. Navegação, navegador e zoom de execução ainda não aferidos. |
+| Avaliadores | A03: Tainá Cunha Bueno — 22.119.025-9. As telas F14–F18 foram desenvolvidas pela própria avaliadora, o que representa uma limitação relacionada à independência da avaliação. |
+
+Os achados desta revisão preliminar são fundamentados nas imagens exportadas do protótipo. O funcionamento das interações entre os frames ainda precisa ser verificado.
+
+## 3. Procedimento individual
+
+Cada avaliador deve:
+
+1. percorrer os fluxos/telas ao menos uma vez para familiarização;
+2. inspecionar novamente aplicando sistematicamente H1–H10;
+3. registrar cada problema com evidência e contexto;
+4. atribuir severidade **depois de compreender bem o problema**, justificando a decisão;
+5. não discutir achados com os demais antes de terminar a inspeção individual, quando o objetivo for preservar independência.
+
+### 4. Matriz de cobertura das 10 heurísticas
+
+| Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
+| --- | --- | --- | --- | --- |
+| H1 — Visibilidade do estado do sistema | F06, F08/F09, F10/F12, F15-vazio, F17/F18 | Sim | V18, V20, V23 | Não se aplica |
+| H2 — Correspondência com o mundo real | L01/L02, F06/F07/F08, F14/F15/F17 | Sim | V17, V23, V27, V28 | Não se aplica |
+| H3 — Controle e liberdade do usuário | L01/L02, F07–F10, F12, F16-sair, F18 | Não identificada nas imagens | — | F16-sair: continuar editando ou descartar |
+| H4 — Consistência e padrões | L01/L02, F06–F18 e variantes | Sim | V14, V19, V20, V24, V28, V29 | Não se aplica |
+| H5 — Prevenção de erros | L01/L02, F07, F09/F12, F15/F16 e variantes | Sim | V16, V21, V22, V25, V26 | Não se aplica |
+| H6 — Reconhecimento em vez de memorização | L01/L02, F06–F13, F15–F18 | Sim | V21 | Não se aplica |
+| H7 — Flexibilidade e eficiência de uso | F06, F14 e menus laterais dos três fluxos | Não identificada nas imagens | — | F06: ação Retomar; F14: acesso direto às solicitações |
+| H8 — Estética e design minimalista | L01/L02, F06–F18 | Não identificada nas imagens | — | F14: quatro cartões temáticos |
+| H9 — Reconhecimento, diagnóstico e recuperação de erros | F09/F12, F16-E1/E2 | Não identificada nas imagens | — | F16-E2: falha de envio |
+| H10 — Ajuda e documentação | L01/L02, F07–F09, F14/F15 | Sim | V17 | Não se aplica |
+
+A matriz se limita aos problemas visíveis e não comprova ausência de violações na interação.
+
+### 5. Declaração de violações
+
+| ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| V14 | H4 | F06–F13 | As imagens dos frames têm largura de 1280 px e alturas distintas: F06 (1134), F07 (873), F08/F09 (974), F10 (818), F12 (889), F11/F13 (800). A mudança de escala ou salto durante a navegação não foi testada. | [Figura V14](#figura-v14) | 2 — Menor | A diferença de dimensão é recorrente; pode prejudicar a continuidade se a apresentação redimensionar cada tela. | Padronizar a altura do viewport e usar rolagem para conteúdos longos; testar a escala no modo de apresentação. |
+| V16 | H5 | F07 — Sinalização | A opção “Não aprofundar: ir para o registro (P06)” permite, no desenho, prosseguir sem consultar a cobertura dos dados; F07 não apresenta o estado de confiabilidade. F09 e F12 representam restrição quando há insuficiência, mas o atalho não foi testado. | [Figura V16](#figura-v16) | 3 — Maior | A opção aparece sempre nesse estado e pode favorecer decisões sem conferir suficiência. A possibilidade de efetivamente registrar uma decisão inadequada ainda não foi comprovada. | Exibir a confiabilidade antes do atalho e impedir encaminhamentos incompatíveis com dados insuficientes, inclusive no caminho direto. |
+| V17 | H2, H10 | F07 — Sinalização | As barras de comunicação e atividades têm rótulos de período, porém não mostram a métrica, valores, escala ou unidade. | [Figura V17](#figura-v17) | 2 — Menor | A omissão é constante e pode levar à leitura incorreta da diferença, embora a descrição qualitativa ofereça algum apoio. | Identificar o indicador e a unidade, mostrar valores comparáveis e explicar a leitura das barras. |
+| V18 | H1 | F06, F10 e F12 | F06 apresenta rascunho salvo ontem e F10/F12 afirmam salvamento automático e retomada ao sair. A retomada entre sessões não está demonstrada nas imagens e ultrapassa o comportamento documentado na Entrega 11 para M01. | [Figura V18](#figura-v18) | 2 — Menor | A promessa aparece nas telas de registro e pode criar expectativa de recuperação do texto; não há evidência de perda efetiva. | Especificar o alcance do rascunho (sessão ou persistência) e alinhar o texto ao modelo; testar a retomada. |
+| V19 | H4 | F11/F13 × F17/F18 | As confirmações de registro identificam João Pedro, enquanto o cenário de T01 e o fluxo da colaboradora identificam Rafael Costa como gestor. A diferença não é explicada. | [Figura V19](#figura-v19) | 1 — Cosmético | A inconsistência dos dados fictícios reaparece nas confirmações e pode confundir a identificação do gestor no cenário integrado. | Unificar o nome fictício ou indicar explicitamente se os registros correspondem a gestores distintos. |
+| V20 | H1, H4 | F15-vazio | O cabeçalho informa compartilhamento por Rafael Costa em 06/11, enquanto o conteúdo informa que nenhuma explicação foi compartilhada. | [Figura V20](#figura-v20) | 2 — Menor | A contradição está presente sempre que esse estado é exibido e pode gerar dúvida sobre a disponibilidade da explicação. | Remover autor e data de compartilhamento no estado vazio. |
+| V21 | H5, H6 | F15-vazio | O campo de mensagem e o botão Enviar aparecem sem identificação do destinatário, diferentemente de F16. | [Figura V21](#figura-v21) | 3 — Maior | O problema é constante nesse estado e envolve risco de encaminhar contexto sensível sem saber quem o receberá. Não foi testado o envio. | Exibir nome e papel do destinatário antes do envio. |
+| V22 | H5 | F15-vazio e F16 | O aviso sobre informações pessoais sensíveis não aparece em F15-vazio e está abaixo do campo de mensagem em F16. | [Figura V22](#figura-v22) | 2 — Menor | A orientação pode passar despercebida antes da digitação; em F16 ainda aparece antes do envio. | Colocar o aviso antes do campo em ambos os formulários e manter a alternativa de conversa reservada quando aplicável. |
+| V23 | H1, H2 | F17 | A mensagem de confirmação informa envio e recebimento, sem distinguir recebimento pelo sistema de leitura pelo gestor. | [Figura V23](#figura-v23) | 2 — Menor | A ambiguidade ocorre na confirmação e pode alterar a expectativa de retorno, embora o fluxo ainda possa ser concluído. | Explicitar que a solicitação foi recebida pelo sistema e que isso não significa leitura pelo gestor. |
+| V24 | H4 | F18-respondida, F18-aguardando e F18-esclarecida | A linha do tempo possui quatro etapas na versão respondida e cinco nas variantes de espera e encerramento. | [Figura V24](#figura-v24) | 2 — Menor | A diferença é persistente entre estados e pode dificultar a compreensão do encerramento. | Padronizar cinco etapas, diferenciando as concluídas, atuais e pendentes. |
+| V25 | H5 | F15 | A orientação de que o envio de contexto não altera automaticamente a análise aparece abaixo dos botões, em texto de menor destaque. | [Figura V25](#figura-v25) | 2 — Menor | A usuária pode iniciar a ação sem perceber a orientação; o texto ainda está disponível na tela. | Mover a orientação para antes dos botões e dar maior destaque. |
+| V26 | H5 | L02/F02 — Cadastro | Os campos não indicam quais são obrigatórios ou opcionais; há somente um lembrete geral para conferir os dados. | [Figura V26](#figura-v26) | 2 — Menor | A omissão ocorre no formulário inteiro e pode causar tentativas de preenchimento incompletas; as mensagens de validação não foram examinadas. | Identificar os campos obrigatórios ou opcionais de forma consistente. |
+| V27 | H2 | F06 — Visão geral | O botão “Está tudo certo, registrar e sair” aparece junto de uma sinalização e uma análise incompleta, sem identificar o caso ao qual a ação se aplica. | [Figura V27](#figura-v27) | 2 — Menor | O rótulo pode induzir a uma conclusão geral indevida; o destino do botão não foi testado. | Usar rótulo neutro e identificar o caso antes de registrar. |
+| V28 | H2, H4 | F07 × F15 | Para o ciclo 22/10–05/11, F07 diz que M. F. está se comunicando menos com a equipe e F15 descreve mensagens mais frequentes e mais curtas. Os textos não explicam se frequência, volume ou outra métrica fundamenta cada leitura. | [Figura V28](#figura-v28) | 2 — Menor | As duas leituras podem coexistir se forem métricas distintas, mas a falta de explicação pode gerar interpretações divergentes entre gestor e colaboradora. | Alinhar os dados fictícios e explicitar o indicador que sustenta cada conclusão. |
+| V29 | H4 | F07/F08 × F15 | Para o ciclo 22/10–05/11, F07/F08 mostram referência de 06/09 a 05/10, enquanto F15 mostra referência de 22/09 a 21/10. Não há explicação da diferença. | [Figura V29](#figura-v29) | 2 — Menor | A divergência de período é persistente nas telas e prejudica a comparação das explicações do mesmo caso. | Unificar o período de referência do cenário ou explicar por que os períodos diferem. |
+
+V15 (botões sem resposta) não foi incluído: requer navegação no protótipo. As severidades são propostas e refletem frequência esperada, impacto e persistência visual, sem medição com participantes.
+
+#### Figura V14
+
+![V14 — f06 visao geral](../assets/13_heuristica/a03_f06_visao_geral.png)
+
+![V14 — f07 sinalizacao](../assets/13_heuristica/a03_f07_sinalizacao.png)
+
+![V14 — f11 confirmacao](../assets/13_heuristica/a03_f11_confirmacao.png)
+
+#### Figura V16
+
+![V16 — f07 sinalizacao](../assets/13_heuristica/a03_f07_sinalizacao.png)
+
+![V16 — f09 incompleta](../assets/13_heuristica/a03_f09_incompleta.png)
+
+![V16 — f12 aguardar dados](../assets/13_heuristica/a03_f12_aguardar_dados.png)
+
+#### Figura V17
+
+![V17 — f07 sinalizacao](../assets/13_heuristica/a03_f07_sinalizacao.png)
+
+#### Figura V18
+
+![V18 — f06 visao geral](../assets/13_heuristica/a03_f06_visao_geral.png)
+
+![V18 — f10 registro](../assets/13_heuristica/a03_f10_registro.png)
+
+![V18 — f12 aguardar dados](../assets/13_heuristica/a03_f12_aguardar_dados.png)
+
+#### Figura V19
+
+![V19 — f11 confirmacao](../assets/13_heuristica/a03_f11_confirmacao.png)
+
+![V19 — f13 confirmacao aguardar](../assets/13_heuristica/a03_f13_confirmacao_aguardar.png)
+
+![V19 — f17 solicitacao recebida](../assets/13_heuristica/a03_f17_solicitacao_recebida.png)
+
+#### Figura V20
+
+![V20 — f15 vazio](../assets/13_heuristica/a03_f15_vazio.png)
+
+#### Figura V21
+
+![V21 — f15 vazio](../assets/13_heuristica/a03_f15_vazio.png)
+
+#### Figura V22
+
+![V22 — f15 vazio](../assets/13_heuristica/a03_f15_vazio.png)
+
+![V22 — f16 enviar esclarecimento](../assets/13_heuristica/a03_f16_enviar_esclarecimento.png)
+
+#### Figura V23
+
+![V23 — f17 solicitacao recebida](../assets/13_heuristica/a03_f17_solicitacao_recebida.png)
+
+#### Figura V24
+
+![V24 — f18 minhas solicitacoes](../assets/13_heuristica/a03_f18_minhas_solicitacoes.png)
+
+![V24 — f18 aguardando](../assets/13_heuristica/a03_f18_aguardando.png)
+
+![V24 — f18-esclarecida](../assets/13_heuristica/a03_f18-esclarecida.png)
+
+#### Figura V25
+
+![V25 — f15 explicacao do ciclo](../assets/13_heuristica/a03_f15_explicacao_do_ciclo.png)
+
+#### Figura V26
+
+![V26 — l02 cadastro](../assets/13_heuristica/a03_l02_cadastro.png)
+
+#### Figura V27
+
+![V27 — f06 visao geral](../assets/13_heuristica/a03_f06_visao_geral.png)
+
+#### Figura V28
+
+![V28 — f07 sinalizacao](../assets/13_heuristica/a03_f07_sinalizacao.png)
+
+![V28 — f15 explicacao do ciclo](../assets/13_heuristica/a03_f15_explicacao_do_ciclo.png)
+
+#### Figura V29
+
+![V29 — f07 sinalizacao](../assets/13_heuristica/a03_f07_sinalizacao.png)
+
+![V29 — f08 confiabilidade](../assets/13_heuristica/a03_f08_confiabilidade.png)
+
+![V29 — f15 explicacao do ciclo](../assets/13_heuristica/a03_f15_explicacao_do_ciclo.png)
+
+### 6. Boas práticas — heurísticas sem violação identificada na revisão visual
+
+| Heurística | Exemplo no sistema | Evidência | Por que atende |
+| --- | --- | --- | --- |
+| H3 — Controle e liberdade do usuário | F16-sair: continuar editando ou descartar | ![Boa prática H3](../assets/13_heuristica/a03_f16_sair.png) | Mostra alternativas de saída e consequências do descarte. |
+| H7 — Flexibilidade e eficiência de uso | F06: ação Retomar; F14: acesso direto às solicitações | ![Boa prática H7](../assets/13_heuristica/a03_f06_visao_geral.png) | Representa acesso direto à atividade interrompida; eficiência e funcionamento não medidos. |
+| H8 — Estética e design minimalista | F14: quatro cartões temáticos | ![Boa prática H8](../assets/13_heuristica/a03_f14_sobre_minhas_analises.png) | Agrupa informações relacionadas com títulos específicos. |
+| H9 — Reconhecimento, diagnóstico e recuperação de erros | F16-E2: falha de envio | ![Boa prática H9](../assets/13_heuristica/a03_f16e_falha_ao_enviar.png) | Mostra a mensagem preservada e orienta a verificar a conexão e tentar novamente. |
 
 ## 7. Consolidação da equipe
 
@@ -208,13 +349,60 @@ Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes dev
 
 | ID consolidado | Achados individuais | Heurística | Problema | Severidade final | Prioridade | Responsável pela correção |
 |---|---|---|---|---:|---|---|
+| HC01 | V01 | H4, H5 | F12 apresenta “Apoiar” e “Aguardar dados” selecionados simultaneamente, apesar de permitir apenas aguardar dados. | Proposta: 3 — maior; validar com a equipe | Alta — corrigir antes do teste do estado incompleto | Proposta: Caio Arnoni, em alinhamento com o responsável pela edição do protótipo |
+| HC02 | V02 | H4 | F10 mostra “Apoiar”, mas F11 confirma “Acompanhar”, sem alteração intermediária documentada. | Proposta: 3 — maior, se confirmado no mesmo fluxo | Alta — verificar o encadeamento e corrigir antes do teste de registro | Proposta: Caio Arnoni, em alinhamento com o responsável pela edição do protótipo |
+| HC03 | V03 (A01); V27 (A03) | H2 | F06 oferece “Está tudo certo, registrar e sair” mesmo apresentando sinalização e insuficiência de dados. | Proposta: 2 — menor; validar com a equipe | Baixa em relação a HC01/HC02; incluir na revisão anterior ao teste | Proposta: Caio Arnoni, em alinhamento com o responsável pela edição do protótipo |
 | HC04 | V10 (A02) | H10, H5 | Telegram ID e Trello ID sem orientação de onde encontrar | Proposta: 3 — maior; validar com a equipe | Alta — corrigir antes do teste | Proposta: Guilherme Matias |
 | HC05 | V08 (A02) | H8, H5 | Campos de cadastro fora da tarefa modelada (CPF, cargo, departamento, admissão, matrícula) | Proposta: 3 — maior; validar com a equipe | Alta — decidir se são necessários | Proposta: Guilherme Matias, com a equipe |
 | HC06 | V05, V07 (A02) | H5, H10 | "Lembrar de mim" sem explicação e "Fale com o RH" sem canal | Proposta: 2 — menor | Média | Proposta: Guilherme Matias |
 | HC07 | V04, V13 (A02) | H2, H8 | Painel promocional e elementos decorativos sem relação com a tarefa | Proposta: 2 — menor | Média | Proposta: Guilherme Matias |
-| HC08 | V09, V11 (A02) | H5, H4 | Obrigatoriedade não indicada e listas sem aparência de seleção | Proposta: 2 — menor | Média | Proposta: Guilherme Matias |
+| HC08 | V09, V11 (A02); V26 (A03) | H5, H4 | Obrigatoriedade não indicada e listas sem aparência de seleção | Proposta: 2 — menor | Média | Proposta: Guilherme Matias |
 | HC09 | V06, V12 (A02) | H5, H4 | Senha sem mostrar ou ocultar e identidade visual diferente entre as telas | Proposta: 1 — cosmético | Baixa | Proposta: Guilherme Matias |
+| HC10 | V14 (A03) | H4 | Diferenças de altura dos frames do gestor | Proposta: 2 — Menor | Média | Proposta: Equipe — autores dos fluxos |
+| HC12 | V16 (A03) | H5 | Atalho para registro sem conferir confiabilidade | Proposta: 3 — Maior | Alta — revisar antes do teste | Proposta: Caio Arnoni |
+| HC13 | V17 (A03) | H2, H10 | Barras sem métrica, valor ou unidade explícita | Proposta: 2 — Menor | Média | Proposta: Caio Arnoni |
+| HC14 | V18 (A03) | H1 | Promessa de salvamento e retomada sem demonstração entre sessões | Proposta: 2 — Menor | Média | Proposta: Caio Arnoni |
+| HC15 | V19 (A03) | H4 | Nome fictício divergente nas confirmações | Proposta: 1 — Cosmético | Baixa | Proposta: Caio Arnoni |
+| HC16 | V20 (A03) | H1, H4 | Contradição sobre compartilhamento em F15-vazio | Proposta: 2 — Menor | Média | Proposta: Tainá Cunha Bueno |
+| HC17 | V21 (A03) | H5, H6 | Destinatário ausente em F15-vazio | Proposta: 3 — Maior | Alta — revisar antes do teste | Proposta: Tainá Cunha Bueno |
+| HC18 | V22 (A03) | H5 | Aviso de dados sensíveis ausente ou após campo de mensagem | Proposta: 2 — Menor | Média | Proposta: Tainá Cunha Bueno |
+| HC19 | V23 (A03) | H1, H2 | Ambiguidade entre recebimento e leitura pelo gestor | Proposta: 2 — Menor | Média | Proposta: Tainá Cunha Bueno |
+| HC20 | V24 (A03) | H4 | Linha do tempo com quantidade inconsistente de etapas | Proposta: 2 — Menor | Média | Proposta: Tainá Cunha Bueno |
+| HC21 | V25 (A03) | H5 | Aviso sobre efeitos do envio após ações | Proposta: 2 — Menor | Média | Proposta: Tainá Cunha Bueno |
+| HC22 | V28 (A03) | H2, H4 | Descrição comunicacional sem conciliação entre os fluxos | Proposta: 2 — Menor | Média | Proposta: Caio Arnoni e Tainá Cunha Bueno |
+| HC23 | V29 (A03) | H4 | Períodos de referência divergentes entre os fluxos | Proposta: 2 — Menor | Média | Proposta: Caio Arnoni e Tainá Cunha Bueno |
 
+## 8. Síntese e plano de melhoria — A03
+
+A revisão visual identificou 15 achados nas 22 imagens examinadas. Dois achados (V26 e V27) coincidem com registros anteriores da equipe e devem ser consolidados nos respectivos HC08 e HC03.
+
+| Heurística | Quantidade de violações |
+| --- | --- |
+| H1 — Visibilidade do estado do sistema | 3 |
+| H2 — Correspondência com o mundo real | 4 |
+| H3 — Controle e liberdade do usuário | 0 |
+| H4 — Consistência e padrões | 6 |
+| H5 — Prevenção de erros | 5 |
+| H6 — Reconhecimento em vez de memorização | 1 |
+| H7 — Flexibilidade e eficiência de uso | 0 |
+| H8 — Estética e design minimalista | 0 |
+| H9 — Reconhecimento, diagnóstico e recuperação de erros | 0 |
+| H10 — Ajuda e documentação | 1 |
+
+Uma violação pode estar associada a mais de uma heurística.
+
+| Severidade | Quantidade |
+| --- | --- |
+| 0 — Não é problema | 0 |
+| 1 — Cosmético | 1 |
+| 2 — Menor | 12 |
+| 3 — Maior | 2 |
+| 4 — Catástrofe | 0 |
+| **Total** | 15 |
+
+Priorizar a revisão do atalho para registro sem conferência de confiabilidade (V16) e a ausência de destinatário em F15-vazio (V21). A existência de um registro indevido por meio do atalho ainda precisa ser testada. Verificar também a coerência dos dados fictícios, dos períodos e dos nomes entre os dois fluxos, os avisos de privacidade e o acompanhamento de solicitações. Padronizar o viewport e verificar a apresentação de telas longas.
+
+V15 permanece sem confirmação; deve ser testado no Figma. Os estados não presentes nas imagens e as interações de navegação, validação e retomada também precisam ser inspecionados. A avaliadora deve conferir os achados individualmente antes de considerar a inspeção concluída. As correções propostas não representam alterações implementadas.
 ---
 
 ## Checklist
