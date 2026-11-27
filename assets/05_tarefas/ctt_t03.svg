@@ -1,5 +1,171 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360">
-<rect width="100%" height="100%" fill="#f6f8fa" stroke="#8c959f" stroke-width="4"/>
-<text x="480" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#24292f">PLACEHOLDER DE ARTEFATO</text>
-<text x="480" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#57606a">Substitua este arquivo pela evidência real da equipe.</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="2370" height="760" viewBox="0 0 2370 760"><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs><rect x="0" y="0" width="2370" height="760" fill="#ffffff"/>
+<text x="1185.0" y="34" font-family="Inter, DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#111" text-anchor="middle">CTT — T03 Esclarecer uma interpretação sobre o próprio trabalho e verificar a resposta</text>
+<text x="1185.0" y="58" font-family="Inter, DejaVu Sans, sans-serif" font-size="13" font-weight="400" fill="#555" text-anchor="middle">Persona P03 — Maria Fonseca · Autora: Tainá Cunha Bueno — 22.119.025-9</text>
+<rect x="40" y="380" width="132" height="84" rx="6" fill="#dbeafe" stroke="#3a6ea5" stroke-width="1.5"/>
+<text x="106.0" y="409.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">[Consultar</text>
+<text x="106.0" y="425.75" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">finalidade, fontes</text>
+<text x="106.0" y="442.0" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">e acesso]</text>
+<rect x="142" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="156" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">I</text>
+<line x1="106.0" y1="330" x2="106.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<rect x="186" y="380" width="132" height="84" rx="6" fill="#dbeafe" stroke="#3a6ea5" stroke-width="1.5"/>
+<text x="252.0" y="417.625" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">Abrir explicação</text>
+<text x="252.0" y="433.875" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">do ciclo</text>
+<rect x="288" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="302" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">I</text>
+<line x1="252.0" y1="330" x2="252.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<rect x="332" y="380" width="132" height="84" rx="6" fill="#e5e7eb" stroke="#555" stroke-width="1.5"/>
+<text x="398.0" y="409.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">Exibir período,</text>
+<text x="398.0" y="425.75" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">dimensões e</text>
+<text x="398.0" y="442.0" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">limites</text>
+<rect x="434" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="448" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">S</text>
+<line x1="398.0" y1="330" x2="398.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<rect x="478" y="380" width="132" height="84" rx="6" fill="#fef3c7" stroke="#b8962e" stroke-width="1.5"/>
+<text x="544.0" y="409.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">Interpretar o que</text>
+<text x="544.0" y="425.75" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">mudou e o que não</text>
+<text x="544.0" y="442.0" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">mudou</text>
+<rect x="580" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="594" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">U</text>
+<line x1="544.0" y1="330" x2="544.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<line x1="106.0" y1="330" x2="544.0" y2="330" stroke="#333" stroke-width="1.5"/>
+<line x1="325.0" y1="286" x2="325.0" y2="330" stroke="#333" stroke-width="1.5"/>
+<rect x="159.0" y="343" width="40" height="22" rx="4" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="179.0" y="359" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="700" fill="#b42318" text-anchor="middle">|||</text>
+<rect x="305.0" y="343" width="40" height="22" rx="4" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="325.0" y="359" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="700" fill="#b42318" text-anchor="middle">[]&gt;&gt;</text>
+<rect x="451.0" y="343" width="40" height="22" rx="4" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="471.0" y="359" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="700" fill="#b42318" text-anchor="middle">&gt;&gt;</text>
+<rect x="195.0" y="230" width="260" height="56" rx="6" fill="#ffffff" stroke="#333" stroke-width="1.5"/>
+<text x="325.0" y="262.2" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#111" text-anchor="middle">Compreender a interpretação</text>
+<rect x="427.0" y="229" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="441.0" y="243" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">A</text>
+<rect x="650" y="380" width="132" height="84" rx="6" fill="#dbeafe" stroke="#3a6ea5" stroke-width="1.5"/>
+<text x="716.0" y="409.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">Escrever pergunta,</text>
+<text x="716.0" y="425.75" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">correção ou</text>
+<text x="716.0" y="442.0" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">contexto</text>
+<rect x="752" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="766" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">I</text>
+<line x1="716.0" y1="330" x2="716.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<rect x="796" y="380" width="132" height="84" rx="6" fill="#dbeafe" stroke="#3a6ea5" stroke-width="1.5"/>
+<text x="862.0" y="417.625" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">Pedir conversa</text>
+<text x="862.0" y="433.875" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">reservada</text>
+<rect x="898" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="912" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">I</text>
+<line x1="862.0" y1="330" x2="862.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<rect x="942" y="380" width="132" height="84" rx="6" fill="#dbeafe" stroke="#3a6ea5" stroke-width="1.5"/>
+<text x="1008.0" y="417.625" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">Conferir</text>
+<text x="1008.0" y="433.875" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">destinatário</text>
+<rect x="1044" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="1058" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">I</text>
+<line x1="1008.0" y1="330" x2="1008.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<rect x="1088" y="380" width="132" height="84" rx="6" fill="#dbeafe" stroke="#3a6ea5" stroke-width="1.5"/>
+<text x="1154.0" y="425.75" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">Enviar solicitação</text>
+<rect x="1190" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="1204" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">I</text>
+<line x1="1154.0" y1="330" x2="1154.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<rect x="1234" y="380" width="132" height="84" rx="6" fill="#e5e7eb" stroke="#555" stroke-width="1.5"/>
+<text x="1300.0" y="409.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">Registrar e</text>
+<text x="1300.0" y="425.75" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">confirmar</text>
+<text x="1300.0" y="442.0" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">recebimento</text>
+<rect x="1336" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="1350" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">S</text>
+<line x1="1300.0" y1="330" x2="1300.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<rect x="1380" y="380" width="132" height="84" rx="6" fill="#dbeafe" stroke="#3a6ea5" stroke-width="1.5"/>
+<text x="1446.0" y="425.75" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">Descartar rascunho</text>
+<rect x="1482" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="1496" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">I</text>
+<line x1="1446.0" y1="330" x2="1446.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<line x1="716.0" y1="330" x2="1446.0" y2="330" stroke="#333" stroke-width="1.5"/>
+<line x1="1081.0" y1="286" x2="1081.0" y2="330" stroke="#333" stroke-width="1.5"/>
+<rect x="769.0" y="343" width="40" height="22" rx="4" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="789.0" y="359" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="700" fill="#b42318" text-anchor="middle">[]</text>
+<rect x="915.0" y="343" width="40" height="22" rx="4" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="935.0" y="359" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="700" fill="#b42318" text-anchor="middle">&gt;&gt;</text>
+<rect x="1061.0" y="343" width="40" height="22" rx="4" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="1081.0" y="359" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="700" fill="#b42318" text-anchor="middle">[]&gt;&gt;</text>
+<rect x="1207.0" y="343" width="40" height="22" rx="4" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="1227.0" y="359" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="700" fill="#b42318" text-anchor="middle">[]&gt;&gt;</text>
+<rect x="1353.0" y="343" width="40" height="22" rx="4" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="1373.0" y="359" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="700" fill="#b42318" text-anchor="middle">[&gt;</text>
+<rect x="951.0" y="230" width="260" height="56" rx="6" fill="#ffffff" stroke="#333" stroke-width="1.5"/>
+<text x="1081.0" y="262.2" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#111" text-anchor="middle">Apresentar o contexto</text>
+<rect x="1183.0" y="229" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="1197.0" y="243" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">A</text>
+<rect x="1552" y="380" width="132" height="84" rx="6" fill="#dbeafe" stroke="#3a6ea5" stroke-width="1.5"/>
+<text x="1618.0" y="417.625" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">Consultar</text>
+<text x="1618.0" y="433.875" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">solicitação*</text>
+<rect x="1654" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="1668" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">I</text>
+<line x1="1618.0" y1="330" x2="1618.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<rect x="1698" y="380" width="132" height="84" rx="6" fill="#e5e7eb" stroke="#555" stroke-width="1.5"/>
+<text x="1764.0" y="417.625" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">Exibir estado e</text>
+<text x="1764.0" y="433.875" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">resposta</text>
+<rect x="1800" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="1814" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">S</text>
+<line x1="1764.0" y1="330" x2="1764.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<rect x="1844" y="380" width="132" height="84" rx="6" fill="#fef3c7" stroke="#b8962e" stroke-width="1.5"/>
+<text x="1910.0" y="425.75" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">Avaliar a resposta</text>
+<rect x="1946" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="1960" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">U</text>
+<line x1="1910.0" y1="330" x2="1910.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<rect x="1990" y="380" width="132" height="84" rx="6" fill="#dbeafe" stroke="#3a6ea5" stroke-width="1.5"/>
+<text x="2056.0" y="417.625" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">Considerar</text>
+<text x="2056.0" y="433.875" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">esclarecido</text>
+<rect x="2092" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="2106" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">I</text>
+<line x1="2056.0" y1="330" x2="2056.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<rect x="2136" y="380" width="132" height="84" rx="6" fill="#dbeafe" stroke="#3a6ea5" stroke-width="1.5"/>
+<text x="2202.0" y="425.75" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="400" fill="#111" text-anchor="middle">Pedir nova revisão</text>
+<rect x="2238" y="379" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="2252" y="393" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">I</text>
+<line x1="2202.0" y1="330" x2="2202.0" y2="380" stroke="#333" stroke-width="1.5"/>
+<line x1="1618.0" y1="330" x2="2202.0" y2="330" stroke="#333" stroke-width="1.5"/>
+<line x1="1910.0" y1="286" x2="1910.0" y2="330" stroke="#333" stroke-width="1.5"/>
+<rect x="1671.0" y="343" width="40" height="22" rx="4" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="1691.0" y="359" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="700" fill="#b42318" text-anchor="middle">[]&gt;&gt;</text>
+<rect x="1817.0" y="343" width="40" height="22" rx="4" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="1837.0" y="359" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="700" fill="#b42318" text-anchor="middle">[]&gt;&gt;</text>
+<rect x="1963.0" y="343" width="40" height="22" rx="4" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="1983.0" y="359" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="700" fill="#b42318" text-anchor="middle">&gt;&gt;</text>
+<rect x="2109.0" y="343" width="40" height="22" rx="4" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="2129.0" y="359" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="700" fill="#b42318" text-anchor="middle">[]</text>
+<rect x="1780.0" y="230" width="260" height="56" rx="6" fill="#ffffff" stroke="#333" stroke-width="1.5"/>
+<text x="1910.0" y="262.2" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#111" text-anchor="middle">Acompanhar a solicitação</text>
+<rect x="2012.0" y="229" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="2026.0" y="243" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">A</text>
+<rect x="965.0" y="90" width="440" height="56" rx="6" fill="#fff" stroke="#333" stroke-width="1.5"/>
+<text x="1185.0" y="122.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#111" text-anchor="middle">Esclarecer uma interpretação e verificar a resposta</text>
+<rect x="1377.0" y="89" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="1391.0" y="103" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">A</text>
+<line x1="1185.0" y1="146" x2="1185.0" y2="190" stroke="#333" stroke-width="1.5"/>
+<line x1="325.0" y1="190" x2="1910.0" y2="190" stroke="#333" stroke-width="1.5"/>
+<line x1="325.0" y1="190" x2="325.0" y2="230" stroke="#333" stroke-width="1.5"/>
+<line x1="1081.0" y1="190" x2="1081.0" y2="230" stroke="#333" stroke-width="1.5"/>
+<line x1="1910.0" y1="190" x2="1910.0" y2="230" stroke="#333" stroke-width="1.5"/>
+<rect x="679.0" y="178" width="48" height="24" rx="4" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="703.0" y="195" font-family="Inter, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#b42318" text-anchor="middle">[]&gt;&gt;</text>
+<rect x="1471.5" y="178" width="48" height="24" rx="4" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="1495.5" y="195" font-family="Inter, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#b42318" text-anchor="middle">[]&gt;&gt;</text>
+<rect x="40" y="520" width="2290" height="210" rx="4" fill="#f6f6f6" stroke="#ccc" stroke-width="1"/>
+<text x="60" y="548" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#111" text-anchor="start">Tipos de tarefa</text>
+<rect x="60" y="564" width="40" height="26" rx="4" fill="#ffffff" stroke="#333" stroke-width="1.5"/>
+<rect x="66" y="568" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="80" y="582" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">A</text>
+<text x="110" y="582" font-family="Inter, DejaVu Sans, sans-serif" font-size="13" font-weight="400" fill="#111" text-anchor="start">Abstrata (composição)</text>
+<rect x="330" y="564" width="40" height="26" rx="4" fill="#dbeafe" stroke="#3a6ea5" stroke-width="1.5"/>
+<rect x="336" y="568" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="350" y="582" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">I</text>
+<text x="380" y="582" font-family="Inter, DejaVu Sans, sans-serif" font-size="13" font-weight="400" fill="#111" text-anchor="start">Interação usuário–sistema</text>
+<rect x="600" y="564" width="40" height="26" rx="4" fill="#e5e7eb" stroke="#555" stroke-width="1.5"/>
+<rect x="606" y="568" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="620" y="582" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">S</text>
+<text x="650" y="582" font-family="Inter, DejaVu Sans, sans-serif" font-size="13" font-weight="400" fill="#111" text-anchor="start">Sistema (automática)</text>
+<rect x="870" y="564" width="40" height="26" rx="4" fill="#fef3c7" stroke="#b8962e" stroke-width="1.5"/>
+<rect x="876" y="568" width="28" height="18" rx="3" fill="#111" stroke="#111" stroke-width="1"/>
+<text x="890" y="582" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">U</text>
+<text x="920" y="582" font-family="Inter, DejaVu Sans, sans-serif" font-size="13" font-weight="400" fill="#111" text-anchor="start">Usuário (atividade cognitiva)</text>
+<text x="60" y="628" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#111" text-anchor="start">Operadores temporais</text>
+<text x="60" y="654" font-family="Inter, DejaVu Sans, sans-serif" font-size="13" font-weight="400" fill="#333" text-anchor="start">[]  escolha   ·   &gt;&gt;  habilitação   ·   []&gt;&gt;  habilitação com passagem de informação   ·   |||  intercalação (ordem livre)   ·   [&gt;  desativação (interrompe a sequência anterior)</text>
+<text x="60" y="678" font-family="Inter, DejaVu Sans, sans-serif" font-size="13" font-weight="400" fill="#333" text-anchor="start">*  repetição (iterativa)   ·   [ ]  tarefa opcional, entre colchetes no rótulo</text>
+<text x="60" y="702" font-family="Inter, DejaVu Sans, sans-serif" font-size="13" font-weight="400" fill="#333" text-anchor="start">“Pedir nova revisão” reinicia “Apresentar o contexto” vinculado à solicitação anterior; a conversa pessoal com o gestor ocorre fora do sistema e não é modelada.</text></svg>
