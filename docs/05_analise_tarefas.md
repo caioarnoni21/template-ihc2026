@@ -31,6 +31,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 |---|---|---|---|---|
 | T01 | Consultar uma análise e registrar o próximo passo humano | Rafael Costa (P01) / E4-C01 | Revisão periódica ou sob demanda; alta | Caio Arnoni |
 | T02 | Interpretar uma sinalização de um colaborador e decidir o acompanhamento | João Pedro (P02)  / E4-C02 | A cada ciclo ou sinalização / Alta (H17) | Guilherme Matias |
+| T03 | Esclarecer uma interpretação sobre o próprio trabalho e verificar a resposta | Maria Fonseca (P03) / E4-C03 | Eventual, quando há explicação compartilhada ou comentário do gestor; alta (H25, H28) | Tainá Cunha |
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
@@ -271,6 +272,143 @@ O CTT modela as relações temporais entre as ações do João Pedro e as respos
 | Interação (I) | Caixa azul clara | I1 Abrir painel; I3 Escolher encaminhamento; I4 Digitar justificativa |
 
 Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
+
+---
+---
+
+## HTA — T03 Esclarecer uma interpretação sobre o próprio trabalho e verificar a resposta
+
+**Autor(a):** Tainá Cunha Bueno — 22.119.025-9
+
+### Descrição da tarefa
+
+- **Objetivo:** compreender em que se baseia uma interpretação sobre a própria comunicação, apresentar contexto sem expor informações pessoais e saber se ele foi considerado. <br>
+- **Ponto de início:** Maria recebeu um comentário do gestor ou um aviso de que uma explicação do seu ciclo foi compartilhada com ela. <br>
+- **Conclusão esperada:** solicitação enviada, recebimento confirmado e resposta lida; Maria considera o assunto esclarecido ou pede nova revisão. Uma conversa reservada combinada também é um resultado válido. <br>
+- **Contexto:** consulta individual, possivelmente fora do expediente, em notebook ou celular; assunto sensível e relação hierárquica (C03.Q2). O acesso da colaboradora à própria explicação é **proposta** dependente da política de acesso (Entrega 3, CT03). <br>
+
+### Diagrama
+
+![HTA T03](../assets/05_tarefas/hta_t03.png)
+
+Fonte editável: [`hta_t03.svg`](../assets/05_tarefas/hta_t03.svg)
+
+### Decomposição e planos
+
+| ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
+|---|---|---|---|
+| 0 | Esclarecer uma interpretação e verificar a resposta | 1 > 2 > 3; se a resposta não considerar o contexto, voltar a 2 | Enviar não equivale a ser ouvida; a tarefa só termina com a resposta (C03.Q8) |
+| 1 | Compreender a interpretação | 1.1 na primeira consulta > 1.2 > 1.3; sem explicação compartilhada, seguir para 2 com pergunta geral | Assimetria de informação: Maria não sabe em que o gestor se baseou (C03.Q3) |
+| 1.1 | Consultar finalidade, fontes e quem acessa os resultados | Operação terminal; opcional depois da primeira vez | Transparência sobre o uso dos dados (N07, H28) |
+| 1.2 | Abrir a explicação compartilhada do ciclo | Operação terminal | Período e data de compartilhamento precisam estar visíveis |
+| 1.3 | Distinguir o que mudou (comunicação) do que permaneceu estável (tarefas) | Operação terminal | Mudança comunicacional não deve parecer queda de desempenho |
+| 2 | Apresentar o contexto | 2.1; mensagem escrita: 2.2 > 2.3; conversa reservada: 2.3 com o pedido. Falha: repetir 2.3; persistindo, manter rascunho | Oferecer alternativa sem exigir relato escrito de questões pessoais (C03.Q5) |
+| 2.1 | Escolher a forma: mensagem escrita ou conversa reservada | Operação terminal | Respeitar a preferência e o nível de exposição |
+| 2.2 | Descrever pergunta, correção ou contexto, sem dados pessoais sensíveis | Operação terminal | Aviso preventivo sobre dados sensíveis; não obrigar justificativa pessoal |
+| 2.3 | Conferir o destinatário e enviar | Operação terminal | Destinatário visível antes do envio (C03.Q7) |
+| 3 | Acompanhar a solicitação | 3.1 > 3.2 (repetir até “respondida”) > 3.3 | O silêncio gera ansiedade; o estado precisa ser visível (C03.Q7) |
+| 3.1 | Conferir a confirmação de recebimento e o destinatário | Operação terminal | Distinguir “enviada” de “recebida” |
+| 3.2 | Consultar o estado da solicitação | Operação terminal, repetível | Estados: enviada, recebida, em análise, respondida |
+| 3.3 | Ler a resposta e decidir: considerar esclarecido ou pedir nova revisão | Operação terminal | A decisão de encerrar é da colaboradora, não do sistema |
+
+**Verificação do HTA:**
+
+- **O objetivo 0 representa uma meta da usuária?** Sim. Esclarecer uma interpretação e saber se foi ouvida corresponde à necessidade de Maria descrita no C03 e na jornada J03. Não é apenas “usar o sistema”.<br>
+- **As subtarefas são necessárias e suficientes?** Sim, para o recorte: compreender a interpretação, apresentar o contexto e acompanhar a resposta. A conversa pessoal com o gestor e uma eventual revisão da análise ficam fora da tarefa.<br>
+- **Os planos indicam ordem, alternativa, repetição ou condição?** Sim. O plano 0 é sequencial, com retorno a 2 quando a resposta não considera o contexto. O plano 1 torna 1.1 opcional e prevê a falta de explicação compartilhada. O plano 2 apresenta a alternativa entre mensagem escrita e conversa reservada, além da repetição em caso de falha. O plano 3 repete 3.2 até haver resposta.<br>
+- **A decomposição parou em nível útil para o projeto de interação?** Sim. As operações finais indicam informações (finalidade, período, dimensões, destinatário, estado) e controles (escolher forma, enviar, encerrar, pedir revisão) necessários na interface, sem descer ao nível de cliques.
+
+---
+
+## GOMS — T03 Esclarecer uma interpretação sobre o próprio trabalho e verificar a resposta
+
+**Autor(a):** Tainá Cunha Bueno — 22.119.025-9
+
+### Diagrama
+
+![GOMS T03](../assets/05_tarefas/goms_t03.png)
+
+Fonte editável: [`goms_t03.svg`](../assets/05_tarefas/goms_t03.svg)
+
+### Goals: metas e subobjetivos
+
+- **G0:** esclarecer uma interpretação sobre o próprio trabalho e verificar se houve resposta.
+- **G1:** abrir a explicação compartilhada.
+- **G2:** compreender a finalidade e o que mudou.
+- **G3:** apresentar o contexto.
+- **G4:** acompanhar a solicitação e concluir.
+
+### Métodos, operadores e regras de seleção
+
+- **Method M1:** Abrir pelo aviso recebido
+  - Ler o aviso de explicação compartilhada;
+  - Selecionar “Ver explicação”;
+  - Conferir nome e período exibidos.
+- **Method M2:** Abrir pelo menu
+  - Selecionar “Minha análise” no menu;
+  - Selecionar o ciclo;
+  - Conferir nome e período exibidos.
+- **Selection Rule SR1:** usar M1 se o aviso está visível; senão, usar M2.
+- **Operadores de G2 (sequência única, sem métodos alternativos):** [opcional na primeira consulta] ler finalidade, fontes e quem acessa; ler a dimensão comunicação; ler a dimensão tarefas; ler “o que significa e o que não significa”.
+- **Method M3:** Mensagem escrita
+  - Selecionar “Esclarecer ou adicionar contexto”;
+  - Escolher o tipo: pergunta, correção ou contexto;
+  - Digitar a mensagem;
+  - Conferir o destinatário;
+  - Selecionar “Enviar”.
+- **Method M4:** Conversa reservada
+  - Selecionar “Prefiro conversar”;
+  - [Opcional] indicar preferência de horário;
+  - Conferir o destinatário;
+  - Selecionar “Enviar pedido”.
+- **Selection Rule SR2:** usar M3 se Maria quer deixar registro escrito ou corrigir uma informação; usar M4 se o assunto é pessoal ou ela prefere falar (C03.Q5).
+- **Operadores comuns de G4:** conferir confirmação, data e destinatário; abrir “Minhas solicitações”; ler o estado e a resposta.
+- **Method M5:** Considerar esclarecido
+  - Selecionar “Considero esclarecido”.
+- **Method M6:** Pedir nova revisão
+  - Selecionar “Pedir nova revisão”;
+  - Digitar complemento;
+  - Selecionar “Enviar”.
+- **Selection Rule SR3:** usar M5 se a resposta considera o contexto; senão, usar M6, que retorna a G3 vinculado à solicitação anterior.
+
+> Os rótulos entre aspas são provisórios e correspondem às telas F14–F18 propostas na Entrega 11.
+
+---
+
+## CTT — T03 Esclarecer uma interpretação sobre o próprio trabalho e verificar a resposta
+
+**Autor(a):** Tainá Cunha Bueno — 22.119.025-9
+
+### Descrição
+
+Maria Fonseca, colaboradora, abre a explicação do seu ciclo e, se quiser, consulta antes a finalidade da análise e quem acessa os resultados. O sistema exibe o período, as dimensões de comunicação e tarefas separadamente e os limites da análise. Maria interpreta o que mudou e o que permaneceu estável. Em seguida, escolhe entre escrever uma pergunta, correção ou contexto e pedir uma conversa reservada; confere o destinatário e envia. O sistema registra a solicitação e confirma o recebimento. Ela pode desistir antes de enviar, descartando o rascunho. Depois, consulta a solicitação quantas vezes precisar; o sistema exibe o estado e a resposta do gestor. Maria avalia a resposta e escolhe entre considerar o assunto esclarecido e pedir nova revisão. A conversa pessoal com o gestor ocorre fora do sistema e não é modelada.
+
+### Diagrama
+
+![CTT T03](../assets/05_tarefas/ctt_t03.png)
+
+Fonte editável: [`ctt_t03.svg`](../assets/05_tarefas/ctt_t03.svg)
+
+### Legenda e relações temporais usadas
+
+| Operador/relação | Significado no diagrama | Exemplo no modelo |
+|---|---|---|
+| `[]>>` | Habilitação com passagem de informação | O ciclo aberto orienta a explicação; a solicitação enviada é passada ao acompanhamento |
+| `>>` | Habilitação | Exibir o conteúdo habilita a interpretação; conferir o destinatário habilita o envio |
+| `[]` | Escolha exclusiva | Escrever contexto ou pedir conversa reservada; considerar esclarecido ou pedir nova revisão |
+| `\|\|\|` | Intercalação (ordem livre) | Consultar finalidade e acesso em qualquer momento da compreensão |
+| `[>` | Desativação | Descartar o rascunho interrompe a sequência de envio |
+| `*` | Repetição | Consultar a solicitação até haver resposta |
+| `[ ]` no rótulo | Tarefa opcional | [Consultar finalidade, fontes e acesso] |
+
+### Tipos de tarefa
+
+| Símbolo | Tipo | Exemplo no diagrama |
+|---|---|---|
+| [A] | Abstrata: composição de outras tarefas | Compreender a interpretação; apresentar o contexto; acompanhar a solicitação |
+| [I] | Interação: diálogo entre pessoa e sistema | Abrir explicação; escrever contexto; enviar; pedir nova revisão |
+| [S] | Sistema: execução automática | Exibir período, dimensões e limites; registrar e confirmar recebimento; exibir estado e resposta |
+| [U] | Usuário: atividade humana fora do diálogo | Interpretar o que mudou; avaliar a resposta |
 
 ---
 
