@@ -71,6 +71,48 @@ Antes de decidir “que dados coletar”, retome os itens `[H]` e `[?]` da Entre
 
 Analise voluntariedade, consentimento, minimização de dados, privacidade, riscos, gravação, anonimização, armazenamento e descarte. Não responda apenas “sim, por causa da LGPD”: explique **quais dados e riscos existem neste projeto**.
 
+### A02 — Guilherme Matias
+
+**Autor(a):** Guilherme Matias — 22.122.071-8  
+**Foco:** gestor de equipe operacional, com pouco tempo e pouca familiaridade com métricas (P02 — João Pedro; cenário C02; tarefa T02).
+
+#### Que dados coletar?
+
+| Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
+|---|---|---|---|
+| Perfil: papel, tamanho e tipo de equipe, tempo na função | H05 / H15 | Verificar se o perfil realiza a atividade atribuída ao João Pedro | Público de T02 e persona P02 |
+| Fontes consultadas e a ordem em que são abertas ao decidir se conversa com alguém | H15 / H18 / H26 | Conhecer o processo real e as ferramentas que já moldam a expectativa | O que a interface complementa e padrões familiares |
+| Quais informações o gestor usa e quais pede e não estão disponíveis | H19 / H24 | Separar o essencial do excesso | Conteúdo da visão geral e do detalhamento (HTA 1 e 3) |
+| Tempo até a primeira decisão e se aprofunda ou decide direto | H20 / H27 | Validar o caminho curto e a janela de cerca de 15 minutos | Existência e posição do aprofundamento opcional |
+| Reação a uma interrupção e modo de retomar | H20 / H22 | Verificar a necessidade de retomar o caso e a etapa | Estado de retomada (O20 e E04 do M02) |
+| Cuidados de privacidade visual durante a consulta | H22 / H23 | Ver se o gestor evita expor nomes ou mensagens | Identificação discreta por iniciais |
+| Reação a um aviso de mudança sem causa informada | H17 / H25 | Verificar se o aviso é lido como veredito e se o texto de limites é necessário | Texto "significa e não significa" e sua posição |
+| Distinção entre "sem alteração" e "sem dados suficientes" | H17 / H24 | Verificar se a diferença é percebida sem explicação | Estados da análise e caminho "aguardar dados" |
+| Palavras que o gestor usa espontaneamente (mudança, alerta, sinal, histórico) | H10 / ?03 | Obter o vocabulário real antes de apresentar termos | Rótulos e textos de ajuda |
+| Como registraria a decisão e o que anotaria | H15 / H18 | Verificar se o registro é necessário e quão leve precisa ser | Tela de registro e justificativa curta (HTA 5) |
+
+#### De quem coletar?
+
+| Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
+|---|---|---|
+| Gestores, supervisores ou líderes de equipes operacionais (atendimento, suporte, produção ou similar) | 18 anos ou mais; lideram pelo menos 3 pessoas; acompanharam colaboradores nos últimos seis meses; sem exigir familiaridade com análise de dados | Público principal para investigar P02 e T02 |
+| Gestores de equipes de tecnologia (opcional, 1 participante) | Mesmo critério de experiência | Comparação com P01 e com os resultados do questionário do Caio |
+| **Exclusão** | Integrantes do projeto; pessoas subordinadas a quem conduz a sessão; quem não consentir | Evitar viés e pressão hierárquica |
+
+**Meta exploratória:** 3 a 5 sessões, por conveniência. A amostra não permite generalização; serve para revisar hipóteses e o fluxo. Colegas de turma só participam como proxy com autorização do docente, identificados como tal na análise.
+
+#### Aspectos éticos
+
+- **Dados que existem neste projeto:** comportamento observado (ordem, tempo, hesitações), falas durante a tarefa e respostas de fechamento. O principal risco é o participante descrever ou abrir informações reais de pessoas da equipe.
+- **Minimização:** a tarefa usa cartões fictícios. O participante só diz quais ferramentas abriria e em que ordem, **sem abrir conteúdo real**, e o observador não vê dados reais. Não são coletados nome de empresa, de colegas ou de subordinados. Se citarem nomes, a informação não é anotada.
+- **Voluntariedade e consentimento:** o convite é individual e feito diretamente por mim, sem passar por chefias. O termo (`instrumentos/termo_consentimento_modelo.md`, adaptado para observação) é lido antes de começar. A pessoa pode pular a atividade, pedir pausa ou encerrar sem justificar, e retirar os dados até a consolidação.
+- **Interrupção simulada:** o participante é avisado de que pode haver uma interrupção simulada durante a atividade, sem saber quando. No fechamento explico o motivo.
+- **Gravação:** somente áudio, com consentimento explícito e separado. **Não há vídeo, foto nem captura de tela.** Sem autorização, uso apenas a ficha de observação. O áudio é apagado após a transcrição anonimizada.
+- **Anonimização e armazenamento:** cada participante recebe um código (E01, E02…). Fichas e transcrições ficam em pasta privada durante o semestre 2026.2 e são descartadas ao final da disciplina. O termo assinado fica separado das fichas e **não** vai para o GitHub; só a síntese agregada é publicada.
+- **Risco de desconforto:** ser observado pode causar a sensação de ser avaliado. Aviso que o foco é o cenário e a interface, que não há resposta certa e que nenhuma pessoa real aparece nos materiais.
+- **Relação com o TCC:** a sessão não avalia o algoritmo nem o participante.
+
+
 ### A03 — Tainá Cunha Bueno
 
 **Autor(a):** Tainá Cunha Bueno — 22.119.025-9
@@ -289,6 +331,118 @@ Q03–Q10 investigarão H05, H15, H18 e H19; Q11–Q13 investigarão H10, H20, H
 Para cada hipótese, reunir evidências favoráveis e contrárias antes de decidir: sustentada no recorte quando houver relatos concretos convergentes; refutada no recorte quando os relatos contradisserem a formulação; refinada quando depender de contexto ou perfil. Respostas insuficientes ou genéricas mantêm a hipótese aberta. Registrar quantidade de respostas, limitações e fundamento da decisão; não converter aprovação da ideia em comprovação de necessidade de dashboard.
 
 Os resultados poderão alterar persona, contexto, etapas de T01, informações mostradas e vocabulário. Por exemplo, ausência de necessidade de registro exige rever essa etapa; dificuldade em distinguir insuficiência de estabilidade exige revisar explicações e testar sua compreensão posteriormente. Essas são possibilidades de revisão, não resultados já obtidos.
+
+### Instrumento I02 — Observação com tarefa reconstruída
+
+**Autor(a):** Guilherme Matias — 22.122.071-8  
+**Técnica:** observação individual de uma tarefa reconstruída com materiais fictícios, com protocolo de pensar em voz alta, interrupção simulada e fechamento curto. Presencial ou por videochamada, de 25 a 35 minutos.  
+**Objetivo:** observar como um gestor operacional decide se precisa conversar com alguém da equipe, que fontes e informações usa, quanto tempo leva, como retoma uma tarefa interrompida e como reage a um aviso de mudança sem causa informada, para verificar se o cenário e o fluxo de T02 fazem sentido.  
+**Público:** gestores, supervisores ou líderes de equipes operacionais, conforme os critérios da A02.
+
+#### Procedimento padronizado de aplicação
+
+1. **Preparação:** imprimir ou preparar em tela os cartões (abaixo), a ficha de observação e o termo; ter um cronômetro. Definir o código do participante. Testar o gravador, se houver autorização.
+2. **Piloto:** aplicar com uma pessoa elegível, verificando duração, clareza dos cartões e o momento da interrupção. Se o roteiro mudar, registrar a versão e não misturar o piloto aos resultados.
+3. **Convite:** individual, pelo observador, com a mesma mensagem para todos. Informar duração, finalidade acadêmica e que não se trata de avaliação profissional.
+4. **Abertura e consentimento (5 min):** ler a apresentação e o termo; obter consentimento para participar e, separadamente, para gravar áudio. Explicar o pensar em voz alta e avisar que pode haver uma interrupção simulada.
+5. **Fase 1 — Tarefa sem ferramenta (8 a 10 min):** entregar o cenário e os Cartões 1 e 2. Observar sem ajudar. Por volta do minuto 5, aplicar a interrupção simulada e registrar como o participante retoma. Pedidos de informação que não estão nos cartões são anotados, e a resposta é sempre "isso não está disponível neste exercício".
+6. **Fase 2 — Avisos (8 min):** mostrar o Cartão S1, observar e anotar; depois mostrar o Cartão S2. Não explicar os termos nem indicar respostas esperadas.
+7. **Fechamento (5 min):** fazer as quatro perguntas finais, explicar a interrupção simulada e perguntar se a pessoa quer acrescentar ou retirar algo.
+8. **Armazenamento:** completar a ficha em até 24 horas, substituindo identificadores por códigos; guardar tudo em pasta privada e apagar o áudio após a transcrição.
+
+#### Instrumento
+
+```text
+Roteiro e materiais — Observação com tarefa reconstruída
+Responsável: Guilherme Matias
+Duração estimada: 25 a 35 minutos
+Código do participante: E__    Data: __/__/____    Áudio autorizado? ( ) Sim ( ) Não
+
+ABERTURA (ler)
+"Obrigado por participar. Este exercício faz parte de um trabalho da disciplina de
+Interação Humano-Computador. Vou pedir que você resolva uma situação fictícia
+enquanto fala em voz alta o que está pensando e fazendo. Não estou avaliando
+você: não existe resposta certa ou errada, e nenhuma pessoa real aparece nos
+materiais. Não cite nomes de pessoas ou empresas. Durante a atividade pode haver
+uma interrupção simulada. Você pode pedir pausa ou encerrar quando quiser."
+→ Ler o termo de consentimento e confirmar o aceite antes de continuar.
+
+CENÁRIO (entregar e ler em voz alta)
+"Você lidera uma equipe de atendimento. Você tem 15 minutos antes da próxima
+reunião e quer decidir se precisa conversar com alguém da equipe. Você tem os dois
+cartões abaixo. Se você usaria alguma outra fonte, diga qual e o que procuraria."
+
+CARTÃO 1 — Chamados (fictício)
+Pessoa X, últimas duas semanas: 18 chamados fechados, 17 dentro da meta.
+Pessoa X, duas semanas anteriores: 18 chamados fechados, 17 dentro da meta.
+
+CARTÃO 2 — Chat da equipe (fictício; trechos curtos)
+Semana anterior: "Oi, pode deixar. Vou conferir o pedido e te retorno até as 15h com os detalhes."
+Semana anterior: "Entendi o problema do cliente. Já abri o ajuste e te aviso quando terminar."
+Últimos dias: "ok"
+Últimos dias: "vejo depois"
+
+INTERRUPÇÃO SIMULADA (por volta de 5 min de tarefa)
+Observador: "Desculpe interromper: um supervisor precisa de você para resolver uma
+escala agora."  → anotar o que o participante faz antes de sair e como retoma.
+Após cerca de 1 minuto de pausa, observador: "Pode voltar à atividade. Só para avisar:
+as duas últimas semanas tiveram pico de demanda e troca de turnos." → anotar se e
+como o participante revisa a leitura anterior.
+
+FASE 2 — AVISOS (mostrar um cartão por vez)
+CARTÃO S1 (fictício): "Aviso de uma ferramenta: foi observada uma mudança nas
+mensagens desta pessoa em relação ao histórico dela nos últimos 15 dias. Os
+indicadores de tarefas não mudaram."
+  Pergunta única: "O que você entende desse aviso e o que faria?"
+CARTÃO S2 (fictício): "Aviso de uma ferramenta: não há dados suficientes para
+comparar o período recente com o histórico desta pessoa (fonte: chat, últimos
+15 dias)."
+  Pergunta única: "O que você entende desse aviso e o que faria?"
+Sondagens neutras (apenas se necessário): "Pode explicar?", "O que você quer dizer
+com isso?". Não explicar termos nem sugerir respostas.
+
+FECHAMENTO (perguntas)
+F1. O que ajudou e o que atrapalhou nessa atividade?
+F2. O que faltou para você decidir com segurança?
+F3. Se pudesse trocar uma palavra dos avisos, qual trocaria e por quê?
+F4. Quando você faz isso de verdade, o que é diferente do que fez aqui?
+"Obrigado! As respostas serão usadas de forma anônima, apenas para a disciplina."
+Explicar a interrupção simulada e perguntar se quer retirar ou corrigir algo.
+
+FICHA DE OBSERVAÇÃO (preencher durante e após)
+Participante E__ | Versão do roteiro: __ | Duração por fase: F1 __ F2 __ Fech. __
+Fase 1
+- Primeira fonte consultada / ordem das fontes: ______________________
+- Fontes extras pedidas (não disponíveis nos cartões): ______________
+- Tempo até a primeira decisão (minutos aproximados): ______________
+- Aprofundou antes de decidir? ( ) Sim ( ) Não — como: _____________
+- Anotou algo? ( ) Não ( ) Sim — o quê (sem nomes): ________________
+- Falas-chave (curtas, entre aspas): ______________________________
+- Palavras que usou para descrever a mudança: ______________________
+Interrupção
+- O que fez antes de sair: ________________________________________
+- Como retomou (releu tudo, continuou, anotou, esqueceu o ponto): ____
+- Revisou a leitura após a nova informação? ( ) Sim ( ) Não — como: __
+Fase 2
+- S1: leu até o fim? ( ) Sim ( ) Não | tratou como veredito? ( ) Sim ( ) Não
+  Perguntou o que significa? ( ) Sim ( ) Não | ação proposta: __________
+- S2: interpretou como "sem mudança"? ( ) Sim ( ) Não | como "aguardar"? ( ) Sim ( ) Não
+  Ação proposta: ___________________________________________________
+- Termos que estranhou ou quis trocar: ____________________________
+- Cuidados de privacidade percebidos (tela, nomes, voz baixa): _______
+Fechamento: respostas a F1–F4 (curtas): ______________________________
+Perguntas puladas / observações do observador: ______________________
+```
+
+#### Como os dados serão analisados
+
+1. **Linha do tempo por participante:** ordem das fontes, tempo até a decisão, pedidos de informação ausente, interrupção e retomada, reação a S1 e S2.
+2. **Contagem descritiva:** quantos participantes aprofundaram, pediram contexto externo, trataram S1 como veredito e distinguiram S2 de "sem mudança". Sempre informar o número de participantes e sem percentuais, por causa da amostra pequena.
+3. **Análise temática** das falas e das respostas de fechamento: fonte de informação, critério de decisão, restrição de tempo, retomada, compreensão de termos, privacidade e registro. Distinguir fala do participante de inferência do observador, e registrar também comportamentos inesperados.
+4. **Relação com as hipóteses:** a Fase 1 investiga H15, H18, H19, H20, H26 e H27; a interrupção, H20, H22 e a retomada; a Fase 2, H17, H24, H25 e ?03; o fechamento, H10 e H23.
+5. **Classificação de cada hipótese:** *sustentada no recorte* quando os relatos e comportamentos convergirem; *refutada no recorte* quando contradisserem; *refinada* quando dependerem de contexto; *inconclusiva* quando faltarem dados.
+6. **Limites:** a observação usa cartões fictícios e um observador presente, então o comportamento real, sob pressão real, pode diferir. Ela não mede desempenho em uma interface nem a precisão técnica do TCC.
+7. **Uso no design:** os resultados podem alterar T02 (caminho curto, estados de retomada, posição do texto de limites), os rótulos do protótipo e o vocabulário. Essas são possibilidades de revisão, não resultados já obtidos.
 
 ### Instrumento I03 — Entrevista semiestruturada com colaboradores
 
