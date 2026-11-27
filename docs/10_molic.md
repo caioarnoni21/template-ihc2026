@@ -207,14 +207,6 @@ As cenas têm o tópico no cabeçalho e diálogos e signos no corpo; `u:` identi
 
 Liste os estados/telas que serão necessários **a partir das conversas modeladas**, incluindo feedback, confirmação, erro e recuperação.
 
-## Erros frequentes a evitar
-
-- desenhar apenas caixas com nomes de telas e setas de navegação;
-- não modelar falhas, cancelamento, volta ou recuperação;
-- usar rótulos genéricos (“Tela 1”, “Processo 2”) sem tópico de conversa;
-- criar no Figma fluxos que não existem no MoLIC;
-- diagrama sem legenda/fonte editável e com texto ilegível.
-
 **Telas e estados necessários para M03 — Tainá:**
 
 | Cena MoLIC | Tela ou estado previsto | Finalidade |
@@ -229,3 +221,12 @@ Liste os estados/telas que serão necessários **a partir das conversas modelada
 | C8 | F16 — Confirmação de descarte | Evitar a perda acidental de texto |
 | C5 | F17 — Solicitação recebida | Confirmar o recebimento e orientar sobre o acompanhamento |
 | C7 | F18 — Minhas solicitações | Apresentar estados, resposta do gestor e opções de encerramento ou nova revisão |
+
+
+## Erros frequentes a evitar
+
+- desenhar apenas caixas com nomes de telas e setas de navegação;
+- não modelar falhas, cancelamento, volta ou recuperação;
+- usar rótulos genéricos (“Tela 1”, “Processo 2”) sem tópico de conversa;
+- criar no Figma fluxos que não existem no MoLIC;
+- diagrama sem legenda/fonte editável e com texto ilegível.
